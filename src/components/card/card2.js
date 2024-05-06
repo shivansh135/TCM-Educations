@@ -1,9 +1,5 @@
-
-
 import React from "react";
-import './home.css';
-
-export default function Card_two(props) {
+export function Card_two(props) {
     return (
         <div className="card_two">
             <div className="top-layer">

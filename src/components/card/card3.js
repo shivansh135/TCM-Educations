@@ -1,8 +1,7 @@
 import React from "react";
-import './home.css';
 import Icon_two from './notifications_active.svg';
 
-export default function Card_three(props) {
+export function Card_three(props) {
     return (
                     <div>
                         <div className='card3'>

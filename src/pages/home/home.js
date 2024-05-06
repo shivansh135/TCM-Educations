@@ -1,11 +1,12 @@
 import React from 'react';
 import './home.css';
-import Button from './button.js';
-import Card from './card.js';
-import Card_two from './card2.js';
-import Card_three from './card3.js';
-import Card_four from './card4.js';
-import FAQQuestion from './FAQQuestion.js';
+import FAQQuestion from '../../components/FaQ/FAQQuestion';
+import {Button} from '../../components/button/button';
+import { Card } from '../../components/card/card';
+import { Card_two } from '../../components/card/card2';
+import { Card_four } from '../../components/card/card4';
+import { Card_three } from '../../components/card/card3';
+import { HeadingSubheading } from '../../components/headings/headings';
 
 export default function Home() {
     return (
@@ -27,13 +28,8 @@ export default function Home() {
             <img src="/Group.png" alt='hero'/>
         </div>
         </div>
-        <div className='quote'>
-            Why TCM is India’s Fastest Growing Institute?
-            </div>
-
-            <div className='home_two_content'>
-            We're India's leading coaching institute, empowering students to conquer CAT, IPMAT, CLAT & CUET with our expert faculty, personalized approach, and proven strategies. We'll equip you with the knowledge and confidence to ace your exams and gain admission to the top colleges in India.
-            </div>
+        
+        <HeadingSubheading heading={`Why TCM is India’s Fastest Growing Institute?`} sub={`We're India's leading coaching institute, empowering students to conquer CAT, IPMAT, CLAT & CUET with our expert faculty, personalized approach, and proven strategies. We'll equip you with the knowledge and confidence to ace your exams and gain admission to the top colleges in India.`}/>
 
             <div className='but2'>
             <button className='Counsel '>Counseling Call {'>'}</button>
@@ -43,13 +39,9 @@ export default function Home() {
             <div className='home_two_img'>
                 <img src="/Group2.png" alt='hero'/>
             </div>
-            <div className='quote2'>
-            Meet the TCM Avengers
-            </div>
 
-            <div className='home_three_content'>
-            We're India's leading coaching institute, empowering students to conquer CAT, IPMAT, CLAT & CUET with our expert faculty, personalized approach, and proven strategies. We'll equip you with the knowledge and confidence to ace your exams and gain admission to the top colleges in India.
-            </div>
+            <HeadingSubheading heading={` Meet the TCM Avengers`} sub={`            We're India's leading coaching institute, empowering students to conquer CAT, IPMAT, CLAT & CUET with our expert faculty, personalized approach, and proven strategies. We'll equip you with the knowledge and confidence to ace your exams and gain admission to the top colleges in India.`}/>
+
 
             <div className='card-1-container'>
 
@@ -60,7 +52,7 @@ export default function Home() {
 
             <div className='panchmukhi-img'>
                 {/* <Link to='#'> */}
-                <img src="./images/Frame.png" style={{width:'840px'}} alt='frame'/>
+                <img src="./images/Frame.png" style={{width:'100%',height:'auto'}} alt='frame'/>
                 {/* </Link> */}
             </div>
 
@@ -104,10 +96,17 @@ export default function Home() {
                         detail='New batch starts 10th April 2024.'
                         course_timing='Class Timing 8:30PM to 10:30PM'
                         />
+                        <Card_four
+                        course_name='CAT'
+                        course_price='Rs.50,000'
+                        detail='New batch starts 10th April 2024.'
+                        course_timing='Class Timing 8:30PM to 10:30PM'
+                        />
                     </div>
 
                 </div>
             </div>
+
             <div className='FQA'>
                 <div className='FQA-area'>
                     <div className='FQA-head'>
@@ -137,9 +136,6 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-
-
-
 
         </div>
     );

@@ -1,7 +1,6 @@
 import React from "react";
-import './home.css';
 
-export default function Card(props) {
+export  function Card(props) {
     return (
         <div className="card">
                 <img className="card--image" src={props.src} alt="teacher"/>

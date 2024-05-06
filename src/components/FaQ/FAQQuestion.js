@@ -1,6 +1,5 @@
 
 import React, { useState } from 'react';
-import './home.css';
 
 function FAQQuestion({question, answer}) {
   const [showAnswer, setShowAnswer] = useState(false);
