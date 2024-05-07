@@ -1,10 +1,12 @@
 
-import Home from './pages/home/home';
+// import Home from './pages/home/home';
+import Prayagraj from './pages/centre/prayagraj';
 
 function App() {
   return (
     <>
-     <Home />
+     {/* <Home /> */}
+    <Prayagraj/>
     </>
   );
 }

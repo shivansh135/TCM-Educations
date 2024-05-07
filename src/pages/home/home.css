@@ -530,6 +530,7 @@ width:330px;
 }
 
 .card3{
+    width: 300px;
     display: flex;
     padding: 40px 67px;
     border-radius: 16px;
@@ -817,7 +818,7 @@ width:330px;
 .FQA{
     margin-top: 5%;
     width: 100%;
-    height: 7567px;
+    height: 100%;
     overflow: hidden;
     background: #FFF;
     display: flex;
