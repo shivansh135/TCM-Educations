@@ -1,0 +1,72 @@
+.off_centre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+}
+
+.centre_heading{
+    width: 878px;
+    color: var(--TCM-Neutral-grey13, #000);
+    font-family: Figtree;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 72px;
+    text-align: center;
+}
+
+.centres{
+    display: flex;
+    align-items: flex-start;
+    gap: 50px;
+}
+
+.centre_one{
+    position: relative;
+}
+
+.centre_two {
+    position: relative;
+}
+
+.centre_prayagraj{
+    width: 100%; /* adjust as needed */
+    height: auto; /* adjust as needed */ 
+}
+.centre_varanasi {
+    width: 100%; /* adjust as needed */
+    height: auto; /* adjust as needed */
+}
+
+.centre_name{
+    color: var(--TCM-Neutral-grey01, #FFF);
+    position: absolute;
+    font-family: Figtree;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    bottom: 5%; /* adjust as needed */
+    left: 18%; /* adjust as needed */
+    transform: translate(-50%, -50%); 
+}
+
+.centre_name, .visit{
+    position: absolute;
+}
+
+.visit{
+    display: flex;
+    padding: 10px 20px;
+    border-radius: 38px;
+    border: 1px solid var(--TCM-Neutral-grey01, #FFF);
+    background: var(--TCM-Neutral-grey01, #FFF);
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+
+    bottom: 5%; /* adjust as needed */
+    right: 1px; /* adjust as needed */
+    transform: translate(-50%, -50%); /* centers the element horizontally */
+}

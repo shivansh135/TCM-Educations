@@ -1,0 +1,105 @@
+.confirmation-modal {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.confirmation {
+    display: inline-flex;
+    padding: 24px 40px;
+    border-radius: 8px;
+    border: 2px solid var(--TCM-Brand-brand-blue03, #5EB2F7);
+    background: var(--TCM-Brand-brand-blue01, #14A4F5);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+@keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+}
+
+/* .confirmation{
+    display: inline-flex;
+    padding: 24px 40px;
+    border-radius: 8px;
+    border: 2px solid var(--TCM-Brand-brand-blue03, #5EB2F7);
+    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.08);
+    background: var(--TCM-Brand-brand-blue01, #14A4F5);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+} */
+
+.confirmation_text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.confirmation_img{
+    width: 42px;
+    height: 42px;
+}
+
+.confirmation_head{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+.call_back{
+    color: var(--TCM-Neutral-grey01, #FFF);
+    font-family: Figtree;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+.call_back_text{
+    width: 232px;
+    color: var(--TCM-Brand-brand-blue09, #C6DFFC);
+    font-family: Figtree;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+}
+
+.call_back_btn{
+    display: flex;
+    padding: 10px 20px;
+    border-radius: 38px;
+    background: var(--TCM-Neutral-grey01, #FFF);
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    color: var(--TCM-Brand-brand-blue01, #14A4F5);
+    font-family: Figtree;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+    text-align: center;
+    border: none;
+}

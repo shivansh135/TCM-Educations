@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState }from 'react';
 import './home.css';
 import FAQQuestion from '../../components/FaQ/FAQQuestion';
 import {Button} from '../../components/button/button';
@@ -7,40 +7,47 @@ import { Card_two } from '../../components/card/card2';
 import { Card_four } from '../../components/card/card4';
 import { Card_three } from '../../components/card/card3';
 import { HeadingSubheading } from '../../components/headings/headings';
+import Popup_home from './popup_home';
 
 export default function Home() {
+    const [showPopup, setShowPopup] = useState(true);
     return (
         <div>
-        <div className='home'>
-        <div className='head'>
-            <div className='blue-head'>
-                TCM Education
+            {showPopup && 
+                <div className='popup-container' onClick={() => setShowPopup(false)}>
+                    <Popup_home closePopup={() => setShowPopup(false)} />
+                </div>
+            }
+            <div className='home'>
+                <div className='head'>
+                    <div className='blue-head'>
+                        TCM Education
+                    </div>
+                    <div className='black-head'>
+                    Trusted Gateway<br/>to Top Colleges
+                    </div>
+                    <div className='para-one'>
+                        <p>We're India's leading coaching institute, empowering students to <br/>conquer CAT, IPMAT, CLAT & CUET with our expert faculty,<br/> personalized approach, and proven strategies. We'll equip you with <br/>the knowledge and confidence to ace your exams and gain<br/> admission to the top colleges in India.</p>
+                    </div>
+                    <Button/>
+                </div>
+                <div className='head-img'>
+                    <img src="/Group.png" alt='hero'/>
+                </div>
             </div>
-            <div className='black-head'>
-            Trusted Gateway<br/>to Top Colleges
-            </div>
-            <div className='para-one'>
-                <p>We're India's leading coaching institute, empowering students to <br/>conquer CAT, IPMAT, CLAT & CUET with our expert faculty,<br/> personalized approach, and proven strategies. We'll equip you with <br/>the knowledge and confidence to ace your exams and gain<br/> admission to the top colleges in India.</p>
-            </div>
-            <Button/>
-        </div>
-        <div className='head-img'>
-            <img src="/Group.png" alt='hero'/>
-        </div>
-        </div>
         
         <HeadingSubheading heading={`Why TCM is India’s Fastest Growing Institute?`} sub={`We're India's leading coaching institute, empowering students to conquer CAT, IPMAT, CLAT & CUET with our expert faculty, personalized approach, and proven strategies. We'll equip you with the knowledge and confidence to ace your exams and gain admission to the top colleges in India.`}/>
 
             <div className='but2'>
-            <button className='Counsel '>Counseling Call {'>'}</button>
-            <button className='book'>Book Live Trial Class {'>'}</button>
+                <button className='Counsel '>Counseling Call {'>'}</button>
+                <button className='book'>Book Live Trial Class {'>'}</button>
             </div>
 
             <div className='home_two_img'>
                 <img src="/Group2.png" alt='hero'/>
             </div>
 
-            <HeadingSubheading heading={` Meet the TCM Avengers`} sub={`We're India's leading coaching institute, empowering students to conquer CAT, IPMAT, CLAT & CUET with our expert faculty, personalized approach, and proven strategies. We'll equip you with the knowledge and confidence to ace your exams and gain admission to the top colleges in India.`}/>
+        <HeadingSubheading heading={` Meet the TCM Avengers`} sub={`We're India's leading coaching institute, empowering students to conquer CAT, IPMAT, CLAT & CUET with our expert faculty, personalized approach, and proven strategies. We'll equip you with the knowledge and confidence to ace your exams and gain admission to the top colleges in India.`}/>
 
 
             <div className='card-1-container'>

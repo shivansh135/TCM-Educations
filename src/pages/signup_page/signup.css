@@ -1,0 +1,318 @@
+.signup{
+    display: flex;
+    align-items: center;
+    gap: 42px;
+    height: 100%;
+    width: 100%;
+    flex-direction: row;
+    margin-top: 3%;
+}
+
+.signup_left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+    position: relative;
+    left: 10%;
+    bottom: 10%;
+    }
+
+.input{
+    gap: 50px;
+}
+
+.email_pass{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+    position: relative;
+}
+
+.Welcome{
+    color: var(--Primary-text, #0C1421);
+    font-family: Figtree;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px;
+    text-align: center;
+}
+
+.email{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    margin-top: 4%;
+}
+
+.email_text{
+    color: var(--Primary-text, #0C1421);
+    font-family: Figtree;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.email_input{
+    display: flex;
+    width: 388px;
+    overflow: hidden;
+    padding: 12px 22px;
+    border-radius: 100px;
+    border: 1px solid var(--TCM-Brand-brand-blue05, #86C1F9);
+    background: var(--TCM-Brand-brand-blue11, #E3EFFE);
+    align-items: center;
+    gap: 10px;
+
+    color: var(--TCM-Brand-brand-blue06, #97C8FA);
+    font-family: Figtree;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 5%;
+}
+
+.Password{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.Password_text{
+    color: var(--Primary-text, #0C1421);
+    font-family: Figtree;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+
+.Password_input{
+    display: flex;
+    width: 388px;
+    overflow: hidden;
+    padding: 12px 22px;
+    border-radius: 100px;
+    border: 1px solid var(--TCM-Brand-brand-blue05, #86C1F9);
+    background: var(--TCM-Brand-brand-blue11, #E3EFFE);
+    align-items: center;
+    gap: 10px;
+
+    color: var(--TCM-Brand-brand-blue06, #97C8FA);
+    font-family: Figtree;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.Name{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.Name_text{
+    color: var(--Primary-text, #0C1421);
+    font-family: Figtree;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+
+.Name_input{
+    display: flex;
+    width: 388px;
+    overflow: hidden;
+    padding: 12px 22px;
+    border-radius: 100px;
+    border: 1px solid var(--TCM-Brand-brand-blue05, #86C1F9);
+    background: var(--TCM-Brand-brand-blue11, #E3EFFE);
+    align-items: center;
+    gap: 10px;
+
+    color: var(--TCM-Brand-brand-blue06, #97C8FA);
+    font-family: Figtree;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.Contact{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    margin-top: 5%;
+}
+
+.Contact_text{
+    color: var(--Primary-text, #0C1421);
+    font-family: Figtree;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+
+.Contact_input{
+    display: flex;
+    width: 388px;
+    overflow: hidden;
+    padding: 12px 22px;
+    border-radius: 100px;
+    border: 1px solid var(--TCM-Brand-brand-blue05, #86C1F9);
+    background: var(--TCM-Brand-brand-blue11, #E3EFFE);
+    align-items: center;
+    gap: 10px;
+
+    color: var(--TCM-Brand-brand-blue06, #97C8FA);
+    font-family: Figtree;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.forgot_pass{
+    color: var(--TCM-Brand-brand-blue02, #43AAF6);
+    font-family: Figtree;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+    text-decoration-line: underline;
+    position: relative;
+    right: 18%;
+    top: 30%;
+}
+
+.login_button{
+    display: flex;
+    width: 388px;
+    padding: 10px 20px;
+    border-radius: 38px;
+    background: var(--TCM-Brand-brand-blue01, #14A4F5);
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    color: var(--TCM-Neutral-grey01, #FFF);
+    font-family: Figtree;
+
+}
+
+.or{
+    display: flex;
+    width: 388px;
+    padding: 10px 0px;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    text-align: center;
+    flex-direction: row;
+    
+}
+
+.or_line{
+    width: 168.5px;
+    height: 1px;
+    background: #CFDFE2;
+}
+
+
+.google{
+    display: flex;
+    padding: 12px 9px;
+    border-radius: 1000px;
+    background: var(--TCM-Brand-brand-blue11, #E3EFFE);
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    align-self: stretch;
+    width: 388px;
+    color: var(--Secondary-text, #313957);
+    font-family: Figtree;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.google_img{
+    width: 28px;
+    height: 28px;
+}
+
+.facebook{
+    display: flex;
+    padding: 12px 9px;
+    border-radius: 1000px;
+    background: var(--TCM-Brand-brand-blue11, #E3EFFE);
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    align-self: stretch;
+    width: 388px;
+    color: var(--Secondary-text, #313957);
+    font-family: Figtree;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.google_img{
+    width: 28px;
+    height: 28px;
+}
+
+.new_user{
+    width: 382px;
+    color: var(--Secondary-text, #313957);
+    font-family: Figtree;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    margin-left: 5%;
+}
+
+.login_right{
+    display: flex;
+    overflow: hidden;
+    padding: 47px 56px;
+    border-radius: 24px;
+    background: var(--TCM-Brand-brand-blue12, #F1F7FE);
+    align-items: center;
+    gap: 10px;
+    width: 35%;
+    height: 100%;
+    position: relative;
+    left: 20%;
+}
+
+.sign_up{
+    color: var(--TCM-Brand-brand-blue02, #43AAF6);
+    /* Paragraph/P1/Semi Bold */
+    font-family: Figtree;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+}
