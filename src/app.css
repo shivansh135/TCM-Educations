@@ -1,0 +1,12 @@
+:root {
+    --font-xxl: 48px;
+    --font-m: 24px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    :root {
+      --font-xxl: 24px;
+      --font-m: 10px;
+    }
+  }
+  

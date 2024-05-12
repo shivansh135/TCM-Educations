@@ -8,7 +8,6 @@ import { Card_four } from '../../components/card/card4';
 import { Card_three } from '../../components/card/card3';
 import { HeadingSubheading } from '../../components/headings/headings';
 import Popup_home from './popup_home';
-
 export default function Home() {
     const [showPopup, setShowPopup] = useState(true);
     return (
@@ -20,14 +19,14 @@ export default function Home() {
             }
             <div className='home'>
                 <div className='head'>
-                    <div className='blue-head'>
-                        TCM Education
-                    </div>
                     <div className='black-head'>
-                    Trusted Gateway<br/>to Top Colleges
+                    <span className='blue-head'>TCM Education </span>Trusted Gateway to Top Colleges
                     </div>
                     <div className='para-one'>
-                        <p>We're India's leading coaching institute, empowering students to <br/>conquer CAT, IPMAT, CLAT & CUET with our expert faculty,<br/> personalized approach, and proven strategies. We'll equip you with <br/>the knowledge and confidence to ace your exams and gain<br/> admission to the top colleges in India.</p>
+                        We're India's leading coaching institute, empowering students to
+                         conquer CAT, IPMAT, CLAT & CUET with our expert faculty, personalized approach, and proven strategies. We'll equip you with 
+                         the knowledge and confidence to ace your exams and gain
+                         admission to the top colleges in India.
                     </div>
                     <Button/>
                 </div>

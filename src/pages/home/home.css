@@ -11,15 +11,8 @@
 }
 
 .blue-head{
-    margin-top: 10%;
-    margin-bottom: 5px;
-    width: 536px;
     color: var(--TCM-Brand-brand-blue01, #14A4F5);
-    font-family: Figtree;
-    font-size: 60px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+    font-size: inherit;
 }
 
 .black-head{
@@ -30,6 +23,7 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    max-width: 700px;
 }
 
 .para-one{
@@ -60,137 +54,6 @@
     width: 90%;
     height: auto;
 }
-/* @media (max-width: 768px) {
-    .home{
-        display: flex;
-        flex-direction: column;
-    }
-
-
-    .head{
-        margin-left: 70px;
-        margin-top: 7%;
-    }
-    
-    .blue-head{
-        margin-top: 10%;
-        margin-bottom: 5px;
-        width: 536px;
-        color: var(--TCM-Brand-brand-blue01, #14A4F5);
-        font-family: Figtree;
-        font-size: 60px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-    }
-    
-    .black-head{
-        margin-top: 5px;
-        color: var(--TCM-Neutral-grey13, #000);
-        font-family: Figtree;
-        font-size: 60px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-    }
-    
-    .para-one{
-        margin-top: 30px;
-        width: 477px;
-        color: var(--TCM-Neutral-grey08, #595959);
-        font-family: Figtree;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-    }
-    
-    .btn{
-        margin-top: 20px;
-        display: flex;
-        padding: 10px 20px;
-        border-radius: 38px;
-        color: aliceblue;
-        background-color: #14A4F5;
-        justify-content: center;
-        align-items: center;
-        border: none;
-    }
-    
-    .head-img img{
-        margin-top: 13%;
-        margin-left: 25%;
-        width: 80%;
-        height: 95%;
-    }
-}
-
-@media (max-width: 480px) {
-    .home{
-        display: flex;
-        flex-direction: column;
-    }
-
-   
-    .head{
-        margin-left: 70px;
-        margin-top: 7%;
-    }
-    
-    .blue-head{
-        margin-top: 10%;
-        margin-bottom: 5px;
-        width: 536px;
-        color: var(--TCM-Brand-brand-blue01, #14A4F5);
-        font-family: Figtree;
-        font-size: 60px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-    }
-    
-    .black-head{
-        margin-top: 5px;
-        color: var(--TCM-Neutral-grey13, #000);
-        font-family: Figtree;
-        font-size: 60px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-    }
-    
-    .para-one{
-        margin-top: 30px;
-        width: 477px;
-        color: var(--TCM-Neutral-grey08, #595959);
-        font-family: Figtree;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-    }
-    
-    .btn{
-        margin-top: 20px;
-        display: flex;
-        padding: 10px 20px;
-        border-radius: 38px;
-        color: aliceblue;
-        background-color: #14A4F5;
-        justify-content: center;
-        align-items: center;
-        border: none;
-    }
-    
-    .head-img img{
-        margin-top: 13%;
-        margin-left: 25%;
-        width: 80%;
-        height: 95%;
-    }
-}
-*/
-
 
 .but2{
     margin-top: 2%;
@@ -905,4 +768,52 @@ width:330px;
     line-height: 26px;
 }
 
+/*phone view */
+
+@media (max-width: 768px) {
+    .home{
+        width: 100%;
+        flex-direction: column;
+    }
+    .head{
+        margin: auto;
+        margin-top: 7%;
+        width: 80%;
+    }
+    
+    .black-head{
+        margin-top: 5px;
+        color: var(--TCM-Neutral-grey13, #000);
+        font-family: Figtree;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        max-width: 100%;
+    }
+    .para-one{
+        width: 95%;
+    }
+    
+    .btn{
+        margin-top: 20px;
+        display: flex;
+        padding: 10px 20px;
+        border-radius: 38px;
+        color: aliceblue;
+        background-color: #14A4F5;
+        justify-content: center;
+        align-items: center;
+        border: none;
+    }
+    
+    .head-img img{
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        margin-top: 13%;
+        width: 80%;
+        height: 95%;
+    }
+}
 

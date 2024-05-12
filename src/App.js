@@ -1,6 +1,6 @@
-
+import './app.css'
 // import { Confirmation } from './pages/form_page/confirmation';
-// import Home from './pages/home/home';
+import Home from './pages/home/home';
 // import Prayagraj from './pages/centre/prayagraj';
 // import Cat from './pages/Cat_page/cat';
 // import { Testimonial } from "./pages/Testimonials/stud_testimonial";
@@ -15,7 +15,7 @@
 // import { Test_series } from "./pages/test_series/test_series";
 // import { Checkout } from "./pages/checkout_page/checkout";
 // import Popup_home from "./pages/home/popup_home";
-import More_page from "./pages/past_papers_more_page/more_page";
+// import More_page from "./pages/past_papers_more_page/more_page";
 
 
 
@@ -23,8 +23,8 @@ import More_page from "./pages/past_papers_more_page/more_page";
 function App() {
   return (
     <>
-     {/* <Home /> */}
-    {/* <Prayagraj/> */}
+      <Home /> 
+     {/* <Prayagraj/> */}
     {/* <Planning/> */}
     {/* <Cat/> */}
     {/* <Panchmukhi/> */}
@@ -46,7 +46,7 @@ function App() {
     {/* <Checkout/> */}
     {/* <Popup_home/> */}
     {/* <Confirmation/> */}
-    <More_page/>
+    {/* <More_page/> */}
     </>
   );
 }
