@@ -316,3 +316,346 @@
     font-weight: 500;
     line-height: 26px;
 }
+
+
+@media (max-width: 768px) {
+    .signup{
+        display: inline-flex;
+        align-items: center;
+        gap: 2px;
+        height: auto;
+        width: 100%;
+    }
+
+    .signup_left{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        width: 60%;
+        position: relative;
+        left: 4%;
+        }
+    
+    .input{
+        gap: 10px;
+    }
+    
+    .email_pass{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        position: relative;
+        right: 6%;
+    }
+    
+    .Welcome{
+        width: 100%;
+        color: var(--Primary-text, #0C1421);
+        font-family: Figtree;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-align: center;
+    }
+    
+    .email{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+    
+    .email_text{
+        color: var(--Primary-text, #0C1421);
+        font-family: Figtree;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+    
+    .email_input{
+        width: 100%;
+        height: auto;
+        display: flex;
+        overflow: hidden;
+        padding: 6px 16px;
+        border-radius: 100px;
+        border: 1px solid var(--TCM-Brand-brand-blue05, #86C1F9);
+        background: var(--TCM-Brand-brand-blue11, #E3EFFE);
+        align-items: center;
+        gap: 6px;
+    
+        color: var(--TCM-Brand-brand-blue06, #97C8FA);
+        font-family: Figtree;
+        font-size: 8px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin-bottom: 5%;
+    }
+    
+    .Password{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+    
+    .Password_text{
+        color: var(--Primary-text, #0C1421);
+        font-family: Figtree;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+    
+    
+    .Password_input{
+        width: 100%;
+        height: auto;
+        display: flex;
+        overflow: hidden;
+        padding: 6px 16px;
+        border-radius: 100px;
+        border: 1px solid var(--TCM-Brand-brand-blue05, #86C1F9);
+        background: var(--TCM-Brand-brand-blue11, #E3EFFE);
+        align-items: center;
+        gap: 6px;
+    
+        color: var(--TCM-Brand-brand-blue06, #97C8FA);
+        font-family: Figtree;
+        font-size: 8px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin-bottom: 5%;
+    }
+    
+    .Name{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+    
+    .Name_text{
+        color: var(--Primary-text, #0C1421);
+        font-family: Figtree;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+    
+    
+    .Name_input{
+        width: 100%;
+        height: auto;
+        display: flex;
+        overflow: hidden;
+        padding: 6px 16px;
+        border-radius: 100px;
+        border: 1px solid var(--TCM-Brand-brand-blue05, #86C1F9);
+        background: var(--TCM-Brand-brand-blue11, #E3EFFE);
+        align-items: center;
+        gap: 6px;
+    
+        color: var(--TCM-Brand-brand-blue06, #97C8FA);
+        font-family: Figtree;
+        font-size: 8px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin-bottom: 5%;
+    }
+    
+    .Contact{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+    
+    .Contact_text{
+        color: var(--Primary-text, #0C1421);
+        font-family: Figtree;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+    
+    
+    .Contact_input{
+        width: 100%;
+        height: auto;
+        display: flex;
+        overflow: hidden;
+        padding: 6px 16px;
+        border-radius: 100px;
+        border: 1px solid var(--TCM-Brand-brand-blue05, #86C1F9);
+        background: var(--TCM-Brand-brand-blue11, #E3EFFE);
+        align-items: center;
+        gap: 6px;
+    
+        color: var(--TCM-Brand-brand-blue06, #97C8FA);
+        font-family: Figtree;
+        font-size: 8px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin-bottom: 5%;
+    }
+    
+    .forgot_pass{
+        color: var(--TCM-Brand-brand-blue02, #43AAF6);
+        font-family: Figtree;
+        font-size: 8px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-align: center;
+        text-decoration-line: underline;
+        position: relative;
+        left: 11%;
+        bottom: 15%;
+    }
+    
+    .login_button{
+        display: flex;
+        width: 72%;
+        height: auto;
+        padding: 2px 13px;
+        border-radius: 38px;
+        background: var(--TCM-Brand-brand-blue01, #14A4F5);
+        justify-content: center;
+        align-items: center;
+        gap: 4px;
+        color: var(--TCM-Neutral-grey01, #FFF);
+        font-family: Figtree;
+        font-size: 11px;
+        position: relative;
+        left: 11%;
+    }
+    
+    .or{
+        display: flex;
+        width: 89%;
+        padding: 8px 0px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        text-align: center;
+        flex-direction: row;
+        position: relative;
+        left: 11%;
+    }
+    
+    .or_line{
+        width: 100%;
+        height: 1px;
+        background: #CFDFE2;
+    }
+    
+    
+    .google{
+        display: flex;
+        padding: 4px 7px;
+        border-radius: 1000px;
+        background: var(--TCM-Brand-brand-blue11, #E3EFFE);
+        justify-content: center;
+        align-items: center;
+        gap: 13px;
+        align-self: stretch;
+        width: 82%;
+        color: var(--Secondary-text, #313957);
+        font-family: Figtree;
+        font-size: 11px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        position: relative;
+        left: 11%;
+    }
+    
+    .google_img{
+        width: 17px;
+        height: 17px;
+    }
+    
+    .facebook{
+        display: flex;
+        padding: 4px 7px;
+        border-radius: 1000px;
+        background: var(--TCM-Brand-brand-blue11, #E3EFFE);
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        align-self: stretch;
+        width: 82%;
+        color: var(--Secondary-text, #313957);
+        font-family: Figtree;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        position: relative;
+        left: 11%;
+    }
+    
+    .facebook_img{
+        width: 17px;
+        height: 17px;
+    }
+    
+    .new_user{
+        width: 140%;
+        color: var(--Secondary-text, #313957);
+        font-family: Figtree;
+        font-size: 11px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        margin-left: 11%; 
+    }
+    
+    .login_right{
+        display: flex;
+        overflow: hidden;
+        padding: 30px 40px;
+        border-radius: 24px;
+        background: var(--TCM-Brand-brand-blue12, #F1F7FE);
+        align-items: flex-start;
+        gap: 6px;
+        width: 35%;
+        height: 100%;
+        position: relative;
+        left: 6%;
+    }
+    
+    .sign_up{
+        color: var(--TCM-Brand-brand-blue02, #43AAF6);
+        /* Paragraph/P1/Semi Bold */
+        font-family: Figtree;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+}

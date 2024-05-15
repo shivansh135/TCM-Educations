@@ -53,9 +53,9 @@ export default function Prayagraj() {
                     An Extraordinary Learning Experience
                 </div>
                 <div className='students'>
-                    <img src='./images/student1.jpg' alt='student'/>
-                    <img src='./images/student1.jpg' alt='student'/>
-                    </div>
+                    <img src='./images/student1.jpg' style={{width:'50%', height:'auto'}} alt='student'/>
+                    <img src='./images/student1.jpg' style ={{width:'50%', height:'auto'}} alt='student'/>
+                </div>
             </div>
 
             <div className='course_batch'>

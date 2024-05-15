@@ -38,7 +38,7 @@ export default function Cat() {
 
             <div className='CAT_eligibility'>
 
-                <img src='./images/filling-survey.png' className='CAT_img' alt='CAT' />
+                <img src='./images/filling-survey.png' className='CAT_imgg' alt='CAT' />
 
                 <div className='eligibility_content'>
                     <div className='eligibility_content_heading'>
@@ -74,7 +74,7 @@ export default function Cat() {
                 <div className='syllabus'>
                     <div className='CAT_syllabus_first'>
                         <div className='CAT_syllabus_first_one'>
-                        Verbal Ability & Reading Comprehension (VARC)
+                            Verbal Ability & Reading Comprehension (VARC)
                         </div>
                         <div className='CAT_syllabus_first_two'>
                             Data Interpretation & Logical Reasoning (DILR)

@@ -10,7 +10,7 @@ export default function Planning() {
         <div>
             <div className='head'>
                 <div className='heading'>
-                    <div className='BLUE'>CAT 2024</div><div className='BLACK'>HOLISTIC MBA ENTRANCE BATCH</div>
+                    <div className='blue'>CAT 2024</div><div className='BLACK'>HOLISTIC MBA ENTRANCE BATCH</div>
                 </div>
                 <div className='subheading'>
                     Borem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia .
@@ -44,13 +44,13 @@ export default function Planning() {
 
             <div className='roadmap'>
                 <div className='roadmap-head'>
-                <div className='roadmap-heading'>
-                    <div className='BLACK'>The Plan for</div>
-                    <div className='BLUE'>
-                        <div className='BLACK'>Acing</div> 
-                        CAT 2024 
+                    <div className='roadmap-heading'>
+                        <div className='BLACK'>The Plan for</div>
+                        <div className='BLUE'>
+                            <div className='BLACK'>Acing</div> 
+                            CAT 2024 
+                        </div>
                     </div>
-                </div>
                     <div className='roadmap-heading-detail'>
                         Borem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class apten
                     </div>

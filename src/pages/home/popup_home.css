@@ -119,3 +119,145 @@
     text-align: center;
     border: none;
 }
+
+/*phone view */
+
+@media (max-width: 768px) {
+    .popup-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    
+    .popup_home{
+        width: 86%;
+        height: auto;
+        display: inline-flex;
+        padding: 40px;
+        border-radius: 25px;
+        background: var(--TCM-Brand-brand-blue01, #14A4F5);
+        align-items: center;
+        gap: 20px;
+        flex-direction: row;
+        padding: 20px;
+        border-radius: 10px;
+    
+        right: 4%;
+    }
+    
+    .logo{
+        width: 106px;
+        height: 145px;
+        position: relative;
+        right: 2%;
+    }
+    
+    .popup_home_content{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    
+    .popup_home_heading{
+        width: 119%;
+        height: auto;
+        color: var(--TCM-Neutral-grey02, #FAFAFA);
+        font-family: Figtree;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    
+    .popup_home_cards{
+        display: flex;
+        width: 127px; /* width of two cards (200px each) plus the gap between them (24px) and the gap to the right of the second card (24px) */
+        align-items: flex-start;
+        align-content: flex-start;
+        gap: 14px;
+        flex-wrap: wrap;
+        position: relative;
+        left: 11%;
+        }
+    
+    .popup_home_card {
+        display: flex;
+        padding: 13.5px 45px 8.5px 15.5px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 9.5px;
+        border-radius: 10.5px;
+        border: 1.5px solid rgba(20, 164, 245, 0.20);
+        background: var(--TCM-Brand-brand-blue12, #F1F7FE);
+    }
+    
+    .popup_home_card_details{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    .popup_home_card_head{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+    }
+    
+    .popup_home_card_heading{
+        width: 120%;
+        height: auto;
+        color: var(--TCM-Brand-brand-blue01, #14A4F5);
+        font-family: Figtree;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    
+    .popup_home_card_subheading{
+        width: 142%;
+        height: auto;
+        color: var(--TCM-Neutral-grey08, #595959);
+        font-family: Figtree;
+        font-size: 8.5px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    
+    .popup_home_card_button{
+        width: 142%;
+        height: auto;
+        display: flex;
+        padding: 4.5px 5px;
+        border-radius: 28.5px;
+        background: var(--TCM-Brand-brand-blue01, #14A4F5);
+        justify-content: center;
+        align-items: center;
+        gap: 3.5px;
+        color: var(--TCM-Neutral-grey01, #FFF);
+        font-family: Figtree;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-align: center;
+        border: none;
+    }
+}

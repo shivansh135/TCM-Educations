@@ -25,7 +25,7 @@ export default function Panchmukhi() {
                 <div className='roadmap-head'>
                 <div className='roadmap-heading'>
                     <div className='BLUE'>
-                        TCM’s Scientific <br/>
+                        TCM’s Scientific 
                         <div className='BLACK'> Process of Preparation</div> 
                     </div>
                 </div>

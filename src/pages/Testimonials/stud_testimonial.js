@@ -11,7 +11,7 @@ export function Testimonial() {
             <div className="container">
                 <img src="./images/student1.png" alt="stud_img" className="stud_img"/>
                 <div className="container_text">
-                    <button className="btn">Student</button>
+                    <button className="btn">IIM Trichy 99%ile</button>
                     <div className="stud_name">
                         Sharad Singh,<br/> Prayagraj
                     </div>

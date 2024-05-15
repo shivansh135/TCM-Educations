@@ -1,4 +1,4 @@
-import './heading.css';
+import React from 'react';
 export function HeadingSubheading({heading,sub}){
     return(
         <div className="heading-subheading">

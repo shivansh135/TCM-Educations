@@ -70,3 +70,91 @@
     right: 1px; /* adjust as needed */
     transform: translate(-50%, -50%); /* centers the element horizontally */
 }
+
+
+/*phone view */
+
+@media (max-width: 768px) {
+    .off_centre{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .centre_heading{
+        width: 72%;
+        height: auto;
+        color: var(--TCM-Neutral-grey13, #000);
+        font-family: Figtree;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        display: flex;
+        justify-content: center;    
+        position: relative;
+        left: -10% ;
+
+    }
+    
+    .centres{
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 18px;
+    }
+    
+    .centre_one{
+        position: relative;
+    }
+    
+    .centre_two {
+        position: relative;
+    }
+    
+    .centre_prayagraj{
+        width: 78%; /* adjust as needed */
+        height: auto; /* adjust as needed */ 
+    }
+    .centre_varanasi {
+        width: 78%; /* adjust as needed */
+        height: auto; /* adjust as needed */
+    }
+    
+    .centre_name{
+        color: var(--TCM-Neutral-grey01, #FFF);
+        position: absolute;
+        font-family: Figtree;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        bottom: 5%; /* adjust as needed */
+        left: 14%; /* adjust as needed */
+        transform: translate(-50%, -50%); 
+    }
+    
+    .centre_name, .visit{
+        position: absolute;
+    }
+    
+    .visit{
+        display: flex;
+        padding: 4px 12px;
+        border-radius: 38px;
+        border: 1px solid var(--TCM-Neutral-grey01, #FFF);
+        background: var(--TCM-Neutral-grey01, #FFF);
+        justify-content: center;
+        align-items: center;
+        gap: 4px;
+        font-size: 11px;
+        bottom: -1%;
+        left: 72%;
+        transform: translate(-91%, -92%); /* centers the element horizontally */
+    }
+}

@@ -11,6 +11,8 @@
     flex-direction: column;
     align-items: center;
     gap: 40px;
+    position: relative;
+    right: 4%;
 }
 
 .past_papers-heading{
@@ -105,33 +107,6 @@
     color: var(--TCM-Neutral-grey01, #FFF);
     
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .course-select{
     margin-top:5%;
@@ -490,3 +465,681 @@
     width: 24px;
     height: 24px;
 } 
+
+.FQA{
+    margin-top: 5%;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #FFF;
+    display: flex;
+    justify-content: center;
+}
+
+.FQA-area{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+}
+
+.FQA-head{
+    color: var(--TCM-Neutral-grey13, #000);
+    font-family: Figtree;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 56px;
+    text-align: center;
+}
+
+.FQA-body{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+
+.FQA-question {
+        display: flex;
+        flex-direction: column;
+        padding: 24px 50px 24px 40px;
+        border-radius: 16px;
+        border: 1px solid var(--TCM-Neutral-grey05, #D9D9D9);
+        background: var(--TCM-Neutral-grey02, #FAFAFA);
+}
+
+.question-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.question{
+    flex-grow: 1;
+    width: auto;
+    color: #000;
+    width: 782px;
+    color: #000;
+    font-family: Figtree;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+.answer-btn{
+    display: flex;
+    width: 34px;
+    height: 34px;
+    padding: 10px;
+    border-radius: 38px;
+    background: var(--TCM-Brand-brand-blue01, #14A4F5);
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    border: none;
+    color: white;
+    
+}
+
+.answer{
+    margin-top: 3%;
+    width: 782px;
+    color: var(--TCM-Neutral-grey08, #595959);
+    font-family: Figtree;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+/*phone view */
+
+@media (max-width: 768px) {
+    .past_papers{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .past_papers-head{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        width: 100%;
+        text-align: center;
+        position: relative;
+        right: 3%;
+    }
+    
+    .past_papers-heading{
+        width: 273px;
+        line-height: 32px;
+        font-feature-settings: 'clig' off, 'liga' off;
+        color: black;
+        font-family: Figtree;
+        font-size: var(--font-xxl);
+        font-style: normal;
+        font-weight: 700;
+        text-align: center;
+    }
+    
+    .past_papers-subheading{
+        display: flex;
+        align-items: flex-start;
+        gap: 11px;
+        width: 339px;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .option{
+        display: flex;
+        padding: 5px 20px;
+        border-radius: 59px;
+        border: 1px solid var(--TCM-Brand-brand-blue01, #14A4F5);
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        color: var(--TCM-Brand-brand-blue01, #14A4F5);
+        font-family: Figtree;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px;
+        text-align: center;
+    }
+    
+    .past_papers-body{
+        display: flex;
+        width: 100%;
+        gap: 20px 25px;
+        flex-wrap: wrap;
+        position: relative;
+        left:10%;
+    }
+    
+    .past_papers-card{
+        width: 65%;
+        height: auto;
+        display: flex;
+        overflow: hidden;
+        padding: 15px;
+        border-radius: 14px;
+        border: 2px solid rgba(20, 164, 245, 0.20);
+        background: var(--TCM-Brand-brand-blue12, #F1F7FE);
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    .past_papers-card-image{
+        width: 232px;
+        height: 159px;
+        border-radius: 7px;
+        background: var(--TCM-Brand-brand-blue10, #D4E7FD);
+    }
+    
+    .past_papers-card-content{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        width: 100%;
+    
+    }
+    
+    .past_papers-card-title{
+        width: 230px;
+        color: var(--TCM-Brand-brand-blue01, #14A4F5);
+        font-family: Figtree;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    
+    .past_papers-card-button{
+        display: flex;
+        padding: 10px 20px;
+        border-radius: 38px;
+        background: var(--TCM-Brand-brand-blue01, #14A4F5);
+        justify-content: center;
+        align-items: center;
+        gap: 6px;
+        border: none;
+        color: var(--TCM-Neutral-grey01, #FFF);
+        
+    }
+    .course-select{
+        margin-top:5%;
+        display: flex;
+        overflow: hidden;
+        background: var(--TCM-Brand-brand-blue11, #E3EFFE);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 23px;
+    }
+
+     .course-select-area{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    } 
+    .course-head{
+        margin-left: normal;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .course-head-title{
+        width: 221px;
+        line-height: 32px;
+        font-feature-settings: 'clig' off, 'liga' off;
+        color: var(--TCM-Brand-brand-blue01, #14A4F5);
+        font-family: Figtree;
+        font-size: var(--font-xxl);
+        font-style: normal;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    .course-head-option{
+        display: flex;
+        align-items: flex-start;
+        gap: 11px;
+        width: 283px;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+
+    }
+
+    .option{
+        display: flex;
+        padding: 5px 20px;
+        border-radius: 59px;
+        border: 1px solid var(--TCM-Brand-brand-blue01, #14A4F5);
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        color: var(--TCM-Brand-brand-blue01, #14A4F5);
+        font-family: Figtree;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px;
+        text-align: center;
+    }
+
+    .course-body{
+        display: flex;
+        width: 310px;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 23px;
+    }
+
+    .card3{
+        display: flex;
+        width: 306px;
+        padding: 16px 20px;
+        border-radius: 16px;
+        border: 2px solid rgba(20, 164, 245, 0.30);
+        background: var(--TCM-Brand-brand-blue01, #14A4F5);
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        position: relative;
+        right: 7%;
+    }
+
+    .oval{
+        fill: var(--TCM-Brand-brand-blue13, #FFF);
+        width: 92px;
+        height: 92px;
+    }
+
+    .book2{
+        position: absolute;
+        left: 22px;
+        top: 23px;
+        width: 68px;
+        height: 68px;
+    }
+
+    .card3-title{
+        width: 243px;
+        color: var(--TCM-Brand-brand-blue13, #FFF);
+        font-family: Figtree;
+        font-size: var(--font-card-title-two);
+        font-style: normal;
+        font-weight: 700;
+        line-height: 28px;
+    }
+
+    .card3-title2{
+        color: var(--TCM-Neutral-grey01, #FFF);
+        font-family: Figtree;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px;
+    }
+
+    .card3-detail{
+        display: flex;
+        height: 165px;
+        overflow: hidden;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+
+        width: 208px;
+        color: var(--TCM-Neutral-grey01, #FFF);
+        font-family: Figtree;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+    }
+
+
+    .card3-price{
+        color: var(--TCM-Neutral-grey01, #FFF);
+        font-family: Figtree;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 24px;
+    }
+
+    .card3-buy{
+        display: flex;
+        padding: 10px 20px;
+        border-radius: 38px;
+        background: var(--TCM-Neutral-grey01, #FFF);
+        justify-content: center;
+        align-items: center;
+        gap: 6px;
+        border: none;
+        color: var(--TCM-Brand-brand-blue01, #14A4F5);
+        font-family: Figtree;
+    }
+
+    .card3-more{
+        display: flex;
+        padding: 10px 20px;
+        border-radius: 38px;
+        justify-content: center;
+        align-items: center;
+        gap: 6px;
+
+        color: var(--TCM-Neutral-grey01, #FFF);
+        font-family: Figtree;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px;
+        text-align: center;
+        text-decoration-line: underline;
+    }
+
+    .card3-other{
+        margin-left: 5%;
+
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        flex-direction: row;
+    }
+
+    .card3-manymore{
+        display: flex;
+        padding: 1px 20px;
+        border-radius: 38px;
+        justify-content: center;
+        align-items: center;
+        gap: 6px;
+
+        color: var(--TCM-Neutral-grey01, #FFF);
+        font-family: Figtree;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px;
+        text-align: center;
+        text-decoration-line: underline;
+    }
+
+    .card3-extra{
+        margin-left: 5%;
+        display: flex;
+        padding: 9px 31px 9px 18px;
+        border-radius: 400px;
+        background: var(--TCM-Brand-brand-blue06, #97C8FA);
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+
+        color: var(--TCM-Neutral-grey01, #FFF);
+        font-family: Figtree;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px;
+    }
+
+    .bell{
+        width: 24px;
+        height: 24px;
+    }
+
+    .card4{
+        display: flex;
+        width: 306px;
+        padding: 16px 20px;
+        border-radius: 16px;
+        border: 2px solid rgba(20, 164, 245, 0.30);
+        background: var(--TCM-Brand-brand-blue12, #F1F7FE);
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        position: relative;
+        right: 7%;
+    }
+
+    .oval2{
+        fill: var(--TCM-Brand-brand-blue10, #D4E7FD);
+        width: 113px;
+        height: 113px;
+    }
+
+    .card4-title{
+        width: 214px;
+        color: var(--TCM-Brand-brand-blue01, #14A4F5);
+        font-family: Figtree;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 32px;
+    }
+
+    .card4-title2{
+        color: var(--TCM-Neutral-grey10, #262626);
+        font-family: Figtree;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px; 
+    }
+
+    .card4-contents{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .card4-detail{
+        display: flex;
+        height: 130px;
+        overflow: hidden;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+    .card4-manymore{
+        margin-left: 8%;
+        width: 266px;
+        color: var(--TCM-Neutral-grey08, #595959);
+        font-family: Figtree;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        text-decoration-line: underline;
+    }
+
+    .card4-price{
+        color: var(--TCM-Neutral-grey10, #262626);
+        font-family: Figtree;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 24px;
+    }
+
+    .card4-other{
+        margin-left: 5%;
+
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        flex-direction: row;
+    }
+
+    .card4-buy{
+        display: flex;
+        padding: 10px 20px;
+        border-radius: 38px;
+        background: var(--TCM-Brand-brand-blue01, #14A4F5);
+        justify-content: center;
+        align-items: center;
+        gap: 6px;
+        border: none;
+        color: var(--TCM-Neutral-grey01, #FFF);
+    }
+
+    .card4-more{
+        display: flex;
+        padding: 10px 20px;
+        border-radius: 38px;
+        justify-content: center;
+        align-items: center;
+        gap: 6px;
+
+        color: var(--TCM-Brand-brand-blue01, #14A4F5);
+        font-family: Figtree;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px;
+        text-align: center;
+        text-decoration-line: underline;
+    }
+
+    .card4-extra{
+        display: flex;
+        padding: 9px 31px 9px 18px;
+        border-radius: 400px;
+        background: var(--TCM-Brand-brand-blue11, #E3EFFE);
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+
+        color: var(--TCM-Neutral-grey08, #595959);
+        font-family: Figtree;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px;
+    }
+
+    .bell{
+        width: 24px;
+        height: 24px;
+    }
+
+    .FQA{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+    
+    .FQA-area{
+        display: inline-flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 22px;
+    }
+    
+    .FQA-head{
+        width: 206px;
+        color: var(--TCM-Neutral-grey13, #000);
+        font-family: Figtree;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 32px;
+        text-align: center;
+        font-feature-settings: 'clig' off, 'liga' off;
+        position: relative;
+        left: 15%;
+    }
+    
+    .FQA-body{
+        display: inline-flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+    
+    
+    .FQA-question {
+        margin-left: 5%;
+        display: flex;
+        width: 290px;
+        padding: 10px 12px;
+        border-radius: 8px;
+        border: 1px solid var(--TCM-Neutral-grey05, #D9D9D9);
+        background: var(--TCM-Neutral-grey02, #FAFAFA);
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+    .question-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    
+    .question{
+        width: 225px;
+        flex-shrink: 0;
+        color: #000;
+        font-family: Figtree;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 16px;
+        font-feature-settings: 'clig' off, 'liga' off;
+    }
+    
+    .answer-btn{
+        display: flex;
+        width: 25px;
+        height: 25px;
+        padding: 10px;
+        border-radius: 38px;
+        background: var(--TCM-Brand-brand-blue01, #14A4F5);
+        justify-content: center;
+        align-items: center;
+        gap: 6px;
+        flex-shrink: 0;
+        width: 16px;
+        height: 16px;
+        
+    }
+    
+    .answer{
+        width: 283px;
+        color: var(--TCM-Neutral-grey08, #595959);
+        font-family: Figtree;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 18px;
+        font-feature-settings: 'clig' off, 'liga' off;
+    }
+}

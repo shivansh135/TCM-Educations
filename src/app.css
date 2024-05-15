@@ -1,12 +1,16 @@
 :root {
     --font-xxl: 48px;
     --font-m: 24px;
+    --font-card-title: 16px;
+    --font-card-title-two: 24px;
   }
   
   @media screen and (max-width: 768px) {
     :root {
       --font-xxl: 24px;
       --font-m: 10px;
+      --font-card-title: 12px;
+      --font-card-title-two: 18px;
     }
   }
   

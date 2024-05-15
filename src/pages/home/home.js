@@ -1,4 +1,4 @@
-import React, { useState }from 'react';
+import React, { useState,useEffect }from 'react';
 import './home.css';
 import FAQQuestion from '../../components/FaQ/FAQQuestion';
 import {Button} from '../../components/button/button';
@@ -10,6 +10,18 @@ import { HeadingSubheading } from '../../components/headings/headings';
 import Popup_home from './popup_home';
 export default function Home() {
     const [showPopup, setShowPopup] = useState(true);
+    const [imgSrc, setImgSrc] = useState("/Group.png");
+    const images = ["/Group.png",/* "/Group2.png", "./images/prayagraj.png"]; */];
+    let index = 0;
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+          index = index + 1 === images.length ? 0 : index + 1;
+          setImgSrc(images[index]);
+        }, 3000);
+
+        return () => clearInterval(interval);
+    }, []);
     return (
         <div>
             {showPopup && 
@@ -31,7 +43,7 @@ export default function Home() {
                     <Button/>
                 </div>
                 <div className='head-img'>
-                    <img src="/Group.png" alt='hero'/>
+                    <img src={imgSrc} style={{width:'100%', height:'auto'}} alt='hero'/>
                 </div>
             </div>
         
@@ -51,6 +63,7 @@ export default function Home() {
 
             <div className='card-1-container'>
 
+                <Card src='./images/teacher1.png' title='Ajai Singh' faculty='Lead Mentor and Director' viewmore='View More'/>
                 <Card src='./images/teacher1.png' title='Ajai Singh' faculty='Lead Mentor and Director' viewmore='View More'/>
                 <Card src='./images/teacher1.png' title='Ajai Singh' faculty='Lead Mentor and Director' viewmore='View More'/> 
 

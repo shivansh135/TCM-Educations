@@ -30,9 +30,9 @@ export function Login() {
                         </div>
 
                         <div className="or">
-                            <div className="or_line">-</div>
+                            <div className="or_line"></div>
                             or
-                            <div className="or_line">-</div>
+                            <div className="or_line"></div>
                         </div>
 
                         <div className="google">

@@ -21,7 +21,7 @@ export function Form_page() {
                                     <input type="text" name="name" placeholder="name" className="name_input" />
                                 </div>
                                 <div class="input-field" className="Mobile">
-                                    <label for="Mobile" className="Mobile">Mobile No</label>
+                                    <label for="Mobile" className="Mobile_text">Mobile No</label>
                                     <input type="text" name="Mobile" placeholder="Mobile" className="Mobile_input" />
                                 </div>
                             </div>
