@@ -1,4 +1,4 @@
-.head{
+.head_three{
     width: 100%;
     display: inline-flex;
     flex-direction: column;
@@ -8,7 +8,7 @@
     margin-bottom: 10px;
 }
 
-.heading{
+.heading_three{
     width: 1056px;
     font-family: Figtree;
     font-size: 60px;
@@ -650,7 +650,7 @@
 /*phone view */
 
 @media (max-width: 768px) {
-    .head{
+    .head_three{
         width: 100%;
         display: inline-flex;
         flex-direction: column;
@@ -659,7 +659,7 @@
         gap: 16px;
     }
     
-    .heading{
+    .heading_three{
         width: 100%;
         font-family: Figtree;
         font-size: 30px;

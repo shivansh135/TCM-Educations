@@ -7,9 +7,9 @@ import { Topic_button } from "../../components/button/topic_button";
 export default function More_page() {
     return (
         <div>
-            <div className="head">
+            <div className="head_two">
                 <div className="heading_content">
-                    <div className="heading">
+                    <div className="heading_two">
                         CAT 2023<br/> Question Paper
                     </div>
                     <div className="detail">

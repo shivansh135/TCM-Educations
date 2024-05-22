@@ -5,12 +5,12 @@ import FAQQuestion from '../../components/FaQ/FAQQuestion';
 export function Test_series() {
     return (
         <div>
-            <div className="head">
-                <div className="heading_content">
-                    <div className="heading">
+            <div className="head_six">
+                <div className="heading_content_six">
+                    <div className="heading_six">
                         Solve the test papers <br/>and test your skills
                     </div>
-                    <div className="detail">
+                    <div className="detail_six">
                         Hello Everyone!! I am Ajai Singh, Founder and CEO of Toil Chamber of Mathematics Pvt. Ltd. (TCM Education), a leading national brand, based in Prayagraj, for CAT, CLAT, IPMAT & OMET exams.
                     </div>
                     <button className="book">

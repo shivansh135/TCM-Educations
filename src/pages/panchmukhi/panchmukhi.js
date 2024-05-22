@@ -10,7 +10,7 @@ import FAQQuestion from '../../components/FaQ/FAQQuestion';
 export default function Panchmukhi() {
     return (
         <div>
-            <div className="rectangle">
+            <div className="rectangle_one">
                 <div className="panckmukhi_heading">
                 TCM’ Exclusive Panchukhi Approach for Aspirants
                 </div>

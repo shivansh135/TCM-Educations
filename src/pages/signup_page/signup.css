@@ -18,11 +18,11 @@
     bottom: 10%;
     }
 
-.input{
+.input_to{
     gap: 50px;
 }
 
-.email_pass{
+.email_pass_signup{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -30,7 +30,7 @@
     position: relative;
 }
 
-.Welcome{
+.Welcome_to{
     color: var(--Primary-text, #0C1421);
     font-family: Figtree;
     font-size: 34px;
@@ -40,7 +40,7 @@
     text-align: center;
 }
 
-.email{
+.Email{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -48,7 +48,7 @@
     margin-top: 4%;
 }
 
-.email_text{
+.Email_text{
     color: var(--Primary-text, #0C1421);
     font-family: Figtree;
     font-size: 16px;
@@ -57,7 +57,7 @@
     line-height: 20px;
 }
 
-.email_input{
+.Email_input{
     display: flex;
     width: 388px;
     overflow: hidden;
@@ -186,7 +186,7 @@
     line-height: 24px;
 }
 
-.forgot_pass{
+.Forgot_pass{
     color: var(--TCM-Brand-brand-blue02, #43AAF6);
     font-family: Figtree;
     font-size: 14px;
@@ -200,7 +200,7 @@
     top: 30%;
 }
 
-.login_button{
+.Login_button{
     display: flex;
     width: 388px;
     padding: 10px 20px;
@@ -214,7 +214,7 @@
 
 }
 
-.or{
+.Or{
     display: flex;
     width: 388px;
     padding: 10px 0px;
@@ -226,7 +226,7 @@
     
 }
 
-.or_line{
+.Or_line{
     width: 168.5px;
     height: 1px;
     background: #CFDFE2;
@@ -293,7 +293,7 @@
     margin-left: 5%;
 }
 
-.login_right{
+.Login_right{
     display: flex;
     overflow: hidden;
     padding: 47px 56px;
@@ -337,11 +337,11 @@
         left: 4%;
         }
     
-    .input{
+    .input_to{
         gap: 10px;
     }
     
-    .email_pass{
+    .email_pass_signup{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -350,7 +350,7 @@
         right: 6%;
     }
     
-    .Welcome{
+    .Welcome_to{
         width: 100%;
         color: var(--Primary-text, #0C1421);
         font-family: Figtree;
@@ -361,7 +361,7 @@
         text-align: center;
     }
     
-    .email{
+    .Email{
         width: 100%;
         height: auto;
         display: flex;
@@ -370,7 +370,7 @@
         gap: 8px;
     }
     
-    .email_text{
+    .Email_text{
         color: var(--Primary-text, #0C1421);
         font-family: Figtree;
         font-size: 10px;
@@ -379,7 +379,7 @@
         line-height: normal;
     }
     
-    .email_input{
+    .Email_input{
         width: 100%;
         height: auto;
         display: flex;
@@ -520,7 +520,7 @@
         margin-bottom: 5%;
     }
     
-    .forgot_pass{
+    .Forgot_pass{
         color: var(--TCM-Brand-brand-blue02, #43AAF6);
         font-family: Figtree;
         font-size: 8px;
@@ -534,7 +534,7 @@
         bottom: 15%;
     }
     
-    .login_button{
+    .Login_button{
         display: flex;
         width: 72%;
         height: auto;
@@ -551,7 +551,7 @@
         left: 11%;
     }
     
-    .or{
+    .Or{
         display: flex;
         width: 89%;
         padding: 8px 0px;
@@ -564,7 +564,7 @@
         left: 11%;
     }
     
-    .or_line{
+    .Or_line{
         width: 100%;
         height: 1px;
         background: #CFDFE2;
@@ -635,7 +635,7 @@
         margin-left: 11%; 
     }
     
-    .login_right{
+    .Login_right{
         display: flex;
         overflow: hidden;
         padding: 30px 40px;

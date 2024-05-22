@@ -8,8 +8,8 @@ import FAQQuestion from '../../components/FaQ/FAQQuestion';
 export default function Planning() {
     return (
         <div>
-            <div className='head'>
-                <div className='heading'>
+            <div className='head_three'>
+                <div className='heading_three'>
                     <div className='blue'>CAT 2024</div><div className='BLACK'>HOLISTIC MBA ENTRANCE BATCH</div>
                 </div>
                 <div className='subheading'>

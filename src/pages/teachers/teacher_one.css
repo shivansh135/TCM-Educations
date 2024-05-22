@@ -23,7 +23,7 @@
     align-items: left;
 }
 
-.name{
+.names{
     color: var(--TCM-Neutral-grey01, #FFF);
     font-family: Figtree;
     font-size: 48px;
@@ -136,7 +136,7 @@
     justify-content: center;
     }
 
-.head{
+.head_five{
     width: 612px;
     color: var(--TCM-Neutral-grey13, #000);
     font-family: Figtree;
@@ -500,7 +500,7 @@
         align-items: left;
     }
     
-    .name{
+    .names{
         width: 100%;
         height: auto;
         color: var(--TCM-Neutral-grey01, #FFF);

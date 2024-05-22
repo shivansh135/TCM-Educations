@@ -1,7 +1,7 @@
 import React from 'react';
 // import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './app.css';
-// import Home from './pages/home/home';
+import Home from './pages/home/home';
 // import Prayagraj from './pages/centre/prayagraj';
 // import Planning from './pages/plan_details/planning';
 // import Cat from './pages/Cat_page/cat';
@@ -14,7 +14,7 @@ import './app.css';
 // import {Plans} from './pages/plans/plans';
 // import { Past_papers as PastPapers } from './pages/Past_papers/past_papers';
 // import { Test_series as TestSeries } from './pages/test_series/test_series';
-import { Form_page as FormPage } from './pages/form_page/form_page';
+// import { Form_page as FormPage } from './pages/form_page/form_page';
 // import {Checkout} from './pages/checkout_page/checkout';
 // import PopupHome from './pages/home/popup_home';
 // import {Confirmation} from './pages/form_page/confirmation';
@@ -23,7 +23,7 @@ import { Form_page as FormPage } from './pages/form_page/form_page';
 
 function App() {
   return (
-  < FormPage/>                                                 
+  < Home/>                                                 
   // <Router>
   //   <Routes>
   //     <Route path="/" element={<Home />} />

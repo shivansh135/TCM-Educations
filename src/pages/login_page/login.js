@@ -6,10 +6,10 @@ export function Login() {
         <div>
                 <div className="login">
                     <div className="login_left">
-                        <div className="email_pass">
+                        <div className="Email_Pass">
                             <div className="Welcome">Welcome back</div>
                             <form action="/"  method="post" >
-                                <div class="input-group" className="input">
+                                <div class="input-group" className="input_group">
                                     <div class="input-field" className="email">
                                         <label for="Email" className="email_text">Email</label>
                                         <input type="text" name="Email" placeholder="Email" className="email_input" />
@@ -25,7 +25,7 @@ export function Login() {
                                 Forgot Password?
                             </div>
                         </div>
-                        <div className="login_button">
+                        <div className="login_button_one">
                             Sign In
                         </div>
 

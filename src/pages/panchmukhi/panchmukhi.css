@@ -30,7 +30,7 @@
 
 }
 
-.rectangle{
+.rectangle_one{
     position: relative;
     background-color: #14A4F5;
     width: 100%;
@@ -703,7 +703,7 @@
     
     }
     
-    .rectangle{
+    .rectangle_one{
         position: relative;
         background-color: #14A4F5;
         width: 100%;

@@ -5,7 +5,7 @@
     gap: 41px;
 }
 
-.Welcome{
+.Welcome_form{
     color: var(--TCM-Neutral-grey13, #000);
     font-family: Figtree;
     font-size: 34px;
@@ -274,7 +274,7 @@
         gap: 21px;
     }
     
-    .Welcome{
+    .Welcome_form{
         width: 100%;
         height: auto;
         color: var(--TCM-Neutral-grey13, #000);

@@ -16,11 +16,11 @@
     left: 10%;
 }
 
-.input{
+.input_group{
     gap: 30px;
 }
 
-.email_pass{
+.Email_Pass{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -123,7 +123,7 @@
     bottom: 15%;
 }
 
-.login_button{
+.login_button_one{
     display: flex;
     width: 388px;
     padding: 10px 20px;
@@ -260,11 +260,11 @@
         left: 4%;
     }
 
-    .input{
+    .input_group{
         gap: 10px;
     }
     
-    .email_pass{
+    .Email_Pass{
         display: flex;
         flex-direction: column;
         align-items: center;

@@ -13,7 +13,7 @@ export default function Teacher({name,desig,description,f_name,img}) {
             <div className="rectangle">
                 <div className='teacher_content'>
                     <div className="teacher_heading">
-                        <div className='name'>{name}</div>
+                        <div className='names'>{name}</div>
                         <div className='desig'>{desig}</div>
                     </div>
                     <div className='content'>
@@ -32,7 +32,7 @@ export default function Teacher({name,desig,description,f_name,img}) {
             </div>
 
             <div className="teacher_wheel">
-                <div className="head">
+                <div className="head_five">
                     What does Student say <br/>about Ajai Sir?
                 </div>
 
