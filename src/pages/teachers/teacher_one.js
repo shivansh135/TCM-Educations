@@ -4,25 +4,62 @@ import {Teacher_card} from '../../components/card/teacher_card';
 import { HeadingSubheading } from '../../components/headings/headings';
 import FAQQuestion from '../../components/FaQ/FAQQuestion';
 import { Card_two } from '../../components/card/card2';
+import { useParams } from 'react-router-dom';
 
 
 
-export default function Teacher({name,desig,description,f_name,img}) {
+export default function Teacher() {
+    const {id}=useParams();
+    const teachers={
+        ajai_sir:{
+            name:'Ajai Singh',
+            desig:'CAT Faculty',
+            description:'Ajai Singh is a CAT faculty at TCM Education. He has been teaching for over 10 years and has helped thousands of students crack the CAT exam. He is known for his unique teaching methods and personalized approach to each student.',
+            f_name:'Ajai',
+            img:'Ajai.png'
+        },
+        'rahul_sir':{
+            name:'Rahul Sharma',
+            desig:'CLAT Faculty',
+            description:'Rahul Sharma is a CLAT faculty at TCM Education. He has been teaching for over 10 years and has helped thousands of students crack the CLAT exam. He is known for his unique teaching methods and personalized approach to each student.',
+            f_name:'Rahul',
+            img:'rahul.png'
+        },
+        'sachin_sir':{
+            name:'Sachin Kumar',
+            desig:'IPMAT Faculty',
+            description:'Sachin Kumar is a IPMAT faculty at TCM Education. He has been teaching for over 10 years and has helped thousands of students crack the IPMAT exam. He is known for his unique teaching methods and personalized approach to each student.',
+            f_name:'Sachin',
+            img:'sachin.png'
+        },
+        'anil_sir':{
+            name:'Anil Kumar',
+            desig:'CUET Faculty',
+            description:'Anil Kumar is a CUET faculty at TCM Education. He has been teaching for over 10 years and has helped thousands of students crack the CUET exam. He is known for his unique teaching methods and personalized approach to each student.',
+            f_name:'Anil',
+            img:'anil.png'
+        }
+    }
+    const getteacherbyname=(name)=>{
+        return teachers[name] || null;        }
+    const teacher_name=id;
+    const teachers_data=getteacherbyname(teacher_name);
+    console.log(teachers_data.name,teacher_name);
     return (
         <div>
             <div className="rectangle">
                 <div className='teacher_content'>
                     <div className="teacher_heading">
-                        <div className='names'>{name}</div>
-                        <div className='desig'>{desig}</div>
+                        <div className='names'>{teachers_data.name}</div>
+                        <div className='desig'>{teachers_data.desig}</div>
                     </div>
                     <div className='content'>
-                        {description}                    
+                        {teachers_data.description}                    
                     </div>
-                    <button className='Book_Live'>Book Live Trial Class with {f_name} Sir</button>
+                    <button className='Book_Live'>Book Live Trial Class with {teachers_data.f_name} Sir</button>
                 </div>
 
-                <img src={`./images/${img}`} className="teacher" alt="teacher"/>
+                <img src={`./images/${teachers_data.img}`} className="teacher" alt="teacher"/>
             </div>
 
             <div className="teacher_cards">
