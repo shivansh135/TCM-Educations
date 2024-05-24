@@ -19,10 +19,12 @@ import {Checkout} from './pages/checkout_page/checkout';
 import PopupHome from './pages/home/popup_home';
 import {Confirmation} from './pages/form_page/confirmation';
 import MorePage from './pages/past_papers_more_page/more_page';
+import { Navbar } from './components/navbar/navbar';
 
 function App() {
   return (                                                 
   <Router>
+    <Navbar/>
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/prayagraj" element={<Prayagraj />} />

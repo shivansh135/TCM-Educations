@@ -71,6 +71,11 @@
     transform: translate(-50%, -50%); /* centers the element horizontally */
 }
 
+.visit a{
+    text-decoration: none;
+    color: var(--TCM-Neutral-grey13, #000);
+    
+}
 
 /*phone view */
 

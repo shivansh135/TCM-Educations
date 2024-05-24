@@ -52,7 +52,7 @@ export default function Home() {
 
             <div className='but2'>
                 <button className='Counsel '><Link to="/form-page">Counseling Call {'>'}</Link></button>
-                <button className='book_one'><Link to="/plans">Book Live Trial Class {'>'}</Link></button>
+                <button className='book_one'><Link to="/signup">Book Live Trial Class {'>'}</Link></button>
             </div>
 
             <div className='home_two_img'>
