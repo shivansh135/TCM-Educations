@@ -34,7 +34,7 @@
     text-align: center;
 }
 
-.CAT_video{
+.CATs_video{
     margin-top: 5%;
     margin-left: auto;
     margin-right: auto;
@@ -51,7 +51,7 @@
     flex-shrink: 0;
 }
 
-.CAT_video_button{
+.CATs_video_button{
     margin-left: 10%;
     width: 200px;
     height: 200px;

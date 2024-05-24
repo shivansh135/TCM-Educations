@@ -37,7 +37,7 @@
     line-height: normal;
 }
 
-.btn{
+.btnn{
     margin-top: 20px;
     display: flex;
     padding: 10px 20px;
@@ -47,6 +47,18 @@
     justify-content: center;
     align-items: center;
     border: none;
+}
+
+.btnn a {
+    text-decoration: none;
+}
+
+.btnn a {
+    text-decoration: none;
+}
+
+.book_one a {
+    text-decoration: none;
 }
 
 .head-img {
@@ -98,6 +110,9 @@
     gap: 25px;
 }
 
+.Counsel a {
+    text-decoration: none;
+}
 .Counsel{
     display: flex;
     padding: 10px 20px;
@@ -110,7 +125,7 @@
     border: none;
 }
 
-.book{
+.book_one{
     display: flex;
     padding: 10px 20px;
     border-radius: 38px;
@@ -510,6 +525,13 @@
     font-family: Figtree;
 }
 
+.card3-buy a {
+    text-decoration: none;
+}
+
+.card4-buy a {
+    text-decoration: none;
+}
 .card3-more{
     display: flex;
     padding: 10px 20px;
@@ -840,6 +862,22 @@
         align-items: center;
         border: none;
     }
+
+    .btnn a {
+        text-decoration: none;
+    }
+    
+    .btnn a {
+        text-decoration: none;
+    }
+
+    .btn a {
+        text-decoration: none;
+    }
+
+    .btn2 a {
+        text-decoration: none;
+    }
     
     .head-img{
         margin-left: 5%;
@@ -1049,6 +1087,9 @@
         font-feature-settings: 'clig' off, 'liga' off;
     }
 
+    .stud-more a {
+        text-decoration: none;
+    }
     .course-select{
         margin-top:5%;
         display: flex;
@@ -1376,6 +1417,14 @@
         gap: 6px;
         border: none;
         color: var(--TCM-Neutral-grey01, #FFF);
+    }
+
+    .card3-buy a {
+        text-decoration: none;
+    }
+    
+    .card4-buy a {
+        text-decoration: none;
     }
 
     .card4-more{

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 export function Popup_home_card({course,detail}) {
     return (
         <div>
@@ -13,7 +14,9 @@ export function Popup_home_card({course,detail}) {
                         </div>
                     </div>
                     <button className="popup_home_card_button">
+                    <Link to="/cat">
                         Learn More
+                    </Link>
                     </button>
                 </div>
             </div>

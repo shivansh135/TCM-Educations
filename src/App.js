@@ -29,8 +29,8 @@ function App() {
       <Route path="/planning" element={<Planning />} />
       <Route path="/cat" element={<Cat />} />
       <Route path="/panchmukhi" element={<Panchmukhi />} />
-      <Route path="/testimonial" element={<Testimonial />} />
-      <Route path="/teacher/:id" element={<Teacher/>} />
+      <Route path="/testimonial/:id" element={<Testimonial />} />
+      <Route path="/teacher/:id" element={<Teacher />} />
       <Route path="/login" element={<Login />} />
       <Route path="/signup" element={<Signup />} />
       <Route path="/offline-centre" element={<OfflineCentre />} />

@@ -77,14 +77,14 @@
     line-height: 24px;
 }
 
-.Email{
+.Emails{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 8px;
 }
 
-.Email_text{
+.Emails_text{
     color: var(--TCM-Neutral-grey13, #000);
     font-family: Figtree;
     font-size: 16px;
@@ -93,7 +93,7 @@
     line-height: 20px;
 }
 
-.Email_input{
+.Emails_input{
     display: flex;
     width: 340px;
     overflow: hidden;

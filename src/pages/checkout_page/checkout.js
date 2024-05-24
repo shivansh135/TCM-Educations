@@ -17,9 +17,9 @@ export function Checkout() {
                                         <label for="name" className="name_text">Enter Name</label>
                                         <input type="text" name="name" placeholder="name" className="name_input" />
                                     </div>
-                                    <div class="input-field" className="Email">
-                                        <label for="Email" className="Email_text">Enter Email</label>
-                                        <input type="text" name="Email" placeholder="Email" className="Email_input" />
+                                    <div class="input-field" className="Emails">
+                                        <label for="Email" className="Emails_text">Enter Email</label>
+                                        <input type="text" name="Email" placeholder="Email" className="Emails_input" />
                                     </div>
                                 </div>
                             </form>

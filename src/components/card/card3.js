@@ -1,5 +1,6 @@
 import React from "react";
 import Icon_two from './notifications_active.svg';
+import { Link } from "react-router-dom";
 
 export function Card_three(props) {
     return (
@@ -37,10 +38,14 @@ export function Card_three(props) {
 
                             <div className='card3-other'>
                                 <button className='card3-buy'>
+                                <Link to="/checkout">
                                     Buy Now {'>'}
+                                </Link>
                                 </button>
                                 <div className='card3-more'>
+                                <Link to="/cat">
                                     View More
+                                </Link>
                                 </div>
                             </div>    
                             <div className='card3-extra'>

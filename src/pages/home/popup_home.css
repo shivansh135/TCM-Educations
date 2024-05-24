@@ -119,7 +119,9 @@
     text-align: center;
     border: none;
 }
-
+.popup_home_card_button a {
+    text-decoration: none;
+}
 /*phone view */
 
 @media (max-width: 768px) {
@@ -259,5 +261,8 @@
         line-height: normal;
         text-align: center;
         border: none;
+    }
+    .popup_home_card_button a {
+        text-decoration: none;
     }
 }

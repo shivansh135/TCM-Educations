@@ -8,6 +8,7 @@ import { Card_four } from '../../components/card/card4';
 import { Card_three } from '../../components/card/card3';
 import { HeadingSubheading } from '../../components/headings/headings';
 import Popup_home from './popup_home';
+import { Link } from 'react-router-dom';
 export default function Home() {
     const [showPopup, setShowPopup] = useState(true);
     const [imgSrc, setImgSrc] = useState("/Group.png");
@@ -50,8 +51,8 @@ export default function Home() {
         <HeadingSubheading heading={`Why TCM is India’s Fastest Growing Institute?`} sub={`We're India's leading coaching institute, empowering students to conquer CAT, IPMAT, CLAT & CUET with our expert faculty, personalized approach, and proven strategies. We'll equip you with the knowledge and confidence to ace your exams and gain admission to the top colleges in India.`}/>
 
             <div className='but2'>
-                <button className='Counsel '>Counseling Call {'>'}</button>
-                <button className='book'>Book Live Trial Class {'>'}</button>
+                <button className='Counsel '><Link to="/form-page">Counseling Call {'>'}</Link></button>
+                <button className='book_one'><Link to="/plans">Book Live Trial Class {'>'}</Link></button>
             </div>
 
             <div className='home_two_img'>
@@ -64,23 +65,23 @@ export default function Home() {
             <div className='card-1-container'>
 
                 <Card src='./images/teacher1.png' title='Ajai Singh' faculty='Lead Mentor and Director' viewmore='View More' id='ajai_sir'/>
-                <Card src='./images/teacher1.png' title='Ajai Singh' faculty='Lead Mentor and Director' viewmore='View More'/>
-                <Card src='./images/teacher1.png' title='Ajai Singh' faculty='Lead Mentor and Director' viewmore='View More'/> 
+                <Card src='./images/teacher1.png' title='Ajai Singh' faculty='Lead Mentor and Director' viewmore='View More' id='ajai_sir'/>
+                <Card src='./images/teacher1.png' title='Ajai Singh' faculty='Lead Mentor and Director' viewmore='View More' id='ajai_sir'/> 
 
             </div>
 
             <div className='panchmukhi-img'>
-                {/* <Link to='#'> */}
+                <Link to='/panchmukhi'>
                 <img src="./images/Frame.png" style={{width:'100%',height:'auto'}} alt='frame'/>
-                {/* </Link> */}
+                </Link>
             </div>
 
             <HeadingSubheading heading={` From Aspirants to Achievers`} sub={`We're India's leading coaching institute, empowering students to conquer CAT, IPMAT, CLAT & CUET with our expert faculty, personalized approach, and proven strategies. We'll equip you with the knowledge and confidence to ace your exams and gain admission to the top colleges in India.`}/>
 
 
             <div className='card-2-container'>
-            <Card_two src='./images/student1.png' name='Ajai Singh' cor='CAT' ile='97.81%ile' review="TCM Special Clone Test Series and suggestions of Ajai Sir acted as a boon in my preparation. Looking back, I can't help but appreciate the support that TCM provided to me." />
-            <Card_two src='./images/student1.png' name='Ajai Singh' cor='CAT' ile='97.81%ile' review="TCM Special Clone Test Series and suggestions of Ajai Sir acted as a boon in my preparation. Looking back, I can't help but appreciate the support that TCM provided to me." />
+            <Card_two src='./images/student1.png' name='Ajai Singh' cor='CAT' ile='97.81%ile' review="TCM Special Clone Test Series and suggestions of Ajai Sir acted as a boon in my preparation. Looking back, I can't help but appreciate the support that TCM provided to me." id='student1' />
+            <Card_two src='./images/student1.png' name='Ajai Singh' cor='CAT' ile='97.81%ile' review="TCM Special Clone Test Series and suggestions of Ajai Sir acted as a boon in my preparation. Looking back, I can't help but appreciate the support that TCM provided to me." id='student1'/>
             </div>
 
             <div className='course-select'>

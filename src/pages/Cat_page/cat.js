@@ -17,8 +17,8 @@ export default function Cat() {
                 </div>
             </div>
 
-            <div className='CAT_video'>
-                <div className='CAT_video_button'>
+            <div className='CATs_video'>
+                <div className='CATs_video_button'>
                     <img src='./images/play_arrow.png'  alt='play' />
                 </div>
             </div>
