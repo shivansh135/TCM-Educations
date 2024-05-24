@@ -5,6 +5,7 @@ import { HeadingSubheading } from '../../components/headings/headings';
 import FAQQuestion from '../../components/FaQ/FAQQuestion';
 import { Card_two } from '../../components/card/card2';
 import { useParams } from 'react-router-dom';
+// import AjaiSirImg from "../../../public/images/Ajai.png"
 
 
 
@@ -37,7 +38,7 @@ export default function Teacher() {
             desig:'CUET Faculty',
             description:'Anil Kumar is a CUET faculty at TCM Education. He has been teaching for over 10 years and has helped thousands of students crack the CUET exam. He is known for his unique teaching methods and personalized approach to each student.',
             f_name:'Anil',
-            img:'anil.png'
+            img:'Ajai.png'
         }
     }
     const getteacherbyname=(name)=>{
@@ -59,7 +60,7 @@ export default function Teacher() {
                     <button className='Book_Live'>Book Live Trial Class with {teachers_data.f_name} Sir</button>
                 </div>
 
-                <img src={`./images/${teachers_data.img}`} className="teacher" alt="teacher"/>
+                <img src={`/images/${teachers_data.img}`} className="teacher" alt="teacher"/>
             </div>
 
             <div className="teacher_cards">
@@ -73,7 +74,7 @@ export default function Teacher() {
                     What does Student say <br/>about Ajai Sir?
                 </div>
 
-                <img src="./images/wheel.png" alt="teacher_wheel" className="wheel"/>
+                <img src="/images/wheel.png" alt="teacher_wheel" className="wheel"/>
             </div>
 
             <div className="special">
@@ -122,8 +123,8 @@ export default function Teacher() {
 
 
             <div className='card-2-container'>
-            <Card_two src='./images/student1.png' name='Ajai Singh' cor='CAT' ile='97.81%ile' review="TCM Special Clone Test Series and suggestions of Ajai Sir acted as a boon in my preparation. Looking back, I can't help but appreciate the support that TCM provided to me." />
-            <Card_two src='./images/student1.png' name='Ajai Singh' cor='CAT' ile='97.81%ile' review="TCM Special Clone Test Series and suggestions of Ajai Sir acted as a boon in my preparation. Looking back, I can't help but appreciate the support that TCM provided to me." />
+            <Card_two src='/images/student1.png' name='Ajai Singh' cor='CAT' ile='97.81%ile' review="TCM Special Clone Test Series and suggestions of Ajai Sir acted as a boon in my preparation. Looking back, I can't help but appreciate the support that TCM provided to me." />
+            <Card_two src='/images/student1.png' name='Ajai Singh' cor='CAT' ile='97.81%ile' review="TCM Special Clone Test Series and suggestions of Ajai Sir acted as a boon in my preparation. Looking back, I can't help but appreciate the support that TCM provided to me." />
             </div>
 
             <div className='FQA'>
