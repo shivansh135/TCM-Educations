@@ -1,105 +1,107 @@
-import React from "react";
+import React ,{useState} from "react";
 import './past_papers.css';
 import { Card_four } from '../../components/card/card4';
 import { Card_three } from '../../components/card/card3';
 import FAQQuestion from '../../components/FaQ/FAQQuestion';
+import { Past_papers_card } from "../../components/card/past_paper_card";
 
 export function Past_papers() {
+    const [selectedOption, setSelectedOption] = useState('CAT');
+
+    const handleOptionClick = (option) => {
+        setSelectedOption(option);
+    };
+
+    const [selectOption, setSelectOption] = useState('CAT');
+
+    const handlingOptionClick = (option) => {
+        setSelectOption(option);
+    };
     return (
         <div>
-            <div className='past_papers'>
-                <div className='past_papers-head'>
-                    <div className='past_papers-heading'>
-                        Explore Past Year Papers
-                    </div>
-                    <div className='past_papers-subheading'>
-                        <div className='option'>CAT</div>
-                        <div className='option'>IPMAT</div>
-                        <div className='option'>CLAT</div>
-                        <div className='option'>CUET</div>     
-                        <div className='option'>CUET</div> 
-                        <div className='option'>CUET</div>    
-                    </div>      
+<div className='past_papers'>
+            <div className='past_papers-head'>
+                <div className='past_papers-heading'>
+                    Explore Past Year Papers
                 </div>
-                <div className='past_papers-body'>
-                    <div className='past_papers-card'>
-                        <div className='past_papers-card-image'>
-                            
-                        </div>
-                        <div className='past_papers-card-content'>
-                            <div className="past_papers-card-title">
-                                CLAT 2020 Paper Set 1
-                            </div>
-                            <button className='past_papers-card-button'>
-                                View Paper
-                            </button>
-                        </div>
-                    </div>
-                    <div className='past_papers-card'>
-                        <div className='past_papers-card-image'>
-                            
-                        </div>
-                        <div className='past_papers-card-content'>
-                            <div className="past_papers-card-title">
-                                CLAT 2020 Paper Set 1
-                            </div>
-                            <button className='past_papers-card-button'>
-                                View Paper
-                            </button>
-                        </div>
-                    </div>
-                    <div className='past_papers-card'>
-                        <div className='past_papers-card-image'>
-                            
-                        </div>
-                        <div className='past_papers-card-content'>
-                            <div className="past_papers-card-title">
-                                CLAT 2020 Paper Set 1
-                            </div>
-                            <button className='past_papers-card-button'>
-                                View Paper
-                            </button>
-                        </div>
-                    </div>
-                    <div className='past_papers-card'>
-                        <div className='past_papers-card-image'>
-                            
-                        </div>
-                        <div className='past_papers-card-content'>
-                            <div className="past_papers-card-title">
-                                CLAT 2020 Paper Set 1
-                            </div>
-                            <button className='past_papers-card-button'>
-                                View Paper
-                            </button>
-                        </div>
-                    </div>
-                    <div className='past_papers-card'>
-                        <div className='past_papers-card-image'>
-                            
-                        </div>
-                        <div className='past_papers-card-content'>
-                            <div className="past_papers-card-title">
-                                CLAT 2020 Paper Set 1
-                            </div>
-                            <button className='past_papers-card-button'>
-                                View Paper
-                            </button>
-                        </div>
-                    </div>
-                    <div className='past_papers-card'>
-                        <div className='past_papers-card-image'>
-                            
-                        </div>
-                        <div className='past_papers-card-content'>
-                            <div className="past_papers-card-title">
-                                CLAT 2020 Paper Set 1
-                            </div>
-                            <button className='past_papers-card-button'>
-                                View Paper
-                            </button>
-                        </div>
-                    </div>
+                <div className='past_papers-subheading'>
+                    <div className='option' onClick={() => handlingOptionClick('CAT')} style={{backgroundColor: selectOption === 'CAT' ? '#14A4F5' : '' ,color: selectOption === 'CAT' ? 'white' : ''}}>CAT</div>
+                    <div className='option' onClick={() => handlingOptionClick('IPMAT')} style={{backgroundColor: selectOption === 'IPMAT' ? '#14A4F5' : '' ,color: selectOption === 'IPMAT' ? 'white' : ''}}>IPMAT</div>
+                    <div className='option' onClick={() => handlingOptionClick('CLAT')} style={{backgroundColor: selectOption === 'CLAT' ? '#14A4F5' : '' ,color: selectOption === 'CLAT' ? 'white' : ''}}>CLAT</div>
+                    <div className='option' onClick={() => handlingOptionClick('CUET')} style={{backgroundColor: selectOption === 'CUET' ? '#14A4F5' : '',color: selectOption === 'CUET' ? 'white' : ''}}>CUET</div>     
+                    <div className='option' onClick={() => handlingOptionClick('CMAT')} style={{backgroundColor: selectOption === 'CMAT' ? '#14A4F5' : '',color: selectOption === 'CMAT' ? 'white' : ''}}>CMAT </div> 
+                    <div className='option' onClick={() => handlingOptionClick('NMAT')} style={{backgroundColor: selectOption === 'NMAT' ? '#14A4F5' : '',color: selectOption === 'NMAT' ? 'white' : ''}}>NMAT</div>    
+                </div>      
+            </div>
+            <div className='past_papers-body'>
+                {selectOption === 'CAT' && (
+                    <>
+                        <Past_papers_card title='CAT 2020 Paper Set 1'/>
+                        <Past_papers_card title='CAT 2020 Paper Set 2'/>
+                        <Past_papers_card title='CAT 2020 Paper Set 3'/>
+                        <Past_papers_card title='CAT 2020 Paper Set 1'/>
+                        <Past_papers_card title='CAT 2020 Paper Set 2'/>
+                        <Past_papers_card title='CAT 2020 Paper Set 3'/>
+                        <Past_papers_card title='CAT 2020 Paper Set 1'/>
+                        <Past_papers_card title='CAT 2020 Paper Set 2'/>
+                        <Past_papers_card title='CAT 2020 Paper Set 3'/>
+
+                    </>
+                )}
+                {selectOption === 'IPMAT' && (
+                    <>
+                        <Past_papers_card title='IPMAT 2020 Paper Set 1'/>
+                        <Past_papers_card title='IPMAT 2020 Paper Set 2'/>
+                        <Past_papers_card title='IPMAT 2020 Paper Set 3'/>
+                        <Past_papers_card title='IPMAT 2020 Paper Set 1'/>
+                        <Past_papers_card title='IPMAT 2020 Paper Set 2'/>
+                        <Past_papers_card title='IPMAT 2020 Paper Set 3'/>
+                        <Past_papers_card title='IPMAT 2020 Paper Set 1'/>
+                        <Past_papers_card title='IPMAT 2020 Paper Set 2'/>
+                        <Past_papers_card title='IPMAT 2020 Paper Set 3'/>
+                    </>
+                )}
+                {selectOption === 'CLAT' && (
+                    <>
+                        <Past_papers_card title='CLAT 2020 Paper Set 1'/>
+                        <Past_papers_card title='CLAT 2020 Paper Set 2'/>
+                        <Past_papers_card title='CLAT 2020 Paper Set 3'/>
+                    </>
+                )}
+                {selectOption === 'CUET' && (
+                    <>
+                        <Past_papers_card title='CUET 2020 Paper Set 1'/>
+                        <Past_papers_card title='CUET 2020 Paper Set 2'/>
+                        <Past_papers_card title='CUET 2020 Paper Set 3'/>
+                        <Past_papers_card title='CUET 2020 Paper Set 1'/>
+                        <Past_papers_card title='CUET 2020 Paper Set 2'/>
+                        <Past_papers_card title='CUET 2020 Paper Set 3'/>
+                    </>
+                )}
+
+                {selectOption === 'CMAT' && (
+                    <>
+                        <Past_papers_card title='CMAT 2020 Paper Set 1'/>
+                        <Past_papers_card title='CMAT 2020 Paper Set 2'/>
+                        <Past_papers_card title='CMAT 2020 Paper Set 3'/>
+                        <Past_papers_card title='CMAT 2020 Paper Set 1'/>
+                        <Past_papers_card title='CMAT 2020 Paper Set 2'/>
+                        <Past_papers_card title='CMAT 2020 Paper Set 3'/>
+                    </>
+                )}
+
+                {selectOption === 'NMAT' && (
+                    <>
+                        <Past_papers_card title='NMAT 2020 Paper Set 1'/>
+                        <Past_papers_card title='NMAT 2020 Paper Set 2'/>
+                        <Past_papers_card title='NMAT 2020 Paper Set 3'/>
+                        <Past_papers_card title='NMAT 2020 Paper Set 1'/>
+                        <Past_papers_card title='NMAT 2020 Paper Set 2'/>
+                        <Past_papers_card title='NMAT 2020 Paper Set 3'/>
+                    </>
+                )}
+                
+
                 </div>
             </div>
             <div className='course-select'>
@@ -109,35 +111,111 @@ export function Past_papers() {
                             Choose a Course that Fits you
                         </div>
                         <div className='course-head-option'>
-                            <div className='option'>CAT</div>
-                            <div className='option'>IPMAT</div>
-                            <div className='option'>CLAT</div>
-                            <div className='option'>CUET</div>
+                            <div className='option' onClick={() => handleOptionClick('CAT')} style={{backgroundColor: selectedOption === 'CAT' ? '#14A4F5' : '',color: selectedOption === 'CAT' ? 'white' : ''}}>CAT</div>
+                            <div className='option' onClick={() => handleOptionClick('IPMAT')} style={{backgroundColor: selectedOption === 'IPMAT' ? '#14A4F5' : '', color: selectedOption === 'IPMAT' ? 'white' : ''}}>IPMAT</div>
+                            <div className='option' onClick={() => handleOptionClick('CLAT')} style={{backgroundColor: selectedOption === 'CLAT' ? '#14A4F5' : '', color: selectedOption === 'CLAT' ? 'white' : ''}}> CLAT</div>
+                            <div className='option' onClick={() => handleOptionClick('CUET')} style={{backgroundColor: selectedOption === 'CUET' ? '#14A4F5' : '', color: selectedOption === 'CUET' ? 'white' : ''}}>CUET</div>
                         </div>
                     </div>
                     <div className='course-body'>
+                        {selectedOption === 'CAT' && (
+                        <>
+                            <Card_four
+                                course_name='CAT'
+                                course_price='Rs.50,000'
+                                detail='New batch starts 10th April 2024.'
+                                course_timing='Class Timing 8:30PM to 10:30PM'
+                            />
+                            <Card_three
+                                course_name='CAT'
+                                course_price='Rs.50,000'
+                                detail='New batch starts 10th April 2024.'
+                                course_timing='Class Timing 8:30PM to 10:30PM'
+                            />
+                            <Card_four
+                                course_name='CAT'
+                                course_price='Rs.50,000'
+                                detail='New batch starts 10th April 2024.'
+                                course_timing='Class Timing 8:30PM to 10:30PM'
+                            />
+                        </>
+                        )}
 
-                        <Card_four
-                        course_name='CAT'
-                        course_price='Rs.50,000'
-                        detail='New batch starts 10th April 2024.'
-                        course_timing='Class Timing 8:30PM to 10:30PM'
-                        />
-                        <Card_three
-                        course_name='CAT'
-                        course_price='Rs.50,000'
-                        detail='New batch starts 10th April 2024.'
-                        course_timing='Class Timing 8:30PM to 10:30PM'
-                        />
-                        <Card_four
-                        course_name='CAT'
-                        course_price='Rs.50,000'
-                        detail='New batch starts 10th April 2024.'
-                        course_timing='Class Timing 8:30PM to 10:30PM'
-                        />
+                        {selectedOption === 'IPMAT' && (
+                        <>
+                            <Card_four
+                                course_name='IPMAT'
+                                course_price='Rs.50,000'
+                                detail='New batch starts 10th April 2024.'
+                                course_timing='Class Timing 8:30PM to 10:30PM'
+                            />
+                            <Card_three
+                                course_name='IPMAT'
+                                course_price='Rs.50,000'
+                                detail='New batch starts 10th April 2024.'
+                                course_timing='Class Timing 8:30PM to 10:30PM'
+                            />
+                            <Card_four
+                                course_name='IPMAT'
+                                course_price='Rs.50,000'
+                                detail='New batch starts 10th April 2024.'
+                                course_timing='Class Timing 8:30PM to 10:30PM'
+                            />
+
+                        </>
+                        )}
+
+                        {selectedOption === 'CLAT' && (
+                        <>
+                            <Card_four
+                                course_name='CLAT'
+                                course_price='Rs.50,000'
+                                detail='New batch starts 10th April 2024.'
+                                course_timing='Class Timing 8:30PM to 10:30PM'
+                            />
+                            <Card_three
+                                course_name='CLAT'
+                                course_price='Rs.50,000'
+                                detail='New batch starts 10th April 2024.'
+                                course_timing='Class Timing 8:30PM to 10:30PM'
+                            />
+                            <Card_four
+                                course_name='CLAT'
+                                course_price='Rs.50,000'
+                                detail='New batch starts 10th April 2024.'
+                                course_timing='Class Timing 8:30PM to 10:30PM'
+                            />
+
+                        </>
+                        )}
+
+                        {selectedOption === 'CUET' && (
+                        <>
+                            <Card_four
+                                course_name='CUET'
+                                course_price='Rs.50,000'
+                                detail='New batch starts 10th April 2024.'
+                                course_timing='Class Timing 8:30PM to 10:30PM'
+                            />
+                            <Card_three
+                                course_name='CUET'
+                                course_price='Rs.50,000'
+                                detail='New batch starts 10th April 2024.'
+                                course_timing='Class Timing 8:30PM to 10:30PM'
+                            />
+                            <Card_four
+                                course_name='CUET'
+                                course_price='Rs.50,000'
+                                detail='New batch starts 10th April 2024.'
+                                course_timing='Class Timing 8:30PM to 10:30PM'
+                            />
+
+                        </>
+                        )}
                     </div>
+
                 </div>
-            </div>  
+            </div>
 
             <div className='FQA'>
                 <div className='FQA-area'>

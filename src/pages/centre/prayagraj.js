@@ -1,5 +1,5 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 import './prayagraj.css';
 import { Centre_card } from '../../components/card/centre_card';
 import { Batch_card } from '../../components/card/centre_batch_card';
@@ -7,6 +7,11 @@ import FAQQuestion from '../../components/FaQ/FAQQuestion';
 import { Centre } from '../../components/Centre_Location/Centre';
 
 export default function Prayagraj() {
+    const [selectedOption, setSelectedOption] = useState('CAT');
+
+    const handleOptionClick = (option) => {
+        setSelectedOption(option);
+    };
     return (
         <div>
             <div className='location_image'>
@@ -59,33 +64,97 @@ export default function Prayagraj() {
             </div>
 
             <div className='course_batch'>
-                <div className='course-head'>
-                    <div className='course-head-title'>
-                        Upcoming Batches at Prayagraj Centre
-                    </div>
-                    <div className='course-head-option'>
-                        <div className='option'>CAT</div>
-                        <div className='option'>IPMAT</div>
-                        <div className='option'>CLAT</div>
-                        <div className='option'>CUET</div>
-                    </div>
+            <div className='course-head'>
+                <div className='course-head-title'>
+                    Upcoming Batches at Prayagraj Centre
                 </div>
-                <div className='Batch-Card'>
-                    <Batch_card 
-                    course='CLAT 2024'
-                    date='Starting Aug,23'
-                    detail={'Forem ipsum dolor sit amet, consectetur adipiscing'}
-                    />
-                    <Batch_card 
-                    course='CLAT 2024'
-                    date='Starting Aug,23'
-                    detail={'Forem ipsum dolor sit amet, consectetur adipiscing'}
-                    />
-                    <Batch_card 
-                    course='CLAT 2024'
-                    date='Starting Aug,23'
-                    detail={'Forem ipsum dolor sit amet, consectetur adipiscing'}
-                    />
+                <div className='course-head-option'>
+                    <div className='option' onClick={() => handleOptionClick('CAT')} style={{backgroundColor: selectedOption === 'CAT' ? '#14A4F5' : '' ,color: selectedOption === 'CAT' ? 'white' : ''}}>CAT</div>
+                    <div className='option' onClick={() => handleOptionClick('IPMAT')}  style={{backgroundColor: selectedOption === 'IPMAT' ? '#14A4F5' : '' ,color: selectedOption === 'IPMAT' ? 'white' : ''}}>IPMAT</div>
+                    <div className='option' onClick={() => handleOptionClick('CLAT')} style={{backgroundColor: selectedOption === 'CLAT' ? '#14A4F5' : '' ,color: selectedOption === 'CLAT' ? 'white' : ''}}>CLAT</div>
+                    <div className='option' onClick={() => handleOptionClick('CUET')} style={{backgroundColor: selectedOption === 'CUET' ? '#14A4F5' : '',color: selectedOption === 'CUET' ? 'white' : ''}}>CUET</div>
+                </div>
+            </div>
+            <div className='Batch-Card'>
+                {selectedOption === 'CAT' && (
+                    <>
+                        <Batch_card 
+                            course='CAT 2024'
+                            date='Starting Aug,23'
+                            detail={'Forem ipsum dolor sit amet, consectetur adipiscing'}
+                        />
+                        <Batch_card 
+                            course='CAT 2024'
+                            date='Starting Aug,23'
+                            detail={'Forem ipsum dolor sit amet, consectetur adipiscing'}
+                        />
+                        <Batch_card 
+                            course='CAT 2024'
+                            date='Starting Aug,23'
+                            detail={'Forem ipsum dolor sit amet, consectetur adipiscing'}
+                        />
+                    </>
+                )}
+
+                {selectedOption === 'IPMAT' && (
+                    <>
+                        <Batch_card 
+                            course='IPMAT 2024'
+                            date='Starting Aug,23'
+                            detail={'Forem ipsum dolor sit amet, consectetur adipiscing'}
+                        />
+                        <Batch_card 
+                            course='IPMAT 2024'
+                            date='Starting Aug,23'
+                            detail={'Forem ipsum dolor sit amet, consectetur adipiscing'}
+                        />
+                        <Batch_card 
+                            course='IPMAT 2024'
+                            date='Starting Aug,23'
+                            detail={'Forem ipsum dolor sit amet, consectetur adipiscing'}
+                        />
+                    </>
+                )}      
+
+                {selectedOption === 'CLAT' && (
+                    <>
+                        <Batch_card 
+                            course='CLAT 2024'
+                            date='Starting Aug,23'
+                            detail={'Forem ipsum dolor sit amet, consectetur adipiscing'}
+                        />
+                        <Batch_card 
+                            course='CLAT 2024'
+                            date='Starting Aug,23'
+                            detail={'Forem ipsum dolor sit amet, consectetur adipiscing'}
+                        />
+                        <Batch_card 
+                            course='CLAT 2024'
+                            date='Starting Aug,23'
+                            detail={'Forem ipsum dolor sit amet, consectetur adipiscing'}
+                        />
+                    </>
+                )}
+
+                {selectedOption === 'CUET' && (
+                    <>
+                        <Batch_card 
+                            course='CUET 2024'
+                            date='Starting Aug,23'
+                            detail={'Forem ipsum dolor sit amet, consectetur adipiscing'}
+                        />
+                        <Batch_card 
+                            course='CUET 2024'
+                            date='Starting Aug,23'
+                            detail={'Forem ipsum dolor sit amet, consectetur adipiscing'}
+                        />
+                        <Batch_card 
+                            course='CUET 2024'
+                            date='Starting Aug,23'
+                            detail={'Forem ipsum dolor sit amet, consectetur adipiscing'}
+                        />
+                    </>
+                )}  
                 </div>
             </div>
 

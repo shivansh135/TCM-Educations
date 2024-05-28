@@ -8,7 +8,7 @@ export function Card_four(props) {
                     <div>
                         <div className='card4'>
                             
-                            <img src="./images/circle_two.png" className='oval2' alt='book3'/>
+                            <img src="/images/circle_two.png" className='oval2' alt='book3'/>
 
                             <div className='card4-title'>
                                 TCM’S Online Holistic Batch - {props.course_name} 2024
@@ -40,7 +40,7 @@ export function Card_four(props) {
                             <div className='card4-other'>
                                 <button className='card4-buy'>
                                 <Link to="/checkout">
-                                    Buy Now {'>'}
+                                    Buy Now <img src="/images/Icon.svg" className='belll' alt='bell'/>
                                 </Link>
                                 </button>
                                 <div className='card4-more'>

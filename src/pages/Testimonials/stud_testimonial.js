@@ -16,21 +16,21 @@ export function Testimonial() {
             ile:'IIM Trichy 99%ile',
             img:'student1.png'
         },
-        'rahul_sir':{
+        student2:{
             name:'Ajai Singh',
             city:'Prayagraj',
             detail:'Hello Everyone!! I am Ajai Singh, Founder and CEO of Toil Chamber of Mathematics Pvt. Ltd. (TCM Education), a leading national brand, based in Prayagraj, for CAT, CLAT, IPMAT & OMET exams. The identity that I love the most is of being a mentor and teacher to young minds. Teaching has always been my first love, right from my childhood.',
             ile:'IIM Trichy 99%ile',
             img:'student1.png'
         },
-        'sachin_sir':{
+        student3:{
             name:'Ajai Singh',
             city:'Prayagraj',
             detail:'Hello Everyone!! I am Ajai Singh, Founder and CEO of Toil Chamber of Mathematics Pvt. Ltd. (TCM Education), a leading national brand, based in Prayagraj, for CAT, CLAT, IPMAT & OMET exams. The identity that I love the most is of being a mentor and teacher to young minds. Teaching has always been my first love, right from my childhood.',
             ile:'IIM Trichy 99%ile',
             img:'student1.png'
         },
-        'anil_sir':{
+        student4:{
             name:'Ajai Singh',
             city:'Prayagraj',
             detail:'Hello Everyone!! I am Ajai Singh, Founder and CEO of Toil Chamber of Mathematics Pvt. Ltd. (TCM Education), a leading national brand, based in Prayagraj, for CAT, CLAT, IPMAT & OMET exams. The identity that I love the most is of being a mentor and teacher to young minds. Teaching has always been my first love, right from my childhood.',

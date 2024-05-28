@@ -4,6 +4,7 @@ import { Batch_card } from '../../components/card/centre_batch_card';
 import { Comparison_card_one } from '../../components/card/comparison_card_one';
 import { Comparison_card_two } from '../../components/card/comparison_card_two';
 import FAQQuestion from '../../components/FaQ/FAQQuestion';
+import { Link } from 'react-router-dom';
 
 export default function Planning() {
     return (
@@ -24,7 +25,7 @@ export default function Planning() {
                     </div>
                 </div>
                 <div className='important-points'>
-                    <div className='points'>
+                    <div className='pointss'>
                         <ul>
                             <li className='bullet'> 120+ Interactive Classes </li>
                             <li className='bullet'> 120+ Interactive Classes </li>
@@ -36,31 +37,33 @@ export default function Planning() {
                         </ul>
                     </div>
                     <div className='buttons'>
-                        <button className='live-class'>Book Live Trial Class</button>
-                        <button className='buy-now'>Buy Now</button>
+                        <button className='live-class'><Link to="/signup">Book Live Trial Class</Link></button>
+                        <button className='buy-now'><Link to="/checkout">Buy Now</Link></button>
                     </div>
                 </div>
             </div>
 
-            <div className='roadmap'>
-                <div className='roadmap-head'>
-                    <div className='roadmap-heading'>
+            <div className='roadmaps'>
+                <div className='roadmaps-head'>
+                    <div className='roadmaps-heading'>
                         <div className='BLACK'>The Plan for</div>
                         <div className='BLUE'>
                             <div className='BLACK'>Acing</div> 
                             CAT 2024 
                         </div>
                     </div>
-                    <div className='roadmap-heading-detail'>
+                    <div className='roadmaps-heading-detail'>
                         Borem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class apten
                     </div>
                     <div className='buttons'>
-                        <button className='counsel'>Counceling Call {'>'}</button>
-                        <button className='trial'>Book Trial Class {'>'}</button>
+                        <button className='counsel'><Link to="/form-page">Counceling Call {'>'}</Link></button>
+                        <button className='trial'><Link to="/signup">Book Trial Class {'>'}</Link></button>
                     </div>
                 </div>
                 <div className='slide-img'>
+                    <Link to="/checkout">
                     <img src = './images/Slide.png' className='slide-imgg' style={{width:'100%'}} alt='group_photo' />
+                    </Link>
                 </div>
             </div>
 

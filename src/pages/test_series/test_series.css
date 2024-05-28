@@ -70,7 +70,7 @@
 }
 
 .course-head-title{
-    color: black;
+    color: var(--TCM-Brand-brand-blue01, #14A4F5);
     font-family: Figtree;
     font-size: 48px;
     font-style: normal;

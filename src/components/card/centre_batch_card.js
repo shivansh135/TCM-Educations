@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export function Batch_card({course, date, detail}) {
     return (
@@ -31,10 +32,14 @@ export function Batch_card({course, date, detail}) {
                             </div>
                             <div className='second-por'>
                                 <button className='batch-enroll-but'>
-                                    Enroll Now
+                                    <Link to ='/checkout'>
+                                        Enroll Now
+                                    </Link>
                                 </button>
                                 <div className='batch-card-viewmore'>
-                                    View details
+                                    <Link to ='/planning'>
+                                        View details
+                                    </Link>
                                 </div>
                             </div>
                         </div>

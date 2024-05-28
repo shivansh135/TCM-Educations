@@ -5,7 +5,6 @@ import { HeadingSubheading } from '../../components/headings/headings';
 import FAQQuestion from '../../components/FaQ/FAQQuestion';
 import { Card_two } from '../../components/card/card2';
 import { useParams } from 'react-router-dom';
-// import AjaiSirImg from "../../../public/images/Ajai.png"
 
 
 
@@ -19,26 +18,33 @@ export default function Teacher() {
             f_name:'Ajai',
             img:'Ajai.png'
         },
-        'rahul_sir':{
-            name:'Rahul Sharma',
+        sunny_sir:{
+            name:'Sunny Rajani',
             desig:'CLAT Faculty',
             description:'Rahul Sharma is a CLAT faculty at TCM Education. He has been teaching for over 10 years and has helped thousands of students crack the CLAT exam. He is known for his unique teaching methods and personalized approach to each student.',
             f_name:'Rahul',
-            img:'rahul.png'
+            img:'sunny.png'
         },
-        'sachin_sir':{
-            name:'Sachin Kumar',
+        prashant_sir:{
+            name:'Prashant Kumar',
             desig:'IPMAT Faculty',
             description:'Sachin Kumar is a IPMAT faculty at TCM Education. He has been teaching for over 10 years and has helped thousands of students crack the IPMAT exam. He is known for his unique teaching methods and personalized approach to each student.',
             f_name:'Sachin',
-            img:'sachin.png'
+            img:'prashant.png'
         },
-        'anil_sir':{
-            name:'Anil Kumar',
+        manoj_sir:{
+            name:'Manoj Kumar',
             desig:'CUET Faculty',
             description:'Anil Kumar is a CUET faculty at TCM Education. He has been teaching for over 10 years and has helped thousands of students crack the CUET exam. He is known for his unique teaching methods and personalized approach to each student.',
             f_name:'Anil',
-            img:'Ajai.png'
+            img:'manoj.png'
+        },
+        ashutosh_sir:{
+            name:'Ashutosh Kumar',
+            desig:'CUET Faculty',
+            description:'Anil Kumar is a CUET faculty at TCM Education. He has been teaching for over 10 years and has helped thousands of students crack the CUET exam. He is known for his unique teaching methods and personalized approach to each student.',
+            f_name:'Anil',
+            img:'ashutosh.png'
         }
     }
     const getteacherbyname=(name)=>{
@@ -71,10 +77,10 @@ export default function Teacher() {
 
             <div className="teacher_wheel">
                 <div className="head_five">
-                    What does Student say <br/>about Ajai Sir?
+                    What does Student say about Ajai Sir?
                 </div>
 
-                <img src="/images/wheel.png" alt="teacher_wheel" className="wheel"/>
+                <img src="/images/wheel.png" alt="teacher_wheel" className='wheel'/>
             </div>
 
             <div className="special">

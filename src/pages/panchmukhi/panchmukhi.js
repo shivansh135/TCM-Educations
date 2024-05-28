@@ -1,13 +1,19 @@
-import React from 'react';
+import React , { useState } from 'react';
 import './panchmukhi.css';
 import { Step_odd } from '../../components/Panchmukhi_process/step_odd';
 import { Step_even } from '../../components/Panchmukhi_process/step_even';
 import { Card_four } from '../../components/card/card4';
 import { Card_three } from '../../components/card/card3';
 import FAQQuestion from '../../components/FaQ/FAQQuestion';
+import { Link } from 'react-router-dom';
 
 
 export default function Panchmukhi() {
+    const [selectedOption, setSelectedOption] = useState('CAT');
+
+    const handleOptionClick = (option) => {
+        setSelectedOption(option);
+    };
     return (
         <div>
             <div className="rectangle_one">
@@ -33,11 +39,11 @@ export default function Panchmukhi() {
                         Borem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class apten
                     </div>
                     <div className='buttons'>
-                        <button className='counsel'>Counceling Call {'>'}</button>
-                        <button className='trial'>Book Trial Class {'>'}</button>
+                    <button className='counsel'><Link to="/form-page">Counceling Call {'>'}</Link></button>
+                        <button className='trial'><Link to="/checkout">Book Trial Class {'>'}</Link></button>
                     </div>
                 </div>
-                    <img src = './images/Slide2.png' className='slide-img' alt='group_photo' />
+                    <img src = './images/Slide2.png' className='slidee-img' alt='group_photo' />
             </div>
 
             <Step_odd 
@@ -78,32 +84,107 @@ export default function Panchmukhi() {
                             Choose a Course that Fits you
                         </div>
                         <div className='course-head-option'>
-                            <div className='option'>CAT</div>
-                            <div className='option'>IPMAT</div>
-                            <div className='option'>CLAT</div>
-                            <div className='option'>CUET</div>
+                            <div className='option' onClick={() => handleOptionClick('CAT')} style={{backgroundColor: selectedOption === 'CAT' ? '#14A4F5' : '' ,color: selectedOption === 'CAT' ? 'white' : ''}}>CAT</div>
+                            <div className='option' onClick={() => handleOptionClick('IPMAT')} style={{backgroundColor: selectedOption === 'IPMAT' ? '#14A4F5' : '' ,color: selectedOption === 'IPMAT' ? 'white' : ''}}>IPMAT</div>
+                            <div className='option' onClick={() => handleOptionClick('CLAT')} style={{backgroundColor: selectedOption === 'CLAT' ? '#14A4F5' : '' ,color: selectedOption === 'CLAT' ? 'white' : ''}}>CLAT</div>
+                            <div className='option' onClick={() => handleOptionClick('CUET')} style={{backgroundColor: selectedOption === 'CUET' ? '#14A4F5' : '',color: selectedOption === 'CUET' ? 'white' : ''}}>CUET</div>
                         </div>
                     </div>
                     <div className='course-body'>
+                        {selectedOption === 'CAT' && (
+                        <>
+                            <Card_four
+                                course_name='CAT'
+                                course_price='Rs.50,000'
+                                detail='New batch starts 10th April 2024.'
+                                course_timing='Class Timing 8:30PM to 10:30PM'
+                            />
+                            <Card_three
+                                course_name='CAT'
+                                course_price='Rs.50,000'
+                                detail='New batch starts 10th April 2024.'
+                                course_timing='Class Timing 8:30PM to 10:30PM'
+                            />
+                            <Card_four
+                                course_name='CAT'
+                                course_price='Rs.50,000'
+                                detail='New batch starts 10th April 2024.'
+                                course_timing='Class Timing 8:30PM to 10:30PM'
+                            />
+                        </>
+                        )}
 
-                        <Card_four
-                        course_name='CAT'
-                        course_price='Rs.50,000'
-                        detail='New batch starts 10th April 2024.'
-                        course_timing='Class Timing 8:30PM to 10:30PM'
-                        />
-                        <Card_three
-                        course_name='CAT'
-                        course_price='Rs.50,000'
-                        detail='New batch starts 10th April 2024.'
-                        course_timing='Class Timing 8:30PM to 10:30PM'
-                        />
-                        <Card_four
-                        course_name='CAT'
-                        course_price='Rs.50,000'
-                        detail='New batch starts 10th April 2024.'
-                        course_timing='Class Timing 8:30PM to 10:30PM'
-                        />
+                        {selectedOption === 'IPMAT' && (
+                        <>
+                            <Card_four
+                                course_name='IPMAT'
+                                course_price='Rs.50,000'
+                                detail='New batch starts 10th April 2024.'
+                                course_timing='Class Timing 8:30PM to 10:30PM'
+                            />
+                            <Card_three
+                                course_name='IPMAT'
+                                course_price='Rs.50,000'
+                                detail='New batch starts 10th April 2024.'
+                                course_timing='Class Timing 8:30PM to 10:30PM'
+                            />
+                            <Card_four
+                                course_name='IPMAT'
+                                course_price='Rs.50,000'
+                                detail='New batch starts 10th April 2024.'
+                                course_timing='Class Timing 8:30PM to 10:30PM'
+                            />
+
+                        </>
+                        )}
+
+                        {selectedOption === 'CLAT' && (
+                        <>
+                            <Card_four
+                                course_name='CLAT'
+                                course_price='Rs.50,000'
+                                detail='New batch starts 10th April 2024.'
+                                course_timing='Class Timing 8:30PM to 10:30PM'
+                            />
+                            <Card_three
+                                course_name='CLAT'
+                                course_price='Rs.50,000'
+                                detail='New batch starts 10th April 2024.'
+                                course_timing='Class Timing 8:30PM to 10:30PM'
+                            />
+                            <Card_four
+                                course_name='CLAT'
+                                course_price='Rs.50,000'
+                                detail='New batch starts 10th April 2024.'
+                                course_timing='Class Timing 8:30PM to 10:30PM'
+                            />
+
+                        </>
+                        )}
+
+                        {selectedOption === 'CUET' && (
+                        <>
+                            <Card_four
+                                course_name='CUET'
+                                course_price='Rs.50,000'
+                                detail='New batch starts 10th April 2024.'
+                                course_timing='Class Timing 8:30PM to 10:30PM'
+                            />
+                            <Card_three
+                                course_name='CUET'
+                                course_price='Rs.50,000'
+                                detail='New batch starts 10th April 2024.'
+                                course_timing='Class Timing 8:30PM to 10:30PM'
+                            />
+                            <Card_four
+                                course_name='CUET'
+                                course_price='Rs.50,000'
+                                detail='New batch starts 10th April 2024.'
+                                course_timing='Class Timing 8:30PM to 10:30PM'
+                            />
+
+                        </>
+                        )}
                     </div>
 
                 </div>

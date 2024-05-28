@@ -4,7 +4,7 @@ import './app.css';
 import Home from './pages/home/home';
 import Prayagraj from './pages/centre/prayagraj';
 import Planning from './pages/plan_details/planning';
-import Cat from './pages/Cat_page/cat';
+import Cat from './pages/Course_page/cat';
 import Panchmukhi from './pages/panchmukhi/panchmukhi';
 import {Testimonial} from './pages/Testimonials/stud_testimonial';
 import Teacher from './pages/teachers/teacher_one';
@@ -29,7 +29,7 @@ function App() {
       <Route path="/" element={<Home />} />
       <Route path="/prayagraj" element={<Prayagraj />} />
       <Route path="/planning" element={<Planning />} />
-      <Route path="/cat" element={<Cat />} />
+      <Route path="/cat/:id" element={<Cat />} />
       <Route path="/panchmukhi" element={<Panchmukhi />} />
       <Route path="/testimonial/:id" element={<Testimonial />} />
       <Route path="/teacher/:id" element={<Teacher />} />

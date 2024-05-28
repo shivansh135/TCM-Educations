@@ -1,10 +1,10 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-export function Button() {
+export function Button({ onClick }) {
     return (
         <div>
-            <button className='btnn'><Link to='/plans'>Learn More {'>'}</Link> </button>
+            <button className='btnn' onClick={onClick}>Learn More <img src="./images/Icon.svg" className='beelll' alt='bell'/> </button>
         </div>
 
     );

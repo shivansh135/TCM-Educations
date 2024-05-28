@@ -14,7 +14,7 @@
     z-index: 2; /* Add this */
     position: absolute;
     /* existing styles */
-    top: 670px; /* adjust as needed */
+    top: 797px; /* adjust as needed */
     left: 50%; /* adjust as needed */
     transform: translate(-50%, -50%); /* centers the element */
     margin: 20px;
@@ -153,7 +153,7 @@
     text-align: center;
 }
 
-.slide-img{
+.slidee-img{
     margin-top: 5%;
     width: 60%;
     height: 600px;

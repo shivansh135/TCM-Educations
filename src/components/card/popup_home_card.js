@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-export function Popup_home_card({course,detail}) {
+export function Popup_home_card({course,detail,id}) {
     return (
         <div>
             <div className="popup_home_card">
@@ -14,7 +14,7 @@ export function Popup_home_card({course,detail}) {
                         </div>
                     </div>
                     <button className="popup_home_card_button">
-                    <Link to="/cat">
+                    <Link to={`cat/${id}`}>
                         Learn More
                     </Link>
                     </button>

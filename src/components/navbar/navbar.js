@@ -15,8 +15,8 @@ export function Navbar() {
                         <div className='navbar_council'><Link to='/form-page'>Career counselling</Link></div>
                         <div className='navbar_pp'><Link to='/past-papers'>Past Papers</Link></div>
                         <div className='navbar_offCetre'><Link to='/offline-centre'>Offline Centres</Link></div>
-                        <div className='navbar_mock'><Link to='/past-papers'>Mock Series</Link></div>
-                        <button className='navbar_signup'><Link to='/signup'>Login/Signup</Link></button>
+                        <div className='navbar_mock'><Link to='/test-series'>Mock Series</Link></div>
+                        <button className='navbar_signup'><Link to='/login'>Login/Signup</Link></button>
                     </div>
                 </div>
 

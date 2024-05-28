@@ -378,8 +378,12 @@
     font-style: normal;
     font-weight: 500;
     line-height: 24px;
-    text-align: center;
-    
+    text-align: center;   
+}
+
+.batch-enroll-but a{
+    text-decoration: none;
+    color: var(--TCM-Neutral-grey01, #FFF);
 }
 
 .batch-card-viewmore{
@@ -398,6 +402,11 @@
     line-height: 24px;
     text-align: center;
     text-decoration-line: underline;
+}
+
+.batch-card-viewmore a{
+    text-decoration-line: underline;
+    color: var(--TCM-Brand-brand-blue01, #14A4F5);
 }
 
 .FQA{
@@ -917,6 +926,11 @@
         text-align: center;
         
     }
+
+    .batch-enroll-but a{
+        text-decoration: none;
+        color: var(--TCM-Neutral-grey01, #FFF);
+    }
     
     .batch-card-viewmore{
         display: flex;
@@ -936,6 +950,10 @@
         text-decoration-line: underline;
     }
 
+    .batch-card-viewmore a{
+        text-decoration-line: underline;
+        color: var(--TCM-Brand-brand-blue01, #14A4F5);
+    }
     .FQA{
         display: flex;
         flex-direction: column;

@@ -1,5 +1,6 @@
 
 import React from "react";
+import { Link } from "react-router-dom";
 
 export function Comparison_card_two() {
     return (
@@ -21,7 +22,7 @@ export function Comparison_card_two() {
                                         <li className='comp-bullet'> Revision classes + GDPI Preparation </li>
                                     </ul>
                                 </div>
-                                <button className='comp-book'>Book Now {'>'}</button>
+                                <button className='comp-book'><Link to="/checkout">Book Now {'>'}</Link></button>
                             </div>
                         </div>
                     </div>

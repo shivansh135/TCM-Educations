@@ -56,7 +56,6 @@
 .btnn a {
     text-decoration: none;
 }
-
 .book_one a {
     text-decoration: none;
 }
@@ -112,6 +111,8 @@
 
 .Counsel a {
     text-decoration: none;
+    color: var(--Neutral-Gray-50, #F8FAFC);
+
 }
 .Counsel{
     display: flex;
@@ -135,6 +136,11 @@
     justify-content: center;
     align-items: center;
     gap: 6px;
+}
+
+.book_one a {
+    text-decoration: none;
+    color: var(--TCM-Brand-brand-blue01, #14A4F5);
 }
 
 .home_two_img img{
@@ -236,6 +242,12 @@
     font-weight: 400;
     line-height: normal;
     text-decoration-line: underline;
+}
+
+.card--viewmore a {
+    text-decoration: none;
+    color: var(--TCM-Neutral-grey13, #000);
+
 }
 
 .panchmukhi-img{
@@ -370,6 +382,11 @@
     font-weight: 400;
     line-height: 24px;
     text-decoration-line: underline;
+}
+
+.stud-more a {
+    text-decoration: none;
+    color: #14A4F5;
 }
 
 .course-select{
@@ -525,12 +542,22 @@
     font-family: Figtree;
 }
 
+.belll{
+    width: 14px;
+    height: 14px;
+    position: relative;
+    top: 3px;
+}
+
 .card3-buy a {
     text-decoration: none;
+    color: var(--TCM-Brand-brand-blue01, #14A4F5);
 }
 
 .card4-buy a {
     text-decoration: none;
+    color: var(--TCM-Neutral-grey01, #FFF);
+
 }
 .card3-more{
     display: flex;
@@ -550,6 +577,11 @@
     text-decoration-line: underline;
 }
 
+.card3-more a{
+    text-decoration-line: underline;
+    color: var(--TCM-Neutral-grey01, #FFF);
+
+}
 .card3-other{
     margin-left: 5%;
 
@@ -711,6 +743,11 @@
     text-align: center;
     text-decoration-line: underline;
 }
+.card4-more a{
+    text-decoration-line: underline;
+    color: var(--TCM-Brand-brand-blue01, #14A4F5);
+
+}
 
 .card4-extra{
     display: flex;
@@ -863,6 +900,21 @@
         border: none;
     }
 
+    .Counsel a {
+        text-decoration: none;
+        color: var(--Neutral-Gray-50, #F8FAFC);
+    }
+
+    .book_one a {
+        text-decoration: none;
+        color: var(--TCM-Brand-brand-blue01, #14A4F5);
+    }
+
+    .card--viewmore a {
+        text-decoration: none;
+        color: var(--TCM-Neutral-grey13, #000);
+    
+    }
     .btnn a {
         text-decoration: none;
     }
@@ -1089,7 +1141,9 @@
 
     .stud-more a {
         text-decoration: none;
+        color: #14A4F5;
     }
+    
     .course-select{
         margin-top:5%;
         display: flex;
@@ -1254,6 +1308,11 @@
         font-family: Figtree;
     }
 
+    .card3-buy a {
+        text-decoration: none;
+        color: var(--TCM-Brand-brand-blue01, #14A4F5);
+    }
+
     .card3-more{
         display: flex;
         padding: 10px 20px;
@@ -1270,6 +1329,11 @@
         line-height: 26px;
         text-align: center;
         text-decoration-line: underline;
+    }
+
+    .card3-more a {
+        text-decoration-line : underline;
+        color: var(--TCM-Neutral-grey01, #FFF);
     }
 
     .card3-other{
@@ -1419,12 +1483,22 @@
         color: var(--TCM-Neutral-grey01, #FFF);
     }
 
+    .belll{
+        width: 14px;
+        height: 14px;
+        position: relative;
+        top: 3px;
+    }
+    
     .card3-buy a {
         text-decoration: none;
+        color: var(--TCM-Brand-brand-blue01, #14A4F5);
     }
     
     .card4-buy a {
         text-decoration: none;
+        color: var(--TCM-Neutral-grey01, #FFF);
+    
     }
 
     .card4-more{
@@ -1443,6 +1517,12 @@
         line-height: 26px;
         text-align: center;
         text-decoration-line: underline;
+    }
+
+    .card4-more a{
+        text-decoration-line: underline;
+        color: var(--TCM-Brand-brand-blue01, #14A4F5);
+
     }
 
     .card4-extra{

@@ -89,7 +89,7 @@
     gap: 20px;
 }
 
-.points{
+.pointss{
     display: flex;
     overflow: hidden;
     flex-direction: column;
@@ -152,7 +152,7 @@
 
 }
 
-.roadmap{
+.roadmaps{
     margin-left: 10%;
     overflow: hidden;
     width: 1300px;
@@ -164,7 +164,7 @@
     
 }
 
-.roadmap-head{
+.roadmaps-head{
     display: inline-flex;
     flex-direction: column;
     align-items: flex-start;
@@ -172,7 +172,7 @@
     width: 500px;
 }
 
-.roadmap-heading{
+.roadmaps-heading{
     width: 471px;
     font-family: Figtree;
     font-size: 60px;
@@ -195,7 +195,7 @@
 
 
 
-.roadmap-heading-detail{
+.roadmaps-heading-detail{
     width: 402px;
     color: var(--TCM-Neutral-grey08, #595959);
     font-family: Figtree;

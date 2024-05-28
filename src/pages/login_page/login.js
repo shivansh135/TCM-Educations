@@ -1,5 +1,6 @@
 import React from "react";
 import './login.css';
+import { Link } from "react-router-dom";
 
 export function Login() {
     return (
@@ -44,7 +45,7 @@ export function Login() {
                         </div>
 
                         <div className="new_user">
-                            Don't you have an account? <div className="sign_up">Sign up</div>
+                            Don't you have an account? <div className="sign_up"><Link to="/signup">Sign up</Link></div>
                         </div>
                     </div>
 
