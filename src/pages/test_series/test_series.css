@@ -187,6 +187,7 @@
     text-decoration-line: underline;
     border: none;
     width: 150px;
+    background-color: transparent;
     
 }
 
@@ -509,6 +510,7 @@
         text-decoration-line: underline;
         border: none;
         width: 150px;
+        background-color: transparent;
         
     }
     

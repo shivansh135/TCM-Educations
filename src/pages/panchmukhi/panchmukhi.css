@@ -135,6 +135,11 @@
     border: none;
 }
 
+.counsel a{
+    text-decoration: none;
+    color: white;
+}
+
 .trial{
     display: flex;
     padding: 10px 20px;
@@ -152,7 +157,10 @@
     line-height: 26px;
     text-align: center;
 }
-
+.trial a{
+    text-decoration: none;
+    color: var(--TCM-Brand-brand-blue01, #14A4F5);
+}
 .slidee-img{
     margin-top: 5%;
     width: 60%;
@@ -813,7 +821,10 @@
         line-height: normal;
         text-align: center;
     }
-    
+    .counsel a{
+        text-decoration: none;
+        color: white;
+    }
     .trial{
         width: 100%;
         display: flex;
@@ -831,6 +842,11 @@
         font-weight: 500;
         line-height: normal;
         text-align: center;
+    }
+
+    .trial a{
+        text-decoration: none;
+        color: var(--TCM-Brand-brand-blue01, #14A4F5);
     }
     
     .slide-img{

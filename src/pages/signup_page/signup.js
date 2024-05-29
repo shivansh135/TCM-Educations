@@ -51,9 +51,6 @@ export function Signup() {
                             <img src="./images/Facebook.png" alt="Facebook" className="facebook_img"/>Sign in with Facebook
                         </div>
 
-                        <div className="new_user">
-                            Don't you have an account? <div className="sign_up">Sign up</div>
-                        </div>
                     </div>
 
                     <img src="./images/couple.png" alt="login" className="Login_right"/>

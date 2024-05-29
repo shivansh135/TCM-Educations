@@ -6,7 +6,7 @@ export function Centre_card({image, title, description}) {
             <div className='center_card_one'>
                 <div className='center_card_content'>
                     <div className='center_card_image'>
-                        <img src={`./images/${image}`} style={{width:"100%", height:"auto"}} alt='img1'/>
+                        <img src={`/images/${image}`} style={{width:"100%", height:"auto"}} alt='img1'/>
                     </div>
                     <div className='center_card_head'>
                         <div className='center_card_title'>

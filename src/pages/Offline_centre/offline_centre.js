@@ -1,6 +1,6 @@
 import React from "react";
 import './offline_centre.css';
-import { Link } from "react-router-dom";
+import { Cityy } from "../../components/card/city_card";
 
 export function Offline_centre() {
     return (
@@ -11,16 +11,16 @@ export function Offline_centre() {
                 </div>
 
                 <div className="centres">
-                    <div className="centre_one">
-                        <img src="./images/prayagraj_centre.png" className="centre_prayagraj" alt="prayagraj"/>
-                        <div className="centre_name">Prayagraj</div>
-                        <button className="visit"><Link to='/prayagraj'>Visit Centre {'>'}</Link></button>
-                    </div>
-                    <div className="centre_two">
-                        <img src="./images/varanasi_centre.png" className="centre_varanasi" alt="varanasi"/>
-                        <div className="centre_name">Varanasi</div>
-                        <button className="visit"><Link to='/prayagraj'>Visit Centre {'>'}</Link></button>
-                    </div>
+                    <Cityy
+                        img="prayagraj_centre.png"
+                        name="Prayagraj"
+                        id="prayagraj"
+                    />
+                    <Cityy
+                        id='varanasi'
+                        img="varanasi_centre.png"
+                        name="Varanasi"
+                    />
                 </div>
             </div>
 

@@ -216,6 +216,10 @@
     margin-left: 5%;
 }
 
+.new_user a{
+    color: var(--TCM-Brand-brand-blue02, #43AAF6);
+};
+
 .login_right{
     display: flex;
     overflow: hidden;

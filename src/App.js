@@ -27,7 +27,7 @@ function App() {
     <Navbar/>
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/prayagraj" element={<Prayagraj />} />
+      <Route path="/offline-centre/:city/:id" element={<Prayagraj />} />
       <Route path="/planning" element={<Planning />} />
       <Route path="/cat/:id" element={<Cat />} />
       <Route path="/panchmukhi" element={<Panchmukhi />} />

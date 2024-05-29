@@ -1,8 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import './test_series.css';
 import FAQQuestion from '../../components/FaQ/FAQQuestion';
+import { Test } from "../../components/card/test_card";
+
 
 export function Test_series() {
+    const [selectedOption, setSelectedOption] = useState('CAT');
+
+    const handleOptionClick = (option) => {
+        setSelectedOption(option);
+    };
     return (
         <div>
             <div className="head_six">
@@ -27,57 +34,46 @@ export function Test_series() {
                         Select Test Series
                     </div>
                     <div className='course-head-option'>
-                        <div className='option'>CAT</div>
-                        <div className='option'>IPMAT</div>
-                        <div className='option'>CLAT</div>
-                        <div className='option'>CUET</div>
+                        <div className='option' onClick={() => handleOptionClick('CAT')} style={{backgroundColor: selectedOption === 'CAT' ? '#14A4F5' : '' ,color: selectedOption === 'CAT' ? 'white' : ''}} >CAT</div>
+                        <div className='option' onClick={() => handleOptionClick('IPMAT')} style={{backgroundColor: selectedOption === 'IPMAT' ? '#14A4F5' : '' ,color: selectedOption === 'IPMAT' ? 'white' : ''}}>IPMAT</div>
+                        <div className='option' onClick={() => handleOptionClick('CLAT')} style={{backgroundColor: selectedOption === 'CLAT' ? '#14A4F5' : '' ,color: selectedOption === 'CLAT' ? 'white' : ''}}>CLAT</div>
+                        <div className='option' onClick={() => handleOptionClick('CUET')} style={{backgroundColor: selectedOption === 'CUET' ? '#14A4F5' : '' ,color: selectedOption === 'CUET' ? 'white' : ''}}>CUET</div>
                     </div>
                 </div>
 
                 <div className='test-contents'>
-                    <div className='test-card'>
-                        <div className='test-card-content'>
-                            <div className="test-card-title">
-                                TCY Test Series
-                            </div>
-                            <div className="test-card-detail">
-                                Analysis & Solutions available <br/>after Submission
-                            </div>
-                            <div className="test-card-button">
-                                <button className="start_test">Start Test {'>'}</button>
-                                <button className="view_more">View Details {'>'}</button>
-                            </div>
-                        </div>
-                    </div>
+                {selectedOption === 'CAT' && (
+                    <>
+                    <Test/>
+                    <Test/>
+                    <Test/>
+                    </>
+                )}
 
-                    <div className='test-card'>
-                        <div className='test-card-content'>
-                            <div className="test-card-title">
-                                TCY Test Series
-                            </div>
-                            <div className="test-card-detail">
-                                Analysis & Solutions available <br/>after Submission
-                            </div>
-                            <div className="test-card-button">
-                                <button className="start_test">Start Test {'>'}</button>
-                                <button className="view_more">View Details {'>'}</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div className='test-card'>
-                        <div className='test-card-content'>
-                            <div className="test-card-title">
-                                TCY Test Series
-                            </div>
-                            <div className="test-card-detail">
-                                Analysis & Solutions available <br/>after Submission
-                            </div>
-                            <div className="test-card-button">
-                                <button className="start_test">Start Test {'>'}</button>
-                                <button className="view_more">View Details {'>'}</button>
-                            </div>
-                        </div>
-                    </div>
+                {selectedOption === 'IPMAT' && (
+                    <>
+                    <Test/>
+                    <Test/>
+                    <Test/>
+                    </>
+                )}
+
+                {selectedOption === 'CLAT' && (
+                    <>
+                    <Test/>
+                    <Test/>
+                    <Test/>
+                    </>
+                )}
+
+                {selectedOption === 'CUET' && (
+                    <>
+                    <Test/>
+                    <Test/>
+                    <Test/>
+                    </>
+                )}
+
                 </div>
             </div>    
             <div className='FQA'>

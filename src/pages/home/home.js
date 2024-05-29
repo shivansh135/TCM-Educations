@@ -62,7 +62,7 @@ export default function Home() {
 
             <div className='but2'>
                 <button className='Counsel '><Link to="/form-page">Counseling Call <img src="./images/Icon.svg" className='belll' alt='bell'/></Link></button>
-                <button className='book_one'><Link to="/signup">Book Live Trial Class {'>'}</Link></button>
+                <button className='book_one'><Link to="/signup">Book Live Trial Class <img src="./images/Icon_1.svg" className='belll' alt='bell'/></Link></button>
             </div>
 
             <div className='home_two_img'>

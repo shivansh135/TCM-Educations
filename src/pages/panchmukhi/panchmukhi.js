@@ -30,17 +30,17 @@ export default function Panchmukhi() {
             <div className='roadmap'>
                 <div className='roadmap-head'>
                 <div className='roadmap-heading'>
-                    <div className='BLUE'>
-                        TCM’s Scientific 
-                        <div className='BLACK'> Process of Preparation</div> 
+                    <div className='BLACK'>
+                        <span className='BLUE'>TCM’s</span>
+                        &nbsp; Scientific Process of Preparation 
                     </div>
                 </div>
                     <div className='roadmap-heading-detail'>
                         Borem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class apten
                     </div>
                     <div className='buttons'>
-                    <button className='counsel'><Link to="/form-page">Counceling Call {'>'}</Link></button>
-                        <button className='trial'><Link to="/checkout">Book Trial Class {'>'}</Link></button>
+                    <button className='counsel'><Link to="/form-page">Counceling Call <img src="./images/Icon.svg" className='belll' alt='bell'/></Link></button>
+                        <button className='trial'><Link to="/checkout">Book Trial Class<img src="./images/Icon_1.svg" className='bellll' alt='bell'/></Link></button>
                     </div>
                 </div>
                     <img src = './images/Slide2.png' className='slidee-img' alt='group_photo' />
