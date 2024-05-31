@@ -19,31 +19,41 @@ import {Checkout} from './pages/checkout_page/checkout';
 import PopupHome from './pages/home/popup_home';
 import {Confirmation} from './pages/form_page/confirmation';
 import MorePage from './pages/past_papers_more_page/more_page';
-import { Navbar } from './components/navbar/navbar';
+import Navbar from './components/navbar/navbar';
 
 function App() {
   return (                                                 
   <Router>
-    <Navbar/>
     <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/offline-centre/:city/:id" element={<Prayagraj />} />
-      <Route path="/planning" element={<Planning />} />
-      <Route path="/cat/:id" element={<Cat />} />
-      <Route path="/panchmukhi" element={<Panchmukhi />} />
-      <Route path="/testimonial/:id" element={<Testimonial />} />
-      <Route path="/teacher/:id" element={<Teacher />} />
-      <Route path="/login" element={<Login />} />
-      <Route path="/signup" element={<Signup />} />
-      <Route path="/offline-centre" element={<OfflineCentre />} />
-      <Route path="/plans" element={<Plans />} />
-      <Route path="/past-papers" element={<PastPapers />} />
-      <Route path="/test-series" element={<TestSeries />} />
-      <Route path="/form-page" element={<FormPage />} />
-      <Route path="/checkout" element={<Checkout />} />
-      <Route path="/popup-home" element={<PopupHome />} />
-      <Route path="/confirmation" element={<Confirmation />} />
-      <Route path="/more-page" element={<MorePage />} />
+      <Route path="/" element={ <><Navbar currentPage="home"/><Home /></>} />
+      <Route path="/offline-centre/:city/:id" element={ <><Navbar currentPage="home" currentImg="home"/><Prayagraj /></>} />
+      <Route path="/planning" element={ <><Navbar currentPage="home" currentImg="home"/><Planning /></>} />
+      <Route path="/cat/:id" element={<><Navbar currentPage="home" currentImg="home"/><Cat /></>} />
+      <Route path="/cat/:id/cat/:id" element={<><Navbar currentPage="home" currentImg="home"/><Cat /></>} />
+      <Route path="/cat/:id/cat/:id/cat/:id" element={<><Navbar currentPage="home" currentImg="home"/><Cat /></>} />
+      <Route path="/panchmukhi/cat/:id" element={<><Navbar currentPage="home" currentImg="home"/><Cat /></ >} />
+      <Route path="/panchmukhi/cat/:id/cat/:id" element={<><Navbar currentPage="home" currentImg="home"/><Cat /></>} />
+      <Route path="/panchmukhi/cat/:id/cat/:id" element={<><Navbar currentPage="home" currentImg="home"/><Cat /></>} />
+      <Route path="/past-papers/cat/:id/cat/:id" element={<><Navbar currentPage="home" currentImg="home"/><Cat /></>} />
+      <Route path="/past-papers/cat/:id" element={<><Navbar currentPage="home" currentImg="home"/><Cat /></>} />
+      <Route path="/plans/cat/:id/cat/:id" element={<><Navbar currentPage="home" currentImg="home"/><Cat /></>} />
+      <Route path="/plans/cat/:id" element={<><Navbar currentPage="home" currentImg="home"/><Cat /></>} />
+      <Route path="/panchmukhi" element={<><Navbar currentPage="specialPage" currentImg="specialPage"/><Panchmukhi /></>} />    
+      <Route path="/testimonial/:id" element={<><Navbar currentPage="home" currentImg="home"/><Testimonial /></>} />
+      <Route path="/testimonial/:id/testimonial/:id" element={<><Navbar currentPage="home" currentImg="home"/><Testimonial /></>} />
+      <Route path="/teacher/:id/testimonial/:id" element={<><Navbar currentPage="home" currentImg="home"/><Testimonial /></>} />
+      <Route path="/teacher/:id" element={<><Navbar currentPage="specialPage" currentImg="specialPage"/><Teacher /></>} />
+      <Route path="/login" element={<><Navbar currentPage="home" currentImg="home"/><Login /></>} />
+      <Route path="/signup" element={<><Navbar currentPage="home" currentImg="home"/><Signup /></>} />
+      <Route path="/offline-centre" element={<><Navbar currentPage="home" currentImg="home"/><OfflineCentre /></>} />
+      <Route path="/plans" element={<><Navbar currentPage="home" currentImg="home"/><Plans /></>} />
+      <Route path="/past-papers" element={<><Navbar currentPage="specialPage" currentImg="specialPage"/><PastPapers /></>} />
+      <Route path="/test-series" element={<><Navbar currentPage="home" currentImg="home"/><TestSeries /></>} />
+      <Route path="/form-page" element={<><Navbar currentPage="home" currentImg="home"/><FormPage /></>} />
+      <Route path="/checkout" element={<><Navbar currentPage="home" currentImg="home"/><Checkout /></>} />
+      <Route path="/popup-home" element={<><Navbar currentPage="home" currentImg="home"/><PopupHome /></>} />
+      <Route path="/confirmation" element={<><Navbar currentPage="home" currentImg="home"/><Confirmation /></>} />
+      <Route path="/more-page" element={<><Navbar currentPage="specialPage" currentImg="specialPage"/><MorePage /></>} />
     </Routes>
   </Router>
   );

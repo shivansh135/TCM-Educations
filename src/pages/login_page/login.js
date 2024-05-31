@@ -36,15 +36,15 @@ export function Login() {
                             <div className="or_line"></div>
                         </div>
 
-                        <div className="google">
-                            <img src="./images/Google.png" alt="google" className="google_img"/> Sign in with Google
+                        <div className="ggoogle">
+                            <img src="./images/Google.png" alt="google" className="ggoogle_img"/> Sign in with Google
                         </div>
 
-                        <div className="facebook">
-                            <img src="./images/Facebook.png" alt="Facebook" className="facebook_img"/>Sign in with Facebook
+                        <div className="ffacebook">
+                            <img src="./images/Facebook.png" alt="Facebook" className="ffacebook_img"/>Sign in with Facebook
                         </div>
 
-                        <div className="new_user">
+                        <div className="nnew_user">
                             Don't you have an account? <div className="sign_up"><Link to="/signup">Sign up</Link></div>
                         </div>
                     </div>

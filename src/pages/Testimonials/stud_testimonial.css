@@ -261,6 +261,20 @@
         text-decoration-line: underline;
     }
 
+    @media (min-width: 769px) { /* Change to tablet or desktop view */
+        .mobile-view {
+            display: none; /* Hide on desktop */
+        }
+    
+        .desktop-view {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+            position: relative;
+            right: 2%; /* if you want some space between the cards */
+          }
+    }
     .FQA{
         margin-top: 7%;
         width: 100%;
@@ -543,6 +557,24 @@
         width: 70%;
     }
 
+    .desktop-view {
+        display: none; /* Hide on mobile by default */
+    }
+
+    .carousel * {
+        box-sizing: content-box !important;
+    }
+    .carousel-slide{
+        display: flex !important;
+        flex-direction: row !important;
+    }
+
+    .carousel .control-prev.control-arrow {
+        display: none;
+    }
+
+    
+
     .card_two{
         display: flex;
         padding: 16px 20px;
@@ -564,6 +596,9 @@
         gap: 11px;
     }
 
+    .bottom-layer{
+        text-align: left;
+    }
     .stud-img{
         width: 47px;
         height: 47px;

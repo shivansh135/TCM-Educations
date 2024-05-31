@@ -156,7 +156,7 @@
 }
 
 
-.google{
+.ggoogle{
     display: flex;
     padding: 12px 9px;
     border-radius: 1000px;
@@ -174,12 +174,12 @@
     line-height: 24px;
 }
 
-.google_img{
+.ggoogle_img{
     width: 28px;
     height: 28px;
 }
 
-.facebook{
+.ffacebook{
     display: flex;
     padding: 12px 9px;
     border-radius: 1000px;
@@ -197,12 +197,12 @@
     line-height: 24px;
 }
 
-.google_img{
+.ggoogle_img{
     width: 28px;
     height: 28px;
 }
 
-.new_user{
+.nnew_user{
     width: 382px;
     color: var(--Secondary-text, #313957);
     font-family: Figtree;
@@ -216,7 +216,7 @@
     margin-left: 5%;
 }
 
-.new_user a{
+.nnew_user a{
     color: var(--TCM-Brand-brand-blue02, #43AAF6);
 };
 
@@ -378,7 +378,7 @@
         bottom: 15%;
     }
 
-    .login_button{
+    .login_button_one{
         display: flex;
         width: 55%;
         height: auto;
@@ -413,7 +413,7 @@
     }
     
     
-    .google{
+    .ggoogle{
         display: flex;
         padding: 4px 7px;
         border-radius: 1000px;
@@ -431,12 +431,12 @@
         line-height: normal;
     }
     
-    .google_img{
+    .ggoogle_img{
         width: 17px;
         height: 17px;
     }
     
-    .facebook{
+    .ffacebook{
         display: flex;
         padding: 4px 7px;
         border-radius: 1000px;
@@ -454,12 +454,12 @@
         line-height: normal;
     }
     
-    .facebook_img{
+    .ffacebook_img{
         width: 17px;
         height: 17px;
     }
     
-    .new_user{
+    .nnew_user{
         width: 140%;
         color: var(--Secondary-text, #313957);
         font-family: Figtree;
@@ -472,7 +472,9 @@
         flex-direction: row;
         margin-left: 5%;
     }
-    
+    .nnew_user a{
+        color: var(--TCM-Brand-brand-blue02, #43AAF6);
+    }
     .login_right{
         display: flex;
         overflow: hidden;

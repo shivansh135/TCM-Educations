@@ -125,18 +125,21 @@ export function Past_papers() {
                                 course_price='Rs.50,000'
                                 detail='New batch starts 10th April 2024.'
                                 course_timing='Class Timing 8:30PM to 10:30PM'
+                                id='Cat'
                             />
                             <Card_three
                                 course_name='CAT'
                                 course_price='Rs.50,000'
                                 detail='New batch starts 10th April 2024.'
                                 course_timing='Class Timing 8:30PM to 10:30PM'
+                                id='Cat'
                             />
                             <Card_four
                                 course_name='CAT'
                                 course_price='Rs.50,000'
                                 detail='New batch starts 10th April 2024.'
                                 course_timing='Class Timing 8:30PM to 10:30PM'
+                                id='Cat'
                             />
                         </>
                         )}
@@ -148,18 +151,21 @@ export function Past_papers() {
                                 course_price='Rs.50,000'
                                 detail='New batch starts 10th April 2024.'
                                 course_timing='Class Timing 8:30PM to 10:30PM'
+                                id='ipmat'
                             />
                             <Card_three
                                 course_name='IPMAT'
                                 course_price='Rs.50,000'
                                 detail='New batch starts 10th April 2024.'
                                 course_timing='Class Timing 8:30PM to 10:30PM'
+                                id='ipmat'
                             />
                             <Card_four
                                 course_name='IPMAT'
                                 course_price='Rs.50,000'
                                 detail='New batch starts 10th April 2024.'
                                 course_timing='Class Timing 8:30PM to 10:30PM'
+                                id='ipmat'
                             />
 
                         </>
@@ -172,18 +178,21 @@ export function Past_papers() {
                                 course_price='Rs.50,000'
                                 detail='New batch starts 10th April 2024.'
                                 course_timing='Class Timing 8:30PM to 10:30PM'
+                                id='clat'
                             />
                             <Card_three
                                 course_name='CLAT'
                                 course_price='Rs.50,000'
                                 detail='New batch starts 10th April 2024.'
                                 course_timing='Class Timing 8:30PM to 10:30PM'
+                                id='clat'
                             />
                             <Card_four
                                 course_name='CLAT'
                                 course_price='Rs.50,000'
                                 detail='New batch starts 10th April 2024.'
                                 course_timing='Class Timing 8:30PM to 10:30PM'
+                                id='clat'
                             />
 
                         </>
@@ -196,18 +205,21 @@ export function Past_papers() {
                                 course_price='Rs.50,000'
                                 detail='New batch starts 10th April 2024.'
                                 course_timing='Class Timing 8:30PM to 10:30PM'
+                                id='cuet'
                             />
                             <Card_three
                                 course_name='CUET'
                                 course_price='Rs.50,000'
                                 detail='New batch starts 10th April 2024.'
                                 course_timing='Class Timing 8:30PM to 10:30PM'
+                                id='cuet'
                             />
                             <Card_four
                                 course_name='CUET'
                                 course_price='Rs.50,000'
                                 detail='New batch starts 10th April 2024.'
                                 course_timing='Class Timing 8:30PM to 10:30PM'
+                                id='cuet'
                             />
 
                         </>

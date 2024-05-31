@@ -44,7 +44,7 @@ export function Card_four(props) {
                                 </Link>
                                 </button>
                                 <div className='card4-more'>
-                                <Link to="/cat">
+                                <Link to={`cat/${props.id}`}>
                                     View More
                                 </Link>
                                 </div>

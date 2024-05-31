@@ -125,6 +125,12 @@
     text-align: center;
 }
 
+.live-class a{
+    text-decoration: none;
+    color: var(--TCM-Brand-brand-blue01, #14A4F5);
+
+}
+
 
 .buy-now{
     display: flex;
@@ -142,6 +148,11 @@
     line-height: 26px;
     text-align: center;
     border: none;
+}
+
+.buy-now a{
+    text-decoration: none;
+    color: var(--Neutral-Gray-50, #F8FAFC);
 }
 
 .buttons{
@@ -545,6 +556,11 @@
     background-color: transparent;
 }
 
+.comp-book a{
+    text-decoration: none;
+    color: var(--TCM-Neutral-grey01, #FFF);
+}
+
 .comparison-card-two{
     display: flex;
     width: 365px;
@@ -781,6 +797,11 @@
         text-align: center;
     }
     
+    .live-class a{
+        text-decoration: none;
+        color: var(--TCM-Brand-brand-blue01, #14A4F5);
+    
+    }
     
     .buy-now{
         display: flex;
@@ -798,6 +819,11 @@
         line-height: normal;
         text-align: center;
         border: none;
+    }
+
+    .buy-now a{
+        text-decoration: none;
+        color: var(--Neutral-Gray-50, #F8FAFC);
     }
     
     .buttons{
@@ -1239,6 +1265,10 @@
         background-color: transparent;
     }
     
+    .comp-book a{
+        text-decoration: none;
+        color: var(--TCM-Neutral-grey01, #FFF);
+    }
     .comparison-card-two{
         display: flex;
         width: 70%;

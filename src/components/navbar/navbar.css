@@ -1,97 +1,388 @@
+.navbar-default {
+    .navbar{
+        width: 100%;
+        display: flex;
+        padding: 16px 0px 45px 75px;
+        background: #FFF;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
 
-.navbar{
-    width: 94%;
-    display: flex;
-    padding: 16px 0px 45px 75px;
-    background: #FFF;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+    .navbar_content{
+        width: 100%;
+        justify-content: space-between;
+        display: flex;
+        align-items: center;
+        gap: 30vw;
+    }
+
+    .navbar_logo{
+        width: 121px;
+        height: 54.547px;
+    }
+
+    .navbar_head{
+        display: flex;
+        align-items: center;
+        gap: 33px;
+        position: relative;
+        right: 9%;
+    }
+
+    .navbar_council{
+        color: var(--TCM-Neutral-grey13, #000);
+        font-family: Figtree;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .navbar_pp{
+        color: var(--TCM-Neutral-grey13, #000);
+        font-family: Figtree;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .navbar_offCetre{
+        color: var(--TCM-Neutral-grey13, #000);
+        font-family: Figtree;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .navbar_mock{
+        color: var(--TCM-Neutral-grey13, #000);
+        font-family: Figtree;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .navbar_signup{
+        display: flex;
+        padding: 12px 18px;
+        border-radius: 38px;
+        background: var(--TCM-Brand-brand-blue01, #14A4F5);
+        justify-content: center;
+        align-items: center;
+        gap: 6px;
+
+        color: var(--Neutral-Gray-50, #F8FAFC);
+        font-family: Figtree;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-align: center;
+        border: none;
+    }
+
+    .navbar_council a,
+    .navbar_pp a,
+    .navbar_offCetre a,
+    .navbar_mock a {
+        text-decoration: none;
+        color: var(--TCM-Neutral-grey13, #000);
+        font-family: Figtree;
+    }
+
+    .navbar_signup a {
+        color: var(--Neutral-Gray-50, #F8FAFC);
+        text-decoration: none;
+    }
+    .mobile-navbar{
+        display: none;
+    }
 }
 
-.navbar_content{
-    display: flex;
-    align-items: center;
-    gap: 489px;
+.navbar-special {
+    .navbar{
+        width: 100%;
+        display: flex;
+        padding: 16px 0px 45px 75px;
+        background: var(--TCM-Brand-brand-blue01, #14A4F5);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .navbar_content{
+        width: 100%;
+        justify-content: space-between;
+        display: flex;
+        align-items: center;
+        gap: 30vw;
+    }
+
+    .navbar_logo{
+        width: 121px;
+        height: 54.547px;
+    }
+
+    .navbar_head{
+        display: flex;
+        align-items: center;
+        gap: 33px;
+        position: relative;
+        right: 9%;
+    }
+
+    .navbar_council{
+        color: var(--Neutral-Gray-50, #F8FAFC);
+        font-family: Figtree;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .navbar_pp{
+        color: var(--Neutral-Gray-50, #F8FAFC);
+        font-family: Figtree;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .navbar_offCetre{
+        color: var(--Neutral-Gray-50, #F8FAFC);
+        font-family: Figtree;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .navbar_mock{
+        color: var(--Neutral-Gray-50, #F8FAFC);
+        font-family: Figtree;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .navbar_signup{
+        display: flex;
+        padding: 12px 18px;
+        border-radius: 38px;
+        background: var(--Neutral-Gray-50, #F8FAFC);
+        justify-content: center;
+        align-items: center;
+        gap: 6px;
+
+        color: var(--TCM-Brand-brand-blue01, #14A4F5);
+        font-family: Figtree;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-align: center;
+        border: none;
+    }
+
+    .navbar_council a,
+    .navbar_pp a,
+    .navbar_offCetre a,
+    .navbar_mock a {
+        text-decoration: none;
+        color: var(--Neutral-Gray-50, #F8FAFC);
+        font-family: Figtree;
+    }
+
+    .navbar_signup a {
+        color: var(--TCM-Brand-brand-blue01, #14A4F5);
+        text-decoration: none;
+    }
+
+    .mobile-navbar{
+        display: none;
+    }
 }
 
-.navbar_logo{
-    width: 121px;
-    height: 54.547px;
+/* Path: Mobile view */
+
+@media (max-width: 768px) {
+    .navbar-default {
+
+    .desktop-navbar{
+        display: none;
+    }
+
+    .mobile-navbar {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10%;
+    }
+    .navbar {
+        width: 100%;
+        display: flex;
+        padding: 8px 0px 5px 5px;
+        background: #FFF;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .navbar_content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 35px;
+    }
+
+    .navbar_top{
+        display: flex;
+        flex-direction: row;
+    } 
+
+    .navbar_logo{
+        position: relative;
+        right: 25%;
+        bottom: 10%;
+
+    }
+  
+    .navbar_signup{
+        position: relative;
+        left:15%;
+
+    }
+    .navbar_head_container {
+        overflow-x: auto;
+        white-space: nowrap;
+        width: 100%;
+        scrollbar-width: 10px; /* For Firefox */
+    }
+    
+    .navbar_head_container::-webkit-scrollbar {
+        display: none; /* For Chrome, Safari and Opera */
+    }
+    
+    .navbar_head {
+        list-style: none;
+        display: flex;
+        overflow-x: scroll;
+        white-space: nowrap;
+        width: 90%;
+        gap: 2px;
+        scrollbar-width: none;
+    }
+    .selected {
+        border-bottom: 2px solid #000; /* Change color as needed */
+    }
+
+    .navbar_head a {
+        text-decoration: none;
+        color: #000;
+        font-family: Figtree;
+        font-size: 16px;
+
+    }
+    
+    .navbar_head::-webkit-scrollbar {
+        display: none; /* For Chrome, Safari and Opera */
+    }
+    
+    .navbar_head li {
+        margin: 0 10px;
+    }
 }
+.navbar-special {
 
-.navbar_head{
-    display: flex;
-    align-items: center;
-    gap: 33px;
+    .desktop-navbar{
+        display: none;
+    }
+
+    .mobile-navbar {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10%;
+    }
+    .navbar {
+        width: 100%;
+        display: flex;
+        padding: 8px 0px 5px 5px;
+        background: var(--TCM-Brand-brand-blue01, #14A4F5);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .navbar_content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 35px;
+    }
+
+    .navbar_top{
+        display: flex;
+        flex-direction: row;
+    } 
+
+    .navbar_logo{
+        position: relative;
+        right: 25%;
+        bottom: 10%;
+
+    }
+  
+    .navbar_signup{
+        position: relative;
+        left:15%;
+
+    }
+    .navbar_head_container {
+        overflow-x: auto;
+        white-space: nowrap;
+        width: 100%;
+        scrollbar-width: 10px; /* For Firefox */
+    }
+    
+    .navbar_head_container::-webkit-scrollbar {
+        display: none; /* For Chrome, Safari and Opera */
+    }
+    
+    .navbar_head {
+        list-style: none;
+        display: flex;
+        overflow-x: scroll;
+        white-space: nowrap;
+        width: 90%;
+        gap: 2px;
+        scrollbar-width: none;
+        color: #FFF;
+    }
+    .selected {
+        border-bottom: 2px solid #000; /* Change color as needed */
+    }
+
+    .navbar_head a {
+        text-decoration: none;
+        color: var(--Neutral-Gray-50, #F8FAFC);
+        font-family: Figtree;
+        font-size: 16px;
+
+    }
+    
+    .navbar_head::-webkit-scrollbar {
+        display: none; /* For Chrome, Safari and Opera */
+    }
+    
+    .navbar_head li {
+        margin: 0 10px;
+    }
 }
-
-.navbar_council{
-     color: var(--TCM-Neutral-grey13, #000);
-     font-family: Figtree;
-     font-size: 16px;
-     font-style: normal;
-     font-weight: 500;
-     line-height: normal;
-}
-
-.navbar_pp{
-    color: var(--TCM-Neutral-grey13, #000);
-    font-family: Figtree;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-}
-
-.navbar_offCetre{
-    color: var(--TCM-Neutral-grey13, #000);
-    font-family: Figtree;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-}
-
-.navbar_mock{
-    color: var(--TCM-Neutral-grey13, #000);
-    font-family: Figtree;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-}
-
-.navbar_signup{
-    display: flex;
-    padding: 12px 18px;
-    border-radius: 38px;
-    background: var(--TCM-Brand-brand-blue01, #14A4F5);
-    justify-content: center;
-    align-items: center;
-    gap: 6px;
-
-    color: var(--Neutral-Gray-50, #F8FAFC);
-    font-family: Figtree;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    text-align: center;
-    border: none;
-}
-
-.navbar_council a,
-.navbar_pp a,
-.navbar_offCetre a,
-.navbar_mock a {
-    text-decoration: none;
-    color: var(--TCM-Neutral-grey13, #000);
-    font-family: Figtree;
-}
-
-.navbar_signup a {
-    color: var(--Neutral-Gray-50, #F8FAFC);
-    text-decoration: none;
 }

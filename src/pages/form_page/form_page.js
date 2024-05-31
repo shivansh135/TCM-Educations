@@ -15,10 +15,10 @@ export function Form_page() {
                     <div className="Welcome_form">Counselling Call with Chief Mentor</div>
                     <div className="email_pass_text">
                         <form action="/"  method="post" >
-                            <div class="input-group" className="input">
-                                <div class="input-field" className="name">
+                            <div class="input-group" className="iinput">
+                                <div class="input-field" className="nname">
                                     <label for="name" className="name_text">Enter Name</label>
-                                    <input type="text" name="name" placeholder="name" className="name_input" />
+                                    <input type="text" name="name" placeholder="name" className="nname_input" />
                                 </div>
                                 <div class="input-field" className="Mobile">
                                     <label for="Mobile" className="Mobile_text">Mobile No</label>
@@ -26,7 +26,7 @@ export function Form_page() {
                                 </div>
                             </div>
 
-                            <div class="input-group" className="input">
+                            <div class="input-group" className="iinput">
                                 <div class="input-field" className="guardian">
                                     <label for="guardian" className="guardian_text">Guardian Contact No</label>
                                     <input type="text" name="guardian" placeholder="guardian" className="guardian_input" />

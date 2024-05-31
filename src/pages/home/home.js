@@ -1,5 +1,7 @@
 import React, { useState,useEffect }from 'react';
 import './home.css';
+import { Carousel } from 'react-responsive-carousel';
+import "react-responsive-carousel/lib/styles/carousel.min.css"; 
 import FAQQuestion from '../../components/FaQ/FAQQuestion';
 import {Button} from '../../components/button/button';
 import { Card } from '../../components/card/card';
@@ -41,7 +43,7 @@ export default function Home() {
                 </div>
             }
             <div className='home'>
-                <div className='head'>
+                <div className='headd'>
                     <div className='black-head'>
                     <span className='blue-head'>TCM Education </span>Trusted Gateway to Top Colleges
                     </div>
@@ -72,30 +74,75 @@ export default function Home() {
         <HeadingSubheading heading={` Meet the TCM Avengers`} sub={`We're India's leading coaching institute, empowering students to conquer CAT, IPMAT, CLAT & CUET with our expert faculty, personalized approach, and proven strategies. We'll equip you with the knowledge and confidence to ace your exams and gain admission to the top colleges in India.`}/>
 
 
-            <div className='card-1-container'>
-
+        <div className='card-1-container'>
+            <div className='mobile-view'>
+            <Carousel showThumbs={false} showStatus={false} showIndicators={false} infiniteLoop autoPlay>
+            <div className='carousel-slide'>
+            <Card src='./images/teacher1.png' title='Ajai Singh' faculty='Lead Mentor and Director' viewmore='View More' id='ajai_sir'/>
+            </div>
+            <div className='carousel-slide'>    
+            <Card src='./images/teacher2.png' title='Sunny Rajani' faculty='Lead Mentor and Director' viewmore='View More' id='sunny_sir'/>
+            </div>
+            <div className='carousel-slide'>
+            <Card src='./images/teacher3.png' title='Manoj Manoj' faculty='Lead Mentor and Director' viewmore='View More' id='manoj_sir'/>
+            </div>
+            <div className='carousel-slide'>
+            <Card src='./images/teacher4.png' title='Prashant Pareek' faculty='Lead Mentor and Director' viewmore='View More' id='prashant_sir'/>
+            </div>
+            <div className='carousel-slide'>
+            <Card src='./images/teacher5.png' title='Ashutosh Ashutosh' faculty='Lead Mentor and Director' viewmore='View More' id='ashutosh_sir'/>
+            </div>
+            </Carousel>
+            </div>
+            
+            <div className='desktopp-view'>
                 <Card src='./images/teacher1.png' title='Ajai Singh' faculty='Lead Mentor and Director' viewmore='View More' id='ajai_sir'/>
                 <Card src='./images/teacher2.png' title='Sunny Rajani' faculty='Lead Mentor and Director' viewmore='View More' id='sunny_sir'/>
-                <Card src='./images/teacher3.png' title='Manoj Manoj' faculty='Lead Mentor and Director' viewmore='View More' id='manoj_sir'/> 
-                <Card src='./images/teacher4.png' title='Prashant Pareek' faculty='Lead Mentor and Director' viewmore='View More' id='prashant_sir'/> 
-                <Card src='./images/teacher5.png' title='Ashutosh Ashutosh' faculty='Lead Mentor and Director' viewmore='View More' id='ashutosh_sir'/> 
-
+                <Card src='./images/teacher3.png' title='Manoj Manoj' faculty='Lead Mentor and Director' viewmore='View More' id='manoj_sir'/>
+                <Card src='./images/teacher4.png' title='Prashant Pareek' faculty='Lead Mentor and Director' viewmore='View More' id='prashant_sir'/>
+                <Card src='./images/teacher5.png' title='Ashutosh Ashutosh' faculty='Lead Mentor and Director' viewmore='View More' id='ashutosh_sir'/>
             </div>
+
+        </div>
 
             <div className='panchmukhi-img'>
                 <Link to='/panchmukhi'>
-                <img src="./images/Frame.png" style={{width:'100%',height:'auto'}} alt='frame'/>
+                <picture>
+                    <source media="(max-width: 768px)" srcSet="./images/Frame_two.png" />
+                    <source media="(min-width: 769px)" srcSet="./images/Frame.png" />
+                    <img src="./images/Frame.png" style={{width:'100%',height:'auto'}} alt='frame'/>
+                </picture>
                 </Link>
+
             </div>
 
             <HeadingSubheading heading={` From Aspirants to Achievers`} sub={`We're India's leading coaching institute, empowering students to conquer CAT, IPMAT, CLAT & CUET with our expert faculty, personalized approach, and proven strategies. We'll equip you with the knowledge and confidence to ace your exams and gain admission to the top colleges in India.`}/>
 
 
             <div className='card-2-container'>
-            <Card_two src='./images/student1.png' name='Ajai Singh' cor='CAT' ile='97.81%ile' review="TCM Special Clone Test Series and suggestions of Ajai Sir acted as a boon in my preparation. Looking back, I can't help but appreciate the support that TCM provided to me." id='student1' />
-            <Card_two src='./images/student1.png' name='Ajai Singh' cor='CAT' ile='97.81%ile' review="TCM Special Clone Test Series and suggestions of Ajai Sir acted as a boon in my preparation. Looking back, I can't help but appreciate the support that TCM provided to me." id='student2'/>
-            <Card_two src='./images/student1.png' name='Ajai Singh' cor='CAT' ile='97.81%ile' review="TCM Special Clone Test Series and suggestions of Ajai Sir acted as a boon in my preparation. Looking back, I can't help but appreciate the support that TCM provided to me." id='student3'/>
-            <Card_two src='./images/student1.png' name='Ajai Singh' cor='CAT' ile='97.81%ile' review="TCM Special Clone Test Series and suggestions of Ajai Sir acted as a boon in my preparation. Looking back, I can't help but appreciate the support that TCM provided to me." id='student4'/>
+            <div className='mobile-view'>
+            <Carousel showThumbs={false} showStatus={false} showIndicators={false} infiniteLoop autoPlay>
+                <div className='carousel-slide'>
+                <Card_two src='./images/student1.png' name='Ajai Singh' cor='CAT' ile='97.81%ile' review="TCM Special Clone Test Series and suggestions of Ajai Sir acted as a boon in my preparation. Looking back, I can't help but appreciate the support that TCM provided to me." id='student1'/>
+                </div>
+                <div className='carousel-slide'>
+                <Card_two src='./images/student1.png' name='Ajai Singh' cor='CAT' ile='97.81%ile' review="TCM Special Clone Test Series and suggestions of Ajai Sir acted as a boon in my preparation. Looking back, I can't help but appreciate the support that TCM provided to me." id='student2'/>
+                </div>
+                <div className='carousel-slide'>
+                <Card_two src='./images/student1.png' name='Ajai Singh' cor='CAT' ile='97.81%ile' review="TCM Special Clone Test Series and suggestions of Ajai Sir acted as a boon in my preparation. Looking back, I can't help but appreciate the support that TCM provided to me." id='student3'/>
+                </div>
+                <div className='carousel-slide'>
+                <Card_two src='./images/student1.png' name='Ajai Singh' cor='CAT' ile='97.81%ile' review="TCM Special Clone Test Series and suggestions of Ajai Sir acted as a boon in my preparation. Looking back, I can't help but appreciate the support that TCM provided to me." id='student4'/>
+                </div>
+                </Carousel>
+            </div>
+                
+            <div className='desktop-view'>
+                <Card_two src='./images/student1.png' name='Ajai Singh' cor='CAT' ile='97.81%ile' review="TCM Special Clone Test Series and suggestions of Ajai Sir acted as a boon in my preparation. Looking back, I can't help but appreciate the support that TCM provided to me." id='student1' />
+                <Card_two src='./images/student1.png' name='Ajai Singh' cor='CAT' ile='97.81%ile' review="TCM Special Clone Test Series and suggestions of Ajai Sir acted as a boon in my preparation. Looking back, I can't help but appreciate the support that TCM provided to me." id='student2'/>
+                <Card_two src='./images/student1.png' name='Ajai Singh' cor='CAT' ile='97.81%ile' review="TCM Special Clone Test Series and suggestions of Ajai Sir acted as a boon in my preparation. Looking back, I can't help but appreciate the support that TCM provided to me." id='student3'/>
+                <Card_two src='./images/student1.png' name='Ajai Singh' cor='CAT' ile='97.81%ile' review="TCM Special Clone Test Series and suggestions of Ajai Sir acted as a boon in my preparation. Looking back, I can't help but appreciate the support that TCM provided to me." id='student4'/>
+            </div>
             </div>
 
             <div className='course-select'>
@@ -119,18 +166,21 @@ export default function Home() {
                                 course_price='Rs.50,000'
                                 detail='New batch starts 10th April 2024.'
                                 course_timing='Class Timing 8:30PM to 10:30PM'
+                                id='Cat'
                             />
                             <Card_three
                                 course_name='CAT'
                                 course_price='Rs.50,000'
                                 detail='New batch starts 10th April 2024.'
                                 course_timing='Class Timing 8:30PM to 10:30PM'
+                                id='Cat'
                             />
                             <Card_four
                                 course_name='CAT'
                                 course_price='Rs.50,000'
                                 detail='New batch starts 10th April 2024.'
                                 course_timing='Class Timing 8:30PM to 10:30PM'
+                                id='Cat'
                             />
                         </>
                         )}
@@ -142,18 +192,22 @@ export default function Home() {
                                 course_price='Rs.50,000'
                                 detail='New batch starts 10th April 2024.'
                                 course_timing='Class Timing 8:30PM to 10:30PM'
+                                id='ipmat'
                             />
                             <Card_three
                                 course_name='IPMAT'
                                 course_price='Rs.50,000'
                                 detail='New batch starts 10th April 2024.'
                                 course_timing='Class Timing 8:30PM to 10:30PM'
+                                id='ipmat'
+
                             />
                             <Card_four
                                 course_name='IPMAT'
                                 course_price='Rs.50,000'
                                 detail='New batch starts 10th April 2024.'
                                 course_timing='Class Timing 8:30PM to 10:30PM'
+                                id='ipmat'
                             />
 
                         </>
@@ -166,18 +220,21 @@ export default function Home() {
                                 course_price='Rs.50,000'
                                 detail='New batch starts 10th April 2024.'
                                 course_timing='Class Timing 8:30PM to 10:30PM'
+                                id='clat'
                             />
                             <Card_three
                                 course_name='CLAT'
                                 course_price='Rs.50,000'
                                 detail='New batch starts 10th April 2024.'
                                 course_timing='Class Timing 8:30PM to 10:30PM'
+                                id='clat'
                             />
                             <Card_four
                                 course_name='CLAT'
                                 course_price='Rs.50,000'
                                 detail='New batch starts 10th April 2024.'
                                 course_timing='Class Timing 8:30PM to 10:30PM'
+                                id='clat'
                             />
 
                         </>
@@ -190,18 +247,21 @@ export default function Home() {
                                 course_price='Rs.50,000'
                                 detail='New batch starts 10th April 2024.'
                                 course_timing='Class Timing 8:30PM to 10:30PM'
+                                id='cuet'
                             />
                             <Card_three
                                 course_name='CUET'
                                 course_price='Rs.50,000'
                                 detail='New batch starts 10th April 2024.'
                                 course_timing='Class Timing 8:30PM to 10:30PM'
+                                id='cuet'
                             />
                             <Card_four
                                 course_name='CUET'
                                 course_price='Rs.50,000'
                                 detail='New batch starts 10th April 2024.'
                                 course_timing='Class Timing 8:30PM to 10:30PM'
+                                id='cuet'
                             />
 
                         </>

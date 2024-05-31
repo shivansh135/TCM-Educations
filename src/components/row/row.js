@@ -19,7 +19,7 @@ export function Row({subject, Total_Questions, Time, Marks}) {
                 </div>
             </div>   
             </div>
-        </div>
+        </div> 
         </div>
 
     )
