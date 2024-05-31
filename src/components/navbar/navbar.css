@@ -348,7 +348,7 @@
         overflow-x: auto;
         white-space: nowrap;
         width: 100%;
-        scrollbar-width: 10px; /* For Firefox */
+        scrollbar-width: 10px;/* For Firefox */
     }
     
     .navbar_head_container::-webkit-scrollbar {
@@ -366,7 +366,7 @@
         color: #FFF;
     }
     .selected {
-        border-bottom: 2px solid #000; /* Change color as needed */
+        border-bottom: 2px solid #FFF; /* Change color as needed */
     }
 
     .navbar_head a {
