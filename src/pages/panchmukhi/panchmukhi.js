@@ -31,7 +31,7 @@ export default function Panchmukhi() {
                 <div className='roadmap-head'>
                 <div className='roadmap-heading'>
                     <div className='BLACK'>
-                        <span className='BLUE'>TCM’s</span>
+                        <span className='BLUEE'>TCM’s</span>
                         &nbsp; Scientific Process of Preparation 
                     </div>
                 </div>

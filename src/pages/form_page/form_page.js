@@ -13,7 +13,7 @@ export function Form_page() {
             <div>   
                 <div className="email_pass">
                     <div className="Welcome_form">Counselling Call with Chief Mentor</div>
-                    <div className="email_pass_text">
+                    <div className="email_pass_textt">
                         <form action="/"  method="post" >
                             <div class="input-group" className="iinput">
                                 <div class="input-field" className="nname">

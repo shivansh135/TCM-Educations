@@ -92,7 +92,7 @@
     color: var(--TCM-Neutral-grey13, #000);
 }
 
-.BLUE{
+.BLUEE{
     color: var(--TCM-Brand-brand-blue01, #14A4F5);
     gap: 20px;
     
@@ -695,8 +695,8 @@
         top: -200px;
         z-index: 2; 
         position: absolute;
-        top: 330px;
-        left: 47%; 
+        top: 499px;
+        left:51%; 
         transform: translate(-50%, -50%); 
         margin: 10px;
     }
@@ -723,6 +723,8 @@
         opacity: auto; 
         z-index: 1;
         clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        bottom: 10%;
+
     }
     
     .panckmukhi_heading{
@@ -756,7 +758,7 @@
         flex-direction: column;
         align-items: flex-start;
         gap: 12px;
-        width: 100%;
+        width: 46%;
         margin-top:20%;
     }
     
@@ -776,7 +778,7 @@
         width: 120%;
     }
     
-    .BLUE{
+    .BLUEE{
         color: var(--TCM-Brand-brand-blue01, #14A4F5);
         display: flex;
         width: 120%;
@@ -849,9 +851,11 @@
         color: var(--TCM-Brand-brand-blue01, #14A4F5);
     }
     
-    .slide-img{
-        width: 39%;
-        height: 190px;
+     
+    .slidee-img{
+        margin-top: 5%;
+        width: 50%;
+        height: 327px;
         
     }
 
@@ -867,8 +871,8 @@
         height: auto;
         display: flex;
         align-items: center;
-        gap: 15px;
-        margin-left: 2%;
+        gap: 0px;
+       margin-left: 0%;
         margin-top: 7%;
     }
     

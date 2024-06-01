@@ -133,16 +133,16 @@ export default function Teacher() {
             <div className='card-2-container'>
             <div className='mobile-view'>
             <Carousel showThumbs={false} showStatus={false} showIndicators={false} infiniteLoop autoPlay>
-                <div className='carousel-slide'>
+                <div className='carousel-slidee'>
                 <Card_two src='/images/student1.png' name='Ajai Singh' cor='CAT' ile='97.81%ile' review="TCM Special Clone Test Series and suggestions of Ajai Sir acted as a boon in my preparation. Looking back, I can't help but appreciate the support that TCM provided to me." id='student1'/>
                 </div>
-                <div className='carousel-slide'>
+                <div className='carousel-slidee'>
                 <Card_two src='/images/student1.png' name='Ajai Singh' cor='CAT' ile='97.81%ile' review="TCM Special Clone Test Series and suggestions of Ajai Sir acted as a boon in my preparation. Looking back, I can't help but appreciate the support that TCM provided to me." id='student2'/>
                 </div>
-                <div className='carousel-slide'>
+                <div className='carousel-slidee'>
                 <Card_two src='/images/student1.png' name='Ajai Singh' cor='CAT' ile='97.81%ile' review="TCM Special Clone Test Series and suggestions of Ajai Sir acted as a boon in my preparation. Looking back, I can't help but appreciate the support that TCM provided to me." id='student3'/>
                 </div>
-                <div className='carousel-slide'>
+                <div className='carousel-slidee'>
                 <Card_two src='/images/student1.png' name='Ajai Singh' cor='CAT' ile='97.81%ile' review="TCM Special Clone Test Series and suggestions of Ajai Sir acted as a boon in my preparation. Looking back, I can't help but appreciate the support that TCM provided to me." id='student4'/>
                 </div>
                 </Carousel>

@@ -1023,10 +1023,10 @@
     }
 
     .card{
-        margin-top: 4%;
+        margin-top: 54%;
         width: 148.8px;
         position: relative;
-        left: 7%;
+        left: 137%;
     }
     
     .carousel .control-prev.control-arrow {
@@ -1046,8 +1046,9 @@
     }
     
     .carousel-slide{
-        width: 100%;
+        width: 20vw !important;
     }
+
     .card--faculty{
         color: var(--TCM-Neutral-grey07, #8C8C8C);
         font-family: Figtree;
@@ -1084,7 +1085,7 @@
      
     .card_two{
         display: flex;
-        padding: 16px 20px;
+        padding: 16px 22px 20px 20px;
         border-radius: 10px;
         border: 2px solid rgba(20, 164, 245, 0.16);
         background: var(--TCM-Brand-brand-blue12, #F1F7FE);
@@ -1094,6 +1095,8 @@
         gap: 10px;
         width: 250px;
         height: 200px;
+        position: relative;
+        left: 1%;
         
     }
 

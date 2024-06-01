@@ -16,7 +16,7 @@
     
 }
 
-.email_pass_text{
+.email_pass_textt{
     display: flex;
     width: 708px;
     align-items: flex-start;
@@ -284,17 +284,19 @@
         font-weight: 500;
         line-height: normal;
         text-align: center;
+        position: relative;
+        right: 2%;
         
     }
     
-    .email_pass_text{
+    .email_pass_textt{
         display: flex;
         width: 90%;
         height: auto;
-        align-items: flex-start;
-        align-content: flex-start;
         gap: 30px;
         flex-wrap: wrap;
+        position: relative;
+        left: 4%;
     }
     
     .nname{
@@ -538,6 +540,6 @@
         line-height: normal;
         text-align: center;
         position: relative;
-        right: 4%;
+        right: 2%;
     }
 }

@@ -564,9 +564,10 @@
     .carousel * {
         box-sizing: content-box !important;
     }
-    .carousel-slide{
+    .carousel-slideee{
         display: flex !important;
         flex-direction: row !important;
+        width: 20vw !important;
     }
 
     .carousel .control-prev.control-arrow {
@@ -577,7 +578,7 @@
 
     .card_two{
         display: flex;
-        padding: 16px 20px;
+        padding: 25px 22px 20px 20px;
         border-radius: 10px;
         border: 2px solid rgba(20, 164, 245, 0.16);
         background: var(--TCM-Brand-brand-blue12, #F1F7FE);
@@ -587,6 +588,8 @@
         gap: 10px;
         width: 250px;
         height: 200px;
+        position: relative;
+        left: 1%;
         
     }
 
