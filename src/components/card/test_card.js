@@ -12,8 +12,8 @@ export  function Test( ) {
                                 Analysis & Solutions available <br/>after Submission
                             </div>
                             <div className="test-card-button">
-                                <button className="start_test">Start Test {'>'}</button>
-                                <button className="view_more">View Details {'>'}</button>
+                                <button className="start_test">Start Test <img src="./images/Icon.svg" className='bellll' alt='bell'/></button>
+                                <button className="view_more">View Details <img src="./images/Icon_1.svg" className='bellll' alt='bell'/></button>
                             </div>
                         </div>
                     </div>

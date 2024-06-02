@@ -21,7 +21,7 @@ export function Test_series() {
                         Hello Everyone!! I am Ajai Singh, Founder and CEO of Toil Chamber of Mathematics Pvt. Ltd. (TCM Education), a leading national brand, based in Prayagraj, for CAT, CLAT, IPMAT & OMET exams.
                     </div>
                     <button className="book">
-                        Book Live Trial Class {'>'}
+                        Book Live Trial Class <img src="./images/Icon.svg" className='bellll' alt='bell'/>
                     </button>
                 </div>
                 <img src="./images/Test_Series_Page.png" alt="hero" className="pages" />

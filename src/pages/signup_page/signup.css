@@ -384,7 +384,7 @@
         height: auto;
         display: flex;
         overflow: hidden;
-        padding: 6px 16px;
+        padding: 8px 16px;
         border-radius: 100px;
         border: 1px solid var(--TCM-Brand-brand-blue05, #86C1F9);
         background: var(--TCM-Brand-brand-blue11, #E3EFFE);
@@ -412,7 +412,7 @@
     .Password_text{
         color: var(--Primary-text, #0C1421);
         font-family: Figtree;
-        font-size: 10px;
+        font-size: 12px;
         font-style: normal;
         font-weight: 500;
         line-height: normal;
@@ -420,7 +420,7 @@
     
     
     .Password_input{
-        width: 100%;
+        width: 82%;
         height: auto;
         display: flex;
         overflow: hidden;
@@ -452,7 +452,7 @@
     .Name_text{
         color: var(--Primary-text, #0C1421);
         font-family: Figtree;
-        font-size: 10px;
+        font-size: 12px;
         font-style: normal;
         font-weight: 500;
         line-height: normal;
@@ -460,7 +460,7 @@
     
     
     .Name_input{
-        width: 100%;
+        width: 82%;
         height: auto;
         display: flex;
         overflow: hidden;
@@ -492,7 +492,7 @@
     .Contact_text{
         color: var(--Primary-text, #0C1421);
         font-family: Figtree;
-        font-size: 10px;
+        font-size: 12px;
         font-style: normal;
         font-weight: 500;
         line-height: normal;
@@ -500,7 +500,7 @@
     
     
     .Contact_input{
-        width: 100%;
+        width: 82%;
         height: auto;
         display: flex;
         overflow: hidden;
@@ -647,6 +647,7 @@
         height: 100%;
         position: relative;
         left: 6%;
+         
     }
     
     .sign_up{

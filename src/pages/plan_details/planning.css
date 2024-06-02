@@ -17,11 +17,11 @@
     line-height: 72px;
     text-align: center;
 }
-.BLUE{
+.BLUEs{
     color: var(--TCM-Brand-brand-blue01, #14A4F5);
 }
 
-.BLACK{
+.BLACKs{
     color: var(--TCM-Neutral-grey13, #000);
 }
 
@@ -155,7 +155,7 @@
     color: var(--Neutral-Gray-50, #F8FAFC);
 }
 
-.buttons{
+.buttonns{
     display: flex;
     flex-direction: row;
     gap: 15px;
@@ -184,7 +184,7 @@
 }
 
 .roadmaps-heading{
-    width: 471px;
+    width: 528px;
     font-family: Figtree;
     font-size: 60px;
     font-style: normal;
@@ -215,14 +215,14 @@
     font-weight: 400;
     line-height: 24px;
 }
-.buttons{
+.buttonss{
     display: flex;
     flex-direction: row;
     gap: 15px;
 
 }
 
-.counsel{
+.counsels{
     display: flex;
     padding: 10px 20px;
     border-radius: 38px;
@@ -238,6 +238,11 @@
     line-height: 26px;
     text-align: center;
     border: none;
+}
+
+.counsels a{
+    text-decoration: none;
+    color: var(--Neutral-Gray-50, #F8FAFC);
 }
 
 .trial{
@@ -614,6 +619,7 @@
         border-radius: 16px;
         border: 1px solid var(--TCM-Neutral-grey05, #D9D9D9);
         background: var(--TCM-Neutral-grey02, #FAFAFA);
+        width: 55vw;
 }
 
 .question-wrapper {
@@ -653,7 +659,7 @@
 
 .answer{
     margin-top: 3%;
-    width: 782px;
+    width: 55vw;
     color: var(--TCM-Neutral-grey08, #595959);
     font-family: Figtree;
     font-size: 18px;
@@ -673,6 +679,8 @@
         align-items: center;
         justify-content: center;
         gap: 16px;
+        position: relative;
+        left: -2%;
     }
     
     .heading_three{
@@ -684,13 +692,13 @@
         line-height: normal;
         text-align: center;
     }
-    .BLUE{
+    .BLUEs{
         color: var(--TCM-Brand-brand-blue01, #14A4F5);
-        font-size: 30px;
+        font-size: 23px;
 
     }
     
-    .BLACK{
+    .BLACKs{
         color: var(--TCM-Neutral-grey13, #000);
         font-size: 20px;
     }
@@ -758,7 +766,7 @@
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        gap: 12px;
+        gap: 1px;
     }
     
     .points{
@@ -826,15 +834,15 @@
         color: var(--Neutral-Gray-50, #F8FAFC);
     }
     
-    .buttons{
+    .buttonss{
         display: flex;
         flex-direction: row;
         gap: 10px;
-        margin-left: 5%;
+        margin-left: 2%;
     
     }
     
-    .roadmap{
+    .roadmaps{
         margin-left: 1px;
         overflow: hidden;
         width: 100%;
@@ -846,16 +854,18 @@
         
     }
     
-    .roadmap-head{
+    .roadmaps-head{
         display: inline-flex;
         flex-direction: column;
         align-items: flex-start;
         gap: 12px;
         width: 100%;
-        margin-top:20%;
+        margin-top:2%;
+        position: relative;
+        left: 2%;
     }
     
-    .roadmap-heading{
+    .roadmaps-heading{
         width: 100%;
         font-family: Figtree;
         font-size: 20px;
@@ -878,7 +888,7 @@
         font-size: 25px;
     }
     
-    .roadmap-heading-detail{
+    .roadmaps-heading-detail{
         width: 100%;
         color: var(--TCM-Neutral-grey08, #595959);
         font-family: Figtree;
@@ -887,17 +897,20 @@
         font-weight: 400;
         line-height: normal;
     }
-    .buttons{
+    .buttonns{
         width: 90%;
-        height: 90px;
+        height: 74px;
         display: flex;
         flex-direction: row;
         gap: 6px;
         align-items: flex-start;
+        position: relative;
+        left: 4%;
+        
     
     }
     
-    .counsel{
+    .counsels{
         width: 100%;
         display: flex;
         padding: 1px 16px;
@@ -914,7 +927,10 @@
         line-height: normal;
         text-align: center;
     }
-    
+    .counsels a{
+        text-decoration: none;
+        color: var(--Neutral-Gray-50, #F8FAFC);
+    }
     .trial{
         width: 100%;
         display: flex;
@@ -940,11 +956,12 @@
         
     }
 
-    .slide-imgg{
+    .slides-imgg{
         position: relative;
         bottom: 25%;
         width: 100%;
-        height: auto;
+        height: 299px;
+        left: -8%;
     }
     
     .discount{

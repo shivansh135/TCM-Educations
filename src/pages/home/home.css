@@ -213,10 +213,11 @@
     }
     .desktop-view {
         display: flex;
-        flex-wrap: wrap;
-        justify-content:space-around; 
-        position: relative;
-        right: 2%;/* if you want some space between the cards */
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        gap: 34px;
+        flex-wrap: wrap;/* if you want some space between the cards */
     }
 }
 .card{
@@ -823,6 +824,7 @@
         border-radius: 16px;
         border: 1px solid var(--TCM-Neutral-grey05, #D9D9D9);
         background: var(--TCM-Neutral-grey02, #FAFAFA);
+        width: 55vw;
 }
 
 .question-wrapper {
@@ -862,13 +864,14 @@
 
 .answer{
     margin-top: 3%;
-    width: 782px;
+    
     color: var(--TCM-Neutral-grey08, #595959);
     font-family: Figtree;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: 26px;
+    width: 55vw;
 }
 
 /*phone view */

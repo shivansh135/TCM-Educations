@@ -21,7 +21,7 @@ export function Comparison_card_one() {
                                         <li className='comp-bullet'> Revision classes + GDPI Preparation </li>
                                     </ul>
                                 </div>
-                                <button className='comp-book'><Link to="/checkout">Book Now {'>'}</Link></button>
+                                <button className='comp-book'><Link to="/checkout">Book Now  <img src="/images/Icon.svg" className='belll' alt='bell'/></Link></button>
                             </div>
                         </div>
                     </div>

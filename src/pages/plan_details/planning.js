@@ -11,7 +11,7 @@ export default function Planning() {
         <div>
             <div className='head_three'>
                 <div className='heading_three'>
-                    <div className='blue'>CAT 2024</div><div className='BLACK'>HOLISTIC MBA ENTRANCE BATCH</div>
+                    <div className='blue'>CAT 2024</div><div className='BLACKs'>HOLISTIC MBA ENTRANCE BATCH</div>
                 </div>
                 <div className='subheading'>
                     Borem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia .
@@ -21,7 +21,7 @@ export default function Planning() {
                 <div className='group-photo'>
                     <img src = './images/group_img.png' className='imgg' alt='group_photo' />
                     <div className='group-photo-subheadng'>
-                        <div className='black'>Record Breaking Results by </div> <div className='blue'> TCM in CAT 2023</div>
+                        <div className='black'>Record Breaking Results by  TCM in <span className='blue'>CAT 2023</span></div>
                     </div>
                 </div>
                 <div className='important-points'>
@@ -36,7 +36,7 @@ export default function Planning() {
                             <li className='bullet'> Revision classes + GDPI Preparation </li>
                         </ul>
                     </div>
-                    <div className='buttons'>
+                    <div className='buttonns'>
                         <button className='live-class'><Link to="/signup">Book Live Trial Class</Link></button>
                         <button className='buy-now'><Link to="/checkout">Buy Now</Link></button>
                     </div>
@@ -46,23 +46,19 @@ export default function Planning() {
             <div className='roadmaps'>
                 <div className='roadmaps-head'>
                     <div className='roadmaps-heading'>
-                        <div className='BLACK'>The Plan for</div>
-                        <div className='BLUE'>
-                            <div className='BLACK'>Acing</div> 
-                            CAT 2024 
-                        </div>
-                    </div>
+                        <div className='BLACK'>The Plan for Acting</div>
+                        <span className='BLUEs'>CAT 2024 </span></div>
                     <div className='roadmaps-heading-detail'>
                         Borem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class apten
                     </div>
-                    <div className='buttons'>
-                        <button className='counsel'><Link to="/form-page">Counceling Call {'>'}</Link></button>
-                        <button className='trial'><Link to="/signup">Book Trial Class {'>'}</Link></button>
+                    <div className='buttonss'>
+                        <button className='counsels'><Link to="/form-page">Counceling Call <img src="/images/Icon.svg" className='belll' alt='bell'/></Link></button>
+                        <button className='trial'><Link to="/signup">Book Trial Class <img src="/images/Icon_1.svg" className='belll' alt='bell'/></Link></button>
                     </div>
                 </div>
                 <div className='slide-img'>
                     <Link to="/checkout">
-                    <img src = './images/Slide.png' className='slide-imgg' style={{width:'100%'}} alt='group_photo' />
+                    <img src = './images/Slide.png' className='slides-imgg' style={{width:'100%'}} alt='group_photo' />
                     </Link>
                 </div>
             </div>

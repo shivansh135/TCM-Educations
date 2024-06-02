@@ -16,7 +16,7 @@ export default function More_page() {
                         Sorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliq odio mattis. Class aptent taciti sociosqu ad litora.
                     </div>
                     <button className="attempt">
-                        Attempt Today {'>'}
+                        Attempt Today <img src="./images/Icon_1.svg" className='belll' alt='bell'/>
                     </button>
                 </div>
                 <img src="./images/Test_Series_Page.png" alt="hero" className="banner_one" />
@@ -35,10 +35,10 @@ export default function More_page() {
 
                     <div className="question_paper_btn">
                         <button className="paper_btn1">
-                            Choose the year {'>'}
+                            Choose the year <img src="./images/Icon_1.svg" className='belll' alt='bell'/>
                         </button>
                         <button className="paper_btn2">
-                            Choose the slot {'>'}
+                            Choose the slot <img src="./images/Icon_1.svg" className='belll' alt='bell'/>
                         </button>
                     </div>
                 </div>

@@ -239,6 +239,7 @@
         border-radius: 16px;
         border: 1px solid var(--TCM-Neutral-grey05, #D9D9D9);
         background: var(--TCM-Neutral-grey02, #FAFAFA);
+        width: 55vw;
 }
 
 .question-wrapper {
@@ -246,7 +247,10 @@
     justify-content: space-between;
     align-items: center;
 }
-
+.bellll{
+    position: relative;
+    top: 3%;
+}
 
 .question{
     flex-grow: 1;
@@ -278,7 +282,7 @@
 
 .answer{
     margin-top: 3%;
-    width: 782px;
+    width: 55vw;
     color: var(--TCM-Neutral-grey08, #595959);
     font-family: Figtree;
     font-size: 18px;
@@ -429,7 +433,10 @@
         gap: 20px;
         flex-wrap: wrap;
     }
-    
+    .bellll{
+        position: relative;
+        top: 3%;
+    }
     .test-card{
         display: flex;
         overflow: hidden;
