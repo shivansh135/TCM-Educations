@@ -31,10 +31,10 @@ class Navbar extends React.Component {
                 <div className='navbar_content'>
                     <div className='navbar_logo'>
                         <Link to='/'>
-                         <img src={logoSrc} alt='logo' style={{width:'100%', height:'auto'}} />
+                         <img src={logoSrc} alt='logo' />
                         </Link>
                     </div>
-                    <div className='navbar_head'>
+                    <div className='navbar_head' >
                         <div className='navbar_council'><Link to='/form-page'>Career counselling</Link></div>
                         <div className='navbar_pp'><Link to='/past-papers'>Past Papers</Link></div>
                         <div className='navbar_offCetre'><Link to='/offline-centre'>Offline Centres</Link></div>
