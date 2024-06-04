@@ -53,12 +53,12 @@ export default function Planning() {
                     </div>
                     <div className='buttonss'>
                         <button className='counsels'><Link to="/form-page">Counceling Call <img src="/images/Icon.svg" className='belll' alt='bell'/></Link></button>
-                        <button className='trial'><Link to="/signup">Book Trial Class <img src="/images/Icon_1.svg" className='belll' alt='bell'/></Link></button>
+                        <button className='triall'><Link to="/signup">Book Trial Class <img src="/images/Icon_1.svg" className='belll' alt='bell'/></Link></button>
                     </div>
                 </div>
                 <div className='slide-img'>
                     <Link to="/checkout">
-                    <img src = './images/Slide.png' className='slides-imgg' style={{width:'100%'}} alt='group_photo' />
+                    <img src = './images/Slide.svg' className='slides-imgg' style={{width:'100%'}} alt='group_photo' />
                     </Link>
                 </div>
             </div>

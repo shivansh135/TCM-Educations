@@ -128,7 +128,9 @@
         width: 121px;
         height: 54.547px;
     }
-
+    .navbar_logo img{
+        height: 65px;
+    } 
     .navbar_head{
         display: flex;
         align-items: center;

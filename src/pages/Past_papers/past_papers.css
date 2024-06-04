@@ -901,7 +901,7 @@
     }
 
     .card3-extra{
-        margin-left: 5%;
+        margin-left: 1%;
         display: flex;
         padding: 9px 31px 9px 18px;
         border-radius: 400px;
@@ -909,6 +909,7 @@
         justify-content: center;
         align-items: center;
         gap: 10px;
+        width: 247px;
 
         color: var(--TCM-Neutral-grey01, #FFF);
         font-family: Figtree;

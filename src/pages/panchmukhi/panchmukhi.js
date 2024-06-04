@@ -43,7 +43,7 @@ export default function Panchmukhi() {
                         <button className='trial'><Link to="/checkout">Book Trial Class<img src="./images/Icon_1.svg" className='bellll' alt='bell'/></Link></button>
                     </div>
                 </div>
-                    <img src = './images/Slide2.png' className='slidee-img' alt='group_photo' />
+                    <img src = './images/Slide2.svg' className='slidee-img' alt='group_photo' />
             </div>
 
             <Step_odd 

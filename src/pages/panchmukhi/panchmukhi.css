@@ -696,7 +696,7 @@
         top: -200px;
         z-index: 2; 
         position: absolute;
-        top: 499px;
+        top: 442px;
         left:51%; 
         transform: translate(-50%, -50%); 
         margin: 10px;
@@ -716,7 +716,7 @@
         position: relative;
         background-color: #14A4F5;
         width: 100%;
-        height: 400px;
+        height: 349px;
         flex-shrink: 0;
         display: flex;
         justify-content: center; 
@@ -724,7 +724,7 @@
         opacity: auto; 
         z-index: 1;
         clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-        bottom: 10%;
+        bottom: 40px;
 
     }
     
@@ -745,7 +745,7 @@
         margin-top: 25%;
         margin-left: 15px;
         overflow: hidden;
-        width: 100%;
+        width: 96%;
         height: auto;
         background: #FFF;
         display: flex;
@@ -766,7 +766,8 @@
     .roadmap-heading{
         width: 100%;
         font-family: Figtree;
-        font-size: 20px;
+        display: flex;
+        flex-direction: row;
         font-style: normal;
         font-weight: 700;
         line-height: normal;
@@ -777,15 +778,17 @@
         color: var(--TCM-Neutral-grey13, #000);
         font-size: 18px;
         width: 120%;
+        height: 40%;
     }
     
     .BLUEE{
         color: var(--TCM-Brand-brand-blue01, #14A4F5);
         display: flex;
-        width: 120%;
+        width: 40%;
         font-size: 20px;
-        flex-direction: column;
+        flex-direction: row;
         gap: 3px;
+        
     }
     
     .roadmap-heading-detail{
@@ -868,12 +871,12 @@
     }
 
     .Step_one{
-        width: 100%;
+        width: 96%;
         height: auto;
         display: flex;
         align-items: center;
         gap: 0px;
-       margin-left: 0%;
+       margin-left: 2%;
         margin-top: 7%;
     }
     
@@ -936,7 +939,7 @@
     
     .Step_img{
         display: flex;
-        width: 100%;
+        width: 96%;
         height: auto;
         overflow: hidden;
         padding: 3.833px 5.502px 3.971px 1.543px;
@@ -1161,7 +1164,7 @@
         justify-content: center;
         align-items: center;
         gap: 10px;
-
+        width: 247px;
         color: var(--TCM-Neutral-grey01, #FFF);
         font-family: Figtree;
         font-size: 14px;

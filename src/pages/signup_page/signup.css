@@ -73,7 +73,7 @@
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
-    line-height: normal;
+    line-height: 24px;
     margin-bottom: 5%;
 }
 
@@ -359,6 +359,8 @@
         font-weight: 500;
         line-height: normal;
         text-align: center;
+        position: relative;
+        bottom: 6px;
     }
     
     .Email{
@@ -368,6 +370,8 @@
         flex-direction: column;
         align-items: flex-start;
         gap: 8px;
+        position: relative;
+        right: 26px;
     }
     
     .Email_text{
@@ -380,11 +384,11 @@
     }
     
     .Email_input{
-        width: 100%;
+        width: 98%;
         height: auto;
         display: flex;
         overflow: hidden;
-        padding: 8px 16px;
+        padding: 6px 16px;
         border-radius: 100px;
         border: 1px solid var(--TCM-Brand-brand-blue05, #86C1F9);
         background: var(--TCM-Brand-brand-blue11, #E3EFFE);
@@ -407,6 +411,8 @@
         flex-direction: column;
         align-items: flex-start;
         gap: 8px;
+        position: relative;
+        right: 26px;
     }
     
     .Password_text{
@@ -420,7 +426,7 @@
     
     
     .Password_input{
-        width: 82%;
+        width: 98%;
         height: auto;
         display: flex;
         overflow: hidden;
@@ -447,6 +453,8 @@
         flex-direction: column;
         align-items: flex-start;
         gap: 8px;
+        position: relative;
+        right: 26px;
     }
     
     .Name_text{
@@ -460,7 +468,7 @@
     
     
     .Name_input{
-        width: 82%;
+        width: 98%;
         height: auto;
         display: flex;
         overflow: hidden;
@@ -487,6 +495,8 @@
         flex-direction: column;
         align-items: flex-start;
         gap: 8px;
+        position: relative;
+        right: 26px;
     }
     
     .Contact_text{
@@ -500,7 +510,7 @@
     
     
     .Contact_input{
-        width: 82%;
+        width: 98%;
         height: auto;
         display: flex;
         overflow: hidden;
@@ -530,13 +540,13 @@
         text-align: center;
         text-decoration-line: underline;
         position: relative;
-        left: 11%;
-        bottom: 15%;
+        left: 7%;
+        bottom: 8px;
     }
     
     .Login_button{
         display: flex;
-        width: 72%;
+        width: 61%;
         height: auto;
         padding: 2px 13px;
         border-radius: 38px;
@@ -548,7 +558,7 @@
         font-family: Figtree;
         font-size: 11px;
         position: relative;
-        left: 11%;
+        left: -1%;
     }
     
     .Or{
@@ -561,7 +571,7 @@
         text-align: center;
         flex-direction: row;
         position: relative;
-        left: 11%;
+        left: -7%;
     }
     
     .Or_line{
@@ -588,7 +598,7 @@
         font-weight: 400;
         line-height: normal;
         position: relative;
-        left: 11%;
+        left: -4%;
     }
     
     .google_img{
@@ -613,7 +623,7 @@
         font-weight: 400;
         line-height: normal;
         position: relative;
-        left: 11%;
+        left: -4%;
     }
     
     .facebook_img{
@@ -643,10 +653,11 @@
         background: var(--TCM-Brand-brand-blue12, #F1F7FE);
         align-items: flex-start;
         gap: 6px;
-        width: 35%;
+        width: 30%;
         height: 100%;
         position: relative;
-        left: 6%;
+        left: -3%;
+        bottom: 67px;
          
     }
     

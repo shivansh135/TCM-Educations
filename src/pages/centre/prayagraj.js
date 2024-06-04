@@ -18,12 +18,12 @@ export default function Prayagraj() {
     const City={
         prayagraj:{
             city:'Prayagraj',
-            img:'prayagraj.png',
+            img:'prayagraj.svg',
             img_two:'centre_img_one.png',
         },
         varanasi:{
             city:'Varanasi',
-            img:'prayagraj.png',
+            img:'prayagraj.svg',
             img_two:'centre_img_one.png',
         }
     }

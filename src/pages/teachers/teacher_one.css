@@ -680,7 +680,7 @@
     }
 
     .special{
-        width: 100%;
+        width: 96%;
         height: auto;
         display: flex;
         flex-direction: row;
@@ -806,7 +806,7 @@
         font-size: var(--font-m);
         font-style: normal;
         font-weight: 400;
-        line-height: 24px;
+        line-height: 17px;
         text-align: center;
     }
 
@@ -847,7 +847,7 @@
     .carousel-slidee{
         display: flex !important;
         flex-direction: row !important;
-        width: 20vw !important;
+        width: 15vw !important;
     }
     
 

@@ -68,7 +68,7 @@ export default function Home() {
             </div>
 
             <div className='home_two_img'>
-                <img src="/Group2.png" alt='hero'/>
+                <img src="/Group2.svg" alt='hero'/>
             </div>
 
         <HeadingSubheading heading={` Meet the TCM Avengers`} sub={`We're India's leading coaching institute, empowering students to conquer CAT, IPMAT, CLAT & CUET with our expert faculty, personalized approach, and proven strategies. We'll equip you with the knowledge and confidence to ace your exams and gain admission to the top colleges in India.`}/>
