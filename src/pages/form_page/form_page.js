@@ -14,7 +14,7 @@ export function Form_page() {
                 <div className="email_pass">
                     <div className="Welcome_form">Counselling Call with Chief Mentor</div>
                     <div className="email_pass_textt">
-                        <form action="/"  method="post" >
+                        <form action="/" style={{width: "100%",display: "flex", flexDirection: "column", alignItems: "center"}} method="post" >
                             <div class="input-group" className="iinput">
                                 <div class="input-field" className="nname">
                                     <label for="name" className="name_text">Enter Name</label>
@@ -45,12 +45,12 @@ export function Form_page() {
                                 <label for="message" className="message_text">Enter Message</label>
                                 <textarea name="message" placeholder="Enter message" className="message_input"></textarea>
                             </div>
-
-                        </form>
-                    </div>
-                    <div className="login_button" onClick={handleSubmit}>
+                            <div className="login_button" onClick={handleSubmit}>
                         Submit
                     </div>
+                        </form>
+                    </div>
+                    
                     {showConfirmation && <Confirmation closeConfirmation={() => setShowConfirmation(false)} />}                    
                 </div>
             </div>

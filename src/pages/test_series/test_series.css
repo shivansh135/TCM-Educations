@@ -57,6 +57,7 @@
     flex-direction: column;
     align-items: center;
     margin-top: 10%;
+    width: 100%;
 }
 
 .course-head{
@@ -83,6 +84,7 @@
     display: flex;
     align-items: flex-start;
     gap: 44px;
+    flex-wrap: nowrap;
 }
 
 .option{
@@ -104,11 +106,12 @@
 
 .test-contents{
     display: flex;
-    width: 1400px;
-    align-items: flex-start;
-    align-content: flex-start;
+    width: 100%;
+    align-items: center;
+    align-content: center;
     gap: 62px;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .test-card{
@@ -380,7 +383,6 @@
         width: 100%;
         text-align: center;
         position: relative;
-        right: 4%;
     }
 
     .course-head-title{
@@ -429,7 +431,6 @@
         width: 100%;
         height: auto;
         position: relative;
-        left: 5%;
         gap: 20px;
         flex-wrap: wrap;
     }
@@ -483,7 +484,7 @@
     
     .start_test{
         display: flex;
-        padding: 13px 23px;
+        padding: 13px 13px;
         border-radius: 38px;
         background: var(--TCM-Brand-brand-blue01, #14A4F5);
         justify-content: center;
@@ -497,7 +498,7 @@
         line-height: normal;
         text-align: center;
         border:none;
-        width: 150px;
+        height: fit-content;
     }
     
     .view_more{
@@ -514,9 +515,11 @@
         font-weight: 400;
         line-height: normal;
         text-align: center;
+        text-wrap: nowrap;
         text-decoration-line: underline;
         border: none;
         width: 150px;
+        height: fit-content;
         background-color: transparent;
         
     }

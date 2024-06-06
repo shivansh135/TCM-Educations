@@ -2,7 +2,7 @@ import React from "react";
 
 export function Centre_card({image, title, description}) {
     return (
-        <div>
+        
             <div className='center_card_one'>
                 <div className='center_card_content'>
                     <div className='center_card_image'>
@@ -18,6 +18,5 @@ export function Centre_card({image, title, description}) {
                     </div>
                 </div>
             </div>
-        </div>
     )
 }

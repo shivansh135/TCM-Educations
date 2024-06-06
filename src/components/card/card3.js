@@ -48,7 +48,7 @@ export function Card_three(props) {
                                 </Link>
                                 </div>
                             </div>    
-                            <div className='card3-extra'>
+                            <div className='card3-extra' style={{left:'0'}}>
                                 <img src={Icon_two} className='bell' alt='bell'/>
                                 {props.detail}<br/> {props.course_timing}
                             </div>

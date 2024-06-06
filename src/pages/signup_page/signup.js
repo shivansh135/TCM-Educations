@@ -8,7 +8,7 @@ export function Signup() {
                     <div className="signup_left">
                         <div className="email_pass_signup">
                             <div className="Welcome_to">Join TCM Family Today</div>
-                            <form action="/"  method="post" >
+                            <form action="/"  method="post" style={{width: "80%"}}>
                                 <div class="input-group" className="input_to">
                                     <div class="input-field" className="Name">
                                         <label for="Name" className="Name_text">Name</label>

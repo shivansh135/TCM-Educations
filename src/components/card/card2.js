@@ -13,7 +13,7 @@ export function Card_two(props) {
             </div>
             <div className="bottom-layer">
                 <div className="stud-detail">{props.review}</div>
-                <div className="stud-more"><Link to ={`testimonial/${props.id}`}>Learn More</Link></div>
+                <div className="stud-more"><Link to ={`/testimonial/${props.id}`}>Learn More</Link></div>
             </div>
         </div>
     )

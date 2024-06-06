@@ -23,7 +23,6 @@
 .Email_Pass{
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 32px;
 }
 
@@ -229,7 +228,6 @@
     align-items: flex-start;
     gap: 10px;
     width: 35%;
-    height: 100%;
     margin-right: 10%;
 }
 
@@ -259,7 +257,7 @@
         flex-direction: column;
         align-items: flex-start;
         gap: 10px;
-        width: 60%;
+        width: 100%;
         position: relative;
         left: 4%;
     }
@@ -271,8 +269,9 @@
     .Email_Pass{
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: start;
         gap: 10px;
+        width: 100%;
     }
     
     .Welcome{
@@ -380,9 +379,9 @@
 
     .login_button_one{
         display: flex;
-        width: 55%;
+        width: 80%;
         height: auto;
-        padding: 2px 13px;
+        padding: 7px 13px;
         border-radius: 38px;
         background: var(--TCM-Brand-brand-blue01, #14A4F5);
         justify-content: center;
@@ -390,6 +389,7 @@
         gap: 4px;
         color: var(--TCM-Neutral-grey01, #FFF);
         font-family: Figtree;
+        margin-left: 0px;
         font-size: 11px;
     
     }
@@ -476,7 +476,7 @@
         color: var(--TCM-Brand-brand-blue02, #43AAF6);
     }
     .login_right{
-        display: flex;
+        display: none;
         overflow: hidden;
         padding: 30px 40px;
         border-radius: 24px;

@@ -1,5 +1,5 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import './app.css';
 import Home from './pages/home/home';
 import Prayagraj from './pages/centre/prayagraj';
@@ -20,10 +20,21 @@ import PopupHome from './pages/home/popup_home';
 import {Confirmation} from './pages/form_page/confirmation';
 import MorePage from './pages/past_papers_more_page/more_page';
 import Navbar from './components/navbar/navbar';
+const ScrollToTop = () => {
+  // Extracts pathname property(key) from an object
+  const { pathname } = useLocation();
+
+  // Automatically scrolls to top whenever pathname changes
+  useEffect(() => {
+    document.getElementById('root').scrollTo(0, 0);
+  }, [pathname]);
+}
 
 function App() {
   return (                                                 
   <Router>
+      <ScrollToTop/>
+
     <Routes>
       <Route path="/" element={ <><Navbar currentPage="home"/><Home /></>} />
       <Route path="/offline-centre/:city/:id" element={ <><Navbar currentPage="home" currentImg="home"/><Prayagraj /></>} />

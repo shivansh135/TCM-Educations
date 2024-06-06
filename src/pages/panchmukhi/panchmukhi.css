@@ -14,7 +14,7 @@
     z-index: 2; /* Add this */
     position: absolute;
     /* existing styles */
-    top: 797px; /* adjust as needed */
+    top: 657px; /* adjust as needed */
     left: 50%; /* adjust as needed */
     transform: translate(-50%, -50%); /* centers the element */
     margin: 20px;
@@ -34,14 +34,24 @@
     position: relative;
     background-color: #14A4F5;
     width: 100%;
-    height: 850px;
+    height: 790px;
     flex-shrink: 0;
     display: flex; /* Add this */
     justify-content: center; /* Add this */
     align-items: center; /* Add this */ /* Add this */
     opacity: auto; 
     z-index: 1; /* Add this */
-    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    clip-path: none;
+}
+
+.rectangle_one::after{
+    content:'';
+    height: 850px;
+    position: absolute;
+    width: 140%;
+    rotate: -2deg;
+    background-color: #14A4F5;
+    z-index: -20;
 }
 
 .panckmukhi_heading{
@@ -696,7 +706,8 @@
         top: -200px;
         z-index: 2; 
         position: absolute;
-        top: 442px;
+        top: 300px;
+        z-index: 10;
         left:51%; 
         transform: translate(-50%, -50%); 
         margin: 10px;
@@ -716,16 +727,26 @@
         position: relative;
         background-color: #14A4F5;
         width: 100%;
-        height: 349px;
+        height: 309px;
         flex-shrink: 0;
         display: flex;
         justify-content: center; 
         align-items: center; 
         opacity: auto; 
         z-index: 1;
-        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        clip-path: none;
         bottom: 40px;
 
+    }
+    
+    .rectangle_one::after{
+        content:'';
+        height: 360px;
+        position: absolute;
+        width: 140%;
+        rotate: -5deg;
+        background-color: #14A4F5;
+        z-index: -20;
     }
     
     .panckmukhi_heading{
@@ -746,11 +767,12 @@
         margin-left: 15px;
         overflow: hidden;
         width: 96%;
-        height: auto;
+        height: 450px;
         background: #FFF;
         display: flex;
         flex-direction: row;
         align-items: center;
+        position: relative;
         
     }
     
@@ -800,11 +822,11 @@
         font-weight: 400;
         line-height: normal;
     }
-    .buttons{
-        width: 200px;
+    .roadmap-head .buttons{
+        width: 100% !important;
         height: 90px;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         gap: 6px;
         align-items: flex-start;
     
@@ -857,9 +879,11 @@
     
      
     .slidee-img{
-        margin-top: 5%;
-        width: 50%;
+        margin-top: 80px;
+        width: 92%;
         height: 327px;
+        position: absolute;
+        right: 10px;
         
     }
 

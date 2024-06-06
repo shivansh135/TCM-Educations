@@ -127,12 +127,12 @@
 
 @media (max-width: 768px) {
     .popup-container {
-        position: relative;
-        top: 31px;
+        position: fixed;
         left: 0;
         width: 100%;
-        height: 644px;
+        height: 100%;
         display: flex;
+        z-index: 9000;
         justify-content: center;
         align-items: center;
         background-color: rgba(0, 0, 0, 0.5);

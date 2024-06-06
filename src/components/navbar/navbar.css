@@ -2,12 +2,15 @@
     .navbar{
         width: 100%;
         display: flex;
-        padding: 16px 0px 45px 5vw;
+        padding: 16px 0px 16px 5vh;
         background: #FFF;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 10px;
+        border-bottom: 1px solid #E5E5E5;
+        margin-bottom: 30px;
+
     }
 
     .navbar_content{
@@ -225,7 +228,8 @@
     .mobile-navbar {
         display: flex;
         flex-direction: column;
-        margin-bottom: 10%;
+        position: sticky;
+        top: 0px;
     }
     .navbar {
         width: 100%;
@@ -247,24 +251,21 @@
     .navbar_top{
         display: flex;
         flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
     } 
 
     .navbar_logo{
         position: relative;
-        right: 25%;
+        right: 0%;
         bottom: 9%;
         width: 95px;
         height: 54.547px;
 
     }
-    .navbar_logo img {
-        position: relative;
-        top: 14%;
-        left: -27%;
-    }
     .navbar_signup{
         position: relative;
-        left:29%;
+        left:0%;
         padding: 4px 12px;
         font-size: 13px;
         line-height: 10%;
@@ -319,7 +320,6 @@
     .mobile-navbar {
         display: flex;
         flex-direction: column;
-        margin-bottom: 10%;
     }
     .navbar {
         width: 100%;
@@ -341,11 +341,12 @@
     .navbar_top{
         display: flex;
         flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
     } 
 
     .navbar_logo{
         position: relative;
-        right: 25%;
         bottom: 9%;
         width: 95px;
         height: 54.547px;
@@ -353,12 +354,9 @@
     }
     .navbar_logo img {
         position: relative;
-        top: 14%;
-        left: -27%;
     }
     .navbar_signup{
         position: relative;
-        left:29%;
         padding: 4px 12px;
         font-size: 13px;
         line-height: 10%;

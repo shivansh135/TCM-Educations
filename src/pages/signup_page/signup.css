@@ -25,7 +25,7 @@
 .email_pass_signup{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     gap: 35px;
     position: relative;
 }
@@ -196,7 +196,6 @@
     text-align: center;
     text-decoration-line: underline;
     position: relative;
-    right: 18%;
     top: 30%;
 }
 
@@ -330,11 +329,11 @@
     .signup_left{
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         gap: 10px;
-        width: 60%;
+        width: 100%;
         position: relative;
-        left: 4%;
+        left: 0%;
         }
     
     .input_to{
@@ -347,7 +346,8 @@
         align-items: center;
         gap: 10px;
         position: relative;
-        right: 6%;
+        right: 3%;
+        width: 100%;
     }
     
     .Welcome_to{
@@ -371,7 +371,7 @@
         align-items: flex-start;
         gap: 8px;
         position: relative;
-        right: 26px;
+        ;
     }
     
     .Email_text{
@@ -412,7 +412,7 @@
         align-items: flex-start;
         gap: 8px;
         position: relative;
-        right: 26px;
+        ;
     }
     
     .Password_text{
@@ -454,7 +454,7 @@
         align-items: flex-start;
         gap: 8px;
         position: relative;
-        right: 26px;
+        ;
     }
     
     .Name_text{
@@ -496,7 +496,7 @@
         align-items: flex-start;
         gap: 8px;
         position: relative;
-        right: 26px;
+        ;
     }
     
     .Contact_text{
@@ -540,7 +540,6 @@
         text-align: center;
         text-decoration-line: underline;
         position: relative;
-        left: 7%;
         bottom: 8px;
     }
     
@@ -548,7 +547,7 @@
         display: flex;
         width: 61%;
         height: auto;
-        padding: 2px 13px;
+        padding: 7px 13px;
         border-radius: 38px;
         background: var(--TCM-Brand-brand-blue01, #14A4F5);
         justify-content: center;
@@ -571,7 +570,7 @@
         text-align: center;
         flex-direction: row;
         position: relative;
-        left: -7%;
+        left: 0%;
     }
     
     .Or_line{
@@ -598,7 +597,7 @@
         font-weight: 400;
         line-height: normal;
         position: relative;
-        left: -4%;
+        margin: auto;
     }
     
     .google_img{
@@ -623,7 +622,7 @@
         font-weight: 400;
         line-height: normal;
         position: relative;
-        left: -4%;
+        margin: auto;
     }
     
     .facebook_img{
@@ -646,7 +645,7 @@
     }
     
     .Login_right{
-        display: flex;
+        display: none;
         overflow: hidden;
         padding: 30px 40px;
         border-radius: 24px;

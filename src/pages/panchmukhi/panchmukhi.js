@@ -15,32 +15,33 @@ export default function Panchmukhi() {
         setSelectedOption(option);
     };
     return (
-        <div>
+        <>
             <div className="rectangle_one">
                 <div className="panckmukhi_heading">
                 TCM’ Exclusive Panchukhi Approach for Aspirants
                 </div>
-            </div>
-            <div className='CAT_video'>
+                <div className='CAT_video'>
                 <div className='CAT_video_button'>
                     <img src='./images/play_arrow.png'  alt='play' />
                 </div>
             </div>
+            </div>
+            
 
             <div className='roadmap'>
                 <div className='roadmap-head'>
                 <div className='roadmap-heading'>
                     <div className='BLACK'>
                         <span className='BLUEE'>TCM’s</span>
-                        &nbsp; Scientific Process of Preparation 
+                        Scientific Process of Preparation 
                     </div>
                 </div>
                     <div className='roadmap-heading-detail'>
                         Borem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class apten
                     </div>
                     <div className='buttons'>
-                    <button className='counsel'><Link to="/form-page">Counceling Call <img src="./images/Icon.svg" className='belll' alt='bell'/></Link></button>
-                        <button className='trial'><Link to="/checkout">Book Trial Class<img src="./images/Icon_1.svg" className='bellll' alt='bell'/></Link></button>
+                    <button className='counsel'><Link to="/form-page">Counceling Call</Link></button>
+                        <button className='trial'><Link to="/checkout">Book Trial Class</Link></button>
                     </div>
                 </div>
                     <img src = './images/Slide2.svg' className='slidee-img' alt='group_photo' />
@@ -235,7 +236,7 @@ export default function Panchmukhi() {
             
 
             
-        </div>
+        </>
 
     );
 }

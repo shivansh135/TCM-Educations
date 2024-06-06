@@ -1,7 +1,7 @@
 import React, { useState,useEffect }from 'react';
 import './home.css';
 import { Carousel } from 'react-responsive-carousel';
-import "react-responsive-carousel/lib/styles/carousel.min.css"; 
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import FAQQuestion from '../../components/FaQ/FAQQuestion';
 import {Button} from '../../components/button/button';
 import { Card } from '../../components/card/card';
@@ -11,8 +11,47 @@ import { Card_three } from '../../components/card/card3';
 import { HeadingSubheading } from '../../components/headings/headings';
 import Popup_home from './popup_home';
 import { Link } from 'react-router-dom';
+import Marquee from "react-fast-marquee";
+
+export const StudentsFeedback = () => {
+return(
+    <>
+    <div style={{minWidth:'100%',margin:'0px',marginTop:'40px'}} className='card-2-container'>
+            
+    <Marquee >
+                <Card_two src='/images/student1.png' name='Ajai Singh' cor='CAT' ile='97.81%ile' review="TCM Special Clone Test Series and suggestions of Ajai Sir acted as a boon in my preparation. Looking back, I can't help but appreciate the support that TCM provided to me." id='student1' />
+                <Card_two src='/images/student1.png' name='Ajai Singh' cor='CAT' ile='97.81%ile' review="TCM Special Clone Test Series and suggestions of Ajai Sir acted as a boon in my preparation. Looking back, I can't help but appreciate the support that TCM provided to me." id='student2'/>
+                <Card_two src='/images/student1.png' name='Ajai Singh' cor='CAT' ile='97.81%ile' review="TCM Special Clone Test Series and suggestions of Ajai Sir acted as a boon in my preparation. Looking back, I can't help but appreciate the support that TCM provided to me." id='student3'/>
+                <Card_two src='/images/student1.png' name='Ajai Singh' cor='CAT' ile='97.81%ile' review="TCM Special Clone Test Series and suggestions of Ajai Sir acted as a boon in my preparation. Looking back, I can't help but appreciate the support that TCM provided to me." id='student4'/>
+                <Card_two src='/images/student1.png' name='Ajai Singh' cor='CAT' ile='97.81%ile' review="TCM Special Clone Test Series and suggestions of Ajai Sir acted as a boon in my preparation. Looking back, I can't help but appreciate the support that TCM provided to me." id='student5'/>
+                <Card_two src='/images/student1.png' name='Ajai Singh' cor='CAT' ile='97.81%ile' review="TCM Special Clone Test Series and suggestions of Ajai Sir acted as a boon in my preparation. Looking back, I can't help but appreciate the support that TCM provided to me." id='student6'/>
+            </Marquee>
+
+            <Marquee direction='right'>
+                <Card_two src='/images/student1.png' name='Ajai Singh' cor='CAT' ile='97.81%ile' review="TCM Special Clone Test Series and suggestions of Ajai Sir acted as a boon in my preparation. Looking back, I can't help but appreciate the support that TCM provided to me." id='student1' />
+                <Card_two src='/images/student1.png' name='Ajai Singh' cor='CAT' ile='97.81%ile' review="TCM Special Clone Test Series and suggestions of Ajai Sir acted as a boon in my preparation. Looking back, I can't help but appreciate the support that TCM provided to me." id='student2'/>
+                <Card_two src='/images/student1.png' name='Ajai Singh' cor='CAT' ile='97.81%ile' review="TCM Special Clone Test Series and suggestions of Ajai Sir acted as a boon in my preparation. Looking back, I can't help but appreciate the support that TCM provided to me." id='student3'/>
+                <Card_two src='/images/student1.png' name='Ajai Singh' cor='CAT' ile='97.81%ile' review="TCM Special Clone Test Series and suggestions of Ajai Sir acted as a boon in my preparation. Looking back, I can't help but appreciate the support that TCM provided to me." id='student4'/>
+                <Card_two src='/images/student1.png' name='Ajai Singh' cor='CAT' ile='97.81%ile' review="TCM Special Clone Test Series and suggestions of Ajai Sir acted as a boon in my preparation. Looking back, I can't help but appreciate the support that TCM provided to me." id='student5'/>
+                <Card_two src='/images/student1.png' name='Ajai Singh' cor='CAT' ile='97.81%ile' review="TCM Special Clone Test Series and suggestions of Ajai Sir acted as a boon in my preparation. Looking back, I can't help but appreciate the support that TCM provided to me." id='student6'/>
+            </Marquee>
+            </div>
+    </>
+)
+}
+
 export default function Home() {
     const [showPopup, setShowPopup] = useState(false);
+    const [currentIndex, setCurrentIndex] = useState(0);
+    const images = ["/Group.png", "/Group.png",'/Group.png','/Group.png','/Group.png'];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 3000); // Change image every 3 seconds
+
+    return () => clearInterval(interval);
+  }, [images.length]);
     // const [imgSrc, setImgSrc] = useState("/Group.png");
     // const images = ["/Group.png",/* "/Group2.png", "./images/prayagraj.png"]; */];
     // let index = 0;
@@ -37,7 +76,7 @@ export default function Home() {
     };
     return (
         <div>
-            {showPopup && 
+            {showPopup &&
                 <div className='popup-container' onClick={() => setShowPopup(false)}>
                     <Popup_home closePopup={() => setShowPopup(false)} />
                 </div>
@@ -49,17 +88,25 @@ export default function Home() {
                     </div>
                     <div className='para-one'>
                         We're India's leading coaching institute, empowering students to
-                         conquer CAT, IPMAT, CLAT & CUET with our expert faculty, personalized approach, and proven strategies. We'll equip you with 
+                         conquer CAT, IPMAT, CLAT & CUET with our expert faculty, personalized approach, and proven strategies. We'll equip you with
                          the knowledge and confidence to ace your exams and gain
                          admission to the top colleges in India.
                     </div>
                     <Button onClick={handleButtonClick}/>
                 </div>
-                <div className='head-img'>
-                    <img src="/Group.png" style={{width:'100%', height:'auto'}} alt='hero'/>
-                </div>
+                <div className='home_two_img'>
+                    {images.map((src, index) => (
+                        <img
+                        key={index}
+                        src={src}
+                        style={{width:'90%'}}
+                        alt={`hero-${index}`}
+                        className={index === currentIndex ? 'fade-in' : 'fade-out'}
+                        />
+                    ))}
+                    </div>
             </div>
-        
+
         <HeadingSubheading heading={`Why TCM is India’s Fastest Growing Institute?`} sub={`We're India's leading coaching institute, empowering students to conquer CAT, IPMAT, CLAT & CUET with our expert faculty, personalized approach, and proven strategies. We'll equip you with the knowledge and confidence to ace your exams and gain admission to the top colleges in India.`}/>
 
             <div className='but2'>
@@ -68,19 +115,21 @@ export default function Home() {
             </div>
 
             <div className='home_two_img'>
-                <img src="/Group2.svg" alt='hero'/>
+                <img src="/Group2-mobile.svg" alt='hero' class="desktop-img"/>
+                <img src="/Group2.svg" alt='hero' class="mobile-img"/>
             </div>
+
 
         <HeadingSubheading heading={` Meet the TCM Avengers`} sub={`We're India's leading coaching institute, empowering students to conquer CAT, IPMAT, CLAT & CUET with our expert faculty, personalized approach, and proven strategies. We'll equip you with the knowledge and confidence to ace your exams and gain admission to the top colleges in India.`}/>
 
 
         <div className='card-1-container'>
-            <div className='mobile-view'>
+            {/* <div className='mobile-view'>
             <Carousel showThumbs={false} showStatus={false} showIndicators={false} infiniteLoop autoPlay>
             <div className='carousel-slide'>
             <Card src='./images/teacher1.png' title='Ajai Singh' faculty='Lead Mentor and Director' viewmore='View More' id='ajai_sir'/>
             </div>
-            <div className='carousel-slide'>    
+            <div className='carousel-slide'>
             <Card src='./images/teacher2.png' title='Sunny Rajani' faculty='Lead Mentor and Director' viewmore='View More' id='sunny_sir'/>
             </div>
             <div className='carousel-slide'>
@@ -93,15 +142,22 @@ export default function Home() {
             <Card src='./images/teacher5.png' title='Ashutosh Ashutosh' faculty='Lead Mentor and Director' viewmore='View More' id='ashutosh_sir'/>
             </div>
             </Carousel>
-            </div>
-            
-            <div className='desktopp-view'>
+            </div> */}
+
+            <Marquee style={{marginTop:'0px'}} speed={43}>
                 <Card src='./images/teacher1.png' title='Ajai Singh' faculty='Lead Mentor and Director' viewmore='View More' id='ajai_sir'/>
                 <Card src='./images/teacher2.png' title='Sunny Rajani' faculty='Lead Mentor and Director' viewmore='View More' id='sunny_sir'/>
                 <Card src='./images/teacher3.png' title='Manoj Manoj' faculty='Lead Mentor and Director' viewmore='View More' id='manoj_sir'/>
                 <Card src='./images/teacher4.png' title='Prashant Pareek' faculty='Lead Mentor and Director' viewmore='View More' id='prashant_sir'/>
                 <Card src='./images/teacher5.png' title='Ashutosh Ashutosh' faculty='Lead Mentor and Director' viewmore='View More' id='ashutosh_sir'/>
-            </div>
+
+                <Card src='./images/teacher1.png' title='Ajai Singh' faculty='Lead Mentor and Director' viewmore='View More' id='ajai_sir'/>
+                <Card src='./images/teacher2.png' title='Sunny Rajani' faculty='Lead Mentor and Director' viewmore='View More' id='sunny_sir'/>
+                <Card src='./images/teacher3.png' title='Manoj Manoj' faculty='Lead Mentor and Director' viewmore='View More' id='manoj_sir'/>
+                <Card src='./images/teacher4.png' title='Prashant Pareek' faculty='Lead Mentor and Director' viewmore='View More' id='prashant_sir'/>
+                <Card src='./images/teacher5.png' title='Ashutosh Ashutosh' faculty='Lead Mentor and Director' viewmore='View More' id='ashutosh_sir'/>
+
+            </Marquee>
 
         </div>
 
@@ -119,8 +175,7 @@ export default function Home() {
             <HeadingSubheading heading={` From Aspirants to Achievers`} sub={`We're India's leading coaching institute, empowering students to conquer CAT, IPMAT, CLAT & CUET with our expert faculty, personalized approach, and proven strategies. We'll equip you with the knowledge and confidence to ace your exams and gain admission to the top colleges in India.`}/>
 
 
-            <div className='card-2-container'>
-            <div className='mobile-view'>
+            {/* <div className='mobile-view'>
             <Carousel showThumbs={false} showStatus={false} showIndicators={false} infiniteLoop autoPlay>
                 <div className='carousel-slide'>
                 <Card_two src='./images/student1.png' name='Ajai Singh' cor='CAT' ile='97.81%ile' review="TCM Special Clone Test Series and suggestions of Ajai Sir acted as a boon in my preparation. Looking back, I can't help but appreciate the support that TCM provided to me." id='student1'/>
@@ -135,18 +190,9 @@ export default function Home() {
                 <Card_two src='./images/student1.png' name='Ajai Singh' cor='CAT' ile='97.81%ile' review="TCM Special Clone Test Series and suggestions of Ajai Sir acted as a boon in my preparation. Looking back, I can't help but appreciate the support that TCM provided to me." id='student4'/>
                 </div>
                 </Carousel>
-            </div>
-                
-            <div className='desktop-view'>
-                <Card_two src='./images/student1.png' name='Ajai Singh' cor='CAT' ile='97.81%ile' review="TCM Special Clone Test Series and suggestions of Ajai Sir acted as a boon in my preparation. Looking back, I can't help but appreciate the support that TCM provided to me." id='student1' />
-                <Card_two src='./images/student1.png' name='Ajai Singh' cor='CAT' ile='97.81%ile' review="TCM Special Clone Test Series and suggestions of Ajai Sir acted as a boon in my preparation. Looking back, I can't help but appreciate the support that TCM provided to me." id='student2'/>
-                <Card_two src='./images/student1.png' name='Ajai Singh' cor='CAT' ile='97.81%ile' review="TCM Special Clone Test Series and suggestions of Ajai Sir acted as a boon in my preparation. Looking back, I can't help but appreciate the support that TCM provided to me." id='student3'/>
-                <Card_two src='./images/student1.png' name='Ajai Singh' cor='CAT' ile='97.81%ile' review="TCM Special Clone Test Series and suggestions of Ajai Sir acted as a boon in my preparation. Looking back, I can't help but appreciate the support that TCM provided to me." id='student4'/>
-                <Card_two src='./images/student1.png' name='Ajai Singh' cor='CAT' ile='97.81%ile' review="TCM Special Clone Test Series and suggestions of Ajai Sir acted as a boon in my preparation. Looking back, I can't help but appreciate the support that TCM provided to me." id='student5'/>
-                <Card_two src='./images/student1.png' name='Ajai Singh' cor='CAT' ile='97.81%ile' review="TCM Special Clone Test Series and suggestions of Ajai Sir acted as a boon in my preparation. Looking back, I can't help but appreciate the support that TCM provided to me." id='student6'/>
-
-            </div>
-            </div>
+            </div> */}
+            <StudentsFeedback/>
+           
 
             <div className='course-select'>
                 <div className='course-select-area'>

@@ -7,7 +7,6 @@
 
 .headd{
     margin-left: 70px;
-    margin-top: 7%;
 }
 
 .blue-head{
@@ -96,7 +95,7 @@
     font-size: var(--font-m);
     font-style: normal;
     font-weight: 400;
-    line-height: 24px;
+    line-height: normal;
     text-align: center;
 }
 .but2{
@@ -147,7 +146,7 @@
     margin: auto;
     margin-top: 5%;
     display: flex;
-    width: 80%;
+    width: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -161,7 +160,7 @@
     font-size: 48px;
     font-style: normal;
     font-weight: 700;
-    line-height: 56px;
+    line-height: normal;
     text-align: center;
     margin-left: 6%;
 }
@@ -221,9 +220,9 @@
     }
 }
 .card{
-    margin-top: 8%;
-    margin-left: 3%;
+    margin-left: 24px;
     width: 248.8px;
+    margin-top: 60px;
 }
 
 .card--title{
@@ -277,7 +276,7 @@
     font-size: 48px;
     font-style: normal;
     font-weight: 700;
-    line-height: 56px;
+    line-height: normal;
     text-align: center;
     margin-left: 1%;
 }
@@ -291,7 +290,7 @@
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 24px;
+    line-height: normal;
     text-align: center;
 }
 
@@ -315,6 +314,7 @@
     align-items: flex-start;
     gap: 1px;
     width:330px;
+    margin: 0px 25px;
 }
 
 .top-layer{
@@ -343,7 +343,7 @@
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
-    line-height: 28px;
+    line-height: normal;
     margin-left: 3px;
     white-space: nowrap;
 }
@@ -354,7 +354,7 @@
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
-    line-height: 24px;
+    line-height: normal;
 }
 
 .stud-ile{
@@ -370,7 +370,7 @@
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
-    line-height: 24px;
+    line-height: normal;
 }
 
 .stud-detail{
@@ -381,7 +381,7 @@
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 24px;
+    line-height: normal;
 }
 
 .stud-more{
@@ -391,7 +391,7 @@
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 24px;
+    line-height: normal;
     text-decoration-line: underline;
 }
 
@@ -435,7 +435,7 @@
     font-size: 48px;
     font-style: normal;
     font-weight: 700;
-    line-height: 56px;
+    line-height: normal;
     text-align: center;
 }
 
@@ -458,7 +458,7 @@
     font-size: 24px;
     font-style: normal;
     font-weight: 500;
-    line-height: 32px;
+    line-height: normal;
     text-align: center;
     cursor: pointer;
 }
@@ -502,7 +502,7 @@
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
-    line-height: 32px;
+    line-height: normal;
 }
 
 .card3-title2{
@@ -511,7 +511,7 @@
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
-    line-height: 24px;
+    line-height: normal;
 }
 
 .card3-detail{
@@ -528,7 +528,7 @@
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
-    line-height: 20px;
+    line-height: normal;
 }
 
 
@@ -538,7 +538,7 @@
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
-    line-height: 24px;
+    line-height: normal;
 }
 
 .card3-buy{
@@ -584,7 +584,7 @@
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
-    line-height: 26px;
+    line-height: normal;
     text-align: center;
     text-decoration-line: underline;
 }
@@ -616,13 +616,12 @@
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 26px;
+    line-height: normal;
     text-align: center;
     text-decoration-line: underline;
 }
 
 .card3-extra{
-    margin-left: 5%;
     display: flex;
     padding: 9px 31px 9px 18px;
     border-radius: 400px;
@@ -636,7 +635,7 @@
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
-    line-height: 20px;
+    line-height: normal;
 }
 
 .bell{
@@ -668,7 +667,7 @@
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
-    line-height: 32px;
+    line-height: normal;
 }
 
 .card4-title2{
@@ -677,7 +676,7 @@
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
-    line-height: 24px;
+    line-height: normal;
 }
 
 .card4-contents{
@@ -704,7 +703,7 @@
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 20px;
+    line-height: normal;
     text-decoration-line: underline;
 }
 
@@ -714,7 +713,7 @@
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
-    line-height: 24px;
+    line-height: normal;
 }
 
 .card4-other{
@@ -751,7 +750,7 @@
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
-    line-height: 26px;
+    line-height: normal;
     text-align: center;
     text-decoration-line: underline;
 }
@@ -775,7 +774,7 @@
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
-    line-height: 20px;
+    line-height: normal;
 }
 
 .bell{
@@ -806,7 +805,7 @@
     font-size: 48px;
     font-style: normal;
     font-weight: 700;
-    line-height: 56px;
+    line-height: normal;
     text-align: center;
 }
 
@@ -845,7 +844,7 @@
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
-    line-height: 28px;
+    line-height: normal;
 }
 
 .answer-btn{
@@ -871,7 +870,7 @@
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
-    line-height: 26px;
+    line-height: normal;
     width: 55vw;
 }
 
@@ -992,7 +991,7 @@
         font-size: var(--font-m);
         font-style: normal;
         font-weight: 400;
-        line-height: 16px;
+        line-height: normal;
         text-align: center;
     }
 
@@ -1027,10 +1026,9 @@
     }
 
     .card{
-        margin-top: 54%;
+        margin-top: 40px;
         width: 148.8px;
         position: relative;
-        left: 137%;
     }
     
     .carousel .control-prev.control-arrow {
@@ -1084,7 +1082,7 @@
         align-items: flex-start;
         gap: 7px;
         flex-direction: row;
-        width: 70%;
+        width: 100%;
     }
      
     .card_two{
@@ -1101,6 +1099,7 @@
         height: 200px;
         position: relative;
         left: 1%;
+        margin: 10px 14px;
         
     }
 
@@ -1131,7 +1130,7 @@
         font-size: 16px;
         font-style: normal;
         font-weight: 500;
-        line-height: 24px;
+        line-height: normal;
         font-feature-settings: 'clig' off, 'liga' off;
     }
 
@@ -1141,7 +1140,7 @@
         font-size: 16px;
         font-style: normal;
         font-weight: 500;
-        line-height: 24px;
+        line-height: normal;
         font-feature-settings: 'clig' off, 'liga' off;
     }
 
@@ -1161,7 +1160,7 @@
         font-size: 12px;
         font-style: normal;
         font-weight: 500;
-        line-height: 16px;
+        line-height: normal;
         font-feature-settings: 'clig' off, 'liga' off;
     }
 
@@ -1172,7 +1171,7 @@
         font-size: 14px;
         font-style: normal;
         font-weight: 400;
-        line-height: 24px;
+        line-height: normal;
         font-feature-settings: 'clig' off, 'liga' off;
     }
 
@@ -1182,7 +1181,7 @@
         font-size: 14px;
         font-style: normal;
         font-weight: 500;
-        line-height: 20px;
+        line-height: normal;
         font-feature-settings: 'clig' off, 'liga' off;
     }
 
@@ -1220,7 +1219,7 @@
 
     .course-head-title{
         width: 221px;
-        line-height: 32px;
+        line-height: normal;
         font-feature-settings: 'clig' off, 'liga' off;
         color: var(--TCM-Brand-brand-blue01, #14A4F5);
         font-family: Figtree;
@@ -1255,7 +1254,7 @@
         font-size: 14px;
         font-style: normal;
         font-weight: 500;
-        line-height: 20px;
+        line-height: normal;
         text-align: center;
     }
 
@@ -1303,7 +1302,7 @@
         font-size: var(--font-card-title-two);
         font-style: normal;
         font-weight: 700;
-        line-height: 28px;
+        line-height: normal;
     }
 
     .card3-title2{
@@ -1312,7 +1311,7 @@
         font-size: 14px;
         font-style: normal;
         font-weight: 500;
-        line-height: 20px;
+        line-height: normal;
     }
 
     .card3-detail{
@@ -1329,7 +1328,7 @@
         font-size: 14px;
         font-style: normal;
         font-weight: 400;
-        line-height: 20px;
+        line-height: normal;
     }
 
 
@@ -1339,7 +1338,7 @@
         font-size: 20px;
         font-style: normal;
         font-weight: 700;
-        line-height: 24px;
+        line-height: normal;
     }
 
     .card3-buy{
@@ -1373,7 +1372,7 @@
         font-size: 18px;
         font-style: normal;
         font-weight: 400;
-        line-height: 26px;
+        line-height: normal;
         text-align: center;
         text-decoration-line: underline;
     }
@@ -1405,13 +1404,12 @@
         font-size: 16px;
         font-style: normal;
         font-weight: 400;
-        line-height: 26px;
+        line-height: normal;
         text-align: center;
         text-decoration-line: underline;
     }
 
     .card3-extra{
-        margin-left: 1%;
         display: flex;
         padding: 9px 31px 9px 18px;
         border-radius: 400px;
@@ -1425,7 +1423,7 @@
         font-size: 14px;
         font-style: normal;
         font-weight: 500;
-        line-height: 20px;
+        line-height: normal;
     }
 
     .bell{
@@ -1460,7 +1458,7 @@
         font-size: 24px;
         font-style: normal;
         font-weight: 700;
-        line-height: 32px;
+        line-height: normal;
     }
 
     .card4-title2{
@@ -1469,7 +1467,7 @@
         font-size: 14px;
         font-style: normal;
         font-weight: 500;
-        line-height: 20px; 
+        line-height: normal; 
     }
 
     .card4-contents{
@@ -1496,7 +1494,7 @@
         font-size: 16px;
         font-style: normal;
         font-weight: 400;
-        line-height: 20px;
+        line-height: normal;
         text-decoration-line: underline;
     }
 
@@ -1506,7 +1504,7 @@
         font-size: 20px;
         font-style: normal;
         font-weight: 700;
-        line-height: 24px;
+        line-height: normal;
     }
 
     .card4-other{
@@ -1561,7 +1559,7 @@
         font-size: 18px;
         font-style: normal;
         font-weight: 400;
-        line-height: 26px;
+        line-height: normal;
         text-align: center;
         text-decoration-line: underline;
     }
@@ -1586,7 +1584,7 @@
         font-size: 14px;
         font-style: normal;
         font-weight: 500;
-        line-height: 20px;
+        line-height: normal;
     }
 
     .bell{
@@ -1615,7 +1613,7 @@
         font-size: 24px;
         font-style: normal;
         font-weight: 700;
-        line-height: 32px;
+        line-height: normal;
         text-align: center;
         font-feature-settings: 'clig' off, 'liga' off;
         position: relative;
@@ -1658,7 +1656,7 @@
         font-size: 10px;
         font-style: normal;
         font-weight: 500;
-        line-height: 16px;
+        line-height: normal;
         font-feature-settings: 'clig' off, 'liga' off;
     }
     
@@ -1685,8 +1683,43 @@
         font-size: 10px;
         font-style: normal;
         font-weight: 400;
-        line-height: 18px;
+        line-height: normal;
         font-feature-settings: 'clig' off, 'liga' off;
     }
 }
 
+
+.fade-in {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .fade-out {
+    opacity: 0;
+    display: none !important;
+    transition: opacity 1s ease-in-out;
+  }
+  /* Default styles */
+.home_two_img .mobile-img {
+    display: none; /* Hide the mobile image by default */
+}
+
+/* Media query for desktop screens */
+@media only screen and (min-width: 768px) {
+    .home_two_img .desktop-img {
+        display: none; /* Hide the desktop image on desktop screens */
+    }
+    .home_two_img .mobile-img {
+        display: block; /* Display the mobile image on desktop screens */
+    }
+}
+
+/* Media query for mobile screens */
+@media only screen and (max-width: 767px) {
+    .home_two_img .desktop-img {
+        display: block; /* Display the desktop image on mobile screens */
+    }
+    .home_two_img .mobile-img {
+        display: none; /* Hide the mobile image on mobile screens */
+    }
+}
