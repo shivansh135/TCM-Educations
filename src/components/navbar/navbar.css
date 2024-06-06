@@ -1,5 +1,4 @@
-.navbar-default {
-    .navbar{
+    .navbar-default .navbar{
         width: 100%;
         display: flex;
         padding: 16px 0px 16px 5vh;
@@ -13,7 +12,7 @@
 
     }
 
-    .navbar_content{
+    .navbar-default .navbar_content{
         width: 100%;
         justify-content: space-between;
         display: flex;
@@ -21,12 +20,12 @@
         gap: 15vw;
     }
 
-    .navbar_logo{
+    .navbar-default .navbar_logo{
         width: 121px;
         height: 54.547px;
     }
 
-    .navbar_head{
+    .navbar-default .navbar_head{
         display: flex;
         align-items: center;
         gap: 33px;
@@ -34,7 +33,7 @@
         right: 9%;
     }
 
-    .navbar_council{
+    .navbar-default .navbar_council{
         color: var(--TCM-Neutral-grey13, #000);
         font-family: Figtree;
         font-size: 16px;
@@ -43,7 +42,7 @@
         line-height: normal;
     }
 
-    .navbar_pp{
+    .navbar-default .navbar_pp{
         color: var(--TCM-Neutral-grey13, #000);
         font-family: Figtree;
         font-size: 16px;
@@ -52,7 +51,7 @@
         line-height: normal;
     }
 
-    .navbar_offCetre{
+    .navbar-default .navbar_offCetre{
         color: var(--TCM-Neutral-grey13, #000);
         font-family: Figtree;
         font-size: 16px;
@@ -61,7 +60,7 @@
         line-height: normal;
     }
 
-    .navbar_mock{
+    .navbar-default .navbar_mock{
         color: var(--TCM-Neutral-grey13, #000);
         font-family: Figtree;
         font-size: 16px;
@@ -70,7 +69,7 @@
         line-height: normal;
     }
 
-    .navbar_signup{
+    .navbar-default .navbar_signup{
         display: flex;
         padding: 12px 18px;
         border-radius: 38px;
@@ -89,26 +88,21 @@
         border: none;
     }
 
-    .navbar_council a,
-    .navbar_pp a,
-    .navbar_offCetre a,
-    .navbar_mock a {
+    .navbar-default  a {
         text-decoration: none;
-        color: var(--TCM-Neutral-grey13, #000);
+        color: #000;
         font-family: Figtree;
     }
 
-    .navbar_signup a {
+    .navbar-default .navbar_signup a {
         color: var(--Neutral-Gray-50, #F8FAFC);
         text-decoration: none;
     }
-    .mobile-navbar{
+    .navbar-default .mobile-navbar{
         display: none;
     }
-}
 
-.navbar-special {
-    .navbar{
+    .navbar-special .navbar{
         width: 100%;
         display: flex;
         padding: 16px 0px 45px 75px;
@@ -119,7 +113,7 @@
         gap: 10px;
     }
 
-    .navbar_content{
+    .navbar-special .navbar_content{
         width: 100%;
         justify-content: space-between;
         display: flex;
@@ -127,14 +121,14 @@
         gap: 30vw;
     }
 
-    .navbar_logo{
+    .navbar-special .navbar_logo{
         width: 121px;
         height: 54.547px;
     }
-    .navbar_logo img{
+    .navbar-special .navbar_logo img{
         height: 65px;
     } 
-    .navbar_head{
+    .navbar-special .navbar_head{
         display: flex;
         align-items: center;
         gap: 33px;
@@ -142,7 +136,7 @@
         right: 9%;
     }
 
-    .navbar_council{
+    .navbar-special .navbar_council{
         color: var(--Neutral-Gray-50, #F8FAFC);
         font-family: Figtree;
         font-size: 16px;
@@ -151,7 +145,7 @@
         line-height: normal;
     }
 
-    .navbar_pp{
+    .navbar-special .navbar_pp{
         color: var(--Neutral-Gray-50, #F8FAFC);
         font-family: Figtree;
         font-size: 16px;
@@ -160,7 +154,7 @@
         line-height: normal;
     }
 
-    .navbar_offCetre{
+    .navbar-special .navbar_offCetre{
         color: var(--Neutral-Gray-50, #F8FAFC);
         font-family: Figtree;
         font-size: 16px;
@@ -169,7 +163,7 @@
         line-height: normal;
     }
 
-    .navbar_mock{
+    .navbar-special .navbar_mock{
         color: var(--Neutral-Gray-50, #F8FAFC);
         font-family: Figtree;
         font-size: 16px;
@@ -178,7 +172,7 @@
         line-height: normal;
     }
 
-    .navbar_signup{
+    .navbar-special .navbar_signup{
         display: flex;
         padding: 12px 18px;
         border-radius: 38px;
@@ -197,41 +191,37 @@
         border: none;
     }
 
-    .navbar_council a,
-    .navbar_pp a,
-    .navbar_offCetre a,
-    .navbar_mock a {
+    .navbar-special  a {
         text-decoration: none;
         color: var(--Neutral-Gray-50, #F8FAFC);
         font-family: Figtree;
     }
 
-    .navbar_signup a {
+    .navbar-special .navbar_signup a {
         color: var(--TCM-Brand-brand-blue01, #14A4F5);
         text-decoration: none;
     }
 
-    .mobile-navbar{
+    .navbar-special .mobile-navbar{
         display: none;
     }
-}
+
 
 /* Path: Mobile view */
 
 @media (max-width: 768px) {
-    .navbar-default {
 
-    .desktop-navbar{
+ .navbar-default .desktop-navbar{
         display: none;
     }
 
-    .mobile-navbar {
+    .navbar-default .mobile-navbar {
         display: flex;
         flex-direction: column;
         position: sticky;
         top: 0px;
     }
-    .navbar {
+    .navbar-default .navbar {
         width: 100%;
         display: flex;
         padding: 8px 0px 5px 5px;
@@ -241,21 +231,21 @@
         align-items: center;
         gap: 10px;
     }
-    .navbar_content {
+    .navbar-default .navbar_content {
         display: flex;
         flex-direction: column;
         width: 100%;
         gap: 5px;
     }
 
-    .navbar_top{
+    .navbar-default .navbar_top{
         display: flex;
         flex-direction: row;
         width: 100%;
         justify-content: space-between;
     } 
 
-    .navbar_logo{
+    .navbar-default .navbar_logo{
         position: relative;
         right: 0%;
         bottom: 9%;
@@ -263,7 +253,7 @@
         height: 54.547px;
 
     }
-    .navbar_signup{
+    .navbar-default .navbar_signup{
         position: relative;
         left:0%;
         padding: 4px 12px;
@@ -271,18 +261,18 @@
         line-height: 10%;
 
     }
-    .navbar_head_container {
+    .navbar-default .navbar_head_container {
         overflow-x: auto;
         white-space: nowrap;
         width: 100%;
         scrollbar-width: 10px; /* For Firefox */
     }
     
-    .navbar_head_container::-webkit-scrollbar {
+    .navbar-default  .navbar_head_container::-webkit-scrollbar {
         display: none; /* For Chrome, Safari and Opera */
     }
     
-    .navbar_head {
+    .navbar-default .navbar_head {
         list-style: none;
         display: flex;
         overflow-x: scroll;
@@ -291,11 +281,11 @@
         gap: 2px;
         scrollbar-width: none;
     }
-    .selected {
+    .navbar-default .selected {
         border-bottom: 2px solid #000; /* Change color as needed */
     }
 
-    .navbar_head a {
+    .navbar-default .navbar_head a {
         text-decoration: none;
         color: #000;
         font-family: Figtree;
@@ -303,25 +293,23 @@
 
     }
     
-    .navbar_head::-webkit-scrollbar {
+    .navbar-default .navbar_head::-webkit-scrollbar {
         display: none; /* For Chrome, Safari and Opera */
     }
     
-    .navbar_head li {
+    .navbar-default .navbar_head li {
         margin: 0 10px;
     }
-}
-.navbar-special {
 
     .desktop-navbar{
         display: none;
     }
 
-    .mobile-navbar {
+    .navbar-special  .mobile-navbar {
         display: flex;
         flex-direction: column;
     }
-    .navbar {
+    .navbar-special .navbar {
         width: 100%;
         display: flex;
         padding: 8px 0px 5px 5px;
@@ -331,49 +319,49 @@
         align-items: center;
         gap: 10px;
     }
-    .navbar_content {
+    .navbar-special .navbar_content {
         display: flex;
         flex-direction: column;
         width: 100%;
         gap: 5px;
     }
 
-    .navbar_top{
+    .navbar-special .navbar_top{
         display: flex;
         flex-direction: row;
         width: 100%;
         justify-content: space-between;
     } 
 
-    .navbar_logo{
+    .navbar-special .navbar_logo{
         position: relative;
         bottom: 9%;
         width: 95px;
         height: 54.547px;
 
     }
-    .navbar_logo img {
+    .navbar-special .navbar_logo img {
         position: relative;
     }
-    .navbar_signup{
+    .navbar-special .navbar_signup{
         position: relative;
         padding: 4px 12px;
         font-size: 13px;
         line-height: 10%;
 
     }
-    .navbar_head_container {
+    .navbar-special .navbar_head_container {
         overflow-x: auto;
         white-space: nowrap;
         width: 100%;
         scrollbar-width: 10px;/* For Firefox */
     }
     
-    .navbar_head_container::-webkit-scrollbar {
+    .navbar-special .navbar_head_container::-webkit-scrollbar {
         display: none; /* For Chrome, Safari and Opera */
     }
     
-    .navbar_head {
+    .navbar-special .navbar_head {
         list-style: none;
         display: flex;
         overflow-x: scroll;
@@ -383,11 +371,11 @@
         scrollbar-width: none;
         color: #FFF;
     }
-    .selected {
+    .navbar-special .selected {
         border-bottom: 2px solid #FFF; /* Change color as needed */
     }
 
-    .navbar_head a {
+    .navbar-special .navbar_head a {
         text-decoration: none;
         color: var(--Neutral-Gray-50, #F8FAFC);
         font-family: Figtree;
@@ -395,12 +383,11 @@
 
     }
     
-    .navbar_head::-webkit-scrollbar {
+    .navbar-special .navbar_head::-webkit-scrollbar {
         display: none; /* For Chrome, Safari and Opera */
     }
     
-    .navbar_head li {
+    .navbar-special .navbar_head li {
         margin: 0 10px;
     }
-}
 }
