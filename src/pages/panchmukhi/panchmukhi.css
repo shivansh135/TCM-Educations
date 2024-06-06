@@ -1,9 +1,8 @@
 .CAT_video{
     display: flex;
-    width: 400px;
-    height: 250px;
+    aspect-ratio: 808 / 489;
+    width: 70%;
     overflow: hidden;
-    padding: 152px 322px 152px 342px;
     border-radius: 16px;
     border: 2px solid rgba(20, 164, 245, 0.20);
     background: var(--TCM-Brand-brand-blue11, #E3EFFE);
@@ -71,11 +70,12 @@
     margin-top: 14%;
     margin-left: 10%;
     overflow: hidden;
-    width: 1300px;
+    width: 100%;
     height: 100%;
     background: #FFF;
     display: flex;
     flex-direction: row;
+    position: relative;
     align-items: center;
     
 }
@@ -172,10 +172,13 @@
     color: var(--TCM-Brand-brand-blue01, #14A4F5);
 }
 .slidee-img{
-    margin-top: 5%;
-    width: 60%;
+    position: absolute;
+    width: 100%;
     height: 600px;
     align-items: left;
+    margin-top: 230px;
+    margin-right: 50px;
+    margin-left: -50px;
     
 }
 
@@ -694,10 +697,8 @@
 
     .CAT_video{
         display: flex;
-        width: 1px;
-        height: 0px;
+        width: 70%;
         overflow: hidden;
-        padding: 202px 229px 82px 72px;
         border-radius: 16px;
         border: 2px solid rgba(20, 164, 245, 0.20);
         background: var(--TCM-Brand-brand-blue11, #E3EFFE);
@@ -706,20 +707,28 @@
         top: -200px;
         z-index: 2; 
         position: absolute;
-        top: 300px;
+        top: 240px;
         z-index: 10;
         left:51%; 
         transform: translate(-50%, -50%); 
         margin: 10px;
     }
+
+    .CAT_video_button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0;
+        margin-left: 0;
+        top: 0;
+    }
     
     .CAT_video_button img{
-        margin-bottom: 80%;
-        margin-left: 94%;
-        width: 100px;
-        height: 100px;
+        width: 40%;
+        height: 40%;
         display: flex;
         align-items: center;
+        top: 0px;
     
     }
     
@@ -727,7 +736,7 @@
         position: relative;
         background-color: #14A4F5;
         width: 100%;
-        height: 309px;
+        height: 270px;
         flex-shrink: 0;
         display: flex;
         justify-content: center; 
@@ -741,7 +750,7 @@
     
     .rectangle_one::after{
         content:'';
-        height: 360px;
+        height: 330px;
         position: absolute;
         width: 140%;
         rotate: -5deg;
@@ -763,16 +772,17 @@
     }
 
     .roadmap{
-        margin-top: 25%;
+        margin-top: 40px;
         margin-left: 15px;
         overflow: hidden;
         width: 96%;
-        height: 450px;
         background: #FFF;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
         position: relative;
+        height: fit-content;
+        margin-bottom: 30px;
         
     }
     
@@ -781,7 +791,7 @@
         flex-direction: column;
         align-items: flex-start;
         gap: 12px;
-        width: 46%;
+        width: 90%;
         margin-top:20%;
     }
     
@@ -826,7 +836,7 @@
         width: 100% !important;
         height: 90px;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         gap: 6px;
         align-items: flex-start;
     
@@ -835,7 +845,7 @@
     .counsel{
         width: 100%;
         display: flex;
-        padding: 1px 16px;
+        padding: 8px 16px;
         border-radius: 38px;
         border: 1px solid var(--TCM-Brand-brand-blue01, #14A4F5);
         justify-content: center;
@@ -856,7 +866,7 @@
     .trial{
         width: 100%;
         display: flex;
-        padding: 1px 16px;
+        padding: 8px 16px;
         border-radius: 38px;
         border: 1px solid var(--TCM-Brand-brand-blue01, #14A4F5);
         background: var(--TCM-Neutral-grey01, #FFF);
@@ -879,12 +889,11 @@
     
      
     .slidee-img{
-        margin-top: 80px;
-        width: 92%;
-        height: 327px;
-        position: absolute;
-        right: 10px;
-        
+        width: 100%;
+        position: relative;
+        margin-top: 0px;
+        height: fit-content;
+        margin-left: 0px;
     }
 
     .slide-imgg{

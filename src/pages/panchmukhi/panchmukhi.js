@@ -40,7 +40,8 @@ export default function Panchmukhi() {
                         Borem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class apten
                     </div>
                     <div className='buttons'>
-                    <button className='counsel'><Link to="/form-page">Counceling Call</Link></button>
+                    <button className='counsel'>
+                        <Link to="/form-page">Counceling Call</Link></button>
                         <button className='trial'><Link to="/checkout">Book Trial Class</Link></button>
                     </div>
                 </div>

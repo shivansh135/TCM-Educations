@@ -160,7 +160,6 @@ export default function Home() {
             </Marquee>
 
         </div>
-
             <div className='panchmukhi-img'>
                 <Link to='/panchmukhi'>
                 <picture>
