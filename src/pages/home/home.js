@@ -43,7 +43,7 @@ return(
 export default function Home() {
     const [showPopup, setShowPopup] = useState(false);
     const [currentIndex, setCurrentIndex] = useState(0);
-    const images = ["/Group.png", "/Group.png",'/Group.png','/Group.png','/Group.png'];
+    const images = ["/H1.png", "/H2.png",'/H3.png','/H4.png','/H5.png'];
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -115,7 +115,7 @@ export default function Home() {
             </div>
 
             <div className='home_two_img'>
-                <img src="/Group2-mobile.svg" alt='hero' class="desktop-img"/>
+                <img src="/Group2-mobile.png" alt='hero' class="desktop-img"/>
                 <img src="/Group2.svg" alt='hero' class="mobile-img"/>
             </div>
 
