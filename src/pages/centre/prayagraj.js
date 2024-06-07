@@ -20,11 +20,15 @@ export default function Prayagraj() {
             city:'Prayagraj',
             img:'prayagraj.svg',
             img_two:'centre_img_one.png',
+            img_three:'centre_img_two.png',
+            img_four:'centre_img_three.svg',
         },
         varanasi:{
             city:'Varanasi',
             img:'prayagraj.svg',
             img_two:'centre_img_one.png',
+            img_three:'centre_img_two.png',
+            img_four:'centre_img_three.svg',
         }
     }
 
@@ -50,14 +54,14 @@ export default function Prayagraj() {
                 />
 
                 <Centre_card 
-                image= {city_data.img_two}
-                title='Limited Batch Size of 25'
+                image= {city_data.img_three}
+                title='Sessions by Chief Mentor'
                 description={'Our expert faculties bring industry experience and academic expertise, ensuring our students quality education and guidance.'}
                 />
 
                 <Centre_card 
-                image= {city_data.img_two}
-                title='Limited Batch Size of 25'
+                image= {city_data.img_four}
+                title='Community of Like-Minded'
                 description={'Our expert faculties bring industry experience and academic expertise, ensuring our students quality education and guidance.'}
                 />
 
@@ -79,11 +83,9 @@ export default function Prayagraj() {
                 <div className='centre_quote'>
                     An Extraordinary Learning Experience
                 </div>
-                <div className='students'>
-                    <img src='/images/student1.jpg' style={{width:'50%', height:'auto'}} alt='student'/>
-                    <img src='/images/student1.jpg' style ={{width:'50%', height:'auto'}} alt='student'/>
-                </div>
+                <img src='/images/frame1.png' className='frame' alt='frame'/>
             </div>
+
 
             <div className='course_batch'>
             <div className='course-head'>

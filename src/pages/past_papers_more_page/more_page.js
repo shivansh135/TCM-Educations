@@ -2,31 +2,58 @@ import React from "react";
 import './more_page.css';
 import { Question_paper_card } from "../../components/card/question_paper_card";
 import { Topic_button } from "../../components/button/topic_button";
+import { useParams } from 'react-router-dom';
 
 
 export default function More_page() {
+    const {id}=useParams();
+    const course={
+        CAT:{
+            name:'CAT'
+        },
+        IPMAT:{
+            name:'IPMAT'
+        },
+        CLAT:{
+            name:'CLAT'
+        },
+        CUET:{
+            name:'CUET'
+        },
+        NMAT:{
+            name:'NMAT'
+        },
+        CMAT:{
+            name:'CMAT'
+        }
+    }
+    const getcoursebyname=(name)=>{
+        return course[name] || null;        }
+    const course_name=id;
+    const courses_data=getcoursebyname(course_name);
+
     return (
         <div>
             <div className="head_two">
                 <div className="heading_content">
                     <div className="heading_two">
-                        CAT 2023<br/> Question Paper
+                    {courses_data.name} 2023<br/> Question Paper
                     </div>
                     <div className="detail">
                         Sorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliq odio mattis. Class aptent taciti sociosqu ad litora.
                     </div>
                     <button className="attempt">
-                        Attempt Today <img src="./images/Icon_1.svg" className='belll' alt='bell'/>
+                        Attempt Today <img src="/images/Icon_1.svg" className='belll' alt='bell'/>
                     </button>
                 </div>
-                <img src="./images/Test_Series_Page.png" alt="hero" className="banner_one" />
+                <img src="/images/Test_Series_Page.png" alt="hero" className="banner_one" />
             </div>
 
             <div className="question_paper">
                 <div className="question_paper_head">
                     <div className="question_paper_heading">
                         <div className="question_paper_title">
-                            CAT Question Papers<br/> CAT Previous Year Papers
+                        {courses_data.name} Question Papers<br/> {courses_data.name} Previous Year Papers
                         </div>
                         <div className="question_paper_subheading">
                             Dorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
@@ -35,10 +62,10 @@ export default function More_page() {
 
                     <div className="question_paper_btn">
                         <button className="paper_btn1">
-                            Choose the year <img src="./images/Icon_1.svg" className='belll' alt='bell'/>
+                            Choose the year <img src="/images/Icon_1.svg" className='belll' alt='bell'/>
                         </button>
                         <button className="paper_btn2">
-                            Choose the slot <img src="./images/Icon_1.svg" className='belll' alt='bell'/>
+                            Choose the slot <img src="/images/Icon_1.svg" className='belll' alt='bell'/>
                         </button>
                     </div>
                 </div>
@@ -69,13 +96,13 @@ export default function More_page() {
             </div>
 
             <div className="question_paper_topicwise">
-                CAT Question Topicwise
+            {courses_data.name} Question Topicwise
             </div>
 
             <div className="question_paper_topic_category">
                 <div className="question_paper_subject_category">
                     <div className="question_paper_subject">
-                        CAT Quantitative Aptitude
+                    {courses_data.name} Quantitative Aptitude
                     </div>
                     <div className="subject_topic">
                     <Topic_button topic="LCM HCF"/>
@@ -101,7 +128,7 @@ export default function More_page() {
 
                 <div className="question_paper_subject_category">
                     <div className="question_paper_subject">
-                        CAT Verbal Ability and CAT RC
+                    {courses_data.name} Verbal Ability and CAT RC
                     </div>
                     <div className="subject_topic">
                     <Topic_button topic="LCM HCF"/>
@@ -127,7 +154,7 @@ export default function More_page() {
 
                 <div className="question_paper_subject_category">
                     <div className="question_paper_subject">
-                        CAT DILR
+                    {courses_data.name} DILR
                     </div>
                     <div className="subject_topic">
                     <Topic_button topic="LCM HCF"/>

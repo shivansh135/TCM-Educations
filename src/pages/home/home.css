@@ -11,14 +11,14 @@
 
 .blue-head{
     color: var(--TCM-Brand-brand-blue01, #14A4F5);
-    font-size: inherit;
+    font-size: 44px;
 }
 
 .black-head{
     margin-top: 5px;
     color: var(--TCM-Neutral-grey13, #000);
     font-family: Figtree;
-    font-size: 55px;
+    font-size: 44px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -27,13 +27,14 @@
 
 .para-one{
     margin-top: 30px;
-    width: 477px;
+    width: 650px;
     color: var(--TCM-Neutral-grey08, #595959);
     font-family: Figtree;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    text-align: justify;
 }
 
 .btnn{
@@ -178,28 +179,23 @@
     text-align: center;
 }
 
-
 .card--image{
     width: 100%;
     height: auto;
     border-radius: 8px 8px 0px 0px;
 }
-
 .card--content{
     display: flex;
     width: calc(100% - 28px);
     padding: 12px 13px;
     position: relative;
     border-radius: 0px 0px 8px 8px;
-    border-right: 0.8px solid var(--TCM-Neutral-grey05, #D9D9D9);
-    border-bottom: 0.8px solid var(--TCM-Neutral-grey05, #D9D9D9);
-    border-left: 0.8px solid var(--TCM-Neutral-grey05, #D9D9D9);
     background: var(--TCM-Neutral-grey02, #FAFAFA);
     flex-direction: column;
     align-items: flex-start;
     gap: 24px;
+    border-top: 0.8px solid var(--TCM-Neutral-grey05, #D9D9D9);
 }
-
 @media (min-width: 769px) { /* Change to tablet or desktop view */
     .mobile-view {
         display: none; /* Hide on desktop */
@@ -225,6 +221,9 @@
     margin-top: 60px;
     display: flex;
     flex-direction: column;
+    background-color: #FAFAFA;
+    border-radius: 8px;
+    border: 0.8px solid var(--TCM-Neutral-grey05, #D9D9D9);
 }
 
 .card--title{
@@ -297,12 +296,14 @@
 }
 
 .card-2-container {
-    gap: 40px;
-    margin-left: 5%;
-    margin-top: 5%;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap; /* This will allow the cards to wrap to the next line if the container width is not enough */
+width: 2251px;
+justify-content: center;
+align-items: center;
+align-content: center;
+gap: 34px;
+flex-wrap: wrap;
+     /* This will allow the cards to wrap to the next line if the container width is not enough */
 }
 
 .card_two{
@@ -311,18 +312,24 @@
     border-radius: 10px;
     border: 2px solid rgba(20, 164, 245, 0.16);
     background: var(--TCM-Brand-brand-blue12, #F1F7FE);
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    gap: 1px;
+    gap: 10px;
     width:330px;
-    margin: 0px 25px;
+    margin-left: 34px;
 }
 
 .top-layer{
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: 41px;
+}
+
+.topp-lay{
+    display: flex;
+    align-items: center;
+    gap: 12px;
 }
 
 
@@ -346,8 +353,6 @@
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    margin-left: 3px;
-    white-space: nowrap;
 }
 
 .stud-cor{
@@ -366,7 +371,6 @@
     background: var(--TCM-Brand-brand-blue01, #14A4F5);
     align-items: center;
     gap: 10px;
-    margin-left: 17%;
     color:var(--TCM-Neutral-grey01, #FFF);
     font-family: Figtree;
     font-size: 16px;
@@ -376,18 +380,16 @@
 }
 
 .stud-detail{
-    margin-top: 4%;
-    align-self: stretch;
+    width: 357px;
     color: var(--TCM-Neutral-grey08, #595959);
     font-family: Figtree;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: normal;
+    line-height: 24px;
 }
 
 .stud-more{
-    margin-top: 2%;
     color: var(--TCM-Brand-brand-blue02, #43AAF6);
     font-family: Figtree;
     font-size: 16px;
@@ -1018,9 +1020,6 @@
         padding: 11px 18px 10px 16px;
         padding-right: 10px;
         border-radius: 0px 0px 8px 8px;
-        border-right: 0.8px solid var(--TCM-Neutral-grey05, #D9D9D9);
-        border-bottom: 0.8px solid var(--TCM-Neutral-grey05, #D9D9D9);
-        border-left: 0.8px solid var(--TCM-Neutral-grey05, #D9D9D9);
         background: var(--TCM-Neutral-grey02, #FAFAFA);
         flex-direction: column;
         align-items: flex-start;

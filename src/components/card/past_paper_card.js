@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-export function Past_papers_card({title}) {
+export function Past_papers_card(props) {
     return (
         <div>
             <div className='past_papers-card'>
@@ -10,10 +10,10 @@ export function Past_papers_card({title}) {
                 </div>
                 <div className='past_papers-card-content'>
                     <div className="past_papers-card-title">
-                        {title}
+                        {props.title}
                     </div>
                     <button className='past_papers-card-button'>
-                        <Link to="/more-page">
+                        <Link to={`/more-page/${props.id}`}>
                         View Paper
                         </Link>
                     </button>

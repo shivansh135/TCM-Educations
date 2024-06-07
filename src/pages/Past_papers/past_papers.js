@@ -36,68 +36,68 @@ export function Past_papers() {
             <div className='past_papers-body'>
                 {selectOption === 'CAT' && (
                     <>
-                        <Past_papers_card title='CAT 2020 Paper Set 1'/>
-                        <Past_papers_card title='CAT 2020 Paper Set 2'/>
-                        <Past_papers_card title='CAT 2020 Paper Set 3'/>
-                        <Past_papers_card title='CAT 2020 Paper Set 1'/>
-                        <Past_papers_card title='CAT 2020 Paper Set 2'/>
-                        <Past_papers_card title='CAT 2020 Paper Set 3'/>
-                        <Past_papers_card title='CAT 2020 Paper Set 1'/>
-                        <Past_papers_card title='CAT 2020 Paper Set 2'/>
-                        <Past_papers_card title='CAT 2020 Paper Set 3'/>
+                        <Past_papers_card title='CAT 2020 Paper Set 1' id='CAT'/>
+                        <Past_papers_card title='CAT 2020 Paper Set 2' id='CAT'/>
+                        <Past_papers_card title='CAT 2020 Paper Set 3' id='CAT'/>
+                        <Past_papers_card title='CAT 2020 Paper Set 1' id='CAT'/>
+                        <Past_papers_card title='CAT 2020 Paper Set 2' id='CAT'/>
+                        <Past_papers_card title='CAT 2020 Paper Set 3' id='CAT'/>
+                        <Past_papers_card title='CAT 2020 Paper Set 1' id='CAT'/>
+                        <Past_papers_card title='CAT 2020 Paper Set 2' id='CAT'/>
+                        <Past_papers_card title='CAT 2020 Paper Set 3' id='CAT'/>
 
                     </>
                 )}
                 {selectOption === 'IPMAT' && (
                     <>
-                        <Past_papers_card title='IPMAT 2020 Paper Set 1'/>
-                        <Past_papers_card title='IPMAT 2020 Paper Set 2'/>
-                        <Past_papers_card title='IPMAT 2020 Paper Set 3'/>
-                        <Past_papers_card title='IPMAT 2020 Paper Set 1'/>
-                        <Past_papers_card title='IPMAT 2020 Paper Set 2'/>
-                        <Past_papers_card title='IPMAT 2020 Paper Set 3'/>
-                        <Past_papers_card title='IPMAT 2020 Paper Set 1'/>
-                        <Past_papers_card title='IPMAT 2020 Paper Set 2'/>
-                        <Past_papers_card title='IPMAT 2020 Paper Set 3'/>
+                        <Past_papers_card title='IPMAT 2020 Paper Set 1' id='IPMAT'/>
+                        <Past_papers_card title='IPMAT 2020 Paper Set 2' id='IPMAT'/>
+                        <Past_papers_card title='IPMAT 2020 Paper Set 3' id='IPMAT'/>
+                        <Past_papers_card title='IPMAT 2020 Paper Set 1' id='IPMAT'/>
+                        <Past_papers_card title='IPMAT 2020 Paper Set 2' id='IPMAT'/>
+                        <Past_papers_card title='IPMAT 2020 Paper Set 3' id='IPMAT'/>
+                        <Past_papers_card title='IPMAT 2020 Paper Set 1' id='IPMAT'/>
+                        <Past_papers_card title='IPMAT 2020 Paper Set 2' id='IPMAT'/>
+                        <Past_papers_card title='IPMAT 2020 Paper Set 3' id='IPMAT'/>
                     </>
                 )}
                 {selectOption === 'CLAT' && (
                     <>
-                        <Past_papers_card title='CLAT 2020 Paper Set 1'/>
-                        <Past_papers_card title='CLAT 2020 Paper Set 2'/>
-                        <Past_papers_card title='CLAT 2020 Paper Set 3'/>
+                        <Past_papers_card title='CLAT 2020 Paper Set 1' id='CLAT'/>
+                        <Past_papers_card title='CLAT 2020 Paper Set 2' id='CLAT'/>
+                        <Past_papers_card title='CLAT 2020 Paper Set 3' id='CLAT'/>
                     </>
                 )}
                 {selectOption === 'CUET' && (
                     <>
-                        <Past_papers_card title='CUET 2020 Paper Set 1'/>
-                        <Past_papers_card title='CUET 2020 Paper Set 2'/>
-                        <Past_papers_card title='CUET 2020 Paper Set 3'/>
-                        <Past_papers_card title='CUET 2020 Paper Set 1'/>
-                        <Past_papers_card title='CUET 2020 Paper Set 2'/>
-                        <Past_papers_card title='CUET 2020 Paper Set 3'/>
+                        <Past_papers_card title='CUET 2020 Paper Set 1' id='CUET'/>
+                        <Past_papers_card title='CUET 2020 Paper Set 2' id='CUET'/>
+                        <Past_papers_card title='CUET 2020 Paper Set 3' id='CUET'/>
+                        <Past_papers_card title='CUET 2020 Paper Set 1' id='CUET'/>
+                        <Past_papers_card title='CUET 2020 Paper Set 2' id='CUET'/>
+                        <Past_papers_card title='CUET 2020 Paper Set 3' id='CUET'/>
                     </>
                 )}
 
                 {selectOption === 'CMAT' && (
                     <>
-                        <Past_papers_card title='CMAT 2020 Paper Set 1'/>
-                        <Past_papers_card title='CMAT 2020 Paper Set 2'/>
-                        <Past_papers_card title='CMAT 2020 Paper Set 3'/>
-                        <Past_papers_card title='CMAT 2020 Paper Set 1'/>
-                        <Past_papers_card title='CMAT 2020 Paper Set 2'/>
-                        <Past_papers_card title='CMAT 2020 Paper Set 3'/>
+                        <Past_papers_card title='CMAT 2020 Paper Set 1' id='CMAT'/>
+                        <Past_papers_card title='CMAT 2020 Paper Set 2' id='CMAT'/>
+                        <Past_papers_card title='CMAT 2020 Paper Set 3' id='CMAT'/>
+                        <Past_papers_card title='CMAT 2020 Paper Set 1' id='CMAT'/>
+                        <Past_papers_card title='CMAT 2020 Paper Set 2' id='CMAT'/>
+                        <Past_papers_card title='CMAT 2020 Paper Set 3' id='CMAT'/>
                     </>
                 )}
 
                 {selectOption === 'NMAT' && (
                     <>
-                        <Past_papers_card title='NMAT 2020 Paper Set 1'/>
-                        <Past_papers_card title='NMAT 2020 Paper Set 2'/>
-                        <Past_papers_card title='NMAT 2020 Paper Set 3'/>
-                        <Past_papers_card title='NMAT 2020 Paper Set 1'/>
-                        <Past_papers_card title='NMAT 2020 Paper Set 2'/>
-                        <Past_papers_card title='NMAT 2020 Paper Set 3'/>
+                        <Past_papers_card title='NMAT 2020 Paper Set 1' id='NMAT'/>
+                        <Past_papers_card title='NMAT 2020 Paper Set 2' id='NMAT'/>
+                        <Past_papers_card title='NMAT 2020 Paper Set 3' id='NMAT'/>
+                        <Past_papers_card title='NMAT 2020 Paper Set 1' id='NMAT'/>
+                        <Past_papers_card title='NMAT 2020 Paper Set 2' id='NMAT'/>
+                        <Past_papers_card title='NMAT 2020 Paper Set 3' id='NMAT'/>
                     </>
                 )}
                 
