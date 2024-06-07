@@ -30,7 +30,7 @@ export function Test_series() {
             <div className="test_series_select">
 
                 <div className='course-head'>
-                    <div className='course-head-title'>
+                    <div className='coursess-head-title'>
                         Select Test Series
                     </div>
                     <div className='course-head-option'>

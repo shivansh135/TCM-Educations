@@ -15,7 +15,7 @@
     align-items: flex-start;
     gap: 28px;
     position: relative;
-    left : 10%;
+    left : 8%;
 }
 
 .heading_two{
@@ -62,7 +62,7 @@
     width: 690.555px;
     height: 441.001px;
     position: relative;
-    left: 10%;
+    left: 8%;
 }
 
 .question_paper_content{
@@ -274,7 +274,10 @@
     line-height: 32px;
     text-align: center;
 }
-
+.beelll{
+    position: relative;
+    bottom: 0px;
+}
 /*phone view */
 
 @media (max-width: 768px) {

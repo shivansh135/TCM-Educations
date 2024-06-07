@@ -163,10 +163,10 @@
 .team_quote{
     color: var(--TCM-Neutral-grey13, #000);
     font-family: Figtree;
-    font-size: 48px;
+    font-size: 40px;
     font-style: normal;
-    font-weight: 700;
-    line-height: 56px;
+    font-weight: 600;
+    line-height: 44px;
     text-align: center;
 }
 

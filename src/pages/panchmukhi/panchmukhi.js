@@ -41,8 +41,8 @@ export default function Panchmukhi() {
                     </div>
                     <div className='buttons'>
                     <button className='counsel'>
-                        <Link to="/form-page">Counceling Call</Link></button>
-                        <button className='trial'><Link to="/checkout">Book Trial Class</Link></button>
+                        <Link to="/form-page">Counceling Call <img src="./images/Icon.svg" className='beeelll' alt='bell'/></Link></button>
+                        <button className='trial'><Link to="/checkout">Book Trial Class <img src="./images/Icon_1.svg" className='beeelll' alt='bell'/></Link></button>
                     </div>
                 </div>
                     <img src = './images/Slide2.svg' className='slidee-img' alt='group_photo' />
@@ -51,32 +51,32 @@ export default function Panchmukhi() {
             <Step_odd 
                 step="Step 1"
                 title="Fundamental Process"
-                detail="Borem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class apten"
-                image='asking-question.png'/>
+                detail="The CAT exam is a computer-based test conducted by the IIMs to evaluate the aptitude of prospective students seeking admission to their post-graduate management programs. The exam is held once a year, usually in November or December, and is one of India's most competitive MBA entrance exams"
+                image='ask1.png'/>
 
             <Step_even 
                 step="Step 2"
-                title="Fundamental Process"
-                detail="Borem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class apten"
-                image='asking-question.png'/>
+                title="Concept Building Stage"
+                detail="The CAT exam is a computer-based test conducted by the IIMs to evaluate the aptitude of prospective students seeking admission to their post-graduate management programs. The exam is held once a year, usually in November or December, and is one of India's most competitive MBA entrance exams"
+                image='ask2.png'/>
 
             <Step_odd 
-                step="Step 1"
-                title="Fundamental Process"
-                detail="Borem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class apten"
-                image='asking-question.png'/>
+                step="Step 3"
+                title="Advanced Stage"
+                detail="The CAT exam is a computer-based test conducted by the IIMs to evaluate the aptitude of prospective students seeking admission to their post-graduate management programs. The exam is held once a year, usually in November or December, and is one of India's most competitive MBA entrance exams"
+                image='ask3.png'/>
 
             <Step_even 
-                step="Step 2"
-                title="Fundamental Process"
-                detail="Borem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class apten"
-                image='asking-question.png'/>
+                step="Step 4"
+                title="Challenger Stage"
+                detail="The CAT exam is a computer-based test conducted by the IIMs to evaluate the aptitude of prospective students seeking admission to their post-graduate management programs. The exam is held once a year, usually in November or December, and is one of India's most competitive MBA entrance exams"
+                image='ask4.png'/>
 
             <Step_odd 
-                step="Step 1"
-                title="Fundamental Process"
-                detail="Borem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class apten"
-                image='asking-question.png'/>       
+                step="Step 5"
+                title="Holistic Development"
+                detail="The CAT exam is a computer-based test conducted by the IIMs to evaluate the aptitude of prospective students seeking admission to their post-graduate management programs. The exam is held once a year, usually in November or December, and is one of India's most competitive MBA entrance exams"
+                image='ask5.png'/>       
             
 
             <div className='course-select'>

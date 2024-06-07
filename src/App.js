@@ -38,17 +38,10 @@ function App() {
     <Routes>
       <Route path="/" element={ <><Navbar currentPage="home"/><Home /></>} />
       <Route path="/offline-centre/:city/:id" element={ <><Navbar currentPage="home" currentImg="home"/><Prayagraj /></>} />
-      <Route path="/planning" element={ <><Navbar currentPage="home" currentImg="home"/><Planning /></>} />
+      <Route path="/planning/:id" element={ <><Navbar currentPage="home" currentImg="home"/><Planning /></>} />
       <Route path="/cat/:id" element={<><Navbar currentPage="home" currentImg="home"/><Cat /></>} />
-      <Route path="/cat/:id/cat/:id" element={<><Navbar currentPage="home" currentImg="home"/><Cat /></>} />
-      <Route path="/cat/:id/cat/:id/cat/:id" element={<><Navbar currentPage="home" currentImg="home"/><Cat /></>} />
-      <Route path="/panchmukhi/cat/:id" element={<><Navbar currentPage="home" currentImg="home"/><Cat /></ >} />
-      <Route path="/panchmukhi/cat/:id/cat/:id" element={<><Navbar currentPage="home" currentImg="home"/><Cat /></>} />
-      <Route path="/panchmukhi/cat/:id/cat/:id" element={<><Navbar currentPage="home" currentImg="home"/><Cat /></>} />
-      <Route path="/past-papers/cat/:id/cat/:id" element={<><Navbar currentPage="home" currentImg="home"/><Cat /></>} />
-      <Route path="/past-papers/cat/:id" element={<><Navbar currentPage="home" currentImg="home"/><Cat /></>} />
-      <Route path="/plans/cat/:id/cat/:id" element={<><Navbar currentPage="home" currentImg="home"/><Cat /></>} />
-      <Route path="/plans/cat/:id" element={<><Navbar currentPage="home" currentImg="home"/><Cat /></>} />
+      <Route path="/cat" element={<><Navbar currentPage="home" currentImg="home"/><Cat /></>} />
+      <Route path="/cat" element={<><Navbar currentPage="home" currentImg="home"/><Cat /></>} />
       <Route path="/panchmukhi" element={<><Navbar currentPage="specialPage" currentImg="specialPage"/><Panchmukhi /></>} />    
       <Route path="/testimonial/:id" element={<><Navbar currentPage="home" currentImg="home"/><Testimonial /></>} />
       <Route path="/testimonial/:id/testimonial/:id" element={<><Navbar currentPage="home" currentImg="home"/><Testimonial /></>} />
@@ -64,7 +57,7 @@ function App() {
       <Route path="/checkout" element={<><Navbar currentPage="home" currentImg="home"/><Checkout /></>} />
       <Route path="/popup-home" element={<><Navbar currentPage="home" currentImg="home"/><PopupHome /></>} />
       <Route path="/confirmation" element={<><Navbar currentPage="home" currentImg="home"/><Confirmation /></>} />
-      <Route path="/more-page" element={<><Navbar currentPage="specialPage" currentImg="specialPage"/><MorePage /></>} />
+      <Route path="/more-page/:id" element={<><Navbar currentPage="specialPage" currentImg="specialPage"/><MorePage /></>} />
     </Routes>
   </Router>
   );

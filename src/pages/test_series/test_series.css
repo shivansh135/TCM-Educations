@@ -70,8 +70,8 @@
     text-align: center;
 }
 
-.course-head-title{
-    color: var(--TCM-Brand-brand-blue01, #14A4F5);
+.coursess-head-title{
+    color: var(--TCM-Neutral-grey13, #000);
     font-family: Figtree;
     font-size: 48px;
     font-style: normal;
@@ -385,11 +385,11 @@
         position: relative;
     }
 
-    .course-head-title{
+    .coursess-head-title{
         width: 221px;
         line-height: 32px;
         font-feature-settings: 'clig' off, 'liga' off;
-        color: var(--TCM-Brand-brand-blue01, #14A4F5);
+        color: var(--TCM-Neutral-grey13, #000);
         font-family: Figtree;
         font-size: var(--font-xxl);
         font-style: normal;

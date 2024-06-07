@@ -43,7 +43,7 @@ export default function More_page() {
                         Sorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliq odio mattis. Class aptent taciti sociosqu ad litora.
                     </div>
                     <button className="attempt">
-                        Attempt Today <img src="/images/Icon_1.svg" className='belll' alt='bell'/>
+                        Attempt Today <img src="/images/Icon_1.svg" className='beelll' alt='bell'/>
                     </button>
                 </div>
                 <img src="/images/Test_Series_Page.png" alt="hero" className="banner_one" />

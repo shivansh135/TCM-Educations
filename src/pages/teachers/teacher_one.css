@@ -27,7 +27,7 @@
 .names{
     color: var(--TCM-Neutral-grey01, #FFF);
     font-family: Figtree;
-    font-size: 48px;
+    font-size: 36px;
     font-style: normal;
     font-weight: 700;
     line-height: 56px; /* 116.667% */
@@ -37,7 +37,7 @@
 .desig{
     color: var(--TCM-Neutral-grey01, #FFF);
     font-family: Figtree;
-    font-size: 32px;
+    font-size: 24px;
     font-style: normal;
     font-weight: 300;
     line-height: 40px;
@@ -62,14 +62,14 @@
     align-items: center;
     gap: 6px;
 
-    color: var(--TCM-Neutral-grey01, #FFF);
+    color: var(--TCM-Brand-brand-blue01, #14A4F5);;
     font-family: Figtree;
     font-size: 18px;
     font-style: normal;
     font-weight: 500;
     line-height: 26px;
     text-align: center;
-    background-color: transparent;
+    background: var(--TCM-Neutral-grey01, #FFF);
 }
 
 .teacher{

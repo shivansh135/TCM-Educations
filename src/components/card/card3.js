@@ -43,7 +43,7 @@ export function Card_three(props) {
                                 </Link>
                                 </button>
                                 <div className='card3-more'>
-                                <Link to={`/cat/${props.id}`}>
+                                <Link to={`/planning/${props.id}`}>
                                     View More
                                 </Link>
                                 </div>

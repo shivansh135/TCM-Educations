@@ -5,13 +5,35 @@ import { Comparison_card_one } from '../../components/card/comparison_card_one';
 import { Comparison_card_two } from '../../components/card/comparison_card_two';
 import FAQQuestion from '../../components/FaQ/FAQQuestion';
 import { Link } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 
 export default function Planning() {
+    const {id}=useParams();
+    const course={
+        Cat:{
+            name:'CAT',
+        },
+        ipmat:{
+            name:'IPMAT',
+        },
+        clat:{
+            name:'CLAT',
+        },
+        cuet:{
+            name:'CUET',
+        }
+    }
+
+    const getcoursebyname=(name)=>{
+        return course[name] || null;        }
+    const course_name=id;
+    const courses_data=getcoursebyname(course_name);
+
     return (
         <div>
             <div className='head_three'>
                 <div className='heading_three'>
-                    <div className='blue'>CAT 2024</div><div className='BLACKs'>HOLISTIC MBA ENTRANCE BATCH</div>
+                    <div className='blue'>{courses_data.name} 2024</div><div className='BLACKs'>HOLISTIC MBA ENTRANCE BATCH</div>
                 </div>
                 <div className='subheading'>
                     Borem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia .
@@ -19,9 +41,9 @@ export default function Planning() {
             </div>
             <div className='group-content'>
                 <div className='group-photo'>
-                    <img src = './images/group_img.png' className='imgg' alt='group_photo' />
+                    <img src = '/images/group_img.png' className='imgg' alt='group_photo' />
                     <div className='group-photo-subheadng'>
-                        <div className='black'>Record Breaking Results by  TCM in <span className='blue'>CAT 2023</span></div>
+                        <div className='black'>Record Breaking Results by  TCM in <span className='blue'>{courses_data.name} 2023</span></div>
                     </div>
                 </div>
                 <div className='important-points'>
@@ -47,7 +69,7 @@ export default function Planning() {
                 <div className='roadmaps-head'>
                     <div className='roadmaps-heading'>
                         <div className='BLACK'>The Plan for Acting</div>
-                        <span className='BLUEs'>CAT 2024 </span></div>
+                        <span className='BLUEs'>{courses_data.name} 2024 </span></div>
                     <div className='roadmaps-heading-detail'>
                         Borem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class apten
                     </div>
@@ -58,13 +80,13 @@ export default function Planning() {
                 </div>
                 <div className='slide-img'>
                     <Link to="/checkout">
-                    <img src = './images/Slide.svg' className='slides-imgg' style={{width:'100%'}} alt='group_photo' />
+                    <img src = '/images/Slide.svg' className='slides-imgg' style={{width:'100%'}} alt='group_photo' />
                     </Link>
                 </div>
             </div>
 
             <div className='discount'>
-                <img src = './images/discount.png' className='discount-img' style={{width:'100%'}} alt='discount_photo' />
+                <img src = '/images/discount.png' className='discount-img' style={{width:'100%'}} alt='discount_photo' />
             </div>
 
             <div className='course_batch'>

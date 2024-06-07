@@ -8,12 +8,12 @@
 
 
 .CAT_heading{
-    width: 1042px;
+    width: 600px;
     color: var(--TCM-Neutral-grey13, #000);
     font-family: Figtree;
-    font-size: 60px;
+    font-size: 40px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 600;
     line-height: normal;
     text-align: center;
 }
@@ -35,12 +35,13 @@
 }
 
 .CATs_video{
-    margin-top: 5%;
+    margin-top: 6%;
+    aspect-ratio: 808 / 229;
     margin-left: auto;
     margin-right: auto;
     display: flex;
-    width: 400px;
-    height: 250px;
+    width: 23%;
+    height: 222px;
     overflow: hidden;
     padding: 152px 322px 152px 342px;
     border-radius: 16px;
@@ -77,9 +78,9 @@
 .CAT_content_heading{
     color: var(--TCM-Neutral-grey13, #000);
     font-family: Figtree;
-    font-size: 48px;
+    font-size: 36px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 56px;
     text-align: center;
 }
@@ -146,9 +147,9 @@
 .eligibility_content_heading_block{
     color: var(--TCM-Neutral-grey13, #000);
     font-family: Figtree;
-    font-size: 48px;
+    font-size: 36px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 56px;
 }
 
@@ -732,7 +733,7 @@
     overflow: hidden;
     flex-direction: column;
     align-items: flex-start;
-    gap: 5px;
+    gap: 0px;
 
     width: 208px;
     color: var(--TCM-Neutral-grey01, #FFF);
