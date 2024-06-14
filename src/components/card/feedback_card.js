@@ -22,7 +22,7 @@ export function Feedback_card({ rank, name, city, feedback }) {
           <div className="stud-ile">{rank}</div>
         </div>
         <div className="bottom-layer">
-          <div className="stud-detail">{feedback}</div>
+          {/* <div className="stud-detail">{feedback}</div> */}
           <div className="stud-more">
             <Link>Learn More</Link>
           </div>

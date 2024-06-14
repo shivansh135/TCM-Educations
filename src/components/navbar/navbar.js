@@ -71,7 +71,7 @@ class Navbar extends React.Component {
                             
                             :
                             
-                            <svg  onClick={this.toggleMobileMenu} width="26" height="26" viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg  onClick={this.toggleMobileMenu} width="26" height="26" viewBox="0 0 800 800" fill={currentPage==="specialPage"?'white':'black'} xmlns="http://www.w3.org/2000/svg">
                             <path d="M133.333 600H666.666" stroke="black" stroke-width="66.6667" stroke-linecap="round"/>
                             <path d="M133.333 400H666.666" stroke="black" stroke-width="66.6667" stroke-linecap="round"/>
                             <path d="M133.333 200H666.666" stroke="black" stroke-width="66.6667" stroke-linecap="round"/>

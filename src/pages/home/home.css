@@ -1129,10 +1129,11 @@ flex-wrap: wrap;
         justify-content: center;
         align-items: flex-start;
         gap: 10px;
-        width: 240px;
+        width: 190px;
         height: fit-content;
         position: relative;
         left: 1%;
+        flex-shrink: 0;
         margin: 10px 14px;
         
     }

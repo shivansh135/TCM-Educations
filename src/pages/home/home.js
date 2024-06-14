@@ -152,10 +152,10 @@ export default function Home() {
 
         <HeadingSubheading heading={`Why TCM is India’s Fastest Growing Institute?`} sub={`Learn about TCM's exclusive features that make us the fastest-growing CAT coaching institute in India`}/>
 
-            <div className='but2'>
+            {/* <div className='but2'>
                 <button className='Counsel '><Link to="/form-page">Counselling Call <img src="./images/Icon.svg" className='belll' alt='bell'/></Link></button>
                 <button className='book_one'><Link to="/signup">Book Trial Class <img src="./images/Icon_1.svg" className='belll' alt='bell'/></Link></button>
-            </div>
+            </div> */}
 
             <div className='home_two_img'>
                 <img src="/Group2-mobile.png" alt='hero' class="desktop-img"/>
