@@ -384,7 +384,7 @@ flex-wrap: wrap;
 }
 
 .stud-detail{
-    width: 357px;
+    width: 90%;
     color: var(--TCM-Neutral-grey08, #595959);
     font-family: Figtree;
     font-size: 16px;
@@ -1199,7 +1199,7 @@ flex-wrap: wrap;
     }
 
     .stud-detail{
-        width: 240px;
+        width: 90%;
         color: var(--TCM-Neutral-grey08, #595959);
         font-family: Figtree;
         font-size: 14px;
