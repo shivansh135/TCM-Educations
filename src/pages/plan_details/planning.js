@@ -84,7 +84,7 @@ export default function Planning() {
                     <picture>
                         <source 
                             media="(max-width: 760px)"
-                            srcset="/images/slide-p.svg"/>
+                            srcset="/images/Slide-p.svg"/>
                         <source 
                             media="(min-width: 761px)"
                             srcset="/images/Slide.svg"/>

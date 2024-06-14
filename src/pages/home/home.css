@@ -900,14 +900,19 @@ flex-wrap: wrap;
         margin-top: 5px;
         color: var(--TCM-Neutral-grey13, #000);
         font-family: Figtree;
-        font-size: 24px;
+        font-size: 20px;
         font-style: normal;
         font-weight: 700;
         line-height: 150%;
-        width: 70%;
+        width: 90%;
+    }
+    .blue-head{
+        color: var(--TCM-Brand-brand-blue01, #14A4F5);
+        font-size: 20px;
     }
     .para-one{
         width: 90%;
+        font-size: 12px;
     }
     
     .btn{
@@ -1090,6 +1095,19 @@ flex-wrap: wrap;
         gap: 7px;
         flex-direction: row;
         width: 100%;
+    }
+
+    .btnn{
+        margin-top: 20px;
+        display: flex;
+        padding: 10px 20px;
+        border-radius: 38px;
+        color: aliceblue;
+        background-color: #14A4F5;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        font-size: 12px;
     }
      
     .card_two{

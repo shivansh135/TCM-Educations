@@ -22,7 +22,7 @@ class Navbar extends React.Component {
     render() {
         const { currentPage, currentImg } = this.props;
         const navbarStyle = currentPage === 'specialPage' ? 'navbar-special' : 'navbar-default';
-        const logoSrc = currentImg === 'specialPage' ? '/images/tcm.png' : '/images/Icon_tcm.png';
+        const logoSrc = currentImg === 'specialPage' ? '/logo/tcmLogoWhite.svg' : '/logo/tcmLogo.svg';
         const links = [
             { name: 'Home', path: '/' },
             { name: 'Career counselling', path: '/form-page' },

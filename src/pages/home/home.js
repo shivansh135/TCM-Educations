@@ -127,7 +127,7 @@ export default function Home() {
             <div className='home'>
                 <div className='headd'>
                     <div className='black-head'>
-                    <span className='blue-head'>TCM Education </span>Turning Dreams to Reality
+                    <span className='blue-head'>TCM EDUCATION </span>Turning Dreams to Reality
                     </div>
                     <div className='para-one'>
                         We're India's leading coaching institute, empowering students to
