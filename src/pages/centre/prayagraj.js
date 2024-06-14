@@ -83,7 +83,7 @@ export default function Prayagraj() {
                 <div className='centre_quote'>
                     An Extraordinary Learning Experience
                 </div>
-                <img src='/images/frame1.png' className='frame' alt='frame'/>
+                <img src={window.innerWidth>760?'/images/local-center.png':'/images/local-center-p.png'} style={{width:'90%',left:'5%'}} alt='frame'/>
             </div>
 
 

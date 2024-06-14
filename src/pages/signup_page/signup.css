@@ -319,7 +319,8 @@
 
 @media (max-width: 768px) {
     .signup{
-        display: inline-flex;
+        display: flex;
+        flex-direction: column-reverse;
         align-items: center;
         gap: 2px;
         height: auto;
@@ -371,7 +372,7 @@
         align-items: flex-start;
         gap: 8px;
         position: relative;
-        ;
+        margin-top: 0px;
     }
     
     .Email_text{
@@ -388,7 +389,7 @@
         height: auto;
         display: flex;
         overflow: hidden;
-        padding: 6px 16px;
+        padding: 9px 19px;
         border-radius: 100px;
         border: 1px solid var(--TCM-Brand-brand-blue05, #86C1F9);
         background: var(--TCM-Brand-brand-blue11, #E3EFFE);
@@ -397,11 +398,11 @@
     
         color: var(--TCM-Brand-brand-blue06, #97C8FA);
         font-family: Figtree;
-        font-size: 8px;
+        font-size: 12px;
         font-style: normal;
         font-weight: 500;
         line-height: normal;
-        margin-bottom: 5%;
+        margin-bottom: 20px;
     }
     
     .Password{
@@ -412,7 +413,7 @@
         align-items: flex-start;
         gap: 8px;
         position: relative;
-        ;
+        margin-bottom: 0;
     }
     
     .Password_text{
@@ -423,14 +424,12 @@
         font-weight: 500;
         line-height: normal;
     }
-    
-    
     .Password_input{
         width: 98%;
         height: auto;
         display: flex;
         overflow: hidden;
-        padding: 6px 16px;
+        padding: 9px 19px;
         border-radius: 100px;
         border: 1px solid var(--TCM-Brand-brand-blue05, #86C1F9);
         background: var(--TCM-Brand-brand-blue11, #E3EFFE);
@@ -439,11 +438,11 @@
     
         color: var(--TCM-Brand-brand-blue06, #97C8FA);
         font-family: Figtree;
-        font-size: 8px;
+        font-size: 12px;
         font-style: normal;
         font-weight: 500;
         line-height: normal;
-        margin-bottom: 5%;
+        margin-bottom: 20px;
     }
     
     .Name{
@@ -472,7 +471,7 @@
         height: auto;
         display: flex;
         overflow: hidden;
-        padding: 6px 16px;
+        padding: 9px 19px;
         border-radius: 100px;
         border: 1px solid var(--TCM-Brand-brand-blue05, #86C1F9);
         background: var(--TCM-Brand-brand-blue11, #E3EFFE);
@@ -481,11 +480,11 @@
     
         color: var(--TCM-Brand-brand-blue06, #97C8FA);
         font-family: Figtree;
-        font-size: 8px;
+        font-size: 12px;
         font-style: normal;
         font-weight: 500;
         line-height: normal;
-        margin-bottom: 5%;
+        margin-bottom: 20px;
     }
     
     .Contact{
@@ -496,7 +495,7 @@
         align-items: flex-start;
         gap: 8px;
         position: relative;
-        ;
+        margin-top: 0;
     }
     
     .Contact_text{
@@ -514,7 +513,7 @@
         height: auto;
         display: flex;
         overflow: hidden;
-        padding: 6px 16px;
+        padding: 9px 19px;
         border-radius: 100px;
         border: 1px solid var(--TCM-Brand-brand-blue05, #86C1F9);
         background: var(--TCM-Brand-brand-blue11, #E3EFFE);
@@ -523,17 +522,17 @@
     
         color: var(--TCM-Brand-brand-blue06, #97C8FA);
         font-family: Figtree;
-        font-size: 8px;
+        font-size: 12px;
         font-style: normal;
         font-weight: 500;
         line-height: normal;
-        margin-bottom: 5%;
+        margin-bottom: 20px;
     }
     
     .Forgot_pass{
         color: var(--TCM-Brand-brand-blue02, #43AAF6);
         font-family: Figtree;
-        font-size: 8px;
+        font-size: 10px;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
@@ -545,9 +544,9 @@
     
     .Login_button{
         display: flex;
-        width: 61%;
+        width: 68%;
         height: auto;
-        padding: 7px 13px;
+        padding: 9px 19px;
         border-radius: 38px;
         background: var(--TCM-Brand-brand-blue01, #14A4F5);
         justify-content: center;
@@ -555,9 +554,8 @@
         gap: 4px;
         color: var(--TCM-Neutral-grey01, #FFF);
         font-family: Figtree;
-        font-size: 11px;
+        font-size: 12px;
         position: relative;
-        left: -1%;
     }
     
     .Or{
@@ -582,14 +580,14 @@
     
     .google{
         display: flex;
-        padding: 4px 7px;
+        padding: 9px 19px;
         border-radius: 1000px;
         background: var(--TCM-Brand-brand-blue11, #E3EFFE);
         justify-content: center;
         align-items: center;
         gap: 13px;
         align-self: stretch;
-        width: 82%;
+        width: 68%;
         color: var(--Secondary-text, #313957);
         font-family: Figtree;
         font-size: 11px;
@@ -607,14 +605,14 @@
     
     .facebook{
         display: flex;
-        padding: 4px 7px;
+        padding: 9px 19px;
         border-radius: 1000px;
         background: var(--TCM-Brand-brand-blue11, #E3EFFE);
         justify-content: center;
         align-items: center;
         gap: 12px;
         align-self: stretch;
-        width: 82%;
+        width: 68%;
         color: var(--Secondary-text, #313957);
         font-family: Figtree;
         font-size: 10px;
@@ -645,9 +643,10 @@
     }
     
     .Login_right{
-        display: none;
         overflow: hidden;
-        padding: 30px 40px;
+        width: 80% !important;
+        padding: 0;
+        aspect-ratio: 1 / 1;
         border-radius: 24px;
         background: var(--TCM-Brand-brand-blue12, #F1F7FE);
         align-items: flex-start;
@@ -655,8 +654,8 @@
         width: 30%;
         height: 100%;
         position: relative;
-        left: -3%;
-        bottom: 67px;
+        left: 0%;
+        margin-bottom: 30px;
          
     }
     

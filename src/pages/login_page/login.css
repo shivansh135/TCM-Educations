@@ -245,8 +245,9 @@
 
 @media (max-width: 768px) {
     .login{
-        display: inline-flex;
+        display: flex;
         align-items: center;
+        flex-direction: column-reverse;
         gap: 20px;
         height: auto;
         width: 100%;
@@ -255,14 +256,15 @@
     .login_left{
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         gap: 10px;
-        width: 100%;
+        width: 80%;
         position: relative;
-        left: 4%;
+        left: 0;
     }
 
     .input_group{
+        width: 100%;
         gap: 10px;
     }
     
@@ -303,11 +305,11 @@
     }
     
     .email_input{
-        width: 100%;
+        width: calc(100% - 38px);
         height: auto;
         display: flex;
         overflow: hidden;
-        padding: 6px 16px;
+        padding: 9px 19px;
         border-radius: 100px;
         border: 1px solid var(--TCM-Brand-brand-blue05, #86C1F9);
         background: var(--TCM-Brand-brand-blue11, #E3EFFE);
@@ -316,7 +318,7 @@
     
         color: var(--TCM-Brand-brand-blue06, #97C8FA);
         font-family: Figtree;
-        font-size: 8px;
+        font-size: 11px;
         font-style: normal;
         font-weight: 500;
         line-height: normal;
@@ -344,10 +346,10 @@
     
     .password_input{
         display: flex;
-        width: 100%;
+        width: calc(100% - 38px);
         height: auto;
         overflow: hidden;
-        padding: 6px 16px;
+        padding: 9px 18px;
         border-radius: 100px;
         border: 1px solid var(--TCM-Brand-brand-blue05, #86C1F9);
         background: var(--TCM-Brand-brand-blue11, #E3EFFE);
@@ -366,22 +368,23 @@
     .forgot_pass{
         color: var(--TCM-Brand-brand-blue02, #43AAF6);
         font-family: Figtree;
-        font-size: 8px;
+        font-size: 10px;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
         text-align: center;
         text-decoration-line: underline;
         position: relative;
-        left: -21%;
+        left: 0%;
+        margin-left: auto;
         bottom: 15%;
     }
 
     .login_button_one{
         display: flex;
-        width: 80%;
+        width: calc(100% - 38px);
         height: auto;
-        padding: 7px 13px;
+        padding: 8px 19px;
         border-radius: 38px;
         background: var(--TCM-Brand-brand-blue01, #14A4F5);
         justify-content: center;
@@ -390,7 +393,7 @@
         color: var(--TCM-Neutral-grey01, #FFF);
         font-family: Figtree;
         margin-left: 0px;
-        font-size: 11px;
+        font-size: 12px;
     
     }
     
@@ -415,14 +418,14 @@
     
     .ggoogle{
         display: flex;
-        padding: 4px 7px;
+        padding: 9px 0px;
         border-radius: 1000px;
         background: var(--TCM-Brand-brand-blue11, #E3EFFE);
         justify-content: center;
         align-items: center;
         gap: 13px;
         align-self: stretch;
-        width: 82%;
+        width: 100%;
         color: var(--Secondary-text, #313957);
         font-family: Figtree;
         font-size: 11px;
@@ -438,14 +441,14 @@
     
     .ffacebook{
         display: flex;
-        padding: 4px 7px;
+        padding: 9px 0px;
         border-radius: 1000px;
         background: var(--TCM-Brand-brand-blue11, #E3EFFE);
         justify-content: center;
         align-items: center;
         gap: 12px;
         align-self: stretch;
-        width: 82%;
+        width: 100%;
         color: var(--Secondary-text, #313957);
         font-family: Figtree;
         font-size: 10px;
@@ -460,7 +463,7 @@
     }
     
     .nnew_user{
-        width: 140%;
+        width: 100%;
         color: var(--Secondary-text, #313957);
         font-family: Figtree;
         font-size: 11px;
@@ -470,21 +473,19 @@
         text-align: center;
         display: flex;
         flex-direction: row;
-        margin-left: 5%;
+        margin-left: 0%;
     }
     .nnew_user a{
         color: var(--TCM-Brand-brand-blue02, #43AAF6);
     }
     .login_right{
-        display: none;
         overflow: hidden;
-        padding: 30px 40px;
+        width: 80% !important;
         border-radius: 24px;
         background: var(--TCM-Brand-brand-blue12, #F1F7FE);
         align-items: flex-start;
         gap: 6px;
-        width: 35%;
-        height: 100%;
+        aspect-ratio: 1 / 1;
         margin-right: 3%;
     }
     

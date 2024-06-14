@@ -20,6 +20,7 @@ import PopupHome from './pages/home/popup_home';
 import {Confirmation} from './pages/form_page/confirmation';
 import MorePage from './pages/past_papers_more_page/more_page';
 import Navbar from './components/navbar/navbar';
+import { Footer } from './components/footer/footer';
 const ScrollToTop = () => {
   // Extracts pathname property(key) from an object
   const { pathname } = useLocation();
@@ -59,6 +60,7 @@ function App() {
       <Route path="/confirmation" element={<><Navbar currentPage="home" currentImg="home"/><Confirmation /></>} />
       <Route path="/more-page/:id" element={<><Navbar currentPage="specialPage" currentImg="specialPage"/><MorePage /></>} />
     </Routes>
+    <Footer/>
   </Router>
   );
 }

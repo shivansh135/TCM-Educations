@@ -12,13 +12,68 @@ import { HeadingSubheading } from '../../components/headings/headings';
 import Popup_home from './popup_home';
 import { Link } from 'react-router-dom';
 import Marquee from "react-fast-marquee";
+import PricingCard from '../../components/pricingCards/pricingCards';
+import PricingCards from '../../components/pricingCards/pricingCards';
+
+export const cardsData = [
+    {
+        title:`TCM'S Online Holistic Batch - CAT 2025`,
+        discription:`Live Online CAT 2024 Weekday Batch`,
+        list:[
+            '120+ Interactive Classes',
+            '150+ Interactive Classes',
+            '150+ Interactive Classes',
+            '100+ Pre recorded classes on QUANT, VARC & DILR',
+            '100+ Pre recorded classes on QUANT, VARC & DILR',
+            '100+ Pre recorded classes on QUANT, VARC & DILR'
+        ],
+        price:'52,000',
+        batchInfo:`New batch starts 10th April 2024 Class Timing 8:30PM to 10:30PM`,
+        blue:true
+    },
+    {
+        title:`TCM'S Online Holistic Batch - CAT 2025`,
+        discription:`Live Online CAT 2024 Weekday Batch`,
+        list:[
+            '120+ Interactive Classes',
+            '150+ Interactive Classes',
+            '150+ Interactive Classes',
+            '100+ Pre recorded classes on QUANT, VARC & DILR',
+            '100+ Pre recorded classes on QUANT, VARC & DILR',
+            '100+ Pre recorded classes on QUANT, VARC & DILR',
+        ],
+        price:'52,000',
+        batchInfo:`New batch starts 10th April 2024 Class Timing 8:30PM to 10:30PM`
+    },
+    {
+        title:`TCM'S Online Holistic Batch - CAT 2025`,
+        discription:`Live Online CAT 2024 Weekday Batch`,
+        list:[
+            '120+ Interactive Classes',
+            '150+ Interactive Classes',
+            '150+ Interactive Classes',
+            '100+ Pre recorded classes on QUANT, VARC & DILR',
+            '100+ Pre recorded classes on QUANT, VARC & DILR',
+            '100+ Pre recorded classes on QUANT, VARC & DILR',
+        ],
+        price:'52,000',
+        batchInfo:`New batch starts 10th April 2024 Class Timing 8:30PM to 10:30PM`
+    }
+]
 
 export const StudentsFeedback = () => {
+    const [isMobile, setIsMobile] = useState(false);
+    useEffect(()=>{
+        if(window.innerWidth < 768){
+            setIsMobile(true);
+        }
+    },[isMobile])
+
 return(
     <>
     <div style={{minWidth:'100%',margin:'0px',marginTop:'40px'}} className='card-2-container'>
             
-    <Marquee >
+           <Marquee >
                 <Card_two src='/images/student1.png' name='Ajai Singh' cor='CAT' ile='97.81%ile' review="TCM Special Clone Test Series and suggestions of Ajai Sir acted as a boon in my preparation. Looking back, I can't help but appreciate the support that TCM provided to me." id='student1' />
                 <Card_two src='/images/student2.png' name='Ajai Singh' cor='CAT' ile='97.81%ile' review="TCM Special Clone Test Series and suggestions of Ajai Sir acted as a boon in my preparation. Looking back, I can't help but appreciate the support that TCM provided to me." id='student2'/>
                 <Card_two src='/images/student3.png' name='Ajai Singh' cor='CAT' ile='97.81%ile' review="TCM Special Clone Test Series and suggestions of Ajai Sir acted as a boon in my preparation. Looking back, I can't help but appreciate the support that TCM provided to me." id='student3'/>
@@ -27,14 +82,14 @@ return(
                 <Card_two src='/images/student6.png' name='Ajai Singh' cor='CAT' ile='97.81%ile' review="TCM Special Clone Test Series and suggestions of Ajai Sir acted as a boon in my preparation. Looking back, I can't help but appreciate the support that TCM provided to me." id='student6'/>
             </Marquee>
 
-            <Marquee direction='right'>
+            {!isMobile &&<Marquee direction='right'>
                 <Card_two src='/images/student7.png' name='Ajai Singh' cor='CAT' ile='97.81%ile' review="TCM Special Clone Test Series and suggestions of Ajai Sir acted as a boon in my preparation. Looking back, I can't help but appreciate the support that TCM provided to me." id='student7' />
                 <Card_two src='/images/student8.jpeg' name='Ajai Singh' cor='CAT' ile='97.81%ile' review="TCM Special Clone Test Series and suggestions of Ajai Sir acted as a boon in my preparation. Looking back, I can't help but appreciate the support that TCM provided to me." id='student8'/>
                 <Card_two src='/images/student9.png' name='Ajai Singh' cor='CAT' ile='97.81%ile' review="TCM Special Clone Test Series and suggestions of Ajai Sir acted as a boon in my preparation. Looking back, I can't help but appreciate the support that TCM provided to me." id='student9'/>
                 <Card_two src='/images/student10.jpeg' name='Ajai Singh' cor='CAT' ile='97.81%ile' review="TCM Special Clone Test Series and suggestions of Ajai Sir acted as a boon in my preparation. Looking back, I can't help but appreciate the support that TCM provided to me." id='student10'/>
                 <Card_two src='/images/student11.jpeg' name='Ajai Singh' cor='CAT' ile='97.81%ile' review="TCM Special Clone Test Series and suggestions of Ajai Sir acted as a boon in my preparation. Looking back, I can't help but appreciate the support that TCM provided to me." id='student11'/>
                 <Card_two src='/images/student12.jpeg' name='Ajai Singh' cor='CAT' ile='97.81%ile' review="TCM Special Clone Test Series and suggestions of Ajai Sir acted as a boon in my preparation. Looking back, I can't help but appreciate the support that TCM provided to me." id='student12'/>
-            </Marquee>
+            </Marquee>}
             </div>
     </>
 )
@@ -45,26 +100,14 @@ export default function Home() {
     const [currentIndex, setCurrentIndex] = useState(0);
     const images = ["/H1.png", "/H2.png",'/H3.png','/H4.png','/H5.png'];
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 3000); // Change image every 3 seconds
-
-    return () => clearInterval(interval);
-  }, [images.length]);
-    // const [imgSrc, setImgSrc] = useState("/Group.png");
-    // const images = ["/Group.png",/* "/Group2.png", "./images/prayagraj.png"]; */];
-    // let index = 0;
-
-    // useEffect(() => {
-    //     const interval = setInterval(() => {
-    //       index = index + 1 === images.length ? 0 : index + 1;
-    //       setImgSrc(images[index]);
-    //     }, 3000);
-
-    //     return () => clearInterval(interval);
-    // }, []);
-
+    useEffect(() => {
+        const interval = setInterval(() => {
+          setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+        }, 3000); // Change image every 3 seconds
+      
+        return () => clearInterval(interval);
+      }, [currentIndex, images]);
+      
     const handleButtonClick = () => {
         setShowPopup(true);
     };
@@ -192,6 +235,7 @@ export default function Home() {
                 </Carousel>
             </div> */}
             <StudentsFeedback/>
+            
            
 
             <div className='course-select'>
@@ -207,119 +251,10 @@ export default function Home() {
                             <div className='option' onClick={() => handleOptionClick('CUET')} style={{backgroundColor: selectedOption === 'CUET' ? '#14A4F5' : '',color: selectedOption === 'CUET' ? 'white' : ''}}>CUET</div>
                         </div>
                     </div>
-                    <div className='course-body'>
-                        {selectedOption === 'CAT' && (
-                        <>
-                            <Card_four
-                                course_name='CAT'
-                                course_price='Rs.50,000'
-                                detail='New batch starts 10th April 2024.'
-                                course_timing='Class Timing 8:30PM to 10:30PM'
-                                id='Cat'
-                            />
-                            <Card_three
-                                course_name='CAT'
-                                course_price='Rs.50,000'
-                                detail='New batch starts 10th April 2024.'
-                                course_timing='Class Timing 8:30PM to 10:30PM'
-                                id='Cat'
-                            />
-                            <Card_four
-                                course_name='CAT'
-                                course_price='Rs.50,000'
-                                detail='New batch starts 10th April 2024.'
-                                course_timing='Class Timing 8:30PM to 10:30PM'
-                                id='Cat'
-                            />
-                        </>
-                        )}
-
-                        {selectedOption === 'IPMAT' && (
-                        <>
-                            <Card_four
-                                course_name='IPMAT'
-                                course_price='Rs.50,000'
-                                detail='New batch starts 10th April 2024.'
-                                course_timing='Class Timing 8:30PM to 10:30PM'
-                                id='ipmat'
-                            />
-                            <Card_three
-                                course_name='IPMAT'
-                                course_price='Rs.50,000'
-                                detail='New batch starts 10th April 2024.'
-                                course_timing='Class Timing 8:30PM to 10:30PM'
-                                id='ipmat'
-
-                            />
-                            <Card_four
-                                course_name='IPMAT'
-                                course_price='Rs.50,000'
-                                detail='New batch starts 10th April 2024.'
-                                course_timing='Class Timing 8:30PM to 10:30PM'
-                                id='ipmat'
-                            />
-
-                        </>
-                        )}
-
-                        {selectedOption === 'CLAT' && (
-                        <>
-                            <Card_four
-                                course_name='CLAT'
-                                course_price='Rs.50,000'
-                                detail='New batch starts 10th April 2024.'
-                                course_timing='Class Timing 8:30PM to 10:30PM'
-                                id='clat'
-                            />
-                            <Card_three
-                                course_name='CLAT'
-                                course_price='Rs.50,000'
-                                detail='New batch starts 10th April 2024.'
-                                course_timing='Class Timing 8:30PM to 10:30PM'
-                                id='clat'
-                            />
-                            <Card_four
-                                course_name='CLAT'
-                                course_price='Rs.50,000'
-                                detail='New batch starts 10th April 2024.'
-                                course_timing='Class Timing 8:30PM to 10:30PM'
-                                id='clat'
-                            />
-
-                        </>
-                        )}
-
-                        {selectedOption === 'CUET' && (
-                        <>
-                            <Card_four
-                                course_name='CUET'
-                                course_price='Rs.50,000'
-                                detail='New batch starts 10th April 2024.'
-                                course_timing='Class Timing 8:30PM to 10:30PM'
-                                id='cuet'
-                            />
-                            <Card_three
-                                course_name='CUET'
-                                course_price='Rs.50,000'
-                                detail='New batch starts 10th April 2024.'
-                                course_timing='Class Timing 8:30PM to 10:30PM'
-                                id='cuet'
-                            />
-                            <Card_four
-                                course_name='CUET'
-                                course_price='Rs.50,000'
-                                detail='New batch starts 10th April 2024.'
-                                course_timing='Class Timing 8:30PM to 10:30PM'
-                                id='cuet'
-                            />
-
-                        </>
-                        )}
-                    </div>
+                    <PricingCard data={cardsData}/>
 
                 </div>
             </div>
-
             <div className='FQA'>
                 <div className='FQA-area'>
                     <div className='FQA-head'>

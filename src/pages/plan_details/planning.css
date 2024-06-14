@@ -38,13 +38,15 @@
 
 .group-content{
     margin-top: 10px;
-    display: inline-flex;
+    display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     align-content: flex-start;
     gap: 120px;
     flex-wrap: wrap;
     flex-direction: row;
+    width: fit-content;
+    margin: auto;
 }
 
 .group-photo{
@@ -82,7 +84,6 @@
 }
 
 .important-points{
-    margin-top: 7%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -95,9 +96,24 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
-
+    position: relative;
+    width: 90%;
+    left:5%;
 
 }
+
+.important-points ul {
+    list-style: none;
+    padding-left: 0;
+  }
+
+.important-points ul li {
+    background: url('../../../public/checkmark-icon.png') no-repeat left center;
+    background-size: 20px;
+    padding-left: 30px;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
 
 .bullet{
     color: var(--TCM-Neutral-grey13, #000);
@@ -123,6 +139,7 @@
     font-weight: 500;
     line-height: 26px;
     text-align: center;
+    background-color: transparent;
 }
 
 .live-class a{
@@ -159,19 +176,19 @@
     display: flex;
     flex-direction: row;
     gap: 15px;
-    margin-left: 2%;
 
 }
 
 .roadmaps{
     margin-left: 10%;
     overflow: hidden;
-    width: 1300px;
+    width: fit-content;
     height: 100%;
     background: #FFF;
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin: auto;
     
 }
 
@@ -270,38 +287,12 @@
 .slide-img{
     margin-top: 5%;
     width: 50%;
-    height: 100%;
+    height: auto;
     
 }
 
 .discount{
     margin-top: 10%;
-}
-
-.course-head{
-    margin-left: normal;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 24px;
-    width: 100%;
-    text-align: center;
-}
-
-.course-head-title{
-    color: black;
-    font-family: Figtree;
-    font-size: 48px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 56px;
-    text-align: center;
-}
-
-.course-head-option{
-    display: flex;
-    align-items: flex-start;
-    gap: 44px;
 }
 
 .option{
@@ -329,149 +320,14 @@
     margin-top: 10%;
 }
 
-.Batch-Card{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-}
-
-.batch-card{
-    display: flex;
-    overflow: hidden;
-    padding: 30px 140px 30px 30px;
-    border-radius: 14px;
-    border: 2px solid rgba(20, 164, 245, 0.20);
-    background: var(--TCM-Brand-brand-blue12, #F1F7FE);
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-}
-
-.batch-card-content{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 24px;
-}
-
-.batch-card-firstpor{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 14px;
-}
-
-.batch-card-firstpor-content{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 8px;
-}
-
-.batch-card-firstpor-title{
-    color: var(--TCM-Brand-brand-blue01, #14A4F5);
-    font-family: Figtree;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 32px;
-}
-
-.batch-card-firstpor-title-date{
-    color: var(--TCM-Neutral-grey13, #000);
-    font-family: Figtree;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 24px;
-}
-
-.batch-card-firstpor-detail{
-    width: 243px;
-    color: var(--TCM-Neutral-grey08, #595959);
-    font-family: Figtree;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 20px;
-}
-
-.city-contain{
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    flex-direction: row;
-}
-.batch-card-city1{
-    display: flex;
-    padding: 3px 12px;
-    border-radius: 59px;
-    border: 1px solid rgba(20, 164, 245, 0.45);
-    background: var(--TCM-Brand-brand-blue12, #F1F7FE);
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-
-    color: var(--TCM-Brand-brand-blue01, #14A4F5);
-    font-family: Figtree;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 18px;
-    text-align: center;
-}
-
-.second-por{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 14px;
-}
-.batch-enroll-but{
-    display: flex;
-    padding: 10px 20px;
-    border-radius: 38px;
-    background: var(--TCM-Brand-brand-blue01, #14A4F5);
-    justify-content: center;
-    align-items: center;
-    gap: 6px;
-    border: none;
-    
-    color: var(--TCM-Neutral-grey01, #FFF);
-    font-family: Figtree;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 24px;
-    text-align: center;
-    
-}
-
-.batch-card-viewmore{
-    display: flex;
-    padding: 10px 5px;
-    border-radius: 38px;
-    justify-content: center;
-    align-items: center;
-    gap: 6px;
-
-    color: var(--TCM-Brand-brand-blue01, #14A4F5);
-    font-family: Figtree;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
-    text-align: center;
-    text-decoration-line: underline;
-}
-
 .comparison-plans{
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     gap: 40px;
     margin-top: 10%;
+    margin: auto;
+        
     
 }
 
@@ -581,95 +437,9 @@
     gap: 10px;
 }
 
-.FQA{
-    margin-top: 14%;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    background: #FFF;
-    display: flex;
-    justify-content: center;
-}
-
-.FQA-area{
-    display: inline-flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 60px;
-}
-
-.FQA-head{
-    color: var(--TCM-Neutral-grey13, #000);
-    font-family: Figtree;
-    font-size: 48px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 56px;
-    text-align: center;
-}
-
-.FQA-body{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 30px;
-}
-
-
-.FQA-question {
-        display: flex;
-        flex-direction: column;
-        padding: 24px 50px 24px 40px;
-        border-radius: 16px;
-        border: 1px solid var(--TCM-Neutral-grey05, #D9D9D9);
-        background: var(--TCM-Neutral-grey02, #FAFAFA);
-        width: 55vw;
-}
-
-.question-wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-
-.question{
-    flex-grow: 1;
+.slides-imgg{
+    height: 390px;
     width: auto;
-    color: #000;
-    width: 782px;
-    color: #000;
-    font-family: Figtree;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 28px;
-}
-
-.answer-btn{
-    display: flex;
-    width: 34px;
-    height: 34px;
-    padding: 10px;
-    border-radius: 38px;
-    background: var(--TCM-Brand-brand-blue01, #14A4F5);
-    justify-content: center;
-    align-items: center;
-    gap: 6px;
-    border: none;
-    color: white;
-    
-}
-
-.answer{
-    margin-top: 3%;
-    width: 55vw;
-    color: var(--TCM-Neutral-grey08, #595959);
-    font-family: Figtree;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 26px;
 }
 
 
@@ -677,14 +447,15 @@
 
 @media (max-width: 768px) {
     .head_three{
-        width: 100%;
+        width: 70%;
         display: inline-flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         gap: 16px;
         position: relative;
-        left: -2%;
+        margin: auto;
+        left: 15%;
     }
     
     .heading_three{
@@ -702,8 +473,9 @@
 
     }
 
-    .slides-imgg img{
-        height: 300px;
+    .slides-imgg{
+        height: 360px;
+        width: auto;
     }
     
     .BLACKs{
@@ -715,7 +487,7 @@
         width: 100%;
         color: var(--TCM-Neutral-grey08, #595959);
         font-family: Figtree;
-        font-size: 10px;
+        font-size: 12px;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
@@ -740,6 +512,8 @@
         flex-direction: column;
         align-items: center;
         gap: 12px;
+        margin-bottom: 15px;
+
     }
     
     .imgg{
@@ -761,8 +535,11 @@
     }
     
     .black{
+        position: relative;
         color: var(--TCM-Neutral-grey13, #000);
         font-size: 16px;
+        width: 90%;
+        left: 5%;
     }
     
     .blue{
@@ -816,7 +593,7 @@
     .live-class a{
         text-decoration: none;
         color: var(--TCM-Brand-brand-blue01, #14A4F5);
-    
+    height: fit-content;
     }
     
     .buy-now{
@@ -846,19 +623,17 @@
         display: flex;
         flex-direction: row;
         gap: 10px;
-        margin-left: 2%;
-    
     }
     
     .roadmaps{
-        margin-left: 1px;
+        margin-left: 0px;
         overflow: hidden;
         width: 100%;
-        height: 322px;
         background: #FFF;
         display: flex;
-        flex-direction: row;
+        flex-direction: column-reverse;
         align-items: center;
+        height: fit-content;
         
     }
     
@@ -866,11 +641,10 @@
         display: inline-flex;
         flex-direction: column;
         align-items: flex-start;
-        gap: 12px;
-        width: 100%;
+        gap: 10px;
+        width: 80%;
         margin-top:2%;
         position: relative;
-        left: 3%;
     }
     
     .roadmaps-heading{
@@ -900,20 +674,21 @@
         width: 100%;
         color: var(--TCM-Neutral-grey08, #595959);
         font-family: Figtree;
-        font-size: 10px;
+        font-size: 12px;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
     }
     .buttonns{
         width: 90%;
-        height: 74px;
         display: flex;
         flex-direction: row;
         gap: 6px;
         align-items: flex-start;
         position: relative;
-        left: 4%;
+        position: relative;
+        height: fit-content;
+    left: 5%;
         
     
     }
@@ -973,45 +748,15 @@
     .slides-imgg{
         position: relative;
         bottom: 24px;
-        width: 100%;
-        height: 299px;
-        left: -8%;
+        width: 80%;
+        left: 10%;
+        margin-top: 50px;
     }
     
     .discount{
         margin-top: 10%;
         width: 100%;
         height: auto;
-    }
-    
-    .course-head{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
-    
-    .course-head-title{
-        width: 221px;
-        color: black;
-        text-align: center;
-        font-feature-settings: 'clig' off, 'liga' off;
-        /* TCM Mobile/text-2xl/Bold-M */
-        font-family: Figtree;
-        font-size: 24px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 32px; /* 133.333% */
-    }
-    
-    .course-head-option{
-        display: flex;
-        width: 283px;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-        gap: 11px;
-        flex-wrap: wrap;
     }
     
     .option{
@@ -1040,153 +785,6 @@
         gap: 21px;
     }
     
-    .Batch-Card{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 21px;
-    }
-    
-    .batch-card{
-        display: flex;
-        padding: 18px 20px;
-        flex-direction: column;
-        align-items: flex;
-        gap: 10px;
-        border-radius: 14px;
-        border: 2px solid rgba(20, 164, 245, 0.20);
-        background: var(--TCM-Brand-brand-blue12, #F1F7FE);
-        position: relative;
-        left: 15%;
-    }
-    
-    .batch-card-content{
-        display: flex;
-        flex-direction: column;
-        align-items: flex;
-        gap: 24px;
-    }
-    
-    .batch-card-firstpor{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 8px;
-    }
-    
-    .batch-card-firstpor-content{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 8px;
-    }
-    
-    .batch-card-firstpor-title{
-        color: var(--TCM-Brand-brand-blue01, #14A4F5);
-        font-feature-settings: 'clig' off, 'liga' off;
-        
-        /* TCM Mobile/text-lg/Bold-M */
-        font-family: Figtree;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 28px; /* 155.556% */
-    }
-    
-    .batch-card-firstpor-title-date{
-        color: var(--TCM-Neutral-grey13, #000);
-        font-feature-settings: 'clig' off, 'liga' off;
-        
-        /* TCM Mobile/text-2xs/Medium-M */
-        font-family: Figtree;
-        font-size: 10px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 16px; /* 160% */
-    }
-    
-    .batch-card-firstpor-detail{
-        width: 243px;
-        color: var(--TCM-Neutral-grey08, #595959);
-        font-feature-settings: 'clig' off, 'liga' off;
-        
-        /* TCM Mobile/text-2xs/Regular-M */
-        font-family: Figtree;
-        font-size: 10px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 18px; /* 180% */
-    }
-    
-    .city-contain{
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        flex-direction: row;
-    }
-    .batch-card-city1{
-        display: flex;
-        padding: 3px 8px;
-        border-radius: 59px;
-        border: 1px solid rgba(20, 164, 245, 0.45);
-        background: var(--TCM-Brand-brand-blue12, #F1F7FE);
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-    
-        color: var(--TCM-Brand-brand-blue01, #14A4F5);
-        font-family: Figtree;
-        font-size: 10px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 16px;
-        text-align: center;
-    }
-    
-    .second-por{
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        gap: 8px;
-    }
-    .batch-enroll-but{
-        display: flex;
-        padding: 5px 12px;
-        border-radius: 38px;
-        background: var(--TCM-Brand-brand-blue01, #14A4F5);
-        justify-content: center;
-        align-items: center;
-        gap: 3px;
-        border: none;
-        
-        color: var(--TCM-Neutral-grey01, #FFF);
-        font-family: Figtree;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 20px;
-        text-align: center;
-        
-    }
-    
-    .batch-card-viewmore{
-        display: flex;
-        padding: 5px 12px;
-        border-radius: 38px;
-        justify-content: center;
-        align-items: center;
-        gap: 6px;
-    
-        color: var(--TCM-Brand-brand-blue01, #14A4F5);
-        font-family: Figtree;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 24px;
-        text-align: center;
-        text-decoration-line: underline;
-    }
-
     .comparison-plans{
         width: 100%;
         height: auto;
@@ -1218,13 +816,13 @@
         align-items: center;
         flex-direction: column;
         margin-left: 2%;
-        gap: 2px;
+        gap: 0px;
     
     }
     
     .comparison-card-one{
         display: flex;
-        width: 70%;
+        width: 100;
         height: auto;
         overflow: hidden;
         padding: 45px 47px;
@@ -1239,14 +837,14 @@
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        gap: 18px;
+        gap: 16px;
     }
     
     .comparison-card-one-title{
-        width: 100%;
+        width: 50%;
         color: var(--TCM-Neutral-grey01, #FFF);
         font-family: Figtree;
-        font-size: 25px;
+        font-size: 18px;
         font-style: normal;
         font-weight: 700;
         line-height: normal;
@@ -1257,7 +855,7 @@
         overflow: hidden;
         flex-direction: column;
         align-items: flex-start;
-        gap: 28px;
+        gap: 10px;
     }
     
     .comparison-card-one-points{
@@ -1271,7 +869,7 @@
         width: 230px;
         color: var(--TCM-Neutral-grey01, #FFF);
         font-family: Figtree;
-        font-size: 20px;
+        font-size: 12px;
         font-style: normal;
         font-weight: 500;
         line-height: 28px;
@@ -1279,7 +877,7 @@
     
     .comp-book{
         display: flex;
-        padding: 10px 20px;
+        padding: 5px 12px;
         border-radius: 38px;
         border: 1px solid var(--TCM-Neutral-grey01, #FFF);
         justify-content: center;
@@ -1288,7 +886,7 @@
     
         color: var(--TCM-Neutral-grey01, #FFF);
         font-family: Figtree;
-        font-size: 18px;
+        font-size: 12px;
         font-style: normal;
         font-weight: 500;
         line-height: 26px;
@@ -1302,107 +900,54 @@
     }
     .comparison-card-two{
         display: flex;
-        width: 70%;
+        width: 70;
         height: auto;
         overflow: hidden;
         padding: 45px 47px;
-        background: var(--TCM-Brand-brand-blue04, #73B9F8);
+        background-color: var(--TCM-Brand-brand-blue04, #73B9F8);
         align-items: flex-start;
         gap: 6px;
     }
+    .important-points ul li {
+        background: url('../../../public/checkmark-icon.png') no-repeat left center;
+        background-size: 20px;
+        padding-left: 30px;
+        margin-bottom: 10px;
+        font-size: 14px;
+      }
 
-    .FQA{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 12px;
-    }
-    
-    .FQA-area{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 22px;
-    }
-    
-    .FQA-head{
-        width: 100%;
-        color: var(--TCM-Neutral-grey13, #000);
-        font-family: Figtree;
-        font-size: 24px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 32px;
-        text-align: center;
-        font-feature-settings: 'clig' off, 'liga' off;
-        position: relative;
-    }
-    
-    .FQA-body{
-        display: inline-flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 12px;
-    }
-    
-    
-    .FQA-question {
-        margin-left: 5%;
-        display: flex;
-        width: 290px;
-        padding: 10px 12px;
-        border-radius: 8px;
-        border: 1px solid var(--TCM-Neutral-grey05, #D9D9D9);
-        background: var(--TCM-Neutral-grey02, #FAFAFA);
-        justify-content: space-between;
-        align-items: flex-start;
-    }
-    
-    .question-wrapper {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 20px;
-    }
-    
-    
-    .question{
-        width: 225px;
-        flex-shrink: 0;
-        color: #000;
-        font-family: Figtree;
-        font-size: 10px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 16px;
-        font-feature-settings: 'clig' off, 'liga' off;
-    }
-    
-    .answer-btn{
-        display: flex;
-        width: 25px;
-        height: 25px;
-        padding: 10px;
-        border-radius: 38px;
-        background: var(--TCM-Brand-brand-blue01, #14A4F5);
-        justify-content: center;
-        align-items: center;
-        gap: 6px;
-        flex-shrink: 0;
-        width: 16px;
-        height: 16px;
-        
-    }
-    
-    .answer{
-        width: 283px;
-        color: var(--TCM-Neutral-grey08, #595959);
-        font-family: Figtree;
-        font-size: 10px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 18px;
-        font-feature-settings: 'clig' off, 'liga' off;
-    }
+      .comparison-card-two ul{
+        list-style: none;
+      }
+
+      
 
 }
+
+   .comparison-card-one ul{
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+  }
+
+   .comparison-card-one ul li {
+    background: url('../../../public/checkmark-icon.png') no-repeat left center;
+    background-size: 20px;
+    padding-left: 30px;
+    filter: brightness(200);
+    margin-bottom: 10px;
+  }
+
+  .comparison-card-two ul{
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+  }
+
+  .comparison-card-two ul li {
+    background: url('../../../public/checkmark-icon.png') no-repeat left center;
+    background-size: 20px;
+    padding-left: 30px;
+    filter: brightness(200);
+    margin-bottom: 10px;
+  }

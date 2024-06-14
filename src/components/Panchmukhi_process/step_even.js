@@ -3,7 +3,7 @@ import React from "react";
 export function Step_even({step,title,image,detail}) {
     return(
         <div>
-            <div className='Step_one'>
+            <div className='Step_one even'>
             <img src={`./images/${image}`} className='Step_img' alt='CAT' />
 
                 <div className='Step_content'>

@@ -6,6 +6,8 @@ import { Card_four } from '../../components/card/card4';
 import { Card_three } from '../../components/card/card3';
 import FAQQuestion from '../../components/FaQ/FAQQuestion';
 import { Link } from 'react-router-dom';
+import { cardsData } from '../home/home';
+import PricingCards from '../../components/pricingCards/pricingCards';
 
 
 export default function Panchmukhi() {
@@ -27,25 +29,38 @@ export default function Panchmukhi() {
             </div>
             </div>
             
-
-            <div className='roadmap'>
-                <div className='roadmap-head'>
-                <div className='roadmap-heading'>
+            <div className='roadmaps'>
+                <div className='roadmaps-head'>
+                    <div className='roadmaps-heading'>
+                    
                     <div className='BLACK'>
-                        <span className='BLUEE'>TCM’s</span>
-                        Scientific Process of Preparation 
+                    <span className='BLUEE'>TCM’s </span>
+                        The Plan for Acting</div>
                     </div>
-                </div>
-                    <div className='roadmap-heading-detail'>
+                    <div className='roadmaps-heading-detail'>
                         Borem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class apten
                     </div>
-                    <div className='buttons'>
-                    <button className='counsel'>
-                        <Link to="/form-page">Counceling Call <img src="./images/Icon.svg" className='beeelll' alt='bell'/></Link></button>
-                        <button className='trial'><Link to="/checkout">Book Trial Class <img src="./images/Icon_1.svg" className='beeelll' alt='bell'/></Link></button>
+                    <div className='buttonns' style={{left:'0'}}>
+                        <button className='live-class'><Link to="/form-page">Counceling Call</Link></button>
+                        <button className='buy-now'><Link to="/signup">Book Trial Class</Link></button>
                     </div>
                 </div>
-                    <img src = './images/Slide2.svg' className='slidee-img' alt='group_photo' />
+                <div className='slide-img'>
+                    <Link to="/checkout">
+                    <picture>
+                        <source 
+                            media="(max-width: 760px)"
+                            srcset="/images/slide-p.svg"/>
+                        <source 
+                            media="(min-width: 761px)"
+                            srcset="/images/Slide.svg"/>
+                        <img src="/images/Slide.svg" 
+                        className='slides-imgg'
+                        alt="def"/>
+                    </picture>
+
+                    </Link>
+                </div>
             </div>
 
             <Step_odd 
@@ -79,130 +94,58 @@ export default function Panchmukhi() {
                 image='ask5.png'/>       
             
 
-            <div className='course-select'>
-                <div className='course-select-area'>
-                    <div className='course-head'>
-                        <div className='course-head-title'>
-                            Choose a Course that Fits you
-                        </div>
-                        <div className='course-head-option'>
-                            <div className='option' onClick={() => handleOptionClick('CAT')} style={{backgroundColor: selectedOption === 'CAT' ? '#14A4F5' : '' ,color: selectedOption === 'CAT' ? 'white' : ''}}>CAT</div>
-                            <div className='option' onClick={() => handleOptionClick('IPMAT')} style={{backgroundColor: selectedOption === 'IPMAT' ? '#14A4F5' : '' ,color: selectedOption === 'IPMAT' ? 'white' : ''}}>IPMAT</div>
-                            <div className='option' onClick={() => handleOptionClick('CLAT')} style={{backgroundColor: selectedOption === 'CLAT' ? '#14A4F5' : '' ,color: selectedOption === 'CLAT' ? 'white' : ''}}>CLAT</div>
-                            <div className='option' onClick={() => handleOptionClick('CUET')} style={{backgroundColor: selectedOption === 'CUET' ? '#14A4F5' : '',color: selectedOption === 'CUET' ? 'white' : ''}}>CUET</div>
-                        </div>
-                    </div>
-                    <div className='course-body'>
-                        {selectedOption === 'CAT' && (
-                        <>
-                            <Card_four
-                                course_name='CAT'
-                                course_price='Rs.50,000'
-                                detail='New batch starts 10th April 2024.'
-                                course_timing='Class Timing 8:30PM to 10:30PM'
-                                id='Cat'
-                            />
-                            <Card_three
-                                course_name='CAT'
-                                course_price='Rs.50,000'
-                                detail='New batch starts 10th April 2024.'
-                                course_timing='Class Timing 8:30PM to 10:30PM'
-                                id='Cat'
-                            />
-                            <Card_four
-                                course_name='CAT'
-                                course_price='Rs.50,000'
-                                detail='New batch starts 10th April 2024.'
-                                course_timing='Class Timing 8:30PM to 10:30PM'
-                                id='Cat'
-                            />
-                        </>
-                        )}
-
-                        {selectedOption === 'IPMAT' && (
-                        <>
-                            <Card_four
-                                course_name='IPMAT'
-                                course_price='Rs.50,000'
-                                detail='New batch starts 10th April 2024.'
-                                course_timing='Class Timing 8:30PM to 10:30PM'
-                                id='ipmat'
-                            />
-                            <Card_three
-                                course_name='IPMAT'
-                                course_price='Rs.50,000'
-                                detail='New batch starts 10th April 2024.'
-                                course_timing='Class Timing 8:30PM to 10:30PM'
-                                id='ipmat'
-                            />
-                            <Card_four
-                                course_name='IPMAT'
-                                course_price='Rs.50,000'
-                                detail='New batch starts 10th April 2024.'
-                                course_timing='Class Timing 8:30PM to 10:30PM'
-                                id='ipmat'
-                            />
-
-                        </>
-                        )}
-
-                        {selectedOption === 'CLAT' && (
-                        <>
-                            <Card_four
-                                course_name='CLAT'
-                                course_price='Rs.50,000'
-                                detail='New batch starts 10th April 2024.'
-                                course_timing='Class Timing 8:30PM to 10:30PM'
-                                id='clat'
-                            />
-                            <Card_three
-                                course_name='CLAT'
-                                course_price='Rs.50,000'
-                                detail='New batch starts 10th April 2024.'
-                                course_timing='Class Timing 8:30PM to 10:30PM'
-                                id='clat'
-                            />
-                            <Card_four
-                                course_name='CLAT'
-                                course_price='Rs.50,000'
-                                detail='New batch starts 10th April 2024.'
-                                course_timing='Class Timing 8:30PM to 10:30PM'
-                                id='clat'
-                            />
-
-                        </>
-                        )}
-
-                        {selectedOption === 'CUET' && (
-                        <>
-                            <Card_four
-                                course_name='CUET'
-                                course_price='Rs.50,000'
-                                detail='New batch starts 10th April 2024.'
-                                course_timing='Class Timing 8:30PM to 10:30PM'
-                                id='cuet'
-                            />
-                            <Card_three
-                                course_name='CUET'
-                                course_price='Rs.50,000'
-                                detail='New batch starts 10th April 2024.'
-                                course_timing='Class Timing 8:30PM to 10:30PM'
-                                id='cuet'
-                            />
-                            <Card_four
-                                course_name='CUET'
-                                course_price='Rs.50,000'
-                                detail='New batch starts 10th April 2024.'
-                                course_timing='Class Timing 8:30PM to 10:30PM'
-                                id='cuet'
-                            />
-
-                        </>
-                        )}
-                    </div>
-
-                </div>
+            <div className="course-select">
+        <div className="course-select-area">
+          <div className="course-head">
+            <div className="course-head-title">
+              Choose a Course that Fits you
             </div>
+            <div className="course-head-option">
+              <div
+                className="option"
+                onClick={() => handleOptionClick("CAT")}
+                style={{
+                  backgroundColor: selectedOption === "CAT" ? "#14A4F5" : "",
+                  color: selectedOption === "CAT" ? "white" : "",
+                }}
+              >
+                CAT
+              </div>
+              <div
+                className="option"
+                onClick={() => handleOptionClick("IPMAT")}
+                style={{
+                  backgroundColor: selectedOption === "IPMAT" ? "#14A4F5" : "",
+                  color: selectedOption === "IPMAT" ? "white" : "",
+                }}
+              >
+                IPMAT
+              </div>
+              <div
+                className="option"
+                onClick={() => handleOptionClick("CLAT")}
+                style={{
+                  backgroundColor: selectedOption === "CLAT" ? "#14A4F5" : "",
+                  color: selectedOption === "CLAT" ? "white" : "",
+                }}
+              >
+                CLAT
+              </div>
+              <div
+                className="option"
+                onClick={() => handleOptionClick("CUET")}
+                style={{
+                  backgroundColor: selectedOption === "CUET" ? "#14A4F5" : "",
+                  color: selectedOption === "CUET" ? "white" : "",
+                }}
+              >
+                CUET
+              </div>
+            </div>
+          </div>
+          <PricingCards data={cardsData} />
+        </div>
+      </div>
 
             <div className='FQA'>
                 <div className='FQA-area'>

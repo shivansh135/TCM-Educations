@@ -105,18 +105,18 @@ export function Testimonial() {
     console.log(students_data.name,student_name);
     return (
         <div>
-            <div className="container">
+            <div className="container student">
                 <img src={`/images/${students_data.img}`} alt="stud_img" className="stud_img"/>
                 <div className="container_text">
                     <button className="btn">{students_data.ile}</button>
                     <div className="stud_name">
-                    {students_data.name},<br/> {students_data.city}
+                    {students_data.name}, {students_data.city}
                     </div>
                     <div className="stud_detail">
                     {students_data.detail}                    
                     </div>
                     <div className="buttons">
-                            <button className="book">Register for Free Workshops</button>
+                            <button className="register">Register for Free Workshops</button>
                             <button className="book">Book Live Trial Class</button>
                     </div>
 

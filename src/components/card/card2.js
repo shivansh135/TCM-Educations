@@ -4,11 +4,14 @@ export function Card_two(props) {
     return (
         <div className="card_two">
             <div className="top-layer">
+                <div style={{display:'flex',gap:'14px'}}> 
                 <img className="stud-img" src={props.src} alt="student"/>
                 <div className="stud-head">
                     <div className="stud-name">{props.name}</div>
                     <div className="stud-cor">{props.cor}</div>
                 </div>
+                </div>
+                
                 <div className="stud-ile">{props.ile}</div>
             </div>
             <div className="bottom-layer">

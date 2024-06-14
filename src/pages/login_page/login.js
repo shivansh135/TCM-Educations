@@ -9,7 +9,7 @@ export function Login() {
                     <div className="login_left">
                         <div className="Email_Pass">
                             <div className="Welcome">Welcome back</div>
-                            <form style={{width: "80%"}} action="/"  method="post" >
+                            <form style={{width: "100%"}} action="/"  method="post" >
                                 <div class="input-group" className="input_group">
                                     <div class="input-field" className="email">
                                         <label for="Email" className="email_text">Email</label>

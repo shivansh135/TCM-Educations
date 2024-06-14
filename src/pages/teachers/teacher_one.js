@@ -91,12 +91,7 @@ export default function Teacher() {
                     <div className="special_head">
                         Why he is so special?
                     </div>
-                    <div className="special_square1">
-
-                    </div>
-                    <div className="special_square2">
-
-                    </div>
+                    <img src="/images/teacher_ill.svg" alt='ill'/>
                 </div>
                 <div className="special_right">
                     <div className="special_block">

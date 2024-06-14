@@ -39,6 +39,7 @@ export default function Planning() {
                     Borem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia .
                 </div>
             </div>
+            
             <div className='group-content'>
                 <div className='group-photo'>
                     <img src = '/images/group_img.png' className='imgg' alt='group_photo' />
@@ -73,20 +74,41 @@ export default function Planning() {
                     <div className='roadmaps-heading-detail'>
                         Borem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class apten
                     </div>
-                    <div className='buttonss'>
-                        <button className='counsels'><Link to="/form-page">Counceling Call <img src="/images/Icon.svg" className='belll' alt='bell'/></Link></button>
-                        <button className='triall'><Link to="/signup">Book Trial Class <img src="/images/Icon_1.svg" className='belll' alt='bell'/></Link></button>
+                    <div className='buttonns' style={{left:'0'}}>
+                        <button className='live-class'><Link to="/form-page">Counceling Call</Link></button>
+                        <button className='buy-now'><Link to="/signup">Book Trial Class</Link></button>
                     </div>
                 </div>
                 <div className='slide-img'>
                     <Link to="/checkout">
-                    <img src = '/images/Slide.svg' className='slides-imgg' style={{width:'100%'}} alt='group_photo' />
+                    <picture>
+                        <source 
+                            media="(max-width: 760px)"
+                            srcset="/images/slide-p.svg"/>
+                        <source 
+                            media="(min-width: 761px)"
+                            srcset="/images/Slide.svg"/>
+                        <img src="/images/Slide.svg" 
+                        className='slides-imgg'
+                        alt="def"/>
+                    </picture>
+
                     </Link>
                 </div>
             </div>
 
             <div className='discount'>
-                <img src = '/images/discount.png' className='discount-img' style={{width:'100%'}} alt='discount_photo' />
+            <picture>
+                        <source 
+                            media="(max-width: 760px)"
+                            srcset="/images/discount-p.png"/>
+                        <source 
+                            media="(min-width: 761px)"
+                            srcset="/images/discount.png"/>
+                        <img src="/images/discount.png" 
+                        className='discount-img' style={{width:'100%'}}
+                        alt="def"/>
+                    </picture>
             </div>
 
             <div className='course_batch'>

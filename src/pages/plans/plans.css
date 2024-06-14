@@ -11,37 +11,6 @@
     gap: 10px;
 }
 
-.course-select-area{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 60px;
-}
-.course-head{
-    margin-left: normal;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 24px;
-    width: 100%;
-    text-align: center;
-}
-
-.course-head-title{
-    color: var(--TCM-Brand-brand-blue01, #14A4F5);
-    font-family: Figtree;
-    font-size: 48px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 56px;
-    text-align: center;
-}
-
-.course-head-option{
-    display: flex;
-    align-items: flex-start;
-    gap: 44px;
-}
 
 .option{
     display: flex;
@@ -358,56 +327,7 @@
 
 @media (max-width: 768px) {
 
-    .course-select{
-        margin-top:5%;
-        display: flex;
-        overflow: hidden;
-        background: var(--TCM-Brand-brand-blue11, #E3EFFE);
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 23px;
-    }
-
-     .course-select-area{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 50px;
-    } 
-    .course-head{
-        margin-left: normal;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-        width: 100%;
-        text-align: center;
-    }
-
-    .course-head-title{
-        width: 221px;
-        line-height: 32px;
-        font-feature-settings: 'clig' off, 'liga' off;
-        color: var(--TCM-Brand-brand-blue01, #14A4F5);
-        font-family: Figtree;
-        font-size: var(--font-xxl);
-        font-style: normal;
-        font-weight: 700;
-        text-align: center;
-    }
-
-    .course-head-option{
-        display: flex;
-        align-items: flex-start;
-        gap: 11px;
-        width: 283px;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-        flex-wrap: wrap;
-
-    }
+   
 
     .option{
         display: flex;

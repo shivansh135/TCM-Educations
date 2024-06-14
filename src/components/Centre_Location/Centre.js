@@ -4,7 +4,7 @@ import React from "react";
 export function Centre({Location ,img}) {
     return (
         <>
-            <img src={`/images/${img}`}style={{width:'100%',height:'auto', position:'relative',  bottom:'40px'}} alt='prayagraj'/>
+            <img src={`/images/${img}`} className="local-center-img"  alt='prayagraj'/>
             <div className='prayag_content'>
                 <img src="/images/tcm.png" className='tcm_logo' alt='tcm'/>
                 <div className='prayag_head'>
