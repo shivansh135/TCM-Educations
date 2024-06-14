@@ -98,7 +98,7 @@ return(
 export default function Home() {
     const [showPopup, setShowPopup] = useState(false);
     const [currentIndex, setCurrentIndex] = useState(0);
-    const images = ["/H1.png", "/H2.png",'/H3.png','/H4.png','/H5.png'];
+    const images = ["/H1.png", "/H2.png",'/H3.png','/H4.png'];
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -127,7 +127,7 @@ export default function Home() {
             <div className='home'>
                 <div className='headd'>
                     <div className='black-head'>
-                    <span className='blue-head'>TCM EDUCATION </span>Turning Dreams to Reality
+                    <span className='blue-head'>TCM Education </span>Assuring Success Every Time
                     </div>
                     <div className='para-one'>
                         We're India's leading coaching institute, empowering students to
@@ -150,11 +150,11 @@ export default function Home() {
                     </div>
             </div>
 
-        <HeadingSubheading heading={`Why TCM is India’s Fastest Growing Institute?`} sub={`We're India's leading coaching institute, empowering students to conquer CAT, IPMAT, CLAT & CUET with our expert faculty, personalized approach, and proven strategies. We'll equip you with the knowledge and confidence to ace your exams and gain admission to the top colleges in India.`}/>
+        <HeadingSubheading heading={`Why TCM is India’s Fastest Growing Institute?`} sub={`Learn about TCM's exclusive features that make us the fastest-growing CAT coaching institute in India`}/>
 
             <div className='but2'>
-                <button className='Counsel '><Link to="/form-page">Counseling Call <img src="./images/Icon.svg" className='belll' alt='bell'/></Link></button>
-                <button className='book_one'><Link to="/signup">Book Live Trial Class <img src="./images/Icon_1.svg" className='belll' alt='bell'/></Link></button>
+                <button className='Counsel '><Link to="/form-page">Counselling Call <img src="./images/Icon.svg" className='belll' alt='bell'/></Link></button>
+                <button className='book_one'><Link to="/signup">Book Trial Class <img src="./images/Icon_1.svg" className='belll' alt='bell'/></Link></button>
             </div>
 
             <div className='home_two_img'>
@@ -163,7 +163,7 @@ export default function Home() {
             </div>
 
 
-        <HeadingSubheading heading={` Meet the TCM Avengers`} sub={`We're India's leading coaching institute, empowering students to conquer CAT, IPMAT, CLAT & CUET with our expert faculty, personalized approach, and proven strategies. We'll equip you with the knowledge and confidence to ace your exams and gain admission to the top colleges in India.`}/>
+        <HeadingSubheading heading={` Meet the TCM Avengers`} sub={`Discover our expert faculty, the TCM Avengers, who transform aspirants into achievers with their unparalleled guidance`}/>
 
 
         <div className='card-1-container'>
@@ -188,21 +188,25 @@ export default function Home() {
             </div> */}
 
             <Marquee style={{marginTop:'0px'}} speed={43}>
-                <Card src='./images/teacher1.png' title='Ajai Singh' faculty='Lead Mentor and Director' viewmore='View More' id='ajai_sir'/>
-                <Card src='./images/teacher2.png' title='Sunny Rajani' faculty='Lead Mentor and Director' viewmore='View More' id='sunny_sir'/>
-                <Card src='./images/teacher3.png' title='Manoj Manoj' faculty='Lead Mentor and Director' viewmore='View More' id='manoj_sir'/>
-                <Card src='./images/teacher4.png' title='Prashant Pareek' faculty='Lead Mentor and Director' viewmore='View More' id='prashant_sir'/>
-                <Card src='./images/teacher5.png' title='Ashutosh Ashutosh' faculty='Lead Mentor and Director' viewmore='View More' id='ashutosh_sir'/>
+                <Card src='./teachers/ajai.png' title='Ajai Singh' faculty='Lead Mentor and Director' viewmore='View More' id='ajai_sir'/>
+                <Card src='./teachers/ashutosh.png' title='Ashutosh Sir' faculty='VARC Faculty' viewmore='View More' id='ashutosh_sir'/>
+                <Card src='./teachers/manoj.png' title='Manoj Sir' faculty='LRDI Faculty' viewmore='View More' id='manoj_sir'/>
+                <Card src='./teachers/santosh.png' title='Santosh Sir' faculty='GS Faculty' viewmore='View More' id='prashant_sir'/>
+                <Card src='./teachers/sunny.png' title='Sunny Sir' faculty='Advanced Quant Faculty' viewmore='View More' id='sunny_sir'/>
+                <Card src='./teachers/vaibhav.png' title='Vaibhav Sir' faculty='Law Faculty' viewmore='View More' id='ashutosh_sir'/>
 
-                <Card src='./images/teacher1.png' title='Ajai Singh' faculty='Lead Mentor and Director' viewmore='View More' id='ajai_sir'/>
-                <Card src='./images/teacher2.png' title='Sunny Rajani' faculty='Lead Mentor and Director' viewmore='View More' id='sunny_sir'/>
-                <Card src='./images/teacher3.png' title='Manoj Manoj' faculty='Lead Mentor and Director' viewmore='View More' id='manoj_sir'/>
-                <Card src='./images/teacher4.png' title='Prashant Pareek' faculty='Lead Mentor and Director' viewmore='View More' id='prashant_sir'/>
-                <Card src='./images/teacher5.png' title='Ashutosh Ashutosh' faculty='Lead Mentor and Director' viewmore='View More' id='ashutosh_sir'/>
+                <Card src='./teachers/ajai.png' title='Ajai Singh' faculty='Lead Mentor and Director' viewmore='View More' id='ajai_sir'/>
+                <Card src='./teachers/ashutosh.png' title='Ashutosh Sir' faculty='VARC Faculty' viewmore='View More' id='ashutosh_sir'/>
+                <Card src='./teachers/manoj.png' title='Manoj Sir' faculty='LRDI Faculty' viewmore='View More' id='manoj_sir'/>
+                <Card src='./teachers/santosh.png' title='Santosh Sir' faculty='GS Faculty' viewmore='View More' id='prashant_sir'/>
+                <Card src='./teachers/sunny.png' title='Sunny Sir' faculty='Advanced Quant Faculty' viewmore='View More' id='sunny_sir'/>
+                <Card src='./teachers/vaibhav.png' title='Vaibhav Sir' faculty='Law Faculty' viewmore='View More' id='ashutosh_sir'/>
 
             </Marquee>
 
         </div>
+
+        <HeadingSubheading heading={`Scientific Approach of Teaching`} sub={'Experience our scientific teaching methods, designed for maximum efficiency and guaranteed to boost your  scores.'} />
 
             <div className='panchmukhi-img'>
                 <Link to='/panchmukhi'>
@@ -215,7 +219,7 @@ export default function Home() {
 
             </div>
 
-            <HeadingSubheading heading={` From Aspirants to Achievers`} sub={`We're India's leading coaching institute, empowering students to conquer CAT, IPMAT, CLAT & CUET with our expert faculty, personalized approach, and proven strategies. We'll equip you with the knowledge and confidence to ace your exams and gain admission to the top colleges in India.`}/>
+            <HeadingSubheading heading={` From Aspirants to Achievers`} sub={`Experience our scientific teaching methods, designed for maximum efficiency and guaranteed to boost your  scores.`}/>
 
 
             {/* <div className='mobile-view'>

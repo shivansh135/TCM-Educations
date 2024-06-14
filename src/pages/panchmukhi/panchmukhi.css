@@ -853,10 +853,10 @@
         height: auto;
         color: var(--TCM-Neutral-grey13, #000);
         font-family: Figtree;
-        font-size: 14px;
+        font-size: 12px;
         font-style: normal;
         font-weight: 500;
-        line-height: normal;
+        line-height: 150%;
         text-align: justify;
     }
     

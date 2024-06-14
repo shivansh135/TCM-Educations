@@ -38,7 +38,7 @@ class Navbar extends React.Component {
                         <div className='navbar_content'>
                             <div className='navbar_logo'>
                                 <Link to='/'>
-                                    <img src={logoSrc} alt='logo' />
+                                    <img src={logoSrc} alt='logo'style={{width:'100%'}} />
                                 </Link>
                             </div>
                             <div className='navbar_head' >
@@ -56,18 +56,29 @@ class Navbar extends React.Component {
                     <div className='navbar_content' style={{ padding: '10px 10px', paddingBottom: '10px', width: '-webkit-fill-available' }}>
                         <div className='navbar_top'>
                             <Link to='/' className='navbar_logo' style={{ height: 'fit-content' }}>
-                                <img src={logoSrc} alt='logo' style={{ width: '90%', height: 'auto' }} />
+                                <img src={logoSrc} alt='logo' style={{ width: '100%', height: 'auto',marginTop:'2px' }} />
                             </Link>
                             <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer'}}>
                             <Link to='/login' className='navbar_signup' style={{padding:'12px 12px',marginRight:'7px',textDecoration:'none'}}>Login</Link>
                             
                             {this.state.mobileMenuOpen ?
-                            <svg onClick={this.toggleMobileMenu} xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
-                            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
-                          </svg>
-                            :<svg onClick={this.toggleMobileMenu}s xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
-                            </svg>}
+                            
+                            <svg onClick={this.toggleMobileMenu} width="26" height="26" viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M133.333 166.667C114.924 166.667 100 181.591 100 200C100 218.409 114.924 233.333 133.333 233.333H666.667C685.077 233.333 700 218.409 700 200C700 181.591 685.077 166.667 666.667 166.667H133.333ZM233.333 400C233.333 381.59 248.257 366.667 266.667 366.667H666.667C685.077 366.667 700 381.59 700 400C700 418.41 685.077 433.333 666.667 433.333H266.667C248.257 433.333 233.333 418.41 233.333 400ZM433.333 600C433.333 581.59 448.257 566.667 466.667 566.667H666.667C685.077 566.667 700 581.59 700 600C700 618.41 685.077 633.333 666.667 633.333H466.667C448.257 633.333 433.333 618.41 433.333 600Z" fill="black"/>
+</svg>
+
+
+                            
+                            :
+                            
+                            <svg  onClick={this.toggleMobileMenu} width="26" height="26" viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M133.333 600H666.666" stroke="black" stroke-width="66.6667" stroke-linecap="round"/>
+                            <path d="M133.333 400H666.666" stroke="black" stroke-width="66.6667" stroke-linecap="round"/>
+                            <path d="M133.333 200H666.666" stroke="black" stroke-width="66.6667" stroke-linecap="round"/>
+                            </svg>
+
+                            
+                            }
                             </div>
                         </div>
                         {this.state.mobileMenuOpen && (

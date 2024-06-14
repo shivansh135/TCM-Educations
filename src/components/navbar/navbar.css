@@ -278,7 +278,7 @@
         overflow-x: scroll;
         white-space: nowrap;
         width: 90%;
-        gap: 2px;
+        gap: 5px;
         scrollbar-width: none;
     }
     .navbar-default .selected {
@@ -367,7 +367,7 @@
         overflow-x: scroll;
         white-space: nowrap;
         width: 90%;
-        gap: 2px;
+        gap: 5px;
         scrollbar-width: none;
         color: #FFF;
     }

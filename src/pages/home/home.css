@@ -100,12 +100,13 @@
     text-align: center;
 }
 .but2{
-    margin-top: 2%;
+    margin-top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
     gap: 25px;
+
 }
 
 .Counsel a {
@@ -903,7 +904,7 @@ flex-wrap: wrap;
         font-size: 20px;
         font-style: normal;
         font-weight: 700;
-        line-height: 150%;
+        line-height: 120%;
         width: 90%;
     }
     .blue-head{
@@ -913,6 +914,7 @@ flex-wrap: wrap;
     .para-one{
         width: 90%;
         font-size: 12px;
+        margin-top: 14px;
     }
     
     .btn{
@@ -927,9 +929,16 @@ flex-wrap: wrap;
         border: none;
     }
 
+    .Counsel{
+        font-size: 10px;
+    }
     .Counsel a {
         text-decoration: none;
         color: var(--Neutral-Gray-50, #F8FAFC);
+    }
+
+    .book_one{
+        font-size: 10px;
     }
 
     .book_one a {
@@ -972,7 +981,7 @@ flex-wrap: wrap;
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 10px;
+        gap: 7px;
     }
     
     .desktop-view {
@@ -995,10 +1004,9 @@ flex-wrap: wrap;
     }
 
     .home_two_img img{
-        margin-top: 15%;
+        margin-top: 35px;
     }
     .home_two_content{
-        margin-top: 14px;
         width: 295px;
         color: var(--TCM-Neutral-grey08, #595959);
         font-family: Figtree;
@@ -1007,6 +1015,7 @@ flex-wrap: wrap;
         font-weight: 400;
         line-height: 150%;
         text-align: center;
+        margin-top: 0;
     }
 
     .card--image{
@@ -1085,7 +1094,7 @@ flex-wrap: wrap;
 
     .panchmukhi-img{
 
-        margin-top: 20%;
+        margin-top: 20px;
         width: 80%;
     }
 
@@ -1189,7 +1198,7 @@ flex-wrap: wrap;
     }
 
     .stud-detail{
-        width: 254px;
+        width: 240px;
         color: var(--TCM-Neutral-grey08, #595959);
         font-family: Figtree;
         font-size: 14px;
@@ -1197,6 +1206,10 @@ flex-wrap: wrap;
         font-weight: 400;
         line-height: 150%;
         font-feature-settings: 'clig' off, 'liga' off;
+        display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
     }
 
     .stud-more{
@@ -1453,6 +1466,7 @@ flex-wrap: wrap;
     .bell{
         width: 24px;
         height: 24px;
+
     }
 
     .card4{
@@ -1553,10 +1567,9 @@ flex-wrap: wrap;
     }
 
     .belll{
-        width: 14px;
-        height: 14px;
+        width: 12px;
+        height: 12px;
         position: relative;
-        top: 3px;
     }
     
     .card3-buy a {
