@@ -10,9 +10,15 @@ export function Form_page() {
         setShowConfirmation(true);
     }
     return (
+        <div className="form-container">
+
             <div>   
+                <div className='black-head' style={{margin:'auto',textAlign:'center'}}>
+                    Councelling with <span className='blue-head'>Chief Mentor </span>
+                    </div>
+                
                 <div className="email_pass">
-                    <div className="Welcome_form">Counselling Call with Chief Mentor</div>
+                
                     <div className="email_pass_textt">
                         <form action="/" style={{width: "100%",display: "flex", flexDirection: "column", alignItems: "center"}} method="post" >
                             <div class="input-group" className="iinput">
@@ -54,7 +60,9 @@ export function Form_page() {
                     {showConfirmation && <Confirmation closeConfirmation={() => setShowConfirmation(false)} />}                    
                 </div>
             </div>
+            <img src="/counclling.png"></img>
 
+            </div>
 
     )
 }

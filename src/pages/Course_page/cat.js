@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./cat.css";
 import { Feedback_card } from "../../components/card/feedback_card.js";
 import { Card_four } from "../../components/card/card4.js";
@@ -10,12 +10,15 @@ import { cardsData } from "../home/home.js";
 import PricingCards from "../../components/pricingCards/pricingCards.js";
 
 export default function Cat() {
-  const [selectedOption, setSelectedOption] = useState("CAT");
+  const { id } = useParams();
+
+  const [selectedOption, setSelectedOption] = useState(id.toUpperCase());
 
   const handleOptionClick = (option) => {
     setSelectedOption(option);
   };
-  const { id } = useParams();
+
+
   const course = {
     Cat: {
       name: "CAT",
@@ -251,11 +254,11 @@ export default function Cat() {
             </div>
           </div>
           <div className="eligibility_content_detail">
-            <ol className="point">
+            <ul className="point">
               <li className="points">{courses_data.criteria_1}</li>
               <li className="points">{courses_data.criteria_2}</li>
               <li className="points"> {courses_data.criteria_3}</li>
-            </ol>
+            </ul>
           </div>
         </div>
       </div>
@@ -299,46 +302,6 @@ export default function Cat() {
             </div>
           </div>
         </div>
-      </div>
-
-        <div className="CAT_PATTERN">
-        <div style={{display:'flex',flexDirection:'column',gap:'10px',width:'100%'}}>
-        <div className="CAT_syllabus_head" style={{ marginTop: "0" }}>
-            CAT Exam Pattern 2023
-          </div>
-          <img src="/images/Pattern1.png" className="CAT_pattern" alt="CAT" />
-
-        </div>
-          
-          <div style={{display:'flex',flexDirection:'column',gap:'10px',width:'100%'}}>
-          <div className="CAT_syllabus_head" style={{ marginTop: "0" }}>
-            CAT Exam Pattern 2020
-          </div>
-          <img src="/images/Pattern2.png" className="CAT_pattern" alt="CAT" />
-          </div>
-        </div>
-
-      <div className="CAT_Feedback">Positive Feedback from Student</div>
-
-      <div className="Feedback_cards">
-        <Feedback_card
-          rank="IIM Trichi 97.21%"
-          name="Pyush Jain"
-          city="Mumbai"
-          feedback="Worem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sems olli citudin lacu"
-        />
-        <Feedback_card
-          rank="IIM Trichi 97.21%"
-          name="Pyush Jain"
-          city="Mumbai"
-          feedback="Worem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sems olli citudin lacu"
-        />
-        <Feedback_card
-          rank="IIM Trichi 97.21%"
-          name="Pyush Jain"
-          city="Mumbai"
-          feedback="Worem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sems olli citudin lacu"
-        />
       </div>
 
       <div className="course-select">

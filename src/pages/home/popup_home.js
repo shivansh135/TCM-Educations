@@ -23,17 +23,17 @@ export default function Popup_home({closePopup}) {
                         <Popup_home_card 
                             course='IPMAT' 
                             detail='Integrated program management aptitude test'
-                            id='clat'/>
+                            id='ipmat'/>
 
                         <Popup_home_card 
                             course='CLAT' 
                             detail='Law school admission test India'
-                            id='cuet'/>
+                            id='clat'/>
 
                         <Popup_home_card 
                             course='CUET' 
                             detail='Undergraduate entrance exam central universities'
-                            id='ipmat'/>
+                            id='ceet'/>
 
                     </div>
                 </div>

@@ -59,7 +59,7 @@ const Pricing = ({title, discription, list, price, batchInfo,}) => {
         </ul>
         <h3>{price || `Rs. 52,000`} (incl GST)</h3>
         <button className="buy-now">Buy Now</button>
-        <Link className="view-more">View more</Link>
+        <Link to="/planning/Cat" className="view-more">View more</Link>
         <div className="batch-info">
           <img src='/images/bell.svg'/>
           <p>{batchInfo || `New batch starts 10th April 2024 Class Timing 8:30PM to 10:30PM`}</p>

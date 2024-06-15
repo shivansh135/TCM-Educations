@@ -63,8 +63,8 @@
   }
   
   .pricing .card-body ul li {
-    background: url('../../../public/checkmark-icon.png') no-repeat left center;
-    background-size: 20px;
+    background: url('../../../public/checkmark-icon.svg') no-repeat left center;
+    background-size: 15px;
     padding-left: 30px;
     margin-bottom: 10px;
     font-size: 14px;
