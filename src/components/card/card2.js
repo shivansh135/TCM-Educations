@@ -8,7 +8,7 @@ export function Card_two(props) {
                 <img className="stud-img" src={props.src} alt="student"/>
                 <div className="stud-head">
                     <div className="stud-name">{props.name}</div>
-                    <div className="stud-cor">{props.cor}</div>
+                    {/* <div className="stud-cor">{props.cor}</div> */}
                 </div>
                 </div>
                 
