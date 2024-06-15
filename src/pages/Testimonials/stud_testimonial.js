@@ -6,115 +6,29 @@ import { Card_two } from '../../components/card/card2';
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; 
 import FAQQuestion from '../../components/FaQ/FAQQuestion';
-import { useParams } from 'react-router-dom';
+import { useLocation, useParams } from 'react-router-dom';
 import { StudentsFeedback } from "../home/home";
 
 export function Testimonial() {
-    const {id}=useParams();
-    const students={
-        student1:{
-            name:'Ajai Singh',
-            city:'Prayagraj',
-            detail:'Hello Everyone!! I am Ajai Singh, Founder and CEO of Toil Chamber of Mathematics Pvt. Ltd. (TCM Education), a leading national brand, based in Prayagraj, for CAT, CLAT, IPMAT & OMET exams. The identity that I love the most is of being a mentor and teacher to young minds. Teaching has always been my first love, right from my childhood.',
-            ile:'IIM Trichy 99%ile',
-            img:'student1.png'
-        },
-        student2:{
-            name:'Ajai Singh',
-            city:'Prayagraj',
-            detail:'Hello Everyone!! I am Ajai Singh, Founder and CEO of Toil Chamber of Mathematics Pvt. Ltd. (TCM Education), a leading national brand, based in Prayagraj, for CAT, CLAT, IPMAT & OMET exams. The identity that I love the most is of being a mentor and teacher to young minds. Teaching has always been my first love, right from my childhood.',
-            ile:'IIM Trichy 99%ile',
-            img:'student2.png'
-        },
-        student3:{
-            name:'Ajai Singh',
-            city:'Prayagraj',
-            detail:'Hello Everyone!! I am Ajai Singh, Founder and CEO of Toil Chamber of Mathematics Pvt. Ltd. (TCM Education), a leading national brand, based in Prayagraj, for CAT, CLAT, IPMAT & OMET exams. The identity that I love the most is of being a mentor and teacher to young minds. Teaching has always been my first love, right from my childhood.',
-            ile:'IIM Trichy 99%ile',
-            img:'student3.png'
-        },
-        student4:{
-            name:'Ajai Singh',
-            city:'Prayagraj',
-            detail:'Hello Everyone!! I am Ajai Singh, Founder and CEO of Toil Chamber of Mathematics Pvt. Ltd. (TCM Education), a leading national brand, based in Prayagraj, for CAT, CLAT, IPMAT & OMET exams. The identity that I love the most is of being a mentor and teacher to young minds. Teaching has always been my first love, right from my childhood.',
-            ile:'IIM Trichy 99%ile',
-            img:'student4.png'
-        },
-        student5:{
-            name:'Ajai Singh',
-            city:'Prayagraj',
-            detail:'Hello Everyone!! I am Ajai Singh, Founder and CEO of Toil Chamber of Mathematics Pvt. Ltd. (TCM Education), a leading national brand, based in Prayagraj, for CAT, CLAT, IPMAT & OMET exams. The identity that I love the most is of being a mentor and teacher to young minds. Teaching has always been my first love, right from my childhood.',
-            ile:'IIM Trichy 99%ile',
-            img:'student5.png'
-        },
-        student6:{
-            name:'Ajai Singh',
-            city:'Prayagraj',
-            detail:'Hello Everyone!! I am Ajai Singh, Founder and CEO of Toil Chamber of Mathematics Pvt. Ltd. (TCM Education), a leading national brand, based in Prayagraj, for CAT, CLAT, IPMAT & OMET exams. The identity that I love the most is of being a mentor and teacher to young minds. Teaching has always been my first love, right from my childhood.',
-            ile:'IIM Trichy 99%ile',
-            img:'student6.png'
-        },
-        student7:{
-            name:'Ajai Singh',
-            city:'Prayagraj',
-            detail:'Hello Everyone!! I am Ajai Singh, Founder and CEO of Toil Chamber of Mathematics Pvt. Ltd. (TCM Education), a leading national brand, based in Prayagraj, for CAT, CLAT, IPMAT & OMET exams. The identity that I love the most is of being a mentor and teacher to young minds. Teaching has always been my first love, right from my childhood.',  
-            ile:'IIM Trichy 99%ile',
-            img:'student7.png'
-        },
-        student8:{
-            name:'Ajai Singh',
-            city:'Prayagraj',
-            detail:'Hello Everyone!! I am Ajai Singh, Founder and CEO of Toil Chamber of Mathematics Pvt. Ltd. (TCM Education), a leading national brand, based in Prayagraj, for CAT, CLAT, IPMAT & OMET exams. The identity that I love the most is of being a mentor and teacher to young minds. Teaching has always been my first love, right from my childhood.',  
-            ile:'IIM Trichy 99%ile',
-            img:'student8.jpeg'
-        },
-        student9:{
-            name:'Ajai Singh',
-            city:'Prayagraj',
-            detail:'Hello Everyone!! I am Ajai Singh, Founder and CEO of Toil Chamber of Mathematics Pvt. Ltd. (TCM Education), a leading national brand, based in Prayagraj, for CAT, CLAT, IPMAT & OMET exams. The identity that I love the most is of being a mentor and teacher to young minds. Teaching has always been my first love, right from my childhood.',  
-            ile:'IIM Trichy 99%ile',
-            img:'student9.png'
-        },
-        student10:{
-            name:'Ajai Singh',
-            city:'Prayagraj',
-            detail:'Hello Everyone!! I am Ajai Singh, Founder and CEO of Toil Chamber of Mathematics Pvt. Ltd. (TCM Education), a leading national brand, based in Prayagraj, for CAT, CLAT, IPMAT & OMET exams. The identity that I love the most is of being a mentor and teacher to young minds. Teaching has always been my first love, right from my childhood.',  
-            ile:'IIM Trichy 99%ile',
-            img:'student10.jpeg'
-        },
-        student11:{
-            name:'Ajai Singh',
-            city:'Prayagraj',
-            detail:'Hello Everyone!! I am Ajai Singh, Founder and CEO of Toil Chamber of Mathematics Pvt. Ltd. (TCM Education), a leading national brand, based in Prayagraj, for CAT, CLAT, IPMAT & OMET exams. The identity that I love the most is of being a mentor and teacher to young minds. Teaching has always been my first love, right from my childhood.',  
-            ile:'IIM Trichy 99%ile',
-            img:'student11.jpeg'
-        },
-        student12:{
-            name:'Ajai Singh',
-            city:'Prayagraj',
-            detail:'Hello Everyone!! I am Ajai Singh, Founder and CEO of Toil Chamber of Mathematics Pvt. Ltd. (TCM Education), a leading national brand, based in Prayagraj, for CAT, CLAT, IPMAT & OMET exams. The identity that I love the most is of being a mentor and teacher to young minds. Teaching has always been my first love, right from my childhood.',  
-            ile:'IIM Trichy 99%ile',
-            img:'student12.jpeg'
-        }
-        
-    }
-    const getstudentbyname=(name)=>{
-        return students[name] || null;        }
-    const student_name=id;
-    const students_data=getstudentbyname(student_name);
-    console.log(students_data.name,student_name);
+    const {state}=useLocation();
+    console.log(state);
+ 
     return (
         <div>
             <div className="container student">
-                <img src={`/images/${students_data.img}`} alt="stud_img" className="stud_img"/>
+                <img src={`/images/students/${state.name.split(' ')[0].toLocaleLowerCase()}.png`} alt="stud_img" className="stud_img"/>
                 <div className="container_text">
-                    <button className="btn">{students_data.ile}</button>
+                    <div className="name-percent">
+                    <button className="btn">{state.percent}</button>
                     <div className="stud_name">
-                    {students_data.name}, {students_data.city}
+                    {state.name}
+                    </div>
                     </div>
                     <div className="stud_detail">
-                    {students_data.detail}                    
+                    {state.review}                    
                     </div>
+                   
+                    
                     <div className="buttons">
                             <button className="register">Register for Free Workshops</button>
                             <button className="book">Book Live Trial Class</button>

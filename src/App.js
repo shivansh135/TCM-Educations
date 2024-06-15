@@ -44,7 +44,7 @@ function App() {
       <Route path="/cat" element={<><Navbar currentPage="home" currentImg="home"/><Cat /></>} />
       <Route path="/cat" element={<><Navbar currentPage="home" currentImg="home"/><Cat /></>} />
       <Route path="/panchmukhi" element={<><Navbar currentPage="specialPage" currentImg="specialPage"/><Panchmukhi /></>} />    
-      <Route path="/testimonial/:id" element={<><Navbar currentPage="home" currentImg="home"/><Testimonial /></>} />
+      <Route path="/testimonial" element={<><Navbar currentPage="home" currentImg="home"/><Testimonial /></>} />
       <Route path="/testimonial/:id/testimonial/:id" element={<><Navbar currentPage="home" currentImg="home"/><Testimonial /></>} />
       <Route path="/teacher/:id/testimonial/:id" element={<><Navbar currentPage="home" currentImg="home"/><Testimonial /></>} />
       <Route path="/teacher/:id" element={<><Navbar currentPage="specialPage" currentImg="specialPage"/><Teacher /></>} />
