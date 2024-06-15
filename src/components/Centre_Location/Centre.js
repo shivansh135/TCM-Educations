@@ -1,7 +1,7 @@
 
 import React from "react";
 
-export function Centre({Location ,img}) {
+export function Centre({Location ,img,phone,link}) {
     return (
         <>
             <img src={`/images/${img}`} className="local-center-img"  alt='prayagraj'/>
@@ -11,8 +11,8 @@ export function Centre({Location ,img}) {
                     Offline Centre at {Location}
                 </div>
                 <div className='prayag_but'>
-                    <button className='call_btn'>Call at centre &nbsp;{'>'}</button>
-                    <button className='view_btn'>View centre &nbsp;{'>'}</button>
+                    <a href={`tel:${phone}`} className='call_btn'>Call at centre <img src="/images/Icon.svg" style={{filter:'brightness(0)'}} className='belll' alt='bell'/></a>
+                    <a target="_blank" href={link} className='view_btn'>View centre <img src="/images/Icon.svg" className='belll' alt='bell'/></a>
                 </div>
             </div>
         </>

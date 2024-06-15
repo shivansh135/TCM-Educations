@@ -22,6 +22,9 @@ export default function Prayagraj() {
             img_two:'centre_img_one.png',
             img_three:'centre_img_two.png',
             img_four:'centre_img_three.svg',
+            link:'https://maps.app.goo.gl/XKZTNipQU3daFp4F7?g_st=ic',
+            phone:'+91 9336339618',
+            grid:'/images/grid-prayagrag'
         },
         varanasi:{
             city:'Varanasi',
@@ -29,6 +32,10 @@ export default function Prayagraj() {
             img_two:'centre_img_one.png',
             img_three:'centre_img_two.png',
             img_four:'centre_img_three.svg',
+            link:'https://maps.app.goo.gl/Ahn98xWTC7UdcKf17?g_st=ic',
+            phone:'+91 7307224500',
+             grid:'/images/grid-varanasi'
+
         }
     }
 
@@ -43,6 +50,8 @@ export default function Prayagraj() {
                 <Centre
                 Location= {city_data.city}
                 img={city_data.img}
+                link={city_data.link}
+                phone={city_data.phone}
                 />
             </div>
 
@@ -50,19 +59,19 @@ export default function Prayagraj() {
                 <Centre_card 
                 image={city_data.img_two}
                 title='Limited Batch Size of 25'
-                description={'Our expert faculties bring industry experience and academic expertise, ensuring our students quality education and guidance.'}
+                description={'Experience personalized attention and tailored guidance with our limited batch size of just 25 students, ensuring you receive the focus you need to excel.'}
                 />
 
                 <Centre_card 
                 image= {city_data.img_three}
                 title='Sessions by Chief Mentor'
-                description={'Our expert faculties bring industry experience and academic expertise, ensuring our students quality education and guidance.'}
+                description={'Benefit from exclusive sessions led by our esteemed Chief Mentor, whose expertise and insights will elevate your exam preparation to new heights.'}
                 />
 
                 <Centre_card 
                 image= {city_data.img_four}
                 title='Community of Like-Minded'
-                description={'Our expert faculties bring industry experience and academic expertise, ensuring our students quality education and guidance.'}
+                description={'Join a vibrant community of like-minded peers, fostering collaboration, motivation, and a shared drive towards achieving success together.'}
                 />
 
             </div>
@@ -73,17 +82,18 @@ export default function Prayagraj() {
                     </div>
 
                     <div className='team_content'>
-                    We're India's leading coaching institute, empowering students to conquer CAT, IPMAT, CLAT & CUET with our expert faculty, personalized approach, and proven strategies. We'll equip you with the knowledge and confidence to ace your exams and gain admission to the top colleges in India.
+                    Meet the dedicated experts at our {city_data.city} Centre, committed to guiding you towards  success with personalized mentorship and top-notch instruction
                     </div>                
                 </div>
-                <img src='/images/faculty_image.png' className='faculties' alt='faculties'/>
+                <img src='/images/faculty.png' className='faculties' alt='faculties'/>
             </div>
 
             <div className='centre_class'>
                 <div className='centre_quote'>
                     An Extraordinary Learning Experience
                 </div>
-                <img src={window.innerWidth>760?'/images/local-center.png':'/images/local-center-p.png'} style={{width:'90%',left:'5%'}} alt='frame'/>
+                <img src={window.innerWidth>760?city_data.grid+'.png':city_data.grid+'-p.png'} style={{width:'90%',left:'5%'}} alt='frame'/>
+
             </div>
 
 

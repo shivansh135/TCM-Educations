@@ -15,24 +15,24 @@ export default function Popup_home({closePopup}) {
 
                     <div className="popup_home_cards">
                         <Popup_home_card 
-                            course='CAT 2024' 
-                            detail='Yorem ipsum dolor sit amet, consectetur adipiscing elit.'
+                            course='CAT' 
+                            detail='Premier MBA entrance exam India'
                             id='Cat'/>
                         
 
                         <Popup_home_card 
-                            course='CLAT 2024' 
-                            detail='Yorem ipsum dolor sit amet, consectetur adipiscing elit.'
+                            course='IPMAT' 
+                            detail='Integrated program management aptitude test'
                             id='clat'/>
 
                         <Popup_home_card 
-                            course='CUET 2024' 
-                            detail='Yorem ipsum dolor sit amet, consectetur adipiscing elit.'
+                            course='CLAT' 
+                            detail='Law school admission test India'
                             id='cuet'/>
 
                         <Popup_home_card 
-                            course='IPMAT 2024' 
-                            detail='Yorem ipsum dolor sit amet, consectetur adipiscing elit.'
+                            course='CUET' 
+                            detail='Undergraduate entrance exam central universities'
                             id='ipmat'/>
 
                     </div>

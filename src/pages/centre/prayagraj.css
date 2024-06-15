@@ -46,7 +46,7 @@
     background: var(--TCM-Neutral-grey01, #FFF);
     justify-content: center;
     align-items: center;
-    gap: 6px;
+    gap: 3px;
 
     color: var(--TCM-Neutral-grey13, #000);
     font-family: Figtree;
@@ -55,6 +55,7 @@
     font-weight: 500;
     line-height: 26px;
     text-align: center;
+    text-decoration: none;
 }
 
 .view_btn{
@@ -64,7 +65,8 @@
     border: 1px solid var(--TCM-Neutral-grey01, #FFF);
     justify-content: center;
     align-items: center;
-    gap: 6px;
+    gap: 2px;
+    text-decoration: none;
 
     color: var(--TCM-Neutral-grey01, #FFF);
     font-family: Figtree;
@@ -244,6 +246,7 @@
     justify-content: center;
     align-items: center;
     gap: 30px;
+    margin: auto;
 }
 
 .batch-card{
@@ -392,6 +395,11 @@
     bottom: 40px;
 }
 
+.faculties{
+    width: 100%;
+    height: auto;
+}
+
 /*phone view */
 
 @media (max-width: 768px) {
@@ -452,7 +460,7 @@
         background: var(--TCM-Neutral-grey01, #FFF);
         justify-content: center;
         align-items: center;
-        gap: 6px;
+        gap: 2px;
         color: var(--TCM-Neutral-grey13, #000);
         font-family: Figtree;
         border: none;
@@ -470,7 +478,7 @@
         border: 1px solid var(--TCM-Neutral-grey01, #FFF);
         justify-content: center;
         align-items: center;
-        gap: 6px;
+        gap: 2px;
     
         color: var(--TCM-Neutral-grey01, #FFF);
         font-family: Figtree;
@@ -687,7 +695,6 @@
         border: 2px solid rgba(20, 164, 245, 0.20);
         background: var(--TCM-Brand-brand-blue12, #F1F7FE);
         position: relative;
-        left: 15%;
     }
     
     .batch-card-content{

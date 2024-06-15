@@ -8,7 +8,7 @@
 
 .centre_heading{
     width: 878px;
-    color: var(--TCM-Neutral-grey13, #000);
+    color: var(--TCM-Neutral-grey13, #262626);
     font-family: Figtree;
     font-size: 60px;
     font-style: normal;
@@ -33,6 +33,7 @@
 
 .centre_prayagraj{
     width: 100%; /* adjust as needed */
+    border-radius: 16px;
     height: auto; /* adjust as needed */ 
 }
 .centre_varanasi {
@@ -65,8 +66,8 @@
     background: var(--TCM-Neutral-grey01, #FFF);
     justify-content: center;
     align-items: center;
-    gap: 6px;
-
+    gap: 3px;
+    font-family: Figtree;
     bottom: 5%; /* adjust as needed */
     right: 1px; /* adjust as needed */
     transform: translate(-50%, -50%); /* centers the element horizontally */
@@ -93,16 +94,14 @@
     .centre_heading{
         width: 72%;
         height: auto;
-        color: var(--TCM-Neutral-grey13, #000);
         font-family: Figtree;
-        font-size: 18px;
+        font-size: 20px;
         font-style: normal;
-        font-weight: 700;
+        font-weight: 600;
         line-height: normal;
         display: flex;
         justify-content: center;    
         position: relative;
-        left: -3% ;
 
     }
     
@@ -126,6 +125,7 @@
     
     .centre_prayagraj{
         width: 78%; /* adjust as needed */
+        border-radius: 8px;
         height: auto; /* adjust as needed */ 
     }
     .centre_varanasi {
@@ -158,7 +158,7 @@
         background: var(--TCM-Neutral-grey01, #FFF);
         justify-content: center;
         align-items: center;
-        gap: 4px;
+        gap: 1px;
         font-size: 11px;
         bottom: -1%;
         left: 72%;

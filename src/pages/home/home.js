@@ -72,7 +72,7 @@ export const StudentsFeedback = () => {
     const data= [
         {
             name:'Mudit Dewan',
-            percent:'CAT 99.67%ile',
+            percent:'SNAP 99.64%ile',
             review:`I want to express my gratitude to TCM for
 playing a crucial role in helping me score
 98.65 percentile in CAT. The coaching
@@ -137,7 +137,7 @@ motivation which pushed me to the heights. Mathematics became fun for me and I w
         },
         {
             name:'Archi Jaiswal',
-            percent:'CAT 99.67%ile',
+            percent:'CMAT 99.83%ile',
             review:`I want to express my gratitude to TCM for
 playing a crucial role in helping me score
 98.65 percentile in CAT. The coaching
@@ -220,7 +220,7 @@ performance.`,
         },
         {
             name:'Somnath Shukla',
-            percent:'CAT 99.88%ile',
+            percent:'CAT 99.49%ile',
             review:`I am Somnath. After completing my
 graduation from an average college, it was
 not an easy job to secure a good percentile
@@ -293,7 +293,7 @@ return(
             {!isMobile &&<Marquee direction='right'>
                 {
                     data.map((ele)=>(
-                        <Card_two state={ele} src={`/images/students/${ele.name.split(' ')[0].toLocaleLowerCase()}.png`} name={ele.name}  ile={ele.percent} review={ele.review} />
+                        <Card_two state={ele} src={`/images/students/${ele.name.split(' ')[0].toLocaleLowerCase()}.png`} name={ele.name}  ile={ele.percent.replace('CAT ','')} review={ele.review} />
                     ))
                 }
             </Marquee>}

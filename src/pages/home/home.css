@@ -346,7 +346,8 @@ flex-wrap: wrap;
 .stud-head{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
     gap: 1px;
 }
 
@@ -391,6 +392,11 @@ flex-wrap: wrap;
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
+    font-feature-settings: 'clig' off, 'liga' off;
+        display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .stud-more{
@@ -1156,10 +1162,10 @@ flex-wrap: wrap;
         border-radius: 47px;
     }
 
+
     .stud-head{
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
     }
 
     .stud-name{

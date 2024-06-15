@@ -35,13 +35,13 @@ export default function Panchmukhi() {
                     
                     <div className='BLACK'>
                     <span className='BLUEE'>TCM’s </span>
-                        The Plan for Acting</div>
+                        Plan for Acing Exams</div>
                     </div>
                     <div className='roadmaps-heading-detail'>
-                        Borem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class apten
+                    Unlock your potential with TCM's comprehensive plan, featuring expert guidance, strategic study methods, and targeted practice to ace the exams.
                     </div>
                     <div className='buttonns' style={{left:'0'}}>
-                        <button className='live-class'><Link to="/form-page">Counceling Call</Link></button>
+                        <button className='live-class'><Link to="/form-page">Councelling Call</Link></button>
                         <button className='buy-now'><Link to="/signup">Book Trial Class</Link></button>
                     </div>
                 </div>
@@ -50,11 +50,11 @@ export default function Panchmukhi() {
                     <picture>
                         <source 
                             media="(max-width: 760px)"
-                            srcset="/images/Slide-p.svg"/>
+                            srcset="/images/punchmukhi-road-p.png"/>
                         <source 
                             media="(min-width: 761px)"
-                            srcset="/images/Slide.svg"/>
-                        <img src="/images/Slide.svg" 
+                            srcset="/images/punchmukhi-road.png"/>
+                        <img src="/images/punchmukhi-road.png" 
                         className='slides-imgg'
                         alt="def"/>
                     </picture>
@@ -66,31 +66,32 @@ export default function Panchmukhi() {
             <Step_odd 
                 step="Step 1"
                 title="Fundamental Process"
-                detail="The CAT exam is a computer-based test conducted by the IIMs to evaluate the aptitude of prospective students seeking admission to their post-graduate management programs. The exam is held once a year, usually in November or December, and is one of India's most competitive MBA entrance exams"
+                detail="We help you to clear your fundamentals of Maths, English
+and Logical Reasoning. In this stage students are advised to appear for Online Topic Tests for practising the fundamental learnt."
                 image='ask1.png'/>
 
             <Step_even 
                 step="Step 2"
                 title="Concept Building Stage"
-                detail="The CAT exam is a computer-based test conducted by the IIMs to evaluate the aptitude of prospective students seeking admission to their post-graduate management programs. The exam is held once a year, usually in November or December, and is one of India's most competitive MBA entrance exams"
+                detail="We ensure our students develop conceptual clarity on all the concepts of Quantitative Aptitude, Logical Reasoning and Data Interpretation, Verbal Ability and Reading Comprehension. Students appear in offline as well as online sectional tests for testing their conceptual knowledge."
                 image='ask2.png'/>
 
             <Step_odd 
                 step="Step 3"
                 title="Advanced Stage"
-                detail="The CAT exam is a computer-based test conducted by the IIMs to evaluate the aptitude of prospective students seeking admission to their post-graduate management programs. The exam is held once a year, usually in November or December, and is one of India's most competitive MBA entrance exams"
+                detail="In this stage Students are exposed and trained on difficult problems and questions which boost up the confidence level of students. Students appear in offline as well as Online Challenger Tests for Comprehensive Preparation."
                 image='ask3.png'/>
 
             <Step_even 
                 step="Step 4"
                 title="Challenger Stage"
-                detail="The CAT exam is a computer-based test conducted by the IIMs to evaluate the aptitude of prospective students seeking admission to their post-graduate management programs. The exam is held once a year, usually in November or December, and is one of India's most competitive MBA entrance exams"
+                detail="This is the highest level rigorous training stage in which students solve most difficult m questions from the concepts of Quantitative Aptitude, Logical Reasoning and Data Interpretation, Verbal Aptitude and Reading Comprehension. Students appear in offline as well as TCM ALL INDIA ONLINE TEST SERIES (A1 Rankers) for Comprehensive Preparation."
                 image='ask4.png'/>
 
             <Step_odd 
                 step="Step 5"
                 title="Holistic Development"
-                detail="The CAT exam is a computer-based test conducted by the IIMs to evaluate the aptitude of prospective students seeking admission to their post-graduate management programs. The exam is held once a year, usually in November or December, and is one of India's most competitive MBA entrance exams"
+                detail="In this stage Students are trained on Group Discussion Skills, Interview Skills, Resume building and Writing Skills, so that our students can excel in their higher education journey."
                 image='ask5.png'/>       
             
 
