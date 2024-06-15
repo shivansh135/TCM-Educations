@@ -153,8 +153,9 @@ export default function Teacher() {
                     </div>
                     <button className='Book_Live'>Book Live Trial Class with {teachers_data.f_name} Sir</button>
                 </div>
-
-                <img src={`${teachers_data.img}`} className="teacher" alt="teacher"/>
+                <div className="teacher">
+                    <img src={`${teachers_data.img}`} style={{width:'100%',height:'auto'}} alt="teacher"></img>
+                </div>
             </div>
 
             <div className="teacher_cards">
