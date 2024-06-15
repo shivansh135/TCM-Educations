@@ -6,6 +6,7 @@ import { Batch_card } from '../../components/card/centre_batch_card';
 import FAQQuestion from '../../components/FaQ/FAQQuestion';
 import { Centre } from '../../components/Centre_Location/Centre';
 import { useParams } from 'react-router-dom';
+import { HeadingSubheading } from '../../components/headings/headings';
 
 export default function Prayagraj() {
     const [selectedOption, setSelectedOption] = useState('CAT');
@@ -88,12 +89,10 @@ export default function Prayagraj() {
                 <img src='/images/faculty.png' className='faculties' alt='faculties'/>
             </div>
 
-            <div className='centre_class'>
-                <div className='centre_quote'>
-                    An Extraordinary Learning Experience
-                </div>
-                <img src={window.innerWidth>760?city_data.grid+'.png':city_data.grid+'-p.png'} style={{width:'90%',left:'5%'}} alt='frame'/>
+            <HeadingSubheading heading={'An Extraordinary Learning Experience'} sub="Immerse yourself in TCM's vibrant Prayagraj center, where innovative teaching, state-of-the-art facilities, and a collaborative environment create an extraordinary learning experience"/>
 
+            <div className='centre_class'>
+                <img src={window.innerWidth>760?city_data.grid+'.png':city_data.grid+'-p.png'} style={{width:'90%',left:'5%'}} alt='frame'/>
             </div>
 
 

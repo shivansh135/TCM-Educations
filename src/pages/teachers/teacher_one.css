@@ -51,6 +51,7 @@
     font-style: normal;
     font-weight: 500;
     line-height: 32px;
+    text-align: justify;
 }
 
 .Book_Live{
@@ -313,7 +314,6 @@
         flex: 1 0 0;
         width: 96%;
         position:relative;
-        top: 10%;
         left:8%;
     }
     
@@ -340,9 +340,9 @@
     .desig{
         width: 100%;
         height: auto;
-        color: var(--TCM-Neutral-grey01, #FFF);
+        color: var(--TCM-Neutral-grey01, #b7d8fc);
         font-family: Figtree;
-        font-size: 20px;
+        font-size: 16px;
         font-style: normal;
         font-weight: 300;
         line-height: normal;
@@ -395,12 +395,12 @@
         content: '';
         position: absolute;
         display: block;
-        aspect-ratio: 1 /1 ;
+        aspect-ratio: 1 / 1 ;
         width: 170%; /* Diameter of the circle */
         height: auto;
         background-color: white; /* Color of the circle */
         border-radius: 50%; /* Makes the shape circular */
-        bottom: -230px; /* Adjust the distance from the bottom of the image */
+        bottom: -290px; /* Adjust the distance from the bottom of the image */
         left: 50%;
         transform: translateX(-50%);
         z-index: -1; /* Ensure the circle is behind the image */
@@ -420,7 +420,7 @@
     }
     
     .teacher_card{
-        width: 60%;
+        width: 50%;
         display: flex;
         overflow: hidden;
         height: 76%;
@@ -447,7 +447,7 @@
         height: auto;
         color: var(--TCM-Brand-brand-blue01, #14A4F5);
         font-family: Figtree;
-        font-size: 12px;
+        font-size: 13px;
         font-style: normal;
         font-weight: 700;
         line-height: normal;
@@ -460,7 +460,7 @@
         height: auto;
         color: var(--TCM-Neutral-grey10, #262626);
         font-family: Figtree;
-        font-size: 11px;
+        font-size: 12px;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
@@ -492,7 +492,7 @@
 
     .wheel{
         width: 90%;
-        left: 0px;
+        left: 5%;
         height: auto;
         position: relative;
     }
@@ -595,7 +595,7 @@
         height: auto;
         color: var(--TCM-Brand-brand-blue01, #14A4F5);
         font-family: Figtree;
-        font-size: 12px;
+        font-size: 13px;
         font-style: normal;
         font-weight: 700;
         line-height: normal;
@@ -606,7 +606,7 @@
         height: auto;
         color: var(--TCM-Neutral-grey08, #595959);
         font-family: Figtree;
-        font-size: 11px;
+        font-size: 12px;
         font-style: normal;
         font-weight: 400;
         line-height: normal;

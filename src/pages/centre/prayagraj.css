@@ -187,7 +187,7 @@
     flex-direction: column;
     align-items: center;
     gap: 60px;
-    padding-top: 15%;
+    padding-top: 40px;
     width: 90% !important;
     margin: auto;
 }
@@ -625,7 +625,7 @@
         flex-direction: column;
         align-items: center;
         gap: 30px;
-        padding-top: 15%;
+        padding-top: 20px;
     }
     
     .centre_quote{

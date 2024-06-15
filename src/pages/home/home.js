@@ -285,7 +285,7 @@ return(
            <Marquee >
                 {
                     data.map((ele)=>(
-                        <Card_two state={ele} src={`/images/students/${ele.name.split(' ')[0].toLocaleLowerCase()}.png`} name={ele.name}  ile={ele.percent.replace('CAT ','')} review={ele.review} />
+                        <Card_two state={ele} src={`/images/students/${ele.name.split(' ')[0].toLocaleLowerCase()}.png`} name={ele.name}  ile={ele.percent.split(' ')[1]} review={ele.review} />
                     ))
                 }
             </Marquee>
@@ -293,7 +293,7 @@ return(
             {!isMobile &&<Marquee direction='right'>
                 {
                     data.map((ele)=>(
-                        <Card_two state={ele} src={`/images/students/${ele.name.split(' ')[0].toLocaleLowerCase()}.png`} name={ele.name}  ile={ele.percent.replace('CAT ','')} review={ele.review} />
+                        <Card_two state={ele} src={`/images/students/${ele.name.split(' ')[0].toLocaleLowerCase()}.png`} name={ele.name}  ile={ele.percent.split(' ')[1]} review={ele.review} />
                     ))
                 }
             </Marquee>}
@@ -395,14 +395,14 @@ export default function Home() {
             </div> */}
 
             <Marquee style={{marginTop:'0px'}} speed={43}>
-                <Card src='./teachers/ajai.png' title='Ajai Singh' faculty='Lead Mentor and Director' viewmore='View More' id='ajai_sir'/>
+                <Card src='./teachers/ajai.png' title='Ajai Singh' faculty='Founder & Chief Mentor' viewmore='View More' id='ajai_sir'/>
                 <Card src='./teachers/ashutosh.png' title='Ashutosh Sir' faculty='VARC Faculty' viewmore='View More' id='ashutosh_sir'/>
                 <Card src='./teachers/manoj.png' title='Manoj Sir' faculty='LRDI Faculty' viewmore='View More' id='manoj_sir'/>
                 <Card src='./teachers/santosh.png' title='Santosh Sir' faculty='GS Faculty' viewmore='View More' id='santosh_sir'/>
                 <Card src='./teachers/sunny.png' title='Sunny Sir' faculty='Advanced Quant Faculty' viewmore='View More' id='sunny_sir'/>
                 <Card src='./teachers/vaibhav.png' title='Vaibhav Sir' faculty='Law Faculty' viewmore='View More' id='vaibhav_sir'/>
 
-                <Card src='./teachers/ajai.png' title='Ajai Singh' faculty='Lead Mentor and Director' viewmore='View More' id='ajai_sir'/>
+                <Card src='./teachers/ajai.png' title='Ajai Singh' faculty='Founder & Chief Mentor' viewmore='View More' id='ajai_sir'/>
                 <Card src='./teachers/ashutosh.png' title='Ashutosh Sir' faculty='VARC Faculty' viewmore='View More' id='ashutosh_sir'/>
                 <Card src='./teachers/manoj.png' title='Manoj Sir' faculty='LRDI Faculty' viewmore='View More' id='manoj_sir'/>
                 <Card src='./teachers/santosh.png' title='Santosh Sir' faculty='GS Faculty' viewmore='View More' id='santosh_sir'/>

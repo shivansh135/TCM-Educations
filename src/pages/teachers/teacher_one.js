@@ -16,7 +16,7 @@ export default function Teacher() {
     const teachers={
         ajai_sir:{
             name:'Ajai Singh',
-            desig:'Chief Mentor & Director',
+            desig:'Founder & Chief Mentor',
             description:'Ajai Singh, our Chief Mentor and Director, brings over a decade of experience in teaching advanced quantitative techniques. Renowned for his innovative teaching methods, Ajai Sir makes complex concepts easy to understand, ensuring his students consistently achieve top scores. His personalized mentorship focuses on individual strengths and weaknesses, helping students reach their full potential. With a proven track record of producing CAT toppers, Ajai Sir is dedicated to transforming aspirants into achievers.',
             f_name:'Ajai',
             img:'/teachers/ajai.png',
@@ -187,7 +187,7 @@ export default function Teacher() {
                     <div className="special_head">
                         What makes {teachers_data.name} so special?
                     </div>
-                    <img src="/images/teacher_ill.svg" alt='ill'/>
+                    <img src={`/teachers/ill/${teachers_data.f_name}-ill.png`} alt='ill'/>
                 </div>
                 <div className="special_right">
 
@@ -204,7 +204,7 @@ export default function Teacher() {
                 </div>
             </div>
 
-            <HeadingSubheading heading={` From Aspirants to Achievers`} sub={`We're India's leading coaching institute, empowering students to conquer CAT, IPMAT, CLAT & CUET with our expert faculty, personalized approach, and proven strategies. We'll equip you with the knowledge and confidence to ace your exams and gain admission to the top colleges in India.`}/>
+            <HeadingSubheading heading={` From Aspirants to Achievers`} sub={`Read testimonials from our successful students who have turned their CAT dreams into reality with TCM`}/>
 
 
             
