@@ -13,19 +13,19 @@ export function Signup() {
                             <form action="/"  method="post" style={{width: "80%"}}>
                                 <div class="input-group" className="input_to">
                                     <div class="input-field" className="Name">
-                                        <label for="Name" className="Name_text">Name</label>
+                                        <label for="Name" className="Name_text">Name*</label>
                                         <input type="text" name="Name" placeholder="Name" className="Name_input" />
                                     </div>
                                     <div class="input-field" className="Contact">
-                                        <label for="Contact" className="Contact_text">Contact No</label>
+                                        <label for="Contact" className="Contact_text">Contact No*</label>
                                         <input type="text" name="Contact" placeholder="Contact" className="Contact_input" />
                                     </div>
                                     <div class="input-field" className="Email">
-                                        <label for="Email" className="Email_text">Email</label>
+                                        <label for="Email" className="Email_text">Email*</label>
                                         <input type="text" name="Email" placeholder="Email" className="Email_input" />
                                     </div>
                                     <div class="input-field" className="Password">
-                                        <label for="Password" className="Password_text">Password</label>
+                                        <label for="Password" className="Password_text">Password*</label>
                                         <input type="text" name="Password" placeholder="Password" className="Password_input" />
                                     </div>
                                 </div>

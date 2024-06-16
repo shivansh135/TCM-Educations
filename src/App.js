@@ -52,7 +52,7 @@ function App() {
       <Route path="/signup" element={<><Navbar currentPage="home" currentImg="home"/><Signup /></>} />
       <Route path="/offline-centre" element={<><Navbar currentPage="home" currentImg="home"/><OfflineCentre /></>} />
       <Route path="/plans" element={<><Navbar currentPage="home" currentImg="home"/><Plans /></>} />
-      {/* <Route path="/past-papers" element={<><Navbar currentPage="specialPage" currentImg="specialPage"/><PastPapers /></>} /> */}
+      <Route path="/past-papers" element={<><Navbar currentPage="specialPage" currentImg="specialPage"/><PastPapers /></>} />
       <Route path="/test-series" element={<><Navbar currentPage="home" currentImg="home"/><TestSeries /></>} />
       <Route path="/form-page" element={<><Navbar currentPage="home" currentImg="home"/><FormPage /></>} />
       <Route path="/checkout" element={<><Navbar currentPage="home" currentImg="home"/><Checkout /></>} />

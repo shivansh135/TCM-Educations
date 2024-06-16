@@ -39,7 +39,14 @@ export function Form_page() {
                                 </div>
                                 <div class="input-field" className="course">
                                     <label for="course" className="course_text">Select Exam</label>
-                                    <input type="text" name="course" placeholder="course" className="course_input" />
+                                    <select type="text" name="course" placeholder="course" className="course_input">
+
+                                        <option>Select Exam</option>
+                                        <option>CAT</option>
+                                        <option>IPMAT</option>
+                                        <option>CLAT</option>
+                                        <option>CUET</option>
+                                    </select>
                                 </div>
                             </div>
 

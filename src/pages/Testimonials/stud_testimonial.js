@@ -8,6 +8,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import FAQQuestion from '../../components/FaQ/FAQQuestion';
 import { useLocation, useParams } from 'react-router-dom';
 import { StudentsFeedback } from "../home/home";
+import { Offline_centre } from "../Offline_centre/offline_centre";
 
 export function Testimonial() {
     const {state}=useLocation();
@@ -46,6 +47,7 @@ export function Testimonial() {
 
 
             <StudentsFeedback/>
+            
 
             <div className='FQA'>
                 <div className='FQA-area'>

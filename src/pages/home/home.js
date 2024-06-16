@@ -14,6 +14,7 @@ import { Link } from 'react-router-dom';
 import Marquee from "react-fast-marquee";
 import PricingCard from '../../components/pricingCards/pricingCards';
 import PricingCards from '../../components/pricingCards/pricingCards';
+import { Offline_centre } from '../Offline_centre/offline_centre';
 
 export const cardsData = [
     {
@@ -322,6 +323,7 @@ export default function Home() {
     const [showPopup, setShowPopup] = useState(false);
     const [currentIndex, setCurrentIndex] = useState(0);
     const images = [1,2,3,4,5,6,7,8,9,10,11];
+    const [learnMore,setLearnMore] = useState(window.innerHeight>768);
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -384,6 +386,33 @@ export default function Home() {
             </div>
 
 
+            <div className='mentor-head'>
+            <div className='mentor-cont' >
+                <div className='black-head' style={{margin:'auto',marginTop:'0px',marginBottom:"0px",textAlign:'center'}}>
+                    Who is the man behind<span className='blue-head'> India’s Fastet Growing </span>Ed-Tech Company?
+                </div>
+                <div className='mentor-detail' style={!learnMore?{'-webkit-line-clamp':'30'}:{}}>
+                It’s me, Ajai Singh, Founder and Chief Mentor of Toil Chamber of Mathematics Pvt. Ltd. (TCM
+                EDUCATION), India’s fasted growing institute for CAT, CLAT, IPMAT & CUET
+                exams. Being a mentor and teacher to young minds is the most fulfilling identity I have ever known. It is
+                an honor to guide and inspire the next generation, and nothing compares to the joy of watching students
+                grow into their full potential. Teaching has always been my first love, right from my childhood. I hail
+                from a business family, so joining it should have been an obvious choice. Then my knack for numbers
+                and aptitude landed me into several corporate and Government jobs with minimum effort. In my last
+                job, with Indian Railways, I realized that knowledge beseeches dissemination and the Goddess of
+                wisdom smiles upon those who spread the light of it.
+                For the past twenty years, I have had the honor of leading the vanguard and serving as an influence and
+                inspiration to achieve stellar results year after year in CAT, CLAT, and IPMAT. The Chamber Of
+                Mathematics started as a small venture with a big vision of transforming the phobia of maths into a mania. My students are the living testimonials of the difference I am making in the lives and careers of
+                ignited minds. I have the esteemed privilege of creating employment opportunities for catalysts of change-our
+                esteemed educators-in diverse realms of aptitude.
+                </div>
+                {learnMore && <div style={{fontSize:'9px',marginLeft:'auto',marginTop:'-30px',color:'#14A4F5',cursor:'pointer'}} onClick={()=>{setLearnMore(!learnMore)}}>Learn more</div>}
+            </div>
+            
+            <img className='mentor-img' style={{width:'60%',height:'auto'}} src="/images/mentor.png" alt ="ajai sir"/>
+
+        </div>
         <HeadingSubheading heading={` Meet the TCM Avengers`} sub={`Discover our expert faculty, the TCM Avengers, who transform aspirants into achievers with their unparalleled guidance`}/>
 
 
@@ -426,6 +455,10 @@ export default function Home() {
 
         </div>
 
+        
+
+
+
         <HeadingSubheading heading={`Scientific Approach of Teaching`} sub={'Experience our scientific teaching methods, designed for maximum efficiency and guaranteed to boost your  scores.'} />
 
             <div className='panchmukhi-img'>
@@ -438,6 +471,9 @@ export default function Home() {
                 </Link>
 
             </div>
+
+            <Offline_centre zero={false} />
+
 
             <HeadingSubheading heading={` From Aspirants to Achievers`} sub={`Experience our scientific teaching methods, designed for maximum efficiency and guaranteed to boost your  scores.`}/>
 
@@ -458,6 +494,7 @@ export default function Home() {
                 </div>
                 </Carousel>
             </div> */}
+
             <StudentsFeedback/>
             
            

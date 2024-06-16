@@ -26,46 +26,39 @@ export const Footer = ()=>{
 
       <ul className="nav__ul">
         <li>
-          <a href="#">Online</a>
+          <a href="#">LinkedIn</a>
         </li>
 
         <li>
-          <a href="#">Print</a>
+          <a href="#">FaceBook</a>
         </li>
             
         <li>
-          <a href="#">Alternative Ads</a>
+          <a href="#">Instagram</a>
         </li>
       </ul>
     </li>
     
     <li className="nav__item nav__item--extra">
-      <h2 className="nav__title">Technology</h2>
+      <h2 className="nav__title">Courses</h2>
       
       <ul className="nav__ul nav__ul--extra">
         <li>
-          <a href="#">Hardware Design</a>
+          <a href="#">CAT</a>
         </li>
         
         <li>
-          <a href="#">Software Design</a>
+          <a href="#">IPMAT</a>
         </li>
         
         <li>
-          <a href="#">Digital Signage</a>
+          <a href="#">CLAT</a>
         </li>
         
         <li>
-          <a href="#">Automation</a>
+          <a href="#">CUET</a>
         </li>
         
-        <li>
-          <a href="#">Artificial Intelligence</a>
-        </li>
-        
-        <li>
-          <a href="#">IoT</a>
-        </li>
       </ul>
     </li>
     
@@ -82,7 +75,11 @@ export const Footer = ()=>{
         </li>
         
         <li>
-          <a href="#">Sitemap</a>
+          <a href="#">About US</a>
+        </li>
+
+        <li>
+          <a href="#">Contact US</a>
         </li>
       </ul>
     </li>

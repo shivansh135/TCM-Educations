@@ -163,7 +163,7 @@
 
 .course_input{
     display: flex;
-    width: 300px;     
+    width: 350px;     
     overflow: hidden;
     padding: 12px 22px;
     border-radius: 100px;
@@ -467,7 +467,7 @@
     
     .course_input{
         display: flex;
-        width: 267px;
+        width: 300px;
         height: auto;
         overflow: hidden;
         padding: 8px 16px;

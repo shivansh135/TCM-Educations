@@ -26,7 +26,7 @@ class Navbar extends React.Component {
         const links = [
             { name: 'Home', path: '/' },
             { name: 'Career counselling', path: '/form-page' },
-            { name: 'Past Papers', path: '/past-papers' },
+            { name: 'Past Papers', path: '/pyqs/cat' },
             { name: 'Offline Centres', path: '/offline-centre' },
             { name: 'Mock Series', path: '/test-series' }
         ];
@@ -43,7 +43,7 @@ class Navbar extends React.Component {
                             </div>
                             <div className='navbar_head' >
                                 <div className='navbar_council'><Link to='/form-page'>Career counselling</Link></div>
-                                <div className='navbar_pp'><Link to='/past-papers'>Past Papers</Link></div>
+                                <div className='navbar_pp'><Link to='/pyqs/cat'>Past Papers</Link></div>
                                 <div className='navbar_offCetre'><Link to='/offline-centre'>Offline Centres</Link></div>
                                 <div className='navbar_mock'><Link to='/test-series'>Mock Series</Link></div>
                                 <button className='navbar_signup'><Link to='/login'>Login</Link></button>

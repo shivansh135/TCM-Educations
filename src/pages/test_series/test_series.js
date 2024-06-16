@@ -24,14 +24,14 @@ export function Test_series() {
                         Book Live Trial Class <img src="./images/Icon.svg" className='bellll' alt='bell'/>
                     </button>
                 </div>
-                <img src="./images/Test_Series_Page.png" alt="hero" className="pages" />
+                <img src="/mock-paper-ill.png" alt="hero" className="pages" />
             </div>
 
             <div className="test_series_select">
 
                 <div className='course-head'>
-                    <div className='coursess-head-title'>
-                        Select Test Series
+                    <div className="heading_six">
+                        Choose your Stream
                     </div>
                     <div className='course-head-option'>
                         <div className='option' onClick={() => handleOptionClick('CAT')} style={{backgroundColor: selectedOption === 'CAT' ? '#14A4F5' : '' ,color: selectedOption === 'CAT' ? 'white' : ''}} >CAT</div>
@@ -47,11 +47,23 @@ export function Test_series() {
                     <Test/>
                     <Test/>
                     <Test/>
+                    <Test/>
+                    <Test/>
+                    <Test/>
+                    <Test/>
+                    <Test/>
+                    <Test/>
                     </>
                 )}
 
                 {selectedOption === 'IPMAT' && (
                     <>
+                    <Test/>
+                    <Test/>
+                    <Test/>
+                    <Test/>
+                    <Test/>
+                    <Test/>
                     <Test/>
                     <Test/>
                     <Test/>
@@ -63,11 +75,22 @@ export function Test_series() {
                     <Test/>
                     <Test/>
                     <Test/>
+                    <Test/>
+                    <Test/>
+                    <Test/>
+                    <Test/>
+                    <Test/>
+                    <Test/>
                     </>
                 )}
 
                 {selectedOption === 'CUET' && (
                     <>
+                    <Test/>
+                    <Test/>
+                    <Test/>
+                    <Test/>
+                    <Test/>
                     <Test/>
                     <Test/>
                     <Test/>
