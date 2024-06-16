@@ -39,7 +39,7 @@ export function Testimonial() {
 
             <div className="road_map">
             <img src="/images/Roadmap detail.png" alt="road_map" className="road_map_img"/>
-            <img src="/images/IIM.png" alt="road_map" className="IIM_img"/>
+            <img src={`/clgs/${state.clg}`} alt="road_map" style={{borderRadius:'8px'}} className="IIM_img"/>
             </div>
 
             <HeadingSubheading heading={` From Aspirants to Achievers`} sub={`We're India's leading coaching institute, empowering students to conquer CAT, IPMAT, CLAT & CUET with our expert faculty, personalized approach, and proven strategies. We'll equip you with the knowledge and confidence to ace your exams and gain admission to the top colleges in India.`}/>

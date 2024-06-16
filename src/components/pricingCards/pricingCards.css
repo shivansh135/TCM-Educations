@@ -29,7 +29,7 @@
     display: flex;
     align-items: center;
     margin-bottom: 20px;
-    color: var(--TCM-Brand-brand-blue01, #14A4F5);
+    color: var(--TCM-Brand-brand-blue01, #14a4f5);
     /* TCM Mobile/text-xl/Bold-M */
     font-family: Figtree;
     font-size: 20px;
@@ -48,7 +48,7 @@
   
   .pricing .card-header h1 {
     font-size: 18px;
-    color: #007bff;
+    color: #14a4f5;
   }
   
   .pricing .card-body h2 {
@@ -72,7 +72,7 @@
   
   .pricing .card-body h3 {
     font-size: 20px;
-    color: #007bff;
+    color: #14a4f5;
     margin-bottom: 20px;
   }
   
@@ -87,14 +87,14 @@
   }
   
   .pricing .buy-now {
-    background: #007bff;
+    background: #14a4f5;
     color: #fff;
     border-radius: 90px;
   }
   
   .pricing .view-more {
     background: #f0f0f000;
-    color: #007bff;
+    color: #14a4f5;
   }
   
   .pricing .batch-info {

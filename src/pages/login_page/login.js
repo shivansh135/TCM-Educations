@@ -8,7 +8,9 @@ export function Login() {
                 <div className="login">
                     <div className="login_left">
                         <div className="Email_Pass">
-                            <div className="Welcome">Welcome back</div>
+                        <div className='black-head' style={{margin:'auto',textAlign:'center'}}>
+                            Welcom Back <span className='blue-head'>Aspirants</span>
+                            </div>
                             <form style={{width: "100%"}} action="/"  method="post" >
                                 <div class="input-group" className="input_group">
                                     <div class="input-field" className="email">
@@ -29,6 +31,9 @@ export function Login() {
                         <div className="login_button_one">
                             Sign In
                         </div>
+                        <div className="nnew_user">
+                            Don't you have an account? <div className="sign_up"><Link to="/signup">Sign up</Link></div>
+                        </div>
 
                         <div className="or">
                             <div className="or_line"></div>
@@ -44,9 +49,7 @@ export function Login() {
                             <img src="./images/Facebook.png" alt="Facebook" className="ffacebook_img"/>Sign in with Facebook
                         </div>
 
-                        <div className="nnew_user">
-                            Don't you have an account? <div className="sign_up"><Link to="/signup">Sign up</Link></div>
-                        </div>
+                        
                     </div>
 
                     <img src="./images/couple.png" alt="login" className="login_right" style={{width:'35%'}}/>

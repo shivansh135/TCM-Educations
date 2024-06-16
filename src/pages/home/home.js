@@ -96,6 +96,7 @@ concepts. TCM's commitment of staying
 updated with the latest exam patterns and
 trends was evident in the relevance of the
 study materials and mocks.`,
+clg:'sibmp.png'
 
         },
         {
@@ -116,6 +117,7 @@ concepts. TCM's commitment of staying
 updated with the latest exam patterns and
 trends was evident in the relevance of the
 study materials and mocks.`,
+clg:'iimkozhi.png'
 
         },
         {
@@ -135,6 +137,7 @@ concepts. TCM's commitment of staying
 updated with the latest exam patterns and
 trends was evident in the relevance of the
 study materials and mocks.`,
+clg:'iimv.png'
 
         },
         {
@@ -142,7 +145,7 @@ study materials and mocks.`,
             percent:'CAT 99.67%ile',
             review:`Hello! I am Muskan Golus, having converted IIM Trichy. I received calls from MDI Gurgaon, 12 IIMs and other top B-schools. This was only possible because I was a part of TCM Education. My immense gratitude to all the faculties for their guidance and showing me the proper direction which was vital. I would specially want to thank Ajai Sir, for his encouragement and constant
 motivation which pushed me to the heights. Mathematics became fun for me and I won.`,
-
+clg:'iimt.png'
         },
         {
             name:'Archi Jaiswal',
@@ -161,6 +164,7 @@ concepts. TCM's commitment of staying
 updated with the latest exam patterns and
 trends was evident in the relevance of the
 study materials and mocks.`,
+clg:'jbims.png'
 
         },
         {
@@ -180,6 +184,7 @@ concepts. TCM's commitment of staying
 updated with the latest exam patterns and
 trends was evident in the relevance of the
 study materials and mocks.`,
+clg:'iims.png'
 
         },
         {
@@ -196,6 +201,7 @@ quantitative aptitude and helped me
 improve my score in quants. His classes
 and workshops are the best way to
 prepare.`,
+clg:'iimga.png'
 
         },
         {
@@ -205,7 +211,7 @@ prepare.`,
 Education has been the aid to my problems during my CAT preparation. I would like to thank the mentors of TCM
 Education for providing me proper
  guidance and mentorship to ace CAT exam. TCM’s special clone test series and suggestions of Ajai sir acted as a boon in my preparation. Looking back, I cannot help but only appreciated the support TCM provided me.`,
-
+clg:'iimt.png'
         },
         {
             name:'Shivam Kumar',
@@ -225,6 +231,7 @@ techniques. His distinct teaching methods
 and strategies instilled in me a newfound
 confidence that greatly enhanced my
 performance.`,
+clg:'iima.png'
 
         },
         {
@@ -242,7 +249,7 @@ itself is a process. Maths is fear only
 because we escape practice and conceptual
 clarity. Mentors proved me the same. So I
 would recommend all from a genuine heart.`,
-
+clg:'iimb.png'
         }
         ,{
             name:'Vivek Kr. Gupta',
@@ -254,7 +261,7 @@ would recommend all from a genuine heart.`,
 the series of mocks to the updated
 content and class delivery.I feel I got
 more than enough.I feel elated that I took a wise and crucial decision that changed my life.`,
-
+clg:'iimc.png'
         },
         {
             name:'Kanhaiya Garg',
@@ -267,7 +274,7 @@ more than enough.I feel elated that I took a wise and crucial decision that chan
  faculty created was very inspirational
  and I will preserve it for lifetime. Finally
  I thank all who guided me at every stage of my preparation.`,
-
+clg:'iiml.png'
         },
         {
             name:'Vishesh Jain',
@@ -283,7 +290,7 @@ them easily. It's true that journey is more
 important than destination and everyday
 working to hone my knowledge under the
 best made it possible!.`,
-
+clg:'iima.png'
         }
     ]
 
@@ -314,7 +321,7 @@ return(
 export default function Home() {
     const [showPopup, setShowPopup] = useState(false);
     const [currentIndex, setCurrentIndex] = useState(0);
-    const images = ["/H1.png", "/H2.png",'/H3.png','/H4.png'];
+    const images = [1,2,3,4,5,6,7,8,9,10,11];
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -355,13 +362,11 @@ export default function Home() {
                 </div>
                 <div className='home_two_img'>
                     {images.map((src, index) => (
-                        <img
-                        key={index}
-                        src={src}
-                        style={{width:'90%'}}
-                        alt={`hero-${index}`}
-                        className={index === currentIndex ? 'fade-in' : 'fade-out'}
-                        />
+                       <picture>
+                            <source media="(max-width: 768px)" srcSet={`/images/hero/phone/h${src}.png`} />
+                            <source media="(min-width: 769px)" srcSet={`/images/hero/desk/h${src}.png`} />
+                            <img  key={index} src={`/images/hero/desk/h${src}.png`} style={{width:'90%',height:'auto'}} alt='frame' className={index === currentIndex ? 'fade-in' : 'fade-out'}/>
+                        </picture>
                     ))}
                     </div>
             </div>

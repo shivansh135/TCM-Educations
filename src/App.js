@@ -44,7 +44,7 @@ function App() {
       <Route path="/cat" element={<><Navbar currentPage="home" currentImg="home"/><Cat /></>} />
       <Route path="/cat" element={<><Navbar currentPage="home" currentImg="home"/><Cat /></>} />
       <Route path="/panchmukhi" element={<><Navbar currentPage="specialPage" currentImg="specialPage"/><Panchmukhi /></>} />    
-      <Route path="/testimonial" element={<><Navbar currentPage="home" currentImg="home"/><Testimonial /></>} />
+      <Route path="/testimonial/:id" element={<><Navbar currentPage="home" currentImg="home"/><Testimonial /></>} />
       <Route path="/testimonial/:id/testimonial/:id" element={<><Navbar currentPage="home" currentImg="home"/><Testimonial /></>} />
       <Route path="/teacher/:id/testimonial/:id" element={<><Navbar currentPage="home" currentImg="home"/><Testimonial /></>} />
       <Route path="/teacher/:id" element={<><Navbar currentPage="specialPage" currentImg="specialPage"/><Teacher /></>} />
@@ -52,13 +52,13 @@ function App() {
       <Route path="/signup" element={<><Navbar currentPage="home" currentImg="home"/><Signup /></>} />
       <Route path="/offline-centre" element={<><Navbar currentPage="home" currentImg="home"/><OfflineCentre /></>} />
       <Route path="/plans" element={<><Navbar currentPage="home" currentImg="home"/><Plans /></>} />
-      <Route path="/past-papers" element={<><Navbar currentPage="specialPage" currentImg="specialPage"/><PastPapers /></>} />
+      {/* <Route path="/past-papers" element={<><Navbar currentPage="specialPage" currentImg="specialPage"/><PastPapers /></>} /> */}
       <Route path="/test-series" element={<><Navbar currentPage="home" currentImg="home"/><TestSeries /></>} />
       <Route path="/form-page" element={<><Navbar currentPage="home" currentImg="home"/><FormPage /></>} />
       <Route path="/checkout" element={<><Navbar currentPage="home" currentImg="home"/><Checkout /></>} />
       <Route path="/popup-home" element={<><Navbar currentPage="home" currentImg="home"/><PopupHome /></>} />
       <Route path="/confirmation" element={<><Navbar currentPage="home" currentImg="home"/><Confirmation /></>} />
-      <Route path="/more-page/:id" element={<><Navbar currentPage="specialPage" currentImg="specialPage"/><MorePage /></>} />
+      <Route path="/pyqs/:id" element={<><Navbar currentPage="home" currentImg="home"/><MorePage /></>} />
     </Routes>
     <Footer/>
   </Router>

@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 export function Card_two(props) {
     return (
-        <div className="card_two">
+        <Link state={props.state} to ={`/testimonial/${props.name}`} className="card_two">
             <div className="top-layer">
                 <div style={{display:'flex',gap:'14px'}}> 
                 <img className="stud-img" src={props.src} alt="student"/>
@@ -16,9 +16,9 @@ export function Card_two(props) {
             </div>
             <div className="bottom-layer">
                 <div className="stud-detail">{props.review}</div>
-                <div className="stud-more"><Link state={props.state} to ={`/testimonial`}>Learn More</Link></div>
+                <div className="stud-more">Learn More</div>
             </div>
-        </div>
+        </Link>
     )
 
 }

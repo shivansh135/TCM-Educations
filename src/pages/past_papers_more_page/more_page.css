@@ -354,17 +354,16 @@
 
     .question_paper_content{
         display: flex;
-        width: 340px;
+        width: 100%;
         align-items: center;
-        align-content: flex-start;
+        justify-content: center;
         gap: 14px;
         flex-wrap: wrap;
         position: relative;
-        left: 4%;
     }
     
     .question_paper{
-        width: 90%;
+        width: 100%;
         height: auto;
         margin-top: 10%;
         display: flex;
@@ -380,7 +379,6 @@
         align-items: center;
         gap: 20px;
         position: relative;
-        right: -5%;
     }
     
     .question_paper_heading{
@@ -495,6 +493,7 @@
         flex-direction: column;
         align-items: flex-start;
         gap: 4px;
+        font-size: 14px;
     }
     
     .question_paper_detail{
@@ -503,6 +502,7 @@
         flex-direction: column;
         align-items: flex-start;
         gap: 4px;
+        font-size: 12px;
     }
     
     .question_paper_subject_category{

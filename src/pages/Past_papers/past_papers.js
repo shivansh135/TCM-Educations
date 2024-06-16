@@ -7,7 +7,7 @@ import { Past_papers_card } from "../../components/card/past_paper_card";
 
 export function Past_papers() {
     const [selectedOption, setSelectedOption] = useState('CAT');
-
+ 
     const handleOptionClick = (option) => {
         setSelectedOption(option);
     };

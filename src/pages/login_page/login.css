@@ -471,7 +471,9 @@
         font-weight: 500;
         line-height: normal;
         text-align: center;
+        justify-content: center;
         display: flex;
+        margin-top: 12px;
         flex-direction: row;
         margin-left: 0%;
     }
@@ -480,7 +482,7 @@
     }
     .login_right{
         overflow: hidden;
-        width: 80% !important;
+        width: 50% !important;
         border-radius: 24px;
         background: var(--TCM-Brand-brand-blue12, #F1F7FE);
         align-items: flex-start;

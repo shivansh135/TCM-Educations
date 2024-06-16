@@ -35,3 +35,7 @@ body,html{
 input,textarea{
   font-family: Figtree;
 }
+
+a{
+  text-decoration: none;
+}

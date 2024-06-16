@@ -7,7 +7,9 @@ export function Signup() {
                 <div className="signup">
                     <div className="signup_left">
                         <div className="email_pass_signup">
-                            <div className="Welcome_to">Join TCM Family Today</div>
+                        <div className='black-head' style={{margin:'auto',textAlign:'center'}}>
+                           Join <span className='blue-head'>TCM Family </span> Today
+                            </div>
                             <form action="/"  method="post" style={{width: "80%"}}>
                                 <div class="input-group" className="input_to">
                                     <div class="input-field" className="Name">

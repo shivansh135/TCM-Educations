@@ -1,14 +1,13 @@
 import React from "react";
 import './offline_centre.css';
 import { Cityy } from "../../components/card/city_card";
+import { HeadingSubheading } from "../../components/headings/headings";
 
 export function Offline_centre() {
     return (
         <div>
             <div className="off_centre">
-                <div className="centre_heading">
-                    Experience the best in our offline centres
-                </div>
+                <HeadingSubheading zero={true} heading={'TCM’s Offline Centres'} sub="Explore TCM's state-of-the-art offline centres, where cutting-edge facilities, expert faculty, and a vibrant learning environment come together to help you achieve CAT success"/>
 
                 <div className="centres">
                     <Cityy

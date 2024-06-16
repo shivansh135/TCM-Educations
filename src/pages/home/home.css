@@ -148,7 +148,7 @@
     margin: auto;
     margin-top: 5%;
     display: flex;
-    width: 100%;
+    width: 80%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -1007,9 +1007,10 @@ flex-wrap: wrap;
         line-height: 150%;
         text-align: center;
     }
-
+    
     .home_two_img img{
         margin-top: 35px;
+        width: 100%;
     }
     .home_two_content{
         width: 295px;
