@@ -7,7 +7,7 @@ export function Signup() {
                 <div className="signup">
                     <div className="signup_left">
                         <div className="email_pass_signup">
-                        <div className='black-head' style={{margin:'auto',textAlign:'center'}}>
+                        <div className='black-head' style={{position:'relative',margin:'auto',left:'10px',textAlign:'center',textAlign:'center'}}>
                            Join <span className='blue-head'>TCM Family </span> Today
                             </div>
                             <form action="/"  method="post" style={{width: "80%"}}>
@@ -25,15 +25,11 @@ export function Signup() {
                                         <input type="text" name="Email" placeholder="Email" className="Email_input" />
                                     </div>
                                     <div class="input-field" className="Password">
-                                        <label for="Password" className="Password_text">Password*</label>
-                                        <input type="text" name="Password" placeholder="Password" className="Password_input" />
+                                        <label for="Password" className="Password_text">Qualification*</label>
+                                        <input type="text" name="quali" placeholder="B.com/B.A/..." className="Password_input" />
                                     </div>
                                 </div>
                             </form>
- 
-                            <div className="Forgot_pass">
-                                Password should be more than 8 characters
-                            </div>
                         </div>
                         <div className="Login_button">
                             Sign In

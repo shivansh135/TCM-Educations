@@ -1,14 +1,14 @@
 import React from "react";
 
-export  function Test( ) {
+export  function Test( {heading,detail} ) {
     return (
                     <div className='test-card'>
                         <div className='test-card-content'>
                             <div className="test-card-title">
-                            TCM Foundation Series
+                            {heading}
                             </div>
                             <div className="test-card-detail">
-                            Build a strong base with our Foundation Series, perfect for beginners to grasp essential concepts and fundamentals.
+                            {detail}
                             </div>
                             <div className="test-card-button">
                                 <button className="start_test">Login</button>

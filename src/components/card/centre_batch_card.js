@@ -37,7 +37,7 @@ export function Batch_card({course, date, detail}) {
                                     </Link>
                                 </button>
                                 <div className='batch-card-viewmore'>
-                                    <Link to ='/planning'>
+                                    <Link to ={'/pricing/'+course.split(' ')[0]}>
                                         View details
                                     </Link>
                                 </div>

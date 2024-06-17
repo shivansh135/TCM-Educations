@@ -41,7 +41,7 @@ export default function Panchmukhi() {
                     Unlock your potential with TCM's comprehensive plan, featuring expert guidance, strategic study methods, and targeted practice to ace the exams.
                     </div>
                     <div className='buttonns' style={{left:'0'}}>
-                        <button className='live-class'><Link to="/form-page">Councelling Call</Link></button>
+                        <button className='live-class'><Link to="/form-page">Counselling Call</Link></button>
                         <button className='buy-now'><Link to="/signup">Book Trial Class</Link></button>
                     </div>
                 </div>

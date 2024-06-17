@@ -15,10 +15,10 @@ export function Test_series() {
             <div className="head_six">
                 <div className="heading_content_six">
                     <div className="heading_six">
-                        Solve the test papers <br/>and test your skills
+                    TCM’s Exclusive AI Powered Test Series
                     </div>
                     <div className="detail_six">
-                        Hello Everyone!! I am Ajai Singh, Founder and CEO of Toil Chamber of Mathematics Pvt. Ltd. (TCM Education), a leading national brand, based in Prayagraj, for CAT, CLAT, IPMAT & OMET exams.
+                    Maximize your preparation with TCM's comprehensive test series, featuring realistic mock exams, detailed performance analysis, and personalized feedback to ensure success.
                     </div>
                     <button className="book">
                         Book Live Trial Class <img src="./images/Icon.svg" className='bellll' alt='bell'/>
@@ -44,56 +44,35 @@ export function Test_series() {
                 <div className='test-contents'>
                 {selectedOption === 'CAT' && (
                     <>
-                    <Test/>
-                    <Test/>
-                    <Test/>
-                    <Test/>
-                    <Test/>
-                    <Test/>
-                    <Test/>
-                    <Test/>
-                    <Test/>
+                    <Test heading={'TCM Foundation Series'} detail={'Build a strong base with our Foundation Series, perfect for beginners to grasp essential concepts and fundamentals.'}/>
+                    <Test heading={'TCM Advanced Series'} detail={'Challenge yourself with our Advanced Series, designed to push your limits and deepen your understanding of complex topics.'}/>
+                    <Test heading={'TCM Mastery Series'} detail={"Achieve excellence with our Mastery Series, featuring the toughest mock exams to ensure you're fully prepared for exam success."}/>
                     </>
                 )}
 
                 {selectedOption === 'IPMAT' && (
                     <>
-                    <Test/>
-                    <Test/>
-                    <Test/>
-                    <Test/>
-                    <Test/>
-                    <Test/>
-                    <Test/>
-                    <Test/>
-                    <Test/>
+                    <Test heading={'TCM Foundation Series'} detail={'Build a strong base with our Foundation Series, perfect for beginners to grasp essential concepts and fundamentals.'}/>
+                    <Test heading={'TCM Advanced Series'} detail={'Challenge yourself with our Advanced Series, designed to push your limits and deepen your understanding of complex topics.'}/>
+                    <Test heading={'TCM Mastery Series'} detail={"Achieve excellence with our Mastery Series, featuring the toughest mock exams to ensure you're fully prepared for exam success."}/>
                     </>
                 )}
 
                 {selectedOption === 'CLAT' && (
                     <>
-                    <Test/>
-                    <Test/>
-                    <Test/>
-                    <Test/>
-                    <Test/>
-                    <Test/>
-                    <Test/>
-                    <Test/>
-                    <Test/>
+                    <Test heading={'TCM Foundation Series'} detail={'Build a strong base with our Foundation Series, perfect for beginners to grasp essential concepts and fundamentals.'}/>
+                    <Test heading={'TCM Advanced Series'} detail={'Challenge yourself with our Advanced Series, designed to push your limits and deepen your understanding of complex topics.'}/>
+                    <Test heading={'TCM Mastery Series'} detail={"Achieve excellence with our Mastery Series, featuring the toughest mock exams to ensure you're fully prepared for exam success."}/>
+                
                     </>
                 )}
 
                 {selectedOption === 'CUET' && (
                     <>
-                    <Test/>
-                    <Test/>
-                    <Test/>
-                    <Test/>
-                    <Test/>
-                    <Test/>
-                    <Test/>
-                    <Test/>
+                   <Test heading={'TCM Foundation Series'} detail={'Build a strong base with our Foundation Series, perfect for beginners to grasp essential concepts and fundamentals.'}/>
+                    <Test heading={'TCM Advanced Series'} detail={'Challenge yourself with our Advanced Series, designed to push your limits and deepen your understanding of complex topics.'}/>
+                    <Test heading={'TCM Mastery Series'} detail={"Achieve excellence with our Mastery Series, featuring the toughest mock exams to ensure you're fully prepared for exam success."}/>
+                
                     </>
                 )}
 

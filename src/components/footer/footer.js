@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import "./footer.css"
 
 export const Footer = ()=>{
@@ -26,15 +27,15 @@ export const Footer = ()=>{
 
       <ul className="nav__ul">
         <li>
-          <a href="#">LinkedIn</a>
+          <Link to="#" >LinkedIn</Link>
         </li>
 
         <li>
-          <a href="#">FaceBook</a>
+          <Link to="#" >FaceBook</Link>
         </li>
             
         <li>
-          <a href="#">Instagram</a>
+          <Link to="#" >Instagram</Link>
         </li>
       </ul>
     </li>
@@ -44,19 +45,19 @@ export const Footer = ()=>{
       
       <ul className="nav__ul nav__ul--extra">
         <li>
-          <a href="#">CAT</a>
+          <Link to="/cat/Cat" >CAT</Link>
         </li>
         
         <li>
-          <a href="#">IPMAT</a>
+          <Link to="/cat/ipmat" >IPMAT</Link>
         </li>
         
         <li>
-          <a href="#">CLAT</a>
+          <Link to="/cat/clat" >CLAT</Link>
         </li>
         
         <li>
-          <a href="#">CUET</a>
+          <Link to="/cat/cuet" >CUET</Link>
         </li>
         
       </ul>
@@ -67,19 +68,19 @@ export const Footer = ()=>{
       
       <ul className="nav__ul">
         <li>
-          <a href="#">Privacy Policy</a>
+          <Link to="#" >Privacy Policy</Link>
         </li>
         
         <li>
-          <a href="#">Terms of Use</a>
+          <Link to="#" >Terms of Use</Link>
         </li>
         
         <li>
-          <a href="#">About US</a>
+          <Link to="#" >About US</Link>
         </li>
 
         <li>
-          <a href="#">Contact US</a>
+          <Link to="#" >Contact US</Link>
         </li>
       </ul>
     </li>

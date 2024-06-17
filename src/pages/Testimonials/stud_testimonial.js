@@ -6,7 +6,7 @@ import { Card_two } from '../../components/card/card2';
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; 
 import FAQQuestion from '../../components/FaQ/FAQQuestion';
-import { useLocation, useParams } from 'react-router-dom';
+import { Link, useLocation, useParams } from 'react-router-dom';
 import { StudentsFeedback } from "../home/home";
 import { Offline_centre } from "../Offline_centre/offline_centre";
 
@@ -31,8 +31,8 @@ export function Testimonial() {
                    
                     
                     <div className="buttons">
-                            <button className="register">Register for Free Workshops</button>
-                            <button className="book">Book Live Trial Class</button>
+                            <Link to="/signup" className="register">Register for Free Workshops</Link>
+                            <Link to="/signup" className="book">Book Live Trial Class</Link>
                     </div>
 
                 </div>
@@ -43,7 +43,7 @@ export function Testimonial() {
             <img src={`/clgs/${state.clg}`} alt="road_map" style={{borderRadius:'8px'}} className="IIM_img"/>
             </div>
 
-            <HeadingSubheading heading={` From Aspirants to Achievers`} sub={`We're India's leading coaching institute, empowering students to conquer CAT, IPMAT, CLAT & CUET with our expert faculty, personalized approach, and proven strategies. We'll equip you with the knowledge and confidence to ace your exams and gain admission to the top colleges in India.`}/>
+            <HeadingSubheading heading={` From Aspirants to Achievers`} sub={`Read testimonials from our successful students who have turned their dreams into reality with TCM`}/>
 
 
             <StudentsFeedback/>

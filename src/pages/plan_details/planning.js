@@ -69,7 +69,7 @@ export default function Planning() {
             <div className='roadmaps'>
                 <div className='roadmaps-head'>
                     <div className='roadmaps-heading'>
-                        <div className='BLACK'>The Plan for Acting</div>
+                        <div className='BLACK'>The Plan for Acing</div>
                         <span className='BLUEs'>{courses_data.name} 2024 </span></div>
                     <div className='roadmaps-heading-detail'>
                         Borem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class apten

@@ -322,7 +322,7 @@ return(
 export default function Home() {
     const [showPopup, setShowPopup] = useState(false);
     const [currentIndex, setCurrentIndex] = useState(0);
-    const images = [1,2,3,4,5,6,7,8,9,10,11];
+    const images = [1,3,4,5,6,7,8,9,10,11];
     const [learnMore,setLearnMore] = useState(window.innerHeight>768);
 
     useEffect(() => {
@@ -386,7 +386,7 @@ export default function Home() {
             </div>
 
 
-            <div className='mentor-head'>
+            <div to="/teacher/ajai_sir" className='mentor-head'>
             <div className='mentor-cont' >
                 <div className='black-head' style={{margin:'auto',marginTop:'0px',marginBottom:"0px",textAlign:'center'}}>
                     Who is the man behind<span className='blue-head'> India’s Fastet Growing </span>Ed-Tech Company?
@@ -409,8 +409,10 @@ export default function Home() {
                 </div>
                 {learnMore && <div style={{fontSize:'9px',marginLeft:'auto',marginTop:'-30px',color:'#14A4F5',cursor:'pointer'}} onClick={()=>{setLearnMore(!learnMore)}}>Learn more</div>}
             </div>
-            
-            <img className='mentor-img' style={{width:'60%',height:'auto'}} src="/images/mentor.png" alt ="ajai sir"/>
+            <Link className='mentor-img'   style={{width:'60%',height:'auto'}} to={`/teacher/ajai_sir`}>
+            <img style={{width:'100%',height:'auto'}} src="/images/mentor.png"  alt ="ajai sir"/>
+
+            </Link>
 
         </div>
         <HeadingSubheading heading={` Meet the TCM Avengers`} sub={`Discover our expert faculty, the TCM Avengers, who transform aspirants into achievers with their unparalleled guidance`}/>
@@ -475,7 +477,7 @@ export default function Home() {
             <Offline_centre zero={false} />
 
 
-            <HeadingSubheading heading={` From Aspirants to Achievers`} sub={`Experience our scientific teaching methods, designed for maximum efficiency and guaranteed to boost your  scores.`}/>
+            <HeadingSubheading heading={` From Aspirants to Achievers`} sub={`Read testimonials from our successful students who have turned their dreams into reality with TCM`}/>
 
 
             {/* <div className='mobile-view'>

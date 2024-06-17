@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export function Card(props) {
   return (
-    <div className="card">
+    <Link to={`/teacher/${props.id}`} className="card">
       <img className="card--image" src={props.src} alt="teacher" />
       <div className="card--content">
         <div>
@@ -14,6 +14,6 @@ export function Card(props) {
           <Link to={`/teacher/${props.id}`}>{props.viewmore}</Link>
         </div>
       </div>
-    </div>
+    </Link>
   );
 }

@@ -21,6 +21,7 @@ import {Confirmation} from './pages/form_page/confirmation';
 import MorePage from './pages/past_papers_more_page/more_page';
 import Navbar from './components/navbar/navbar';
 import { Footer } from './components/footer/footer';
+import { PricingPage } from './pages/pricing/pricing';
 const ScrollToTop = () => {
   // Extracts pathname property(key) from an object
   const { pathname } = useLocation();
@@ -55,10 +56,11 @@ function App() {
       <Route path="/past-papers" element={<><Navbar currentPage="specialPage" currentImg="specialPage"/><PastPapers /></>} />
       <Route path="/test-series" element={<><Navbar currentPage="home" currentImg="home"/><TestSeries /></>} />
       <Route path="/form-page" element={<><Navbar currentPage="home" currentImg="home"/><FormPage /></>} />
-      <Route path="/checkout" element={<><Navbar currentPage="home" currentImg="home"/><Checkout /></>} />
+      {/* <Route path="/checkout" element={<><Navbar currentPage="home" currentImg="home"/><Checkout /></>} /> */}
       <Route path="/popup-home" element={<><Navbar currentPage="home" currentImg="home"/><PopupHome /></>} />
       <Route path="/confirmation" element={<><Navbar currentPage="home" currentImg="home"/><Confirmation /></>} />
       <Route path="/pyqs/:id" element={<><Navbar currentPage="home" currentImg="home"/><MorePage /></>} />
+      <Route path="/pricing/:id" element={<><Navbar currentPage="home" currentImg="home"/><PricingPage /></>} />
     </Routes>
     <Footer/>
   </Router>

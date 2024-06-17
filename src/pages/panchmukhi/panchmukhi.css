@@ -861,7 +861,7 @@
     
     .Step_img{
         display: flex;
-        width: 43%;
+        width: 50%;
         height: auto;
         overflow: hidden;
         justify-content: center;

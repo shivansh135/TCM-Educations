@@ -14,7 +14,7 @@ export function Form_page() {
 
             <div>   
                 <div className='black-head' style={{margin:'auto',textAlign:'center'}}>
-                    Councelling with <span className='blue-head'>Chief Mentor </span>
+                Counselling with <span className='blue-head'>Chief Mentor </span>
                     </div>
                 
                 <div className="email_pass">
