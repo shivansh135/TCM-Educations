@@ -27,15 +27,15 @@ export const Footer = ()=>{
 
       <ul className="nav__ul">
         <li>
-          <Link to="#" >LinkedIn</Link>
+          <Link target="_blank" to="https://www.youtube.com/@TCMEducation">YouTube</Link>
         </li>
 
         <li>
-          <Link to="#" >FaceBook</Link>
+          <Link target="_blank" to="https://www.facebook.com/TCMEducation" >FaceBook</Link>
         </li>
             
         <li>
-          <Link to="#" >Instagram</Link>
+          <Link target="_blank" to="https://www.instagram.com/tcm_education/" >Instagram</Link>
         </li>
       </ul>
     </li>
