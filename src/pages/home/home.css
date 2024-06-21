@@ -900,7 +900,7 @@ flex-wrap: wrap;
     position: relative;
     width: 100%;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     justify-content: space-evenly;
     margin-top: 80px;
 }

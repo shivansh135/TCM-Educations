@@ -110,8 +110,9 @@
         width: 100%;
         height: auto;
         display: flex;
-        align-items: flex-start;
+        align-items: center;
         flex-direction: column;
+        justify-content: center;
         gap: 18px;
     }
     
