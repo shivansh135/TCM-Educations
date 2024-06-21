@@ -71,7 +71,7 @@ function App() {
       <Route path="/directors" element={<><Navbar currentPage="home" currentImg="home"/><Directors /></>}/>
     </Routes>
     <Footer/>
-    <a href="tel:+91 7307224500" className='call'><img style={{backgroundColor:'white',borderRadius:'100px'}} src="/call.svg" slt=""/></a>
+    <a href="tel:+91 9336339618" className='call'><img style={{backgroundColor:'white',borderRadius:'100px'}} src="/call.svg" slt=""/></a>
   </Router>
   );
 }
