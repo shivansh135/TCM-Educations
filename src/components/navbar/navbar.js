@@ -24,8 +24,9 @@ class Navbar extends React.Component {
         const navbarStyle = currentPage === 'specialPage' ? 'navbar-special' : 'navbar-default';
         const logoSrc = currentImg === 'specialPage' ? '/logo/tcmLogoWhite.svg' : '/logo/tcmLogo.svg';
         const links = [
-            { name: 'Home', path: '/' },
-            { name: 'Career counselling', path: '/form-page' },
+            { name: 'Directors', path: '/directors' },
+            { name: 'Media Coverage', path: '/news' },
+            { name: 'Courses', path: '/all-batches' },
             { name: 'Past Papers', path: '/pyqs/cat' },
             { name: 'Offline Centres', path: '/offline-centre' },
             { name: 'Mock Series', path: '/test-series' }
@@ -42,6 +43,9 @@ class Navbar extends React.Component {
                                 </Link>
                             </div>
                             <div className='navbar_head' >
+                                <div className='navbar_council'><Link to='/directors'>Directors</Link></div>
+                                <div className='navbar_council'><Link to='/news'>Media Coverage</Link></div>
+                                <div className='navbar_council'><Link to='/all-batches'>Cources</Link></div>
                                 <div className='navbar_council'><Link to='/form-page'>Career counselling</Link></div>
                                 <div className='navbar_pp'><Link to='/pyqs/cat'>Past Papers</Link></div>
                                 <div className='navbar_offCetre'><Link to='/offline-centre'>Offline Centres</Link></div>

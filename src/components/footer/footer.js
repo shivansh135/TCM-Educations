@@ -5,7 +5,7 @@ export const Footer = ()=>{
     return (
         <footer className="footer">
   <div className="footer__addr">
-    <img className="logo" src="/images/tcm.png"/>
+    <h1 style={{marginBottom:'0'}}>Toil Chamber of Mathematics</h1>
         <br></br>
         <br></br>
         <br></br>

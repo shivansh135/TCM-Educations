@@ -22,6 +22,10 @@ import MorePage from './pages/past_papers_more_page/more_page';
 import Navbar from './components/navbar/navbar';
 import { Footer } from './components/footer/footer';
 import { PricingPage } from './pages/pricing/pricing';
+import { News } from './pages/News/news';
+import { Batch } from './pages/Batch/batch';
+import { Upcomming } from './pages/upcomming-batch/upcomming';
+import { Directors } from './pages/directors/directors';
 const ScrollToTop = () => {
   // Extracts pathname property(key) from an object
   const { pathname } = useLocation();
@@ -61,8 +65,13 @@ function App() {
       <Route path="/confirmation" element={<><Navbar currentPage="home" currentImg="home"/><Confirmation /></>} />
       <Route path="/pyqs/:id" element={<><Navbar currentPage="home" currentImg="home"/><MorePage /></>} />
       <Route path="/pricing/:id" element={<><Navbar currentPage="home" currentImg="home"/><PricingPage /></>} />
+      <Route path="/news" element={<><Navbar currentPage="home" currentImg="home"/><News /></>}/>
+      <Route path="/all-batches" element={<><Navbar currentPage="home" currentImg="home"/><Batch /></>}/>
+      <Route path="/upcomming-batch" element={<><Navbar currentPage="home" currentImg="home"/><Upcomming /></>}/>
+      <Route path="/directors" element={<><Navbar currentPage="home" currentImg="home"/><Directors /></>}/>
     </Routes>
     <Footer/>
+    <a href="tel:+91 7307224500" className='call'><img style={{backgroundColor:'white',borderRadius:'100px'}} src="/call.svg" slt=""/></a>
   </Router>
   );
 }
