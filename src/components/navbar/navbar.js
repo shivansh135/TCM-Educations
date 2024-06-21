@@ -27,7 +27,7 @@ class Navbar extends React.Component {
             { name: 'Directors', path: '/directors' },
             { name: 'Media Coverage', path: '/news' },
             { name: 'Courses', path: '/all-batches' },
-            { name: 'Past Papers', path: '/pyqs/cat' },
+            { name: 'Previous Year Papers', path: '/pyqs/cat' },
             { name: 'Offline Centres', path: '/offline-centre' },
             { name: 'Mock Series', path: '/test-series' }
         ];

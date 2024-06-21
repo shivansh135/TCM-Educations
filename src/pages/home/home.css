@@ -44,6 +44,7 @@
     border-radius: 38px;
     color: aliceblue;
     background-color: #14A4F5;
+    font-family: Figtree;
     justify-content: center;
     align-items: center;
     border: none;
@@ -1027,6 +1028,7 @@ flex-wrap: wrap;
     }
     .btnn a {
         text-decoration: none;
+
     }
     
     .btnn a {

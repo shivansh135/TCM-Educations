@@ -11,7 +11,7 @@ export function Upcomming() {
     };
     return (
         <div>
-            <div className="head_six">
+            {/* <div className="head_six">
                 <div className="heading_content_six">
                     <div className="heading_six">
                     Upcoming Batches at TCM Education
@@ -24,7 +24,7 @@ export function Upcomming() {
                     </button>
                 </div>
                 <img src="/mock-paper-ill.png" alt="hero" className="pages" />
-            </div>
+            </div> */}
 
             <div className="test_series_select">
 
@@ -43,34 +43,34 @@ export function Upcomming() {
                 <div className='test-contents'>
                 {selectedOption === 'CAT' && (
                     <>
-                    <UpcomminCard start="25 June, Monday" button="Enroll Now" heading={'Leaders Batch - CAT 2024'} detail={'Build a strong base with our Foundation Series, perfect for beginners to grasp essential concepts and fundamentals.'}/>
-                    <UpcomminCard start="25 June, Monday" button="Enroll Now" heading={'Leaders Batch - CAT 2024'} detail={'Challenge yourself with our Advanced Series, designed to push your limits and deepen your understanding of complex topics.'}/>
-                    <UpcomminCard start="25 June, Monday" button="Enroll Now" heading={'Leaders Batch - CAT 2024'} detail={"Achieve excellence with our Mastery Series, featuring the toughest mock exams to ensure you're fully prepared for exam success."}/>
+                    <UpcomminCard link="/plans" start="25 June, Monday" button="Enroll Now" heading={'Leaders Batch - CAT 2024'} detail={'Build a strong base with our Foundation Series, perfect for beginners to grasp essential concepts and fundamentals.'}/>
+                    <UpcomminCard link="/plans" start="25 June, Monday" button="Enroll Now" heading={'Leaders Batch - CAT 2024'} detail={'Challenge yourself with our Advanced Series, designed to push your limits and deepen your understanding of complex topics.'}/>
+                    <UpcomminCard link="/plans" start="25 June, Monday" button="Enroll Now" heading={'Leaders Batch - CAT 2024'} detail={"Achieve excellence with our Mastery Series, featuring the toughest mock exams to ensure you're fully prepared for exam success."}/>
                     </>
                 )}
 
                 {selectedOption === 'IPMAT' && (
                     <>
-                    <UpcomminCard start="25 June, Monday" button="Enroll Now" heading={'Leaders Batch - CAT 2024'} detail={'Build a strong base with our Foundation Series, perfect for beginners to grasp essential concepts and fundamentals.'}/>
-                    <UpcomminCard start="25 June, Monday" button="Enroll Now" heading={'Leaders Batch - CAT 2024'} detail={'Challenge yourself with our Advanced Series, designed to push your limits and deepen your understanding of complex topics.'}/>
-                    <UpcomminCard start="25 June, Monday" button="Enroll Now" heading={'Leaders Batch - CAT 2024'} detail={"Achieve excellence with our Mastery Series, featuring the toughest mock exams to ensure you're fully prepared for exam success."}/>
+                    <UpcomminCard link="/plans" start="25 June, Monday" button="Enroll Now" heading={'Leaders Batch - CAT 2024'} detail={'Build a strong base with our Foundation Series, perfect for beginners to grasp essential concepts and fundamentals.'}/>
+                    <UpcomminCard link="/plans" start="25 June, Monday" button="Enroll Now" heading={'Leaders Batch - CAT 2024'} detail={'Challenge yourself with our Advanced Series, designed to push your limits and deepen your understanding of complex topics.'}/>
+                    <UpcomminCard link="/plans" start="25 June, Monday" button="Enroll Now" heading={'Leaders Batch - CAT 2024'} detail={"Achieve excellence with our Mastery Series, featuring the toughest mock exams to ensure you're fully prepared for exam success."}/>
                     </>
                 )}
 
                 {selectedOption === 'CLAT' && (
                     <>
-                    <UpcomminCard start="25 June, Monday" button="Enroll Now" heading={'Leaders Batch - CAT 2024'} detail={'Build a strong base with our Foundation Series, perfect for beginners to grasp essential concepts and fundamentals.'}/>
-                    <UpcomminCard start="25 June, Monday" button="Enroll Now" heading={'Leaders Batch - CAT 2024'} detail={'Challenge yourself with our Advanced Series, designed to push your limits and deepen your understanding of complex topics.'}/>
-                    <UpcomminCard start="25 June, Monday" button="Enroll Now" heading={'Leaders Batch - CAT 2024'} detail={"Achieve excellence with our Mastery Series, featuring the toughest mock exams to ensure you're fully prepared for exam success."}/>
+                    <UpcomminCard link="/plans" start="25 June, Monday" button="Enroll Now" heading={'Leaders Batch - CAT 2024'} detail={'Build a strong base with our Foundation Series, perfect for beginners to grasp essential concepts and fundamentals.'}/>
+                    <UpcomminCard link="/plans" start="25 June, Monday" button="Enroll Now" heading={'Leaders Batch - CAT 2024'} detail={'Challenge yourself with our Advanced Series, designed to push your limits and deepen your understanding of complex topics.'}/>
+                    <UpcomminCard link="/plans" start="25 June, Monday" button="Enroll Now" heading={'Leaders Batch - CAT 2024'} detail={"Achieve excellence with our Mastery Series, featuring the toughest mock exams to ensure you're fully prepared for exam success."}/>
                 
                     </>
                 )}
 
                 {selectedOption === 'CUET' && (
                     <>
-                   <UpcomminCard start="25 June, Monday" button="Enroll Now" heading={'Leaders Batch - CAT 2024'} detail={'Build a strong base with our Foundation Series, perfect for beginners to grasp essential concepts and fundamentals.'}/>
-                    <UpcomminCard start="25 June, Monday" button="Enroll Now" heading={'Leaders Batch - CAT 2024'} detail={'Challenge yourself with our Advanced Series, designed to push your limits and deepen your understanding of complex topics.'}/>
-                    <UpcomminCard start="25 June, Monday" button="Enroll Now" heading={'Leaders Batch - CAT 2024'} detail={"Achieve excellence with our Mastery Series, featuring the toughest mock exams to ensure you're fully prepared for exam success."}/>
+                   <UpcomminCard link="/plans" start="25 June, Monday" button="Enroll Now" heading={'Leaders Batch - CAT 2024'} detail={'Build a strong base with our Foundation Series, perfect for beginners to grasp essential concepts and fundamentals.'}/>
+                    <UpcomminCard link="/plans" start="25 June, Monday" button="Enroll Now" heading={'Leaders Batch - CAT 2024'} detail={'Challenge yourself with our Advanced Series, designed to push your limits and deepen your understanding of complex topics.'}/>
+                    <UpcomminCard link="/plans" start="25 June, Monday" button="Enroll Now" heading={'Leaders Batch - CAT 2024'} detail={"Achieve excellence with our Mastery Series, featuring the toughest mock exams to ensure you're fully prepared for exam success."}/>
                 
                     </>
                 )}

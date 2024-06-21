@@ -6,7 +6,7 @@ import FAQQuestion from '../../components/FaQ/FAQQuestion';
 import { Card_two } from '../../components/card/card2';
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; 
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import { StudentsFeedback } from '../home/home';
 
 
@@ -151,7 +151,7 @@ export default function Teacher() {
                     <div className='content'>
                         {teachers_data.description}                    
                     </div>
-                    <button className='Book_Live'>Book Live Trial Class with {teachers_data.f_name} Sir</button>
+                    <Link to="/signup" className='Book_Live'>Book Live Trial Class with {teachers_data.f_name} Sir</Link>
                 </div>
                 <div className="teacher">
                     <img src={`${teachers_data.img}`} style={{width:'100%',height:'auto'}} alt="teacher"></img>

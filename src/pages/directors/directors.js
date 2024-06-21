@@ -32,9 +32,9 @@ export const Directors = ()=>{
                     Ajai Singh, the visionary Director of TCM Education, brings over two decades of expertise in quantitative techniques and strategic exam preparation. His innovative teaching methods and personalized mentorship have transformed countless CAT aspirants into top achievers. Committed to excellence and student success, Ajai Singh is dedicated to fostering a learning environment where every student can thrive.
                     </div>
                 </div>
-                <div className='home_two_img' style={{alignItems:'center',display:'flex',flexDirection:'column',marginTop:'14px'}}>
+                <div className='home_two_img' style={{alignItems:'center',display:'flex',flexDirection:'column',marginTop:'10px'}}>
                    <img src={`/ajai.png`} style={{width:'90%',height:'auto',maxWidth:'430px'}} alt='frame'/>     
-                <Button2 text={'Request 1-0-1 Counselling'}/>
+                <Button2 link="/form-page" text={'Request 1-0-1 Counselling'}/>
 
                 </div>
 
@@ -48,9 +48,9 @@ export const Directors = ()=>{
                     <div className='para-one' style={{textAlign:'justify',marginLeft:'5%'}}>
                     Hemlata Singh, the dynamic Director of TCM Education, is a driving force behind the institute's commitment to comprehensive and inclusive education. With a keen focus on student-centric learning and academic excellence, she ensures that TCM provides top-notch guidance and resources for all competitive exams. Hemlata Singh's leadership and dedication have been instrumental in establishing TCM as a premier coaching institute.                    </div>
                 </div>
-                <div className='home_two_img' style={{alignItems:'center',display:'flex',flexDirection:'column',marginTop:'14px'}}>
+                <div className='home_two_img' style={{alignItems:'center',display:'flex',flexDirection:'column',marginTop:'10px'}}>
                    <img src={`/hemlata.png`} style={{width:'90%',height:'auto',maxWidth:'430px'}} alt='frame'/>         
-                   <Button2 text={'Request 1-0-1 Counselling'}/>
+                   <Button2 link="/form-page" text={'Request 1-0-1 Counselling'}/>
                 
                 </div>
 

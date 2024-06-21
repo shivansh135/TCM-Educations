@@ -29,7 +29,7 @@ export default function Prayagraj() {
         },
         varanasi:{
             city:'Varanasi',
-            img:'prayagraj.svg',
+            img:'varanasi-back.svg',
             img_two:'centre_img_one.png',
             img_three:'centre_img_two.png',
             img_four:'centre_img_three.svg',

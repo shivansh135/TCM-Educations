@@ -10,9 +10,9 @@ export function Button({ onClick }) {
     );
 }
 
-export function Button2({text}) {
+export function Button2({text,link}) {
     return (
-            <button style={{width:'70%'}} className='btnn'>{text} </button>
+            <Link to={link} style={{width:'70%'}} className='btnn'>{text} </Link>
 
     );
 }

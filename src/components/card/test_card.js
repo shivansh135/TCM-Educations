@@ -52,7 +52,7 @@ export  function UpcomminCard( {heading,detail,button,link,start} ) {
                             </div>
                             <div className="test-card-button">
                                 <Link to={link} className="start_test">{button}</Link>
-                                <Link to={link} className="start_test" style={{width:'fit-content',textDecoration:'underline',backgroundColor:'transparent',color:'#14a4f5'}}>View details</Link>
+                                <a href="tel:+91 9336339618" className="start_test" style={{width:'fit-content',textDecoration:'underline',backgroundColor:'transparent',color:'#14a4f5'}}>Know More</a>
                             </div>
                         </div>
                     </div>

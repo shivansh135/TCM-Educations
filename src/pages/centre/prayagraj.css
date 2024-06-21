@@ -531,7 +531,6 @@
     .local-center-img{
         position: relative;
         width: 130%;
-        left: -15%;
         height: auto;
         bottom: 40px;
     }

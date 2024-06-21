@@ -22,10 +22,10 @@ export const Batch = ()=>{
         </div>
         <div className='test-contents' style={{marginTop:'50px'}}>
                    
-                    <Test2 heading={'CAT'} detail={'Build a strong base with our Foundation Series, perfect for beginners to grasp essential concepts and fundamentals.'} button={'Learn More'}/>
-                    <Test2 heading={'IPMAT'} detail={'Challenge yourself with our Advanced Series, designed to push your limits and deepen your understanding of complex topics.'} button={'Learn More'}/>
-                    <Test2 heading={'CLAT'} detail={"Achieve excellence with our Mastery Series, featuring the toughest mock exams to ensure you're fully prepared for exam success."} button={'Learn More'}/>
-                    <Test2 heading={'CUET'} detail={"Achieve excellence with our Mastery Series, featuring the toughest mock exams to ensure you're fully prepared for exam success."} button={'Learn More'}/>
+                    <Test2 link="/cat/Cat" heading={'CAT'} detail={'Premier MBA entrance exam India'} button={'Learn More'}/>
+                    <Test2 link="/cat/ipmat" heading={'IPMAT'} detail={'Integrated program management aptitude test'} button={'Learn More'}/>
+                    <Test2 link="/cat/clat" heading={'CLAT'} detail={"Law school admission test India"} button={'Learn More'}/>
+                    <Test2 link="/cat/cuet" heading={'CUET'} detail={"Undergraduate entrance exam central universities"} button={'Learn More'}/>
         </div>
         </>
 

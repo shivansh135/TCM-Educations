@@ -16,7 +16,7 @@ export const News = ()=>{
                 </div>
                 <div className='home'>
             
-            <div className='headd'>
+            <Link to="/login" className='headd'>
                 <div className='black-head'>
                 <span className='blue-head'>TCM Education </span>making Headlines from past 20 Years!
                 </div>
@@ -24,7 +24,7 @@ export const News = ()=>{
                 Discover how TCM Education is making headlines! Check out our media coverage to see our achievements, innovations, and success stories featured in top publications.
                 </div>
                 <Button/>
-            </div>
+            </Link>
             <div className='home_two_img'>
                 <img src={`/images/news.png`} style={{width:'90%',height:'auto'}} alt='frame'/>
             </div>

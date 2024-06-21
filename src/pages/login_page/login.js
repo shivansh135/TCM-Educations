@@ -9,7 +9,7 @@ export function Login() {
                     <div className="login_left">
                         <div className="Email_Pass">
                         <div className='black-head' style={{margin:'auto',textAlign:'center'}}>
-                            Welcom Back <span className='blue-head'>Aspirants</span>
+                            Welcom Back, <span className='blue-head'>Aspirant</span>
                             </div>
                             <form style={{width: "100%"}} action="/"  method="post" >
                                 <div class="input-group" className="input_group">
@@ -32,7 +32,7 @@ export function Login() {
                             Sign In
                         </div>
                         <div className="nnew_user">
-                            Don't you have an account? <div className="sign_up"><Link to="/signup">Sign up</Link></div>
+                            Don't you have an account? <div className="sign_up"> &nbsp;<Link to="/signup"> Sign up</Link></div>
                         </div>
 
                         <div className="or">
