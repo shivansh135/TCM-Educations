@@ -386,13 +386,14 @@
     .navbar-special .navbar_head_container::-webkit-scrollbar {
         display: none; /* For Chrome, Safari and Opera */
     }
-    
     .navbar-special .navbar_head {
         list-style: none;
         display: flex;
         overflow-x: scroll;
         white-space: nowrap;
-        width: 90%;
+        width: 100%;
+        align-items: end;
+
         gap: 5px;
         scrollbar-width: none;
         color: #FFF;
