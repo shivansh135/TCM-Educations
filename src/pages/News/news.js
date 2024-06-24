@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom"
 import { Button } from "../../components/button/button"
+import { FAQall } from "../home/home"
 
 export const News = ()=>{
     return(
@@ -29,6 +30,7 @@ export const News = ()=>{
                 <img src={`/images/news.png`} style={{width:'90%',height:'auto'}} alt='frame'/>
             </div>
         </div>
+        <FAQall/>
         </>
 
     )

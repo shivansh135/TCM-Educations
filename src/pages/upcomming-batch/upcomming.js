@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Test, UpcomminCard } from "../../components/card/test_card";
 import FAQQuestion from "../../components/FaQ/FAQQuestion";
+import { FAQall } from "../home/home";
 
 
 export function Upcomming() {
@@ -77,35 +78,7 @@ export function Upcomming() {
 
                 </div>
             </div>    
-            <div className='FQA'>
-                <div className='FQA-area'>
-                    <div className='FQA-head'>
-                        Frequently Asked Questions
-                    </div>
-                    <div className='FQA-body'>
-                        <FAQQuestion
-                        question='What is the eligibility criteria for CAT 2024?'
-                        answer="The eligibility criteria for CAT 2024 is a Bachelor's degree with at least 50% marks or equivalent CGPA. For SC, ST and PwD candidates, the minimum percentage required is 45%."
-                        />
-                            <FAQQuestion
-                        question='What is the eligibility criteria for CAT 2024?'
-                        answer="The eligibility criteria for CAT 2024 is a Bachelor's degree with at least 50% marks or equivalent CGPA. For SC, ST and PwD candidates, the minimum percentage required is 45%."
-                        />
-                        <FAQQuestion
-                        question='What is the eligibility criteria for CAT 2024?'
-                        answer="The eligibility criteria for CAT 2024 is a Bachelor's degree with at least 50% marks or equivalent CGPA. For SC, ST and PwD candidates, the minimum percentage required is 45%."
-                        />
-                        <FAQQuestion
-                        question='What is the eligibility criteria for CAT 2024?'
-                        answer="The eligibility criteria for CAT 2024 is a Bachelor's degree with at least 50% marks or equivalent CGPA. For SC, ST and PwD candidates, the minimum percentage required is 45%."
-                        />
-                        <FAQQuestion
-                        question='What is the eligibility criteria for CAT 2024?'
-                        answer="The eligibility criteria for CAT 2024 is a Bachelor's degree with at least 50% marks or equivalent CGPA. For SC, ST and PwD candidates, the minimum percentage required is 45%."
-                        />
-                    </div>
-                </div>
-            </div>                    
+            <FAQall/>                   
 
         </div>
     )

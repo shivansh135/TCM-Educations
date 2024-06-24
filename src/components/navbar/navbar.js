@@ -24,12 +24,11 @@ class Navbar extends React.Component {
         const navbarStyle = currentPage === 'specialPage' ? 'navbar-special' : 'navbar-default';
         const logoSrc = currentImg === 'specialPage' ? '/logo/tcmLogoWhite.svg' : '/logo/tcmLogo.svg';
         const links = [
-            { name: 'Directors', path: '/directors' },
-            { name: 'Media Coverage', path: '/news' },
             { name: 'Courses', path: '/all-batches' },
-            { name: 'Previous Year Papers', path: '/pyqs/cat' },
-            { name: 'Offline Centres', path: '/offline-centre' },
-            { name: 'Mock Series', path: '/test-series' }
+            { name: 'Media Coverage', path: '/news' },
+            { name: 'Learning Centres', path: '/offline-centre' },
+            { name: 'Test Series', path: '/test-series' },
+            { name: 'Career Conselling', path: '/form-page' }
         ];
 
         return (
@@ -43,13 +42,11 @@ class Navbar extends React.Component {
                                 </Link>
                             </div>
                             <div className='navbar_head' >
-                                <div className='navbar_council'><Link to='/directors'>Directors</Link></div>
-                                <div className='navbar_council'><Link to='/news'>Media Coverage</Link></div>
                                 <div className='navbar_council'><Link to='/all-batches'>Cources</Link></div>
+                                <div className='navbar_council'><Link to='/news'>Media Coverage</Link></div>
+                                <div className='navbar_offCetre'><Link to='/offline-centre'>Learning Centres</Link></div>
+                                <div className='navbar_mock'><Link to='/test-series'>Test Series</Link></div>
                                 <div className='navbar_council'><Link to='/form-page'>Career counselling</Link></div>
-                                <div className='navbar_pp'><Link to='/pyqs/cat'>Past Papers</Link></div>
-                                <div className='navbar_offCetre'><Link to='/offline-centre'>Offline Centres</Link></div>
-                                <div className='navbar_mock'><Link to='/test-series'>Mock Series</Link></div>
                                 <button className='navbar_signup'><Link to='/login'>Login</Link></button>
                             </div>
                         </div>

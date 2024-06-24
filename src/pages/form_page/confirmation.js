@@ -7,7 +7,7 @@ export function Confirmation({closeConfirmation}) {
             <div className="confirmation-modal">
                 <div className="confirmation">
                     <div className="confirmation_text">
-                        <img src="./images/check_circle.png" alt="confirmation" className="confirmation_img"/>
+                        <img src="./images/check_circle.png" alt="confirmation" className="confirmation_img" style={{maxWidth:'14%'}}/>
                         <div className="confirmation_head">
                             <div className="call_back">
                                 Call back request confirmed

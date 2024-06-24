@@ -319,10 +319,56 @@ return(
 )
 }
 
+export const FAQall = ()=>{
+    return(
+        <div className='FQA'>
+                <div className='FQA-area'>
+                    <div className='FQA-head'>
+                        Frequently Asked Questions
+                    </div>
+                    <div className='FQA-body'>
+                        <FAQQuestion
+                        question='What is MBA all about ?'
+                        answer="The MBA (Master of Business Administration) is a post-graduate management degree. It is awarded to students which have mastered the study the theory and application of business and management. It is therefore, a passport to a successful corporate career. It brings together students of diverse background in as intense, rigorous academic experience in an intense, rigorous academic experience usually for two years. However, the trend is fast changing and there are several other programmes where MBA plays the key role by allowing career flexibility, the leadership mindsets, and the acceleration to future growth."
+                        />
+                            <FAQQuestion
+                        question='What is the right time to pursue an MBA ?'
+                        answer="The best time to pursue an MBA is when you are comfortable at pursuing one. There are several programs which are according to the&nbsp;specific needs of different groups of people. These group of people are: like fresher, working professionals, entrepreneurs etc. In other words, one must choose a program that is according to one's career objective and can go easily with the pace."
+                        />
+                        <FAQQuestion
+                        question='Who is eligible to pursue an MBA ?'
+                        answer="In India, the eligibility criteria for pursuing an MBA is a minimum of 3 years of bachelor&rsquo;s degree with a 50% from a recognized university/institution. B-Schools abroad&nbsp; look for a minimum of 2 years or 3 years of full time work experience and 16 years of education. Apart from these, a person needs to clear the entrance test, group discussion and personal interview in order to make it to a good B-School."
+                        />
+                        <FAQQuestion
+                        question='What is IPMAT ?'
+                        answer="IPMAT, it is an aptitude test conducted by IIM Indore and IIM Rohtak for the admissions at its five-year course, IPM which stands for (Integrated Programme in Management) and hence, it is a dual degree by IIM Indore and IIM Rohtak for candidates passing the class 12th standard. It is a program that allows entry to an IIM just after 12th standard. For admission in IPM the aspirants need to clear IPMAT and need to be shortlisted for the Written Ability Test (WAT) &amp; Personal Interview (PI) round. In addition to IIM Indore and IIM Rohtak, Nirma University and some other top B-Schools accepts IPMAT scores for admission to its BBA-MBA integrated program.  Although IIM Indore and IIM Rohtak conduct their IPMAT exams separately.&nbsp; &nbsp; JIPMAT (Joint Integrated Programme in Management) is one more National Level Based Aptitude Test which is conducted by NTA (National Testing Agency) for providing admissions to three newly launched IPM Programs by IIM Jammu, IIM Ranchi and IIM Bodhgaya at its five-year Integrated Programme in Management. One can look forward for JIPMAT exam if he/she wants to be a part of integrated programmes of these IIMs."
+                        />
+                        <FAQQuestion
+                        question='What is the duration of the programme of IPMAT ?'
+                        answer="It is a programme of 5 years which comprises of 15 terms with each year having 3 terms of 3 months each."
+                        />
+                        <FAQQuestion
+                        question='Which degree is awarded to IPM pass out students ?'
+                        answer="The IPM pass out students are awarded with the Bachelors degree from IGNOU and a degree of Integrated Diploma in Management by IIM-Indore/IIM-Rohtak."
+                        />
+                        <FAQQuestion
+                        question='What is CLAT all about ?'
+                        answer="CLAT is an all-India entrance examination, CLAT which stands for Common Law Admission Test, it is a gateway to undergraduate (UG) and postgraduate (PG) degree program (LLB and LLM) in National Law Universities (NLUS) in India."
+                        />
+                        <FAQQuestion
+                        question='What are the Eligibility Criteria For CLAT ?'
+                        answer="UG: Eligibility Criteria 1. There is no upper age limit for UG Programme of CLAT 2. The candidate must have secured in 10+2 or an equivalent examination. 3.&nbsp; The minimum of (45%) marks or its equivalent grade in case of candidates belonging to General / OBC / PWD / NRI / PIO /OCI categories is required. 4. The minimum of (40%) marks or equivalent in case of candidates belonging to SC/ST categories is required. &nbsp; PG: Eligibility Criteria 1. There is no upper age limit is prescribed for appearing in CLAT. 2. A Degree in LLB or an equivalent examination with a minimum (50%) of marks or its equivalent grade is required in case of candidates belonging to General / OBC / PWD / NRI / PIO / OCI categories and&nbsp; (45%) of marks or its equivalent grade is required in case of candidates belonging to SC/ST categories. &nbsp;"
+                        />
+                    </div>
+                </div>
+            </div>
+    )
+}
+
 export default function Home() {
     const [showPopup, setShowPopup] = useState(false);
     const [currentIndex, setCurrentIndex] = useState(0);
-    const images = [1,3,4,5,6,7,8,9,10,11];
+    const images = [1,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24];
     const [learnMore,setLearnMore] = useState(window.innerHeight>768);
 
     useEffect(() => {
@@ -528,36 +574,8 @@ export default function Home() {
 
                 </div>
             </div>
-            <div className='FQA'>
-                <div className='FQA-area'>
-                    <div className='FQA-head'>
-                        Frequently Asked Questions
-                    </div>
-                    <div className='FQA-body'>
-                        <FAQQuestion
-                        question='What is the eligibility criteria for CAT 2024?'
-                        answer="The eligibility criteria for CAT 2024 is a Bachelor's degree with at least 50% marks or equivalent CGPA. For SC, ST and PwD candidates, the minimum percentage required is 45%."
-                        />
-                            <FAQQuestion
-                        question='What is the eligibility criteria for CAT 2024?'
-                        answer="The eligibility criteria for CAT 2024 is a Bachelor's degree with at least 50% marks or equivalent CGPA. For SC, ST and PwD candidates, the minimum percentage required is 45%."
-                        />
-                        <FAQQuestion
-                        question='What is the eligibility criteria for CAT 2024?'
-                        answer="The eligibility criteria for CAT 2024 is a Bachelor's degree with at least 50% marks or equivalent CGPA. For SC, ST and PwD candidates, the minimum percentage required is 45%."
-                        />
-                        <FAQQuestion
-                        question='What is the eligibility criteria for CAT 2024?'
-                        answer="The eligibility criteria for CAT 2024 is a Bachelor's degree with at least 50% marks or equivalent CGPA. For SC, ST and PwD candidates, the minimum percentage required is 45%."
-                        />
-                        <FAQQuestion
-                        question='What is the eligibility criteria for CAT 2024?'
-                        answer="The eligibility criteria for CAT 2024 is a Bachelor's degree with at least 50% marks or equivalent CGPA. For SC, ST and PwD candidates, the minimum percentage required is 45%."
-                        />
-                    </div>
-                </div>
-            </div>
-
+            
+            <FAQall/>
         </div>
     );
 }

@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom"
 import { Button } from "../../components/button/button"
 import { Test2 } from "../../components/card/test_card"
+import { FAQall } from "../home/home"
 
 export const Batch = ()=>{
     return(
@@ -11,7 +12,7 @@ export const Batch = ()=>{
             </div>
             <div className='headd'>
                 <div className='black-head'>
-                <span className='blue-head'>Make Success </span>Make Success your Habit, with TCM Education
+                <span className='blue-head'>Make Success </span> your Habit, with TCM Education
                 </div>
                 <div className='para-one'>
                 Tailored programs for all CAT, IPMAT, CLAT and CUET (UG) offering in-depth knowledge and effective strategies to excel in each exam.
@@ -27,6 +28,7 @@ export const Batch = ()=>{
                     <Test2 link="/cat/clat" heading={'CLAT'} detail={"Law school admission test India"} button={'Learn More'}/>
                     <Test2 link="/cat/cuet" heading={'CUET'} detail={"Undergraduate entrance exam central universities"} button={'Learn More'}/>
         </div>
+        <FAQall/>
         </>
 
     )

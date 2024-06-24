@@ -10,6 +10,8 @@
     margin-top: 60px;
     min-height: 340px;
   }
+
+  
   
   .footer .logo{
     height: 50px;
@@ -116,6 +118,12 @@
   .footer h2{
     font-size: 18px;
     font-weight: 600;
+  }
+
+  @media screen and (max-width: 768px) {
+    .footer h1{
+      font-size: 21px;
+    }
   }
 
   @media screen and (min-width: 24.375em) {

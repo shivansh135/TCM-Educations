@@ -22,7 +22,7 @@ export  function Test( {heading,detail} ) {
 export  function Test2( {heading,detail,button,link} ) {
     return (
                     <div className='test-card'>
-                        <div className='test-card-content'>
+                        <div className='test-card-content' style={{width:'100%'}}>
                             <div className="test-card-title">
                             {heading}
                             </div>

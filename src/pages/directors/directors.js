@@ -9,7 +9,7 @@ export const Directors = ()=>{
                     <div className='black-head' style={{textAlign:'center'}}>
                     Directors of<br/>
                     <span className='blue-head' style={{textWrap:'nowrap',display:'flex',gap:'5px',alignItems:'center',justifyContent:'center'}}>
-                    <img style={{height:'110%',width:'auto'}} src="/text-logo.svg"/>Toil Chamber of Mathematics Pvt Ltd
+                    <img style={{height:'auto',width:'80vw',maxWidth:'470px'}} src="/dir-heading.svg"/>
                     </span>
                     </div>
                     <div className='para-one' style={{textAlign:'center',maxWidth:'430px'}}>
