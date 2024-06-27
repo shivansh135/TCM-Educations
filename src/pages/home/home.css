@@ -27,7 +27,7 @@
 
 .para-one{
     margin-top: 30px;
-    width: 650px;
+    max-width: 650px;
     color: var(--TCM-Neutral-grey08, #595959);
     font-family: Figtree;
     font-size: 16px;
