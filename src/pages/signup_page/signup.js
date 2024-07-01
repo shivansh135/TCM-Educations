@@ -26,7 +26,11 @@ export function Signup() {
                                     </div>
                                     <div class="input-field" className="Password">
                                         <label for="Password" className="Password_text">Qualification*</label>
-                                        <input type="text" name="quali" placeholder="B.com/B.A/..." className="Password_input" />
+                                        <input type="text" name="quali" placeholder="MBA/CLAT/CUET/IPM..." className="Password_input" />
+                                    </div><br></br>
+                                    <div class="input-field" className="Password">
+                                        <label for="Password" className="Password_text">Password*</label>
+                                        <input type="password" name="quali" placeholder="Password" className="Password_input" />
                                     </div>
                                 </div>
                             </form>

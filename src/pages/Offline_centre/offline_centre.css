@@ -20,7 +20,8 @@
 .centres{
     display: flex;
     align-items: flex-start;
-    gap: 50px;
+    justify-content: space-evenly;
+    width: 100%;
 }
 
 .centre_one{
@@ -35,7 +36,7 @@
     width: 100%; /* adjust as needed */
     border-radius: 16px;
     height: auto; /* adjust as needed */
-    max-width: 540px; 
+    max-width: 410px; 
 }
 .centre_varanasi {
     width: 100%; /* adjust as needed */
@@ -51,7 +52,7 @@
     font-weight: 700;
     line-height: 40px;
     bottom: 5%; /* adjust as needed */
-    left: 18%; /* adjust as needed */
+    left: 28%; /* adjust as needed */
     transform: translate(-50%, -50%); 
 }
 
