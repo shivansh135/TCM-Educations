@@ -26,7 +26,7 @@ const Pricing = ({title, discription, list, price, batchInfo,}) => {
             <li style={{color:'white',filter:'brightness(100)'}}>and many more</li></>}
           </ul>
           <h3 style={{color:'white'}}>{price || `Rs. 52,000`} (incl GST)</h3>
-          <button className="buy-now" style={{color:'#007bff',backgroundColor:'white'}}>Buy Now</button>
+          <Link to="/checkout" className="buy-now" style={{color:'#007bff',backgroundColor:'white'}}>Buy Now</Link>
           <Link className="view-more" style={{color:'white'}}>View more</Link>
           <div className="batch-info">
             <img src='/images/bell.svg'/>
