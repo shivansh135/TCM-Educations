@@ -263,7 +263,7 @@ export default function Cat() {
         </div>
       </div>
 
-      <div className="CAT_syllabus">
+      {/* <div className="CAT_syllabus">
         <div className="CAT_syllabus_heading">
           <div className="CAT_syllabus_head">
             {courses_data.name} Syllabus 2024
@@ -302,7 +302,7 @@ export default function Cat() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className="course-select">
         <div className="course-select-area">

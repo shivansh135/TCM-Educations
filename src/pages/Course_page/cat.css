@@ -108,6 +108,7 @@
     display: flex;
     align-items: center;
     gap: 89px;
+    padding-left: 30px;
     position: relative;
     width: fit-content;
     margin: auto;
@@ -248,7 +249,7 @@
     width: 269px;
     color: var(--TCM-Neutral-grey01, #FFF);
     font-family: Figtree;
-    font-size: 24px;
+    line-height: 18px;
     font-style: normal;
     font-weight: 500;
     line-height: 150%;
@@ -259,7 +260,7 @@
     width: 279.21px;
     color: var(--TCM-Neutral-grey01, #FFF);
     font-family: Figtree;
-    font-size: 24px;
+    line-height: 18px;
     font-style: normal;
     font-weight: 500;
     line-height: 150%;
@@ -270,7 +271,7 @@
     width: 272.374px;
     color: var(--TCM-Neutral-grey01, #FFF);
     font-family: Figtree;
-    font-size: 24px;
+    line-height: 18px;
     font-style: normal;
     font-weight: 500;
     line-height: 150%;
@@ -293,7 +294,7 @@
     width: 429px;
     color: var(--TCM-Neutral-grey01, #FFF);
     font-family: Figtree;
-    font-size: 24px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 500;
     line-height: 150%;
@@ -304,7 +305,7 @@
     width: 431.664px;
     color: var(--TCM-Neutral-grey01, #FFF);
     font-family: Figtree;
-    font-size: 24px;
+    line-height: 18px;
     font-style: normal;
     font-weight: 500;
     line-height: 150%;
@@ -315,7 +316,7 @@
     width: 431px;
     color: var(--TCM-Neutral-grey01, #FFF);
     font-family: Figtree;
-    font-size: 24px;
+    line-height: 18px;
     font-style: normal;
     font-weight: 500;
     line-height: 150%;
@@ -565,7 +566,7 @@
 .feedback_name{
     color: var(--TCM-Neutral-grey13, #262626);
     font-family: Figtree;
-    font-size: 24px;
+    line-height: 18px;
     font-style: normal;
     font-weight: 500;
     line-height: 150%;
@@ -574,7 +575,7 @@
 .feedback_name{
     color: var(--TCM-Neutral-grey13, #262626);
     font-family: Figtree;
-    font-size: 24px;
+    line-height: 18px;
     font-style: normal;
     font-weight: 500;
     line-height: 150%;
@@ -586,7 +587,7 @@
     color: var(--TCM-Neutral-grey07, #8C8C8C);
 /* Heading / H2 - Small / Semi Bold */
     font-family: Figtree;
-    font-size: 24px;
+    line-height: 18px;
     font-style: normal;
     font-weight: 500;
     line-height: 150%;
@@ -635,7 +636,7 @@
     gap: 10px;
     color: var(--TCM-Brand-brand-blue01, #14A4F5);
     font-family: Figtree;
-    font-size: 24px;
+    line-height: 18px;
     font-style: normal;
     font-weight: 500;
     line-height: 150%;
@@ -678,7 +679,7 @@
     width: 243px;
     color: var(--TCM-Brand-brand-blue13, #FFF);
     font-family: Figtree;
-    font-size: 24px;
+    line-height: 18px;
     font-style: normal;
     font-weight: 700;
     line-height: 150%;
@@ -822,7 +823,7 @@
     width: 255px;
     color: var(--TCM-Brand-brand-blue01, #14A4F5);
     font-family: Figtree;
-    font-size: 24px;
+    line-height: 18px;
     font-style: normal;
     font-weight: 700;
     line-height: 150%;
@@ -938,7 +939,7 @@
 
 /*phone view */
 
-@media (max-width: 868px) {
+@media (max-width: 768px) {
     
     .CAT_head{
         width: 80%;
@@ -1054,6 +1055,7 @@
         width: 90%;
         height: auto;
         display: flex;
+        padding: 0;
         align-items: center;
         flex-direction: column;
         gap: 10px;
@@ -1163,7 +1165,7 @@
         font-weight: 500;
         line-height: 150%;
         gap: 20px;
-        list-style-type: upper-alpha;
+        list-style: none !important;
     }
 
     .point{
@@ -1508,7 +1510,7 @@
         height: auto;
         color: var(--TCM-Neutral-grey13, #262626);
         font-family: Figtree;
-        font-size: 24px;
+        line-height: 18px;
         font-style: normal;
         font-weight: 700;
         line-height: 150%;
@@ -1857,7 +1859,7 @@
         width: 214px;
         color: var(--TCM-Brand-brand-blue01, #14A4F5);
         font-family: Figtree;
-        font-size: 24px;
+        line-height: 18px;
         font-style: normal;
         font-weight: 700;
         line-height: 150%;
