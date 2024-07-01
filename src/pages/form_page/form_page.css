@@ -48,6 +48,12 @@
     font-weight: 500;
     line-height: 20px;
 }
+.nname{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
 
 .nname_input{
     display: flex;

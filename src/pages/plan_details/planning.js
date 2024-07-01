@@ -76,7 +76,7 @@ export default function Planning() {
                         Borem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class apten
                     </div>
                     <div className='buttonns' style={{left:'0'}}>
-                        <button className='live-class'><Link to="/form-page">Counceling Call</Link></button>
+                        <button className='live-class'><Link to="/form-page">Counselling Call</Link></button>
                         <button className='buy-now'><Link to="/signup">Book Trial Class</Link></button>
                     </div>
                 </div>

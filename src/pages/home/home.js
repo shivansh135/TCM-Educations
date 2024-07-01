@@ -468,10 +468,10 @@ export default function Home() {
             <div to="/directors" className='mentor-head'>
             <div className='mentor-cont' >
                 <div className='black-head' style={{margin:'auto',marginTop:'0px',marginBottom:"0px",textAlign:'center'}}>
-                    Who is the man behind<span className='blue-head'> India’s Fastet Growing </span>Ed-Tech Company?
+                    Who is the man behind<span className='blue-head'> India’s Fastest Growing </span>Ed-Tech Company?
                 </div>
                 <div className='mentor-detail' style={!learnMore?{'-webkit-line-clamp':'30'}:{}}>
-                Hello everyone, Ajai Singh, Founder and Chief Mentor of Toil Chamber of Mathematics Pvt. Ltd. (TCM
+                Hello everyone, I am Ajai Singh, Founder and Chief Mentor of Toil Chamber of Mathematics Pvt. Ltd. (TCM
                 EDUCATION), India’s fasted growing institute for CAT, CLAT, IPMAT & CUET
                 exams. Being a mentor and teacher to young minds is the most fulfilling identity I have ever known. It is
                 an honor to guide and inspire the next generation, and nothing compares to the joy of watching students

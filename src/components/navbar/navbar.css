@@ -105,7 +105,7 @@
     .navbar-special .navbar{
         width: 100%;
         display: flex;
-        padding: 16px 0px 45px 75px;
+        padding: 16px 0px 20px 75px;
         background: var(--TCM-Brand-brand-blue01, #14A4F5);
         flex-direction: column;
         justify-content: center;

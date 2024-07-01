@@ -46,7 +46,7 @@ class Navbar extends React.Component {
                                 <div className='navbar_council'><Link to='/news'>Media Coverage</Link></div>
                                 <div className='navbar_offCetre'><Link to='/offline-centre'>Learning Centres</Link></div>
                                 <div className='navbar_mock'><Link to='/test-series'>Test Series</Link></div>
-                                <div className='navbar_council'><Link to='/form-page'>Career counselling</Link></div>
+                                <div className='navbar_council'><Link to='/form-page'>Career Counselling</Link></div>
                                 <button className='navbar_signup'><Link to='/login'>Login</Link></button>
                             </div>
                         </div>

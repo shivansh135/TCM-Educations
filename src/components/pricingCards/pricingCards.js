@@ -27,7 +27,7 @@ const Pricing = ({title, discription, list, price, batchInfo,}) => {
           </ul>
           <h3 style={{color:'white'}}>{price || `Rs. 52,000`} (incl GST)</h3>
           <Link to="/checkout" className="buy-now" style={{color:'#007bff',backgroundColor:'white'}}>Buy Now</Link>
-          <Link className="view-more" style={{color:'white'}} to="/planning/Cat">View more</Link>
+          <Link className="view-more" style={{color:'white'}} to="tel:+91 93363 39618">Learn More</Link>
           <div className="batch-info">
             <img src='/images/bell.svg'/>
             <p>{batchInfo || `New batch starts 10th April 2024 Class Timing 8:30PM to 10:30PM`}</p>
@@ -59,7 +59,7 @@ const Pricing = ({title, discription, list, price, batchInfo,}) => {
         </ul>
         <h3>{price || `Rs. 52,000`} (incl GST)</h3>
         <Link to="/checkout" className="buy-now">Buy Now</Link>
-        <Link to="/planning/Cat" className="view-more">View more</Link>
+        <Link className="view-more" to="tel:+91 93363 39618">Learn More</Link>
         <div className="batch-info">
           <img src='/images/bell.svg'/>
           <p>{batchInfo || `New batch starts 10th April 2024 Class Timing 8:30PM to 10:30PM`}</p>
