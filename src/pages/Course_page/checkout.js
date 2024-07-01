@@ -1,6 +1,6 @@
 import './OrderSummary.css';
 
-export const OrderSummary = ({ studentName, courseDetails, totalPrice=23000, gstIncluded=5200 }) => {
+export const OrderSummary = ({ studentName, courseDetails, totalPrice=60000, gstIncluded=5200 }) => {
     return (
       <div className="order-summary">
         <h1 style={{color:'#14a4f5'}}>Order Summary</h1>
@@ -10,19 +10,15 @@ export const OrderSummary = ({ studentName, courseDetails, totalPrice=23000, gst
         </div>
         <div className="summary-item">
           <span className="label">Course Details:</span>
-          <span className="value">{courseDetails || "CAT 2024"}</span>
+          <span className="value">{courseDetails || "Leaders Batch CAT 2024"}</span>
         </div>
         <div className="summary-item">
           <span className="label">Course Duration:</span>
           <span className="value">{courseDetails || "21 July 2024 - 12 Jan 2025"}</span>
         </div>
         <div className="summary-item">
-          <span className="label">Total Price:</span>
+          <span className="label">Total Price {'(Incl.GST)'}:</span>
           <span className="value">₹ {totalPrice.toFixed(2)}</span>
-        </div>
-        <div className="summary-item">
-          <span className="label">GST Included:</span>
-          <span className="value">₹ {gstIncluded.toFixed(2)}</span>
         </div>
         <button className="proceed-button">Proceed</button>
       </div>

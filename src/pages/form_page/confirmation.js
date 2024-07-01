@@ -12,9 +12,6 @@ export function Confirmation({closeConfirmation}) {
                             <div className="call_back">
                                 Call back request confirmed
                             </div>
-                            <div className="call_back_text">
-                                Rorem ipsum dolor sit amet, lorem consectetur adipiscing elit.
-                            </div>
                         </div>
                     </div>
                     <button className="call_back_btn" onClick={closeConfirmation}>

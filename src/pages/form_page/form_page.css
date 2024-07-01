@@ -278,6 +278,7 @@
     margin: auto;
     margin-right: 0;
     margin-left: 0;
+    display: none ;
 }
 
 /*phone view */
@@ -295,6 +296,7 @@
         width: 80%;
         margin: 20px;
         margin-left: 10%;
+        display: block;
     }
     .email_pass{
         width: 100%;

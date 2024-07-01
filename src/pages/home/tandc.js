@@ -91,7 +91,7 @@ export const Privacy = () => {
           marginBottom: "8.0pt",
         }}
       >
-        The terms &nbsp;<strong>TCM EDUCAION</strong>, Company, we &nbsp;and our
+        The terms &nbsp;<strong>TCM EDUCATION</strong>, Company, we &nbsp;and our
         refer to the The chamber of mathematics.
       </p>
       <p
@@ -2309,10 +2309,10 @@ export const TandC = () => {
     <div style={{ padding: "25px", fontFamily: "Figtree !important" ,paddingTop:'0px'}}>
       <p
         style={{
-          marginTop: "15pt",
-          marginBottom: "7.5pt",
+          marginTop: "11.0pt",
+          marginBottom: "11.0pt",
           lineHeight: "normal",
-          fontSize: "27.5pt",
+          fontSize: "17.5pt",
         }}
       >
         <span style={{ fontFamily: "Arial" }}>Terms &amp; Condition</span>
