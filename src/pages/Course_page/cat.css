@@ -939,7 +939,7 @@
 
 /*phone view */
 
-@media (max-width: 1200px) {
+@media (max-width: 768px) {
     
     .CAT_head{
         width: 80%;
