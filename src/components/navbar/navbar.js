@@ -42,7 +42,7 @@ class Navbar extends React.Component {
                                 </Link>
                             </div>
                             <div className='navbar_head' >
-                                <div className='navbar_council'><Link to='/all-batches'>Cources</Link></div>
+                                <div className='navbar_council'><Link to='/all-batches'>Courses</Link></div>
                                 <div className='navbar_council'><Link to='/news'>Media Coverage</Link></div>
                                 <div className='navbar_offCetre'><Link to='/offline-centre'>Learning Centres</Link></div>
                                 <div className='navbar_mock'><Link to='/test-series'>Test Series</Link></div>

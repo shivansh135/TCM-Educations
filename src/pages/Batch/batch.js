@@ -6,7 +6,7 @@ import { FAQall } from "../home/home"
 export const Batch = ()=>{
     return(
         <>
-                <div className='home' style={{alignItems:'center'}}>
+                <div className='home' style={{alignItems:'center',width:'95%'}}>
                 <div className='home_two_img' >
                 <img src={`/images/batch-ill.png`} style={{width:'70%',height:'auto',marginBottom:'30px'}} alt='frame'/>
             </div>
