@@ -226,7 +226,7 @@
 
 .Step_content_detail{
     width: fit-content;
-    color: var(--TCM-Neutral-grey13, #000);
+    color: var(--TCM-Neutral-grey13, #444444);
     font-family: Figtree;
     font-size: 18px;
     font-style: normal;

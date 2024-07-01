@@ -295,7 +295,6 @@
 .Login_right{
     display: flex;
     overflow: hidden;
-    padding: 47px 56px;
     border-radius: 24px;
     background: var(--TCM-Brand-brand-blue12, #F1F7FE);
     align-items: center;
@@ -303,7 +302,7 @@
     width: 35%;
     height: 100%;
     position: relative;
-    left: 20%;
+    left: 10%;
 }
 
 .sign_up{

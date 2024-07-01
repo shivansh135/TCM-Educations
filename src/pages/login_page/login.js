@@ -9,7 +9,7 @@ export function Login() {
                     <div className="login_left">
                         <div className="Email_Pass">
                         <div className='black-head' style={{margin:'auto',textAlign:'center'}}>
-                            Welcom Back, <span className='blue-head'>Aspirant</span>
+                            Welcome Back, <span className='blue-head'>Aspirant</span>
                             </div>
                             <form style={{width: "100%"}} action="/"  method="post" >
                                 <div class="input-group" className="input_group">
@@ -52,7 +52,7 @@ export function Login() {
                         
                     </div>
 
-                    <img src="./images/couple.png" alt="login" className="login_right" style={{width:'35%'}}/>
+                    <img src="./images/couple.png" alt="login" className="login_right" style={{width:'30%'}}/>
 
                 </div>
         </div>
