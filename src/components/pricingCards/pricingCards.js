@@ -58,7 +58,7 @@ const Pricing = ({title, discription, list, price, batchInfo,}) => {
           <li>and many more</li></>}
         </ul>
         <h3>{price || `Rs. 52,000`} (incl GST)</h3>
-        <button className="buy-now">Buy Now</button>
+        <Link to="/checkout" className="buy-now">Buy Now</Link>
         <Link to="/planning/Cat" className="view-more">View more</Link>
         <div className="batch-info">
           <img src='/images/bell.svg'/>

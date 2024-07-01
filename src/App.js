@@ -27,6 +27,7 @@ import { Batch } from './pages/Batch/batch';
 import { Upcomming } from './pages/upcomming-batch/upcomming';
 import { Directors } from './pages/directors/directors';
 import { Privacy, TandC } from './pages/home/tandc';
+import { OrderSummary } from './pages/Course_page/checkout';
 const ScrollToTop = () => {
   // Extracts pathname property(key) from an object
   const { pathname } = useLocation();
@@ -63,7 +64,7 @@ function App() {
       <Route path="/past-papers" element={<><Navbar currentPage="specialPage" currentImg="specialPage"/><PastPapers /></>} />
       <Route path="/test-series" element={<><Navbar currentPage="home" currentImg="home"/><TestSeries /></>} />
       <Route path="/form-page" element={<><Navbar currentPage="home" currentImg="home"/><FormPage /></>} />
-      {/* <Route path="/checkout" element={<><Navbar currentPage="home" currentImg="home"/><Checkout /></>} /> */}
+      <Route path="/checkout" element={<><Navbar currentPage="home" currentImg="home"/><OrderSummary /></>} /> 
       <Route path="/popup-home" element={<><Navbar currentPage="home" currentImg="home"/><PopupHome /></>} />
       <Route path="/confirmation" element={<><Navbar currentPage="home" currentImg="home"/><Confirmation /></>} />
       <Route path="/pyqs/:id" element={<><Navbar currentPage="home" currentImg="home"/><MorePage /></>} />
