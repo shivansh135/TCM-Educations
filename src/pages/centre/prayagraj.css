@@ -247,6 +247,7 @@
     align-items: center;
     gap: 30px;
     margin: auto;
+    flex-wrap: wrap;
 }
 
 .batch-card{
@@ -833,4 +834,19 @@
         color: var(--TCM-Brand-brand-blue01, #14A4F5);
     }
 
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .center_card {
+        gap: 30px;
+        top: -140px;
+        width: 90%;
+        margin-left: 5%;
+    }
+    .center_card_detail{
+        width: fit-content;
+    }
+    .center_card_title{
+        text-align: left;
+    }
 }

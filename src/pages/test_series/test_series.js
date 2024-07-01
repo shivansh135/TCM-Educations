@@ -3,6 +3,7 @@ import './test_series.css';
 import FAQQuestion from '../../components/FaQ/FAQQuestion';
 import { Test } from "../../components/card/test_card";
 import { FAQall } from "../home/home";
+import { Link } from "react-router-dom";
 
 
 export function Test_series() {
@@ -21,9 +22,9 @@ export function Test_series() {
                     <div className="detail_six">
                     Maximize your preparation with TCM's comprehensive test series, featuring realistic mock exams, detailed performance analysis, and personalized feedback to ensure success.
                     </div>
-                    <button className="book">
+                    <Link to='/signup' className="book">
                         Book Live Trial Class <img src="./images/Icon.svg" className='bellll' alt='bell'/>
-                    </button>
+                    </Link>
                 </div>
                 <img src="/mock-paper-ill.png" alt="hero" className="pages" />
             </div>
@@ -45,34 +46,34 @@ export function Test_series() {
                 <div className='test-contents'>
                 {selectedOption === 'CAT' && (
                     <>
-                    <Test heading={'TCM Foundation Series'} detail={'Build a strong base with our Foundation Series, perfect for beginners to grasp essential concepts and fundamentals.'}/>
-                    <Test heading={'TCM Advanced Series'} detail={'Challenge yourself with our Advanced Series, designed to push your limits and deepen your understanding of complex topics.'}/>
-                    <Test heading={'TCM Mastery Series'} detail={"Achieve excellence with our Mastery Series, featuring the toughest mock exams to ensure you're fully prepared for exam success."}/>
+                    <Test heading={'Test Panel 1'} link="https://tcmedu.tcyonline.com/" detail={'Build a strong base with our Foundation Series, perfect for beginners to grasp essential concepts and fundamentals.'}/>
+                    <Test heading={'Test Panel 2'} link="https://tcm.testfunda.com/  " detail={'Challenge yourself with our Advanced Series, designed to push your limits and deepen your understanding of complex topics.'}/>
+                    <Test heading={'A1 Rankers'} link="https://a1rankers.com/" detail={"Achieve excellence with our Mastery Series, featuring the toughest mock exams to ensure you're fully prepared for exam success."}/>
                     </>
                 )}
 
                 {selectedOption === 'IPMAT' && (
                     <>
-                    <Test heading={'TCM Foundation Series'} detail={'Build a strong base with our Foundation Series, perfect for beginners to grasp essential concepts and fundamentals.'}/>
-                    <Test heading={'TCM Advanced Series'} detail={'Challenge yourself with our Advanced Series, designed to push your limits and deepen your understanding of complex topics.'}/>
-                    <Test heading={'TCM Mastery Series'} detail={"Achieve excellence with our Mastery Series, featuring the toughest mock exams to ensure you're fully prepared for exam success."}/>
+                    <Test heading={'Test Panel 1'} link="https://tcmedu.tcyonline.com/" detail={'Build a strong base with our Foundation Series, perfect for beginners to grasp essential concepts and fundamentals.'}/>
+                    <Test heading={'Test Panel 2'} link="https://tcm.testfunda.com/  " detail={'Challenge yourself with our Advanced Series, designed to push your limits and deepen your understanding of complex topics.'}/>
+                    <Test heading={'A1 Rankers'} link="https://a1rankers.com/" detail={"Achieve excellence with our Mastery Series, featuring the toughest mock exams to ensure you're fully prepared for exam success."}/>
                     </>
                 )}
 
                 {selectedOption === 'CLAT' && (
                     <>
-                    <Test heading={'TCM Foundation Series'} detail={'Build a strong base with our Foundation Series, perfect for beginners to grasp essential concepts and fundamentals.'}/>
-                    <Test heading={'TCM Advanced Series'} detail={'Challenge yourself with our Advanced Series, designed to push your limits and deepen your understanding of complex topics.'}/>
-                    <Test heading={'TCM Mastery Series'} detail={"Achieve excellence with our Mastery Series, featuring the toughest mock exams to ensure you're fully prepared for exam success."}/>
+                    <Test heading={'Test Panel 1'} link="https://tcmedu.tcyonline.com/" detail={'Build a strong base with our Foundation Series, perfect for beginners to grasp essential concepts and fundamentals.'}/>
+                    <Test heading={'Test Panel 2'} link="https://tcm.testfunda.com/  " detail={'Challenge yourself with our Advanced Series, designed to push your limits and deepen your understanding of complex topics.'}/>
+                    <Test heading={'A1 Rankers'} link="https://a1rankers.com/" detail={"Achieve excellence with our Mastery Series, featuring the toughest mock exams to ensure you're fully prepared for exam success."}/>
                 
                     </>
                 )}
 
                 {selectedOption === 'CUET' && (
                     <>
-                   <Test heading={'TCM Foundation Series'} detail={'Build a strong base with our Foundation Series, perfect for beginners to grasp essential concepts and fundamentals.'}/>
-                    <Test heading={'TCM Advanced Series'} detail={'Challenge yourself with our Advanced Series, designed to push your limits and deepen your understanding of complex topics.'}/>
-                    <Test heading={'TCM Mastery Series'} detail={"Achieve excellence with our Mastery Series, featuring the toughest mock exams to ensure you're fully prepared for exam success."}/>
+                   <Test heading={'Test Panel 1'} link="https://tcmedu.tcyonline.com/" detail={'Build a strong base with our Foundation Series, perfect for beginners to grasp essential concepts and fundamentals.'}/>
+                    <Test heading={'Test Panel 2'} link="https://tcm.testfunda.com/ " detail={'Challenge yourself with our Advanced Series, designed to push your limits and deepen your understanding of complex topics.'}/>
+                    <Test heading={'A1 Rankers'} link="https://a1rankers.com/" detail={"Achieve excellence with our Mastery Series, featuring the toughest mock exams to ensure you're fully prepared for exam success."}/>
                 
                     </>
                 )}

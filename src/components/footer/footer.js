@@ -82,7 +82,7 @@ export const Footer = ()=>{
         </li>
 
         <li>
-          <Link to="https://tcmedu.tcyonline.com/" >Test Panel 2</Link>
+          <Link to="https://tcm.testfunda.com/  " >Test Panel 2</Link>
         </li>
 
         <li>
@@ -100,11 +100,11 @@ export const Footer = ()=>{
           <Link to="/directors" >About Directors</Link>
         </li>
         <li>
-          <Link to="#" >Privacy Policy</Link>
+          <Link to="/privacy" >Privacy Policy</Link>
         </li>
         
         <li>
-          <Link to="#" >Terms of Use</Link>
+          <Link to="/tandc" >Terms of Use</Link>
         </li>
         
         <li>

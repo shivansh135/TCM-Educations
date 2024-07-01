@@ -446,7 +446,7 @@ export default function Home() {
                        <picture>
                             <source media="(max-width: 768px)" srcSet={`/images/hero/phone/${src}.png`} />
                             <source media="(min-width: 769px)" srcSet={`/images/hero/desk/${src}.png`} />
-                            <img  key={index} src={`/images/hero/desk/${src}.png`} style={{width:'90%',height:'auto'}} alt='frame' className={index === currentIndex ? 'fade-in' : 'fade-out'}/>
+                            <img  key={index} src={`/images/hero/desk/${src}.png`} style={{width:'90%',height:'auto',maxWidth:'670px'}} alt='frame' className={index === currentIndex ? 'fade-in' : 'fade-out'}/>
                         </picture>
                     ))}
                     </div>

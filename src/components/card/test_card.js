@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-export  function Test( {heading,detail} ) {
+export  function Test( {heading,detail,link} ) {
     return (
                     <div className='test-card'>
                         <div className='test-card-content'>
@@ -11,9 +11,9 @@ export  function Test( {heading,detail} ) {
                             <div className="test-card-detail">
                             {detail}
                             </div>
-                            <div className="test-card-button">
+                            <Link to={link} className="test-card-button">
                                 <button className="start_test">Login</button>
-                            </div>
+                            </Link>
                         </div>
                     </div>
     )

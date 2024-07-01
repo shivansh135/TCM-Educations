@@ -681,4 +681,7 @@
         height: fit-content;
         gap: 30px;
     }
+    .card-2-container{
+        gap: 30px;
+    }
 }
