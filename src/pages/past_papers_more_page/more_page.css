@@ -67,13 +67,13 @@
 
 .question_paper_content{
     display: flex;
-    width: 1323px;
-    align-items: flex-start;
-    align-content: flex-start;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
     gap: 45px;
     flex-wrap: wrap;
 }
-
+ 
 .question_paper{
     margin-top: 10%;
     display: flex;
