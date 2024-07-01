@@ -297,7 +297,7 @@
 }
 /*phone view */
 
-@media (max-width: 1200px) {
+@media (max-width: 1208px) {
     .rectangle{
         width: 100%;
         height: fit-content;
@@ -396,6 +396,7 @@
         display: block;
         aspect-ratio: 1 / 1 ;
         width: 170%; /* Diameter of the circle */
+        max-width: 700px;
         height: auto;
         background-color: white; /* Color of the circle */
         border-radius: 50%; /* Makes the shape circular */
@@ -641,4 +642,43 @@
         display: none;
     }
 
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+    .names{
+        font-size: 32px;
+    }
+    .desig{
+        font-size: 26px;
+    }
+    .content{
+        font-size: 20px;
+    }
+    .Book_Live{
+        font-size: 20px;
+    }
+    .teacher_card_head{
+        font-size: 21px;
+    }
+    .teacher_card_text{
+        font-size: 20px;
+    }
+    .head{
+        font-size: 21px;
+    }
+    .special_head{
+        font-size: 26px;
+    }
+    .special_block_head{
+        font-size: 21px;
+    }
+    .special_detail{
+        font-size: 20px;
+    }
+    .head_five{
+        font-size: 28px;
+    }
+    .teacher_cards{
+        height: fit-content;
+        gap: 30px;
+    }
 }

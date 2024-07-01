@@ -4,13 +4,13 @@
     gap: 80px;
     position: relative;
     top: 20%;
-    left: 10%;
-
+    width: 90%;
+    left: 5%;
 }
 
 .stud_img{
-    width: 586px;
-    height: 584px;
+    width: 34%;
+    height: auto;
     flex-shrink: 0;
 }
 
@@ -50,7 +50,7 @@
 }
 
 .stud_detail{
-   width: 611px;
+   width: fit-content;
    color: var(--TCM-Neutral-grey08, #595959);
    font-family: Figtree;
    font-size: 24px;
@@ -108,7 +108,8 @@
 
 .road_map{
     margin-top: 10%;
-    width: 1440px;
+    width: 90%;
+    margin-left: 5%;
     height: 100%;
     overflow: hidden;
     background: #FFF;
@@ -121,8 +122,9 @@
 .road_map_img{
     stroke-width: 24px;
     stroke: var(--TCM-Brand-brand-blue01, #14A4F5);
-    width: 1051.809px;
-    height: 900.253px;
+    width: 90%;
+    height: auto;
+    left: 5%;
     flex-shrink: 0;
     align-items: center;
 }

@@ -9,7 +9,7 @@ export const Directors = ()=>{
                     <div className='black-head' style={{textAlign:'center'}}>
                     Directors of<br/>
                     <span className='blue-head' style={{textWrap:'nowrap',display:'flex',gap:'5px',alignItems:'center',justifyContent:'center'}}>
-                    <img style={{height:'auto',width:'80vw',maxWidth:'470px'}} src="/dir-heading.svg"/>
+                    <img style={{height:'auto',width:'80vw',maxWidth:'470px',transformOrigin:'center',transform:'scale(0.95)'}} src="/dir-heading.svg"/>
                     </span>
                     </div>
                     <div className='para-one' style={{textAlign:'center',maxWidth:'430px'}}>
@@ -28,7 +28,7 @@ export const Directors = ()=>{
                     <div className='black-head' style={{textAlign:'center',width:'100%'}}>
                     About <span className='blue-head' style={{textWrap:'nowrap'}}>Ajai Singh</span>
                     </div>
-                    <div className='para-one' style={{textAlign:'justify',marginLeft:'5%'}}>
+                    <div className='para-one' style={{textAlign:'justify',margin:'5%'}}>
                     Ajai Singh, the visionary Director of TCM Education, brings over two decades of expertise in quantitative techniques and strategic exam preparation. His innovative teaching methods and personalized mentorship have transformed countless CAT aspirants into top achievers. Committed to excellence and student success, Ajai Singh is dedicated to fostering a learning environment where every student can thrive.
                     </div>
                 </div>
@@ -45,7 +45,7 @@ export const Directors = ()=>{
                     <div className='black-head' style={{textAlign:'center',width:'100%'}}>
                     About <span className='blue-head' style={{textWrap:'nowrap'}}>Hemlata Singh</span>
                     </div>
-                    <div className='para-one' style={{textAlign:'justify',marginLeft:'5%'}}>
+                    <div className='para-one' style={{textAlign:'justify',margin:'5%'}}>
                     Hemlata Singh, the dynamic Director of TCM Education, is a driving force behind the institute's commitment to comprehensive and inclusive education. With a keen focus on student-centric learning and academic excellence, she ensures that TCM provides top-notch guidance and resources for all competitive exams. Hemlata Singh's leadership and dedication have been instrumental in establishing TCM as a premier coaching institute.                    </div>
                 </div>
                 <div className='home_two_img' style={{alignItems:'center',display:'flex',flexDirection:'column',marginTop:'10px'}}>
