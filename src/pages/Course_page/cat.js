@@ -8,6 +8,8 @@ import { useParams } from "react-router-dom";
 import { Row } from "../../components/row/row.js";
 import { FAQall, cardsData } from "../home/home.js";
 import PricingCards from "../../components/pricingCards/pricingCards.js";
+import Marquee from "react-fast-marquee";
+import { HeadingSubheading } from "../../components/headings/headings.js";
 
 export default function Cat() {
   const { id } = useParams();
@@ -21,6 +23,7 @@ export default function Cat() {
 
   const course = {
     Cat: {
+      marquee:[1,2,3,6,7,10,12,14,17,19],
       name: "CAT",
       subheading:
         "The difficulty level of cracking the CAT exam can vary depending on individual perspectives and preparation strategies. While some consider it to be one of the easiest examinations, others find certain sections, such as Quantitative Aptitude, to be more challenging. Thorough preparation, time management, and a problem-solving mindset are crucial for success.",
@@ -67,6 +70,7 @@ export default function Cat() {
       old_Marks: "300",
     },
     clat: {
+      marquee:[23,21,22,],
       name: "CLAT",
       subheading:
         "The difficulty level of cracking the CLAT exam can vary depending on individual perspectives and preparation strategies. While some consider it to be one of the easiest examinations, others find certain sections, such as Quantitative Aptitude, to be more challenging. Thorough preparation, time management, and a problem-solving mindset are crucial for success.",
@@ -112,6 +116,7 @@ export default function Cat() {
       old_Marks: "300",
     },
     cuet: {
+      marquee:[5,8,9,18],
       name: "CUET",
       subheading:
         "The difficulty level of cracking the CUET exam can vary depending on individual perspectives and preparation strategies. While some consider it to be one of the easiest examinations, others find certain sections, such as Quantitative Aptitude, to be more challenging. Thorough preparation, time management, and a problem-solving mindset are crucial for success.",
@@ -158,6 +163,7 @@ export default function Cat() {
       old_Marks: "300",
     },
     ipmat: {
+      marquee:[20,2,4,13],
       name: "IPMAT",
       subheading:
         "The difficulty level of cracking the IPMAT exam can vary depending on individual perspectives and preparation strategies. While some consider it to be one of the easiest examinations, others find certain sections, such as Quantitative Aptitude, to be more challenging. Thorough preparation, time management, and a problem-solving mindset are crucial for success.",
@@ -220,13 +226,14 @@ export default function Cat() {
         </div>
       </div>
 
-      <div className="CATs_video">
+      {/* <div className="CATs_video">
         <img
           className="CATs_video_button"
           src="/images/play_arrow.png"
           alt="play"
         />
-      </div>
+      </div> */}
+      <iframe className="CATs_video"  src="https://www.youtube.com/embed/Bl2aMQAEIFI?si=Kb_r1Dbrvu9yiPlB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
       <div className="What_is_CAT">
         <div className="CAT_content">
@@ -303,6 +310,26 @@ export default function Cat() {
           </div>
         </div>
       </div> */}
+            <HeadingSubheading heading={` From Aspirants to Achievers`} sub={`Read testimonials from our successful students who have turned their dreams into reality with TCM`}/>
+
+      <Marquee speed={43} style={{marginTop:'50px'}}>
+        {
+          courses_data.marquee.map((src)=>(
+          <img  key={src} src={`/images/hero/phone/${src}.png`} className="cat-marquee-img" alt='frame'/>
+          ))
+        }
+       {
+          courses_data.marquee.map((src)=>(
+          <img  key={src} src={`/images/hero/phone/${src}.png`} className="cat-marquee-img" alt='frame'/>
+          ))
+        }
+       {
+          courses_data.marquee.map((src)=>(
+          <img  key={src} src={`/images/hero/phone/${src}.png`} className="cat-marquee-img" alt='frame'/>
+          ))
+        }
+      
+      </Marquee>
 
       <div className="course-select">
         <div className="course-select-area">

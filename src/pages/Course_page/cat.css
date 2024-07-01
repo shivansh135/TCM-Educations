@@ -108,7 +108,7 @@
     display: flex;
     align-items: center;
     gap: 89px;
-    padding-left: 30px;
+    padding-right: 30px;
     position: relative;
     width: fit-content;
     margin: auto;
@@ -936,11 +936,17 @@
     height: 24px;
 }
 
-
+.cat-marquee-img{
+    width: 340px;
+    margin: 0px 60px;
+}
 /*phone view */
 
 @media (max-width: 768px) {
-    
+    .cat-marquee-img{
+        width: 180px;
+        margin: 0px 20px;
+    }
     .CAT_head{
         width: 80%;
         height: auto;

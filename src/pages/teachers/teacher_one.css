@@ -297,7 +297,7 @@
 }
 /*phone view */
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
     .rectangle{
         width: 100%;
         height: fit-content;

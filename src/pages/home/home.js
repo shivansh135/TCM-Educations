@@ -368,7 +368,30 @@ export const FAQall = ()=>{
 export default function Home() {
     const [showPopup, setShowPopup] = useState(false);
     const [currentIndex, setCurrentIndex] = useState(0);
-    const images = [1,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24];
+    const images = [
+        7,
+        17,
+        1,
+        13,
+        19,
+        3,
+        18,
+        5,
+        16,
+        6,
+        14,
+        12,
+        4,
+        23,
+        15,
+        8,
+        20,
+        22,
+        10,
+        21,
+        11,
+        9
+    ];
     const [learnMore,setLearnMore] = useState(window.innerHeight>768);
 
     useEffect(() => {
@@ -421,9 +444,9 @@ export default function Home() {
                 <div className='home_two_img'>
                     {images.map((src, index) => (
                        <picture>
-                            <source media="(max-width: 768px)" srcSet={`/images/hero/phone/h${src}.png`} />
-                            <source media="(min-width: 769px)" srcSet={`/images/hero/desk/h${src}.png`} />
-                            <img  key={index} src={`/images/hero/desk/h${src}.png`} style={{width:'90%',height:'auto'}} alt='frame' className={index === currentIndex ? 'fade-in' : 'fade-out'}/>
+                            <source media="(max-width: 768px)" srcSet={`/images/hero/phone/${src}.png`} />
+                            <source media="(min-width: 769px)" srcSet={`/images/hero/desk/${src}.png`} />
+                            <img  key={index} src={`/images/hero/desk/${src}.png`} style={{width:'90%',height:'auto'}} alt='frame' className={index === currentIndex ? 'fade-in' : 'fade-out'}/>
                         </picture>
                     ))}
                     </div>

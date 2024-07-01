@@ -22,11 +22,14 @@ export default function Panchmukhi() {
                 <div className="panckmukhi_heading">
                 TCM’ Exclusive Panchukhi Approach for Aspirants
                 </div>
-                <div className='CAT_video'>
+                {/* <div className='CAT_video'>
                 <div className='CAT_video_button'>
                     <img src='./images/play_arrow.png'  alt='play' />
                 </div>
-            </div>
+                
+                </div> */}
+                 <iframe className="CAT_video"  src="https://www.youtube.com/embed/Bl2aMQAEIFI?si=Kb_r1Dbrvu9yiPlB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
             </div>
             
             <div className='roadmaps'>
