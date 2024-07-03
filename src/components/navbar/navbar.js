@@ -24,7 +24,7 @@ class Navbar extends React.Component {
         const navbarStyle = currentPage === 'specialPage' ? 'navbar-special' : 'navbar-default';
         const logoSrc = currentImg === 'specialPage' ? '/logo/tcmLogoWhite.svg' : '/logo/tcmLogo.svg';
         const links = [
-            { name: 'Courses', path: '/all-batches' },
+            { name: 'Courses', path: '/course' },
             { name: 'Media Coverage', path: '/news' },
             { name: 'Learning Centres', path: '/offline-centre' },
             { name: 'Test Series', path: '/test-series' },
@@ -42,7 +42,7 @@ class Navbar extends React.Component {
                                 </Link>
                             </div>
                             <div className='navbar_head' >
-                                <div className='navbar_council'><Link to='/all-batches'>Courses</Link></div>
+                                <div className='navbar_council'><Link to='/course'>Courses</Link></div>
                                 <div className='navbar_council'><Link to='/news'>Media Coverage</Link></div>
                                 <div className='navbar_offCetre'><Link to='/offline-centre'>Learning Centres</Link></div>
                                 <div className='navbar_mock'><Link to='/test-series'>Test Series</Link></div>

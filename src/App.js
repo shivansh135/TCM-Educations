@@ -47,6 +47,7 @@ function App() {
       <Route path="/" element={ <><Navbar currentPage="home"/><Home /></>} />
       <Route path="/offline-centre/:id" element={ <><Navbar currentPage="home" currentImg="home"/><Prayagraj /></>} />
       {/* <Route path="/planning/:id" element={ <><Navbar currentPage="home" currentImg="home"/><Planning /></>} /> */}
+      <Route path="/course" element={<><Navbar currentPage="home" currentImg="home"/><Batch /></>}/>
       <Route path="/course/:id" element={<><Navbar currentPage="home" currentImg="home"/><Cat /></>} />
       <Route path="/cat" element={<><Navbar currentPage="home" currentImg="home"/><Cat /></>} />
       <Route path="/cat" element={<><Navbar currentPage="home" currentImg="home"/><Cat /></>} />
@@ -70,8 +71,7 @@ function App() {
       <Route path="/pyqs/:id" element={<><Navbar currentPage="home" currentImg="home"/><MorePage /></>} />
       <Route path="/pricing/:id" element={<><Navbar currentPage="home" currentImg="home"/><PricingPage /></>} />
       <Route path="/news" element={<><Navbar currentPage="home" currentImg="home"/><News /></>}/>
-      <Route path="/all-batches" element={<><Navbar currentPage="home" currentImg="home"/><Batch /></>}/>
-      <Route path="/upcomming-batch" element={<><Navbar currentPage="home" currentImg="home"/><Upcomming /></>}/>
+      <Route path="/upcoming-batch" element={<><Navbar currentPage="home" currentImg="home"/><Upcomming /></>}/>
       <Route path="/directors" element={<><Navbar currentPage="home" currentImg="home"/><Directors /></>}/>
     </Routes>
     <Footer/>

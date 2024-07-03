@@ -11,7 +11,7 @@ export const News = ()=>{
                 <path d="M7.49897 3.11726C5.55779 3.11726 3.97852 4.69648 3.97852 6.63763C3.97852 6.88681 4.18053 7.08882 4.42971 7.08882C4.67888 7.08882 4.8809 6.88681 4.8809 6.63763C4.8809 5.19405 6.05536 4.01961 7.49899 4.01961C7.74817 4.01961 7.95018 3.8176 7.95018 3.56842C7.95016 3.31922 7.74814 3.11726 7.49897 3.11726Z" fill="white"/>
                 </svg>
                 <span>
-                <strong>Leaders Batch - CAT 2024</strong> starting from 25 June, 2024. <Link to="/upcomming-batch" style={{textDecoration:'underline',color:'#ffffff'}}>Browse all batches</Link>
+                <strong>Leaders Batch - CAT 2024</strong> starting from 25 June, 2024. <Link to="/upcoming-batch" style={{textDecoration:'underline',color:'#ffffff'}}>Browse all batches</Link>
 
                 </span>
                 </div>

@@ -74,12 +74,12 @@
 
 
 .teacher {
-    width: 384px;
+    width: 660px;
     height: auto;
     flex-shrink: 0;
     position: relative;
     left: 60%; /* Adjust as needed */
-    bottom: 180px; /* Adjust as needed */
+    bottom: 460px; /* Adjust as needed */
     z-index: 1; /* Ensure image is in front of circle */
 }
 
@@ -87,11 +87,11 @@
     content: '';
     position: absolute;
     display: block;
-    width: 480px; /* Diameter of the circle */
-    height: 480px;
+    width: 780px; /* Diameter of the circle */
+    height: 780px;
     background-color: white; /* Color of the circle */
     border-radius: 50%; /* Makes the shape circular */
-    bottom: -270px; /* Adjust the distance from the bottom of the image */
+    bottom: -370px; /* Adjust the distance from the bottom of the image */
     left: 50%;
     transform: translateX(-50%);
     z-index: -1; /* Ensure the circle is behind the image */
@@ -149,7 +149,8 @@
 }
 
 .teacher_wheel{
-    width: 100%;
+    width: 90%;
+    margin-left: 5%;
     height: 700.699px;
     margin-top: 20%;
     align-items: start;
