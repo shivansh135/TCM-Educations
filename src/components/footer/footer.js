@@ -51,19 +51,19 @@ export const Footer = ()=>{
       
       <ul className="nav__ul nav__ul">
         <li>
-          <Link to="/cat/Cat" >CAT</Link>
+          <Link to="/course/Cat" >CAT</Link>
         </li>
         
         <li>
-          <Link to="/cat/ipmat" >IPMAT</Link>
+          <Link to="/course/ipmat" >IPMAT</Link>
         </li>
         
         <li>
-          <Link to="/cat/clat" >CLAT</Link>
+          <Link to="/course/clat" >CLAT</Link>
         </li>
         
         <li>
-          <Link to="/cat/cuet" >CUET</Link>
+          <Link to="/course/cuet" >CUET</Link>
         </li>
         
       </ul>

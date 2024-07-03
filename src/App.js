@@ -45,9 +45,9 @@ function App() {
 
     <Routes>
       <Route path="/" element={ <><Navbar currentPage="home"/><Home /></>} />
-      <Route path="/offline-centre/:city/:id" element={ <><Navbar currentPage="home" currentImg="home"/><Prayagraj /></>} />
+      <Route path="/offline-centre/:id" element={ <><Navbar currentPage="home" currentImg="home"/><Prayagraj /></>} />
       {/* <Route path="/planning/:id" element={ <><Navbar currentPage="home" currentImg="home"/><Planning /></>} /> */}
-      <Route path="/cat/:id" element={<><Navbar currentPage="home" currentImg="home"/><Cat /></>} />
+      <Route path="/course/:id" element={<><Navbar currentPage="home" currentImg="home"/><Cat /></>} />
       <Route path="/cat" element={<><Navbar currentPage="home" currentImg="home"/><Cat /></>} />
       <Route path="/cat" element={<><Navbar currentPage="home" currentImg="home"/><Cat /></>} />
       <Route path="/panchmukhi" element={<><Navbar currentPage="specialPage" currentImg="specialPage"/><Panchmukhi /></>} />    

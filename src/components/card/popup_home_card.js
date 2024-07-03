@@ -14,7 +14,7 @@ export function Popup_home_card({course,detail,id}) {
                         </div>
                     </div>
                     <button className="popup_home_card_button">
-                    <Link to={`/cat/${id}`}>
+                    <Link to={`/course/${id}`}>
                         Learn More
                     </Link>
                     </button>
