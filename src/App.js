@@ -28,6 +28,7 @@ import { Upcomming } from './pages/upcomming-batch/upcomming';
 import { Directors } from './pages/directors/directors';
 import { Privacy, TandC } from './pages/home/tandc';
 import { OrderSummary } from './pages/Course_page/checkout';
+import { Results } from './pages/results/results';
 const ScrollToTop = () => {
   // Extracts pathname property(key) from an object
   const { pathname } = useLocation();
@@ -48,6 +49,7 @@ function App() {
       <Route path="/offline-centre/:id" element={ <><Navbar currentPage="home" currentImg="home"/><Prayagraj /></>} />
       {/* <Route path="/planning/:id" element={ <><Navbar currentPage="home" currentImg="home"/><Planning /></>} /> */}
       <Route path="/course" element={<><Navbar currentPage="home" currentImg="home"/><Batch /></>}/>
+      <Route path="/results" element={<><Navbar currentPage="home" currentImg="home"/><Results /></>}/>
       <Route path="/course/:id" element={<><Navbar currentPage="home" currentImg="home"/><Cat /></>} />
       <Route path="/cat" element={<><Navbar currentPage="home" currentImg="home"/><Cat /></>} />
       <Route path="/cat" element={<><Navbar currentPage="home" currentImg="home"/><Cat /></>} />

@@ -28,7 +28,8 @@ class Navbar extends React.Component {
             { name: 'Media Coverage', path: '/news' },
             { name: 'Learning Centres', path: '/offline-centre' },
             { name: 'Test Series', path: '/test-series' },
-            { name: 'Career Conselling', path: '/form-page' }
+            { name: 'Career Conselling', path: '/form-page' },
+            { name: 'Results', path: '/result' }
         ];
 
         return (
@@ -47,6 +48,7 @@ class Navbar extends React.Component {
                                 <div className='navbar_offCetre'><Link to='/offline-centre'>Learning Centres</Link></div>
                                 <div className='navbar_mock'><Link to='/test-series'>Test Series</Link></div>
                                 <div className='navbar_council'><Link to='/form-page'>Career Counselling</Link></div>
+                                <div className='navbar_council'><Link to='/results'>Results</Link></div>
                                 <button className='navbar_signup'><Link to='/login'>Login</Link></button>
                             </div>
                         </div>

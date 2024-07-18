@@ -924,10 +924,19 @@ flex-wrap: wrap;
 }
 
 /*phone view */
+.result-img{
+    width: 340px;
+    height: auto;
 
+}
 @media (max-width: 768px) {
     .call{
         right: 14px !important;
+    }
+    .result-img{
+        width: 83vw;
+        height: auto;
+        margin: auto;
     }
     .mentor-head{
         position: relative;

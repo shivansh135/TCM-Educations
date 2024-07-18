@@ -23,7 +23,8 @@ export default function Cat() {
 
   const course = {
     Cat: {
-      marquee:[1,2,3,6,7,10,12,14,17,19],
+      marquee:[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33],
+      path:'catP',
       name: "CAT",
       subheading:
         "The difficulty level of cracking the CAT exam can vary depending on individual perspectives and preparation strategies. While some consider it to be one of the easiest examinations, others find certain sections, such as Quantitative Aptitude, to be more challenging. Thorough preparation, time management, and a problem-solving mindset are crucial for success.",
@@ -70,7 +71,8 @@ export default function Cat() {
       old_Marks: "300",
     },
     clat: {
-      marquee:[23,21,22,],
+      marquee:[1,2,3,4,5],
+      path:'clatP',
       name: "CLAT",
       subheading:
         "The difficulty level of cracking the CLAT exam can vary depending on individual perspectives and preparation strategies. While some consider it to be one of the easiest examinations, others find certain sections, such as Quantitative Aptitude, to be more challenging. Thorough preparation, time management, and a problem-solving mindset are crucial for success.",
@@ -116,7 +118,8 @@ export default function Cat() {
       old_Marks: "300",
     },
     cuet: {
-      marquee:[5,8,9,18],
+      marquee:[1,2,3,4,5,6,7,8,9],
+      path:'cucetP',
       name: "CUET",
       subheading:
         "The difficulty level of cracking the CUET exam can vary depending on individual perspectives and preparation strategies. While some consider it to be one of the easiest examinations, others find certain sections, such as Quantitative Aptitude, to be more challenging. Thorough preparation, time management, and a problem-solving mindset are crucial for success.",
@@ -163,7 +166,8 @@ export default function Cat() {
       old_Marks: "300",
     },
     ipmat: {
-      marquee:[20,2,4,13],
+      marquee:[1,2,3,4,5,6,7,8,9],
+      path:'ipmP',
       name: "IPMAT",
       subheading:
         "The difficulty level of cracking the IPMAT exam can vary depending on individual perspectives and preparation strategies. While some consider it to be one of the easiest examinations, others find certain sections, such as Quantitative Aptitude, to be more challenging. Thorough preparation, time management, and a problem-solving mindset are crucial for success.",
@@ -315,17 +319,17 @@ export default function Cat() {
       <Marquee speed={43} style={{marginTop:'50px'}}>
         {
           courses_data.marquee.map((src)=>(
-          <img  key={src} src={`/images/hero/phone/${src}.png`} className="cat-marquee-img" alt='frame'/>
+          <img  key={src} src={`/hero/${courses_data.path}/${src}.png`} className="cat-marquee-img" alt='frame'/>
           ))
         }
        {
           courses_data.marquee.map((src)=>(
-          <img  key={src} src={`/images/hero/phone/${src}.png`} className="cat-marquee-img" alt='frame'/>
+          <img  key={src} src={`/hero/${courses_data.path}/${src}.png`} className="cat-marquee-img" alt='frame'/>
           ))
         }
        {
           courses_data.marquee.map((src)=>(
-          <img  key={src} src={`/images/hero/phone/${src}.png`} className="cat-marquee-img" alt='frame'/>
+          <img  key={src} src={`/hero/${courses_data.path}/${src}.png`} className="cat-marquee-img" alt='frame'/>
           ))
         }
       

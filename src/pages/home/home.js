@@ -369,28 +369,7 @@ export default function Home() {
     const [showPopup, setShowPopup] = useState(false);
     const [currentIndex, setCurrentIndex] = useState(0);
     const images = [
-        7,
-        17,
-        1,
-        13,
-        19,
-        3,
-        18,
-        5,
-        16,
-        6,
-        14,
-        12,
-        4,
-        23,
-        15,
-        8,
-        20,
-        22,
-        10,
-        21,
-        11,
-        9
+       1,2,3,4,5,6,7,8
     ];
     const [learnMore,setLearnMore] = useState(window.innerHeight>768);
 
@@ -441,15 +420,15 @@ export default function Home() {
                     </div>
                     <Button onClick={handleButtonClick}/>
                 </div>
-                <div className='home_two_img'>
+                <Link to="/results" className='home_two_img'>
                     {images.map((src, index) => (
                        <picture>
-                            <source media="(max-width: 768px)" srcSet={`/images/hero/phone/${src}.png`} />
-                            <source media="(min-width: 769px)" srcSet={`/images/hero/desk/${src}.png`} />
-                            <img  key={index} src={`/images/hero/desk/${src}.png`} style={{width:'90%',height:'auto',maxWidth:'670px'}} alt='frame' className={index === currentIndex ? 'fade-in' : 'fade-out'}/>
+                            <source media="(max-width: 768px)" srcSet={`/hero/homeP/${src}.png`} />
+                            <source media="(min-width: 769px)" srcSet={`/hero/homeD/${src}.png`} />
+                            <img  key={index} src={`/hero/homeD/${src}.png`} style={{width:'90%',height:'auto',maxWidth:'670px'}} alt='frame' className={index === currentIndex ? 'fade-in' : 'fade-out'}/>
                         </picture>
                     ))}
-                    </div>
+                    </Link>
             </div>
 
         <HeadingSubheading heading={`Why TCM is India’s Fastest Growing Institute?`} sub={`Learn about TCM's exclusive features that make us the fastest-growing CAT coaching institute in India`}/>
