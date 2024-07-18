@@ -81,94 +81,6 @@ export const StudentsFeedback = () => {
 
     const data= [
         {
-            name:'Mudit Dewan',
-            percent:'SNAP 99.64%ile',
-            review:`I want to express my gratitude to TCM for
-playing a crucial role in helping me score
-98.65 percentile in CAT. The coaching
-provided me with the right tools, support
-and strategies that made all the difference.
-The faculty at TCM were not just
-knowledgeable but also made learning
-enjoyable. They broke down complex topics
-into simple explanations, making it easier
-for me to understand and remember key
-concepts. TCM's commitment of staying
-updated with the latest exam patterns and
-trends was evident in the relevance of the
-study materials and mocks.`,
-clg:'sibmp.png'
-
-        },
-        {
-            name:'Yash Sadhwani',
-            percent:'CAT 99.67%ile',
-            review:`
-            I want to express my gratitude to TCM for
-playing a crucial role in helping me score
-98.65 percentile in CAT. The coaching
-provided me with the right tools, support
-and strategies that made all the difference.
-The faculty at TCM were not just
-knowledgeable but also made learning
-enjoyable. They broke down complex topics
-into simple explanations, making it easier
-for me to understand and remember key
-concepts. TCM's commitment of staying
-updated with the latest exam patterns and
-trends was evident in the relevance of the
-study materials and mocks.`,
-clg:'iimkozhi.png'
-
-        },
-        {
-            name:'Khushi Jaiswal',
-            percent:'CAT 99.67%ile',
-            review:`I want to express my gratitude to TCM for
-playing a crucial role in helping me score
-98.65 percentile in CAT. The coaching
-provided me with the right tools, support
-and strategies that made all the difference.
-The faculty at TCM were not just
-knowledgeable but also made learning
-enjoyable. They broke down complex topics
-into simple explanations, making it easier
-for me to understand and remember key
-concepts. TCM's commitment of staying
-updated with the latest exam patterns and
-trends was evident in the relevance of the
-study materials and mocks.`,
-clg:'iimv.png'
-
-        },
-        {
-            name:'Muskan Golus',
-            percent:'CAT 99.67%ile',
-            review:`Hello! I am Muskan Golus, having converted IIM Trichy. I received calls from MDI Gurgaon, 12 IIMs and other top B-schools. This was only possible because I was a part of TCM Education. My immense gratitude to all the faculties for their guidance and showing me the proper direction which was vital. I would specially want to thank Ajai Sir, for his encouragement and constant
-motivation which pushed me to the heights. Mathematics became fun for me and I won.`,
-clg:'iimt.png'
-        },
-        {
-            name:'Archi Jaiswal',
-            percent:'CMAT 99.83%ile',
-            review:`I want to express my gratitude to TCM for
-playing a crucial role in helping me score
-98.65 percentile in CAT. The coaching
-provided me with the right tools, support
-and strategies that made all the difference.
-The faculty at TCM were not just
-knowledgeable but also made learning
-enjoyable. They broke down complex topics
-into simple explanations, making it easier
-for me to understand and remember key
-concepts. TCM's commitment of staying
-updated with the latest exam patterns and
-trends was evident in the relevance of the
-study materials and mocks.`,
-clg:'jbims.png'
-
-        },
-        {
             name:'Adrija Tiwari',
             percent:'CAT 98.65%ile',
             review:`I want to express my gratitude to TCM for
@@ -189,25 +101,8 @@ clg:'iims.png'
 
         },
         {
-            name:'Tanmay Rastogi',
-            percent:'CAT 99.73%ile',
-            review:`I would like to
-express my gratitude towards TCM
- Prayagraj for all the efforts they put in
- me and the support I got and continue to
-get. The teaching staff are excellent and
-leave no stone unturned. Ajai Sir
-provided me complete concept of
-quantitative aptitude and helped me
-improve my score in quants. His classes
-and workshops are the best way to
-prepare.`,
-clg:'iimga.png'
-
-        },
-        {
             name:'Sharad Singh',
-            percent:'CAT 99.67%ile',
+            percent:'CAT 96.20%ile',
             review:`I finally converted lIM Trichy! TCM
 Education has been the aid to my problems during my CAT preparation. I would like to thank the mentors of TCM
 Education for providing me proper
@@ -254,7 +149,7 @@ clg:'iimb.png'
         }
         ,{
             name:'Vivek Kr. Gupta',
-            percent:'CAT 98.84%ile',
+            percent:'CAT 98.94%ile',
             review:`Hello all! I am Vivek Kumar Gupta! Delighted to convert IIM Calcutta & I
  received calls from XLRI and other top b-schools.My journey with TCM started
  with a dream, but it turned into a reality
