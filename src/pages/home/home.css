@@ -925,7 +925,7 @@ flex-wrap: wrap;
 
 /*phone view */
 .result-img{
-    width: 340px;
+    width: 240px;
     height: auto;
 
 }
@@ -934,7 +934,7 @@ flex-wrap: wrap;
         right: 14px !important;
     }
     .result-img{
-        width: 83vw;
+        width: 63vw;
         height: auto;
         margin: auto;
     }
