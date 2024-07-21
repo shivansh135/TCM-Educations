@@ -29,7 +29,7 @@ class Navbar extends React.Component {
             { name: 'Learning Centres', path: '/offline-centre' },
             { name: 'Test Series', path: '/test-series' },
             { name: 'Career Conselling', path: '/form-page' },
-            { name: 'Results', path: '/result' }
+            { name: 'Results', path: '/results' }
         ];
 
         return (
