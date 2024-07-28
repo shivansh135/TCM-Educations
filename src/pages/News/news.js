@@ -29,7 +29,7 @@ export const News = ()=>{
                 <Button/>
             </Link>
             <div className='home_two_img'>
-                <img src={`/images/news.png`} style={{width:'90%',height:'auto'}} alt='frame'/>
+                <img src={`/images/news.png`} style={{width:'90%',height:'auto',display:'none'}} alt='frame'/>
             </div>
            
         </div>
