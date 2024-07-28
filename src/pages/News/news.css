@@ -21,8 +21,8 @@
       padding: 20px;
     }
     .grid-item{
-        height: 150px;
-
+        height: auto;
+        width: 40vh;
     }
     
   }
