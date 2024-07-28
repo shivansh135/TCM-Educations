@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom"
 import { Button } from "../../components/button/button"
 import { FAQall } from "../home/home"
-
+import './news.css'
 export const News = ()=>{
+    const images = Array.from({ length: 28 }, (_, i) => `/images/news/${i + 1}.jpg`);
+
     return(
         <>
         <div className='sticky-note'>
@@ -29,6 +31,14 @@ export const News = ()=>{
             <div className='home_two_img'>
                 <img src={`/images/news.png`} style={{width:'90%',height:'auto'}} alt='frame'/>
             </div>
+           
+        </div>
+        <div className="grid-container">
+          {images.map((src, index) => (
+            
+              <img className="grid-item"  key={index} src={src} alt={`Image ${index + 1}`} />
+          
+          ))}
         </div>
         <FAQall/>
         </>

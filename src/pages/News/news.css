@@ -1,0 +1,29 @@
+.grid-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 40px 20px;
+    margin-top: 60px;
+    padding: 30px;
+  }
+
+  
+  .grid-item {
+    width: auto;
+    height: 230px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  @media screen and (max-width: 768px) {
+    .grid-container {
+      
+      padding: 20px;
+    }
+    .grid-item{
+        height: 150px;
+
+    }
+    
+  }
+  
